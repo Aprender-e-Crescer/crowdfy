@@ -1,5 +1,4 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Activity } from '@/components/activity'
 
 export const Route = createFileRoute('/live-campaigns') ({
     component: LiveCampaigns
