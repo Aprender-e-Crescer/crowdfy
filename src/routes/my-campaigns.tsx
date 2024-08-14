@@ -9,7 +9,6 @@ export function LiveCampaigns() {
     return (
     <>
         <h1>Hello campaigns</h1>
-        <Activity />
     </>
     )
 }

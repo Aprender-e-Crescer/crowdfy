@@ -11,7 +11,7 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as LiveCampaignsImport } from './routes/live-campaigns'
+import { Route as LiveCampaignsImport } from './routes/my-campaigns'
 import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
 
