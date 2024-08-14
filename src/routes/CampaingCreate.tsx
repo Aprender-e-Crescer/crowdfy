@@ -5,5 +5,5 @@ export const Route = createFileRoute('/CampaingCreate')({
 })
 
 function CampaingCreate() {
-  return <div className="p-2">Teste campaing</div>
+  return <div className="p-2">Coloquem seus componentes aqui</div>
 }
