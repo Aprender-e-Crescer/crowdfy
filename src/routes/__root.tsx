@@ -11,7 +11,13 @@ export const Route = createRootRoute({
         <Link to="/about" className="[&.active]:font-bold">
           About
         </Link>
+
+        <Link to="/profileNotifications" className="[&.active]:font-bold">
+          profileNotifications
+        </Link>
       </div>
+
+
       <hr />
       <Outlet />
       <TanStackRouterDevtools />
