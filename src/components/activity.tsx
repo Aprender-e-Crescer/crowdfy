@@ -35,34 +35,104 @@ export function Activity() {
             <div className="relative pl-6 after:absolute after:inset-y-0 after:w-px after:bg-muted-foreground/20 after:left-0 grid gap-10">
               <div className="flex items-start gap-4 text-sm relative">
                   <Avatar className="w-10 h-10 border">
-                    <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
+                    <AvatarImage src="/public/activity-user-avatar.svg" alt="@shadcn" />
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
                 <div className="grid gap-1">
-                  <div className="font-medium">June 20, 2024 - Went for a 6.2 mile run</div>
+                  <div className="font-medium">Demi Wikinson</div>
                   <div className="text-muted-foreground">Completed a 48 minute and 22 second run.</div>
                 </div>
               </div>
+
               <div className="flex items-start gap-4 text-sm relative">
                   <Avatar className="w-10 h-10 border">
-                    <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
+                    <AvatarImage src="/public/activity-user-avatar.svg" alt="@shadcn" />
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
                 <div className="grid gap-1">
-                  <div className="font-medium">June 15, 2024 - Went for a 24.3 mile bike ride</div>
+                  <div className="font-medium">Demi Wikinson</div>
                   <div className="text-muted-foreground">Completed a 1 hour and 12 minute bike ride.</div>
                 </div>
               </div>
+
+
               <div className="flex items-start gap-4 text-sm relative">
                   <Avatar className="w-10 h-10 border">
-                    <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
+                    <AvatarImage src="/public/activity-user-avatar.svg" alt="@shadcn" />
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
                 <div className="grid gap-1">
-                  <div className="font-medium">June 10, 2024 - Went on an 8.1 mile hike</div>
+                  <div className="font-medium">Demi Wikinson</div>
                   <div className="text-muted-foreground">Completed a 2 hour and 45 minute hike.</div>
                 </div>
               </div>
+
+              <div className="flex items-start gap-4 text-sm relative">
+                  <Avatar className="w-10 h-10 border">
+                    <AvatarImage src="/public/activity-user-avatar.svg" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                <div className="grid gap-1">
+                  <div className="font-medium">Demi Wikinson</div>
+                  <div className="text-muted-foreground">Completed a 2 hour and 45 minute hike.</div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 text-sm relative">
+                  <Avatar className="w-10 h-10 border">
+                    <AvatarImage src="/public/activity-user-avatar.svg" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                <div className="grid gap-1">
+                  <div className="font-medium">Demi Wikinson</div>
+                  <div className="text-muted-foreground">Completed a 2 hour and 45 minute hike.</div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 text-sm relative">
+                  <Avatar className="w-10 h-10 border">
+                    <AvatarImage src="/public/activity-user-avatar.svg" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                <div className="grid gap-1">
+                  <div className="font-medium">Demi Wikinson</div>
+                  <div className="text-muted-foreground">Completed a 2 hour and 45 minute hike.</div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 text-sm relative">
+                  <Avatar className="w-10 h-10 border">
+                    <AvatarImage src="/public/activity-user-avatar.svg" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                <div className="grid gap-1">
+                  <div className="font-medium">Demi Wikinson</div>
+                  <div className="text-muted-foreground">Completed a 2 hour and 45 minute hike.</div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 text-sm relative">
+                  <Avatar className="w-10 h-10 border">
+                    <AvatarImage src="/public/activity-user-avatar.svg" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                <div className="grid gap-1">
+                  <div className="font-medium">Demi Wikinson</div>
+                  <div className="text-muted-foreground">Completed a 2 hour and 45 minute hike.</div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 text-sm relative">
+                  <Avatar className="w-10 h-10 border">
+                    <AvatarImage src="/public/activity-user-avatar.svg" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                <div className="grid gap-1">
+                  <div className="font-medium">Demi Wikinson</div>
+                  <div className="text-muted-foreground">Completed a 2 hour and 45 minute hike.</div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
