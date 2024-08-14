@@ -1,3 +1,4 @@
+import { HeaderCard } from '@/components/headerCard'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/explore')({
@@ -5,5 +6,5 @@ export const Route = createFileRoute('/explore')({
 })
 
 function Explore() {
-  return <div className="p-2">Hello from About!</div>
+  return <HeaderCard />
 }
