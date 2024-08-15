@@ -15,11 +15,7 @@ function Header() {
       {/* Logo */}
       <div className="flex items-center">
         <div className="flex items-center space-x-1">
-          <img
-            src={logoImage}
-            alt="Logo"
-            className="w-8 h-8"
-          />
+          <img src={logoImage} alt="Logo" className="w-8 h-8" />
           <div className="text-black text-xl font-bold">Crowdfy</div>
         </div>
         {/* Links de navegação */}
