@@ -8,7 +8,7 @@ import {
 export default function Footer() {
   return (
     <>
-      <div className="bg-slate-900  block md:hidden flex flex-wrap">
+      <div className="bg-slate-900   md:hidden flex flex-wrap">
         <p>teste</p>
         <p>teste</p>
         <p>teste</p>
