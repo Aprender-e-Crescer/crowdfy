@@ -22,7 +22,7 @@ function Header() {
           />
           <div className="text-black text-xl font-bold">Crowdfy</div>
         </div>
-        {/* Navigation links */}
+        {/* Links de navegação */}
         <nav className="hidden md:flex ml-8 space-x-8">
           <a
             href="#"
@@ -55,36 +55,40 @@ function Header() {
         </nav>
       </div>
 
-      {/* User actions */}
+      {/* Ações do usuário */}
       <div className="flex items-center space-x-4">
-        {/* Add Button */}
-        <button className="bg-gray-100 p-2 w-10 h-10 rounded-lg shadow-md flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-6 h-6 text-gray-700"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 4v16m8-8H4"
-            />
-          </svg>
+        {/* Botão de Adicionar */}
+        <button className="bg-gray-100 p-2 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center border border-gray-400 relative">
+          <div className="absolute inset-0 m-1 border border-gray-400 rounded-lg flex items-center justify-center">
+            <div className="w-6 h-6 border-2 border-gray-400 rounded-full flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-4 h-4 text-gray-600"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+            </div>
+          </div>
         </button>
 
-        {/* User Avatar */}
+        {/* Avatar do usuário */}
         <div className="bg-gray-100 p-2 w-10 h-10 rounded-full shadow-md flex items-center justify-center">
           <img
             src={settingsImage}
-            alt="User Avatar"
+            alt="Avatar do Usuário"
             className="w-8 h-8 rounded-full object-cover"
           />
         </div>
 
-        {/* Settings Icon */}
+        {/* Ícone de Configurações */}
         <div className="bg-gray-100 p-2 w-10 h-10 rounded-lg shadow-md flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
