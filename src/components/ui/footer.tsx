@@ -12,47 +12,51 @@ export default function Footer() {
   return (
     <>
       <div className="hidden md:flex bg-slate-100 w-full flex-col">
-        <div className="flex justify-center gap-x-16 py-4 flex-1 px-8">
+        <div className="flex justify-center gap-x-16 py-20 flex-1 px-8">
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <h1>Home</h1>
+            <h1 className='text-lime-700 font-semibold'>Home</h1>
 
-            <p>My favorites</p>
-            <p>Recents</p>
+            <p className='text-slate-600'>My favorites</p>
+            <p className='text-slate-600'>Recents</p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <h1>Explore</h1>
+            <h1 className='font-semibold'>Explore</h1>
 
-            <p>Lists</p>
-            <p className='flex'>Maps <Badge variant="success">New</Badge></p>
+            <p className='text-slate-600'>Lists</p>
+            <p className='flex text-slate-600'>Maps <Badge variant="success">New</Badge></p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <h1>Campaigns</h1>
+            <h1 className='font-semibold'>Campaigns</h1>
 
-            <p>Home</p>
-            <p className='flex'>Campaigns <Badge variant="success">12</Badge></p>
-            <p className='flex'>Donations <Badge variant="success">4</Badge></p>
-            <p>Analytics</p>
+            <p className='text-slate-600 ' >Home</p>
+            <p className='flex text-slate-600'>Campaigns <Badge variant="success">12</Badge></p>
+            <p className='flex text-slate-600'>Donations <Badge variant="success">4</Badge></p>
+            <p className='text-slate-600'>Analytics</p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <h1>Profile</h1>
+            <h1 className='font-semibold'>Profile</h1>
 
-            <p>Settings</p>
-            <p className='flex'>Notifications <Badge variant="success">10</Badge></p>
+            <p className='text-slate-600'>Settings</p>
+            <p className='flex text-slate-600'>Notifications <Badge variant="success">10</Badge></p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <h1>Resources</h1>
+            <h1 className='font-semibold'>Resources</h1>
 
-            <p>How to use crouwdfy</p>
-            <p>Docs</p>
-            <p>Legal Terms</p>
-            <p>Blog</p>
-            <p>Merch</p>
+            <p className='text-slate-600'>How to use crouwdfy</p>
+            <p className='text-slate-600'>Docs</p>
+            <p className='text-slate-600'>Legal Terms</p>
+            <p className='text-slate-600'>Blog</p>
+            <p className='text-slate-600'>Merch</p>
           </div>
         </div>
-        <div className="flex ml-3 py-5">
+        <hr />
+        <div className="flex mx-20 py-5 items-center justify-between">
             <div className="flex gap-x-2">
               <img src={iconfooter} alt="" />
-              <p className="size-4 font-bold">Crowdfy</p>
+              <p className="font-bold text-lg">Crowdfy</p>
+            </div>
+            <div className='flex'>
+              <p className='flex flex-wrap text-[#667085]'>© 2077 Mainnet Design. All rights reserved.</p>
             </div>
           </div>
         
@@ -131,13 +135,14 @@ export default function Footer() {
               Merch
             </AccordionContent>
           </AccordionItem>
-          <div className="flex ml-3  py-5 items-center justify-between">
+          <hr />
+          <div className="flex mx-4 py-5 items-center justify-between">
             <div className="flex gap-x-2">
               <img src={iconfooter} alt="" />
               <p className="font-bold text-lg">Crowdfy</p>
             </div>
             <div className='flex'>
-              <p className='flex flex-wrap'>© 2077 Mainnet Design.<br /> All rights reserved.</p>
+              <p className='flex flex-wrap text-[#667085] font-light'>© 2077 Mainnet Design.<br /> All rights reserved.</p>
             </div>
           </div>
         </Accordion>
