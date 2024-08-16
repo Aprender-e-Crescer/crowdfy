@@ -131,10 +131,13 @@ export default function Footer() {
               Merch
             </AccordionContent>
           </AccordionItem>
-          <div className="flex ml-3 py-5">
+          <div className="flex ml-3  py-5 items-center justify-between">
             <div className="flex gap-x-2">
               <img src={iconfooter} alt="" />
-              <p className="size-4 font-bold">Crowdfy</p>
+              <p className="font-bold text-lg">Crowdfy</p>
+            </div>
+            <div className='flex'>
+              <p className='flex flex-wrap'>© 2077 Mainnet Design.<br /> All rights reserved.</p>
             </div>
           </div>
         </Accordion>
