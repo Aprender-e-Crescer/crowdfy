@@ -1,6 +1,6 @@
 export default function Give() {
     return (
-        <div className="flex bg-white">
+        <div className="flex ml-1 bg-white">
             <div className="font-semibold text-4xl">
                 <h2>3. Give Final Details</h2>
                 <div className="text-xl font-normal text-[#475467]">
@@ -16,7 +16,7 @@ export default function Give() {
                     <input 
                         type="text" 
                         id="campaign-title"
-                        className="border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl" 
+                        className="border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl text-xl" 
                         placeholder="Write here your beautiful title" 
                         required
                     />
@@ -31,7 +31,7 @@ export default function Give() {
                     <input 
                         type="text" 
                         id="campaign-date"
-                        className="border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl" 
+                        className="border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl text-xl" 
                         placeholder="dd/mm/aaaa" 
                         required
                     />
@@ -46,9 +46,10 @@ export default function Give() {
                     <input 
                         type="text" 
                         id="campaign-goal"
-                        className="border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl" 
+                        className="border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl text-xl" 
                         placeholder="$10,000" 
                         required
+
                     />
                 </div>
             </div>
