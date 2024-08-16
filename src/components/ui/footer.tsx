@@ -11,7 +11,7 @@ import iconfooter from '@/assets/icon-footer.png'
 export default function Footer() {
   return (
     <>
-      <div className="hidden md:flex bg-slate-100 w-full">
+      <div className="hidden md:flex bg-slate-100 w-full flex-col">
         <div className="flex justify-center gap-x-16 py-4 flex-1 px-8">
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1>Home</h1>
@@ -43,9 +43,21 @@ export default function Footer() {
             <h1>Resources</h1>
 
             <p>How to use crouwdfy</p>
+            <p>Docs</p>
+            <p>Legal Terms</p>
+            <p>Blog</p>
+            <p>Merch</p>
           </div>
         </div>
+        <div className="flex ml-3 py-5">
+            <div className="flex gap-x-2">
+              <img src={iconfooter} alt="" />
+              <p className="size-4 font-bold">Crowdfy</p>
+            </div>
+          </div>
+        
       </div>
+      
 
       <div className=" md:hidden flex flex-wrap bg-slate-100">
         <Accordion type="single" collapsible className="w-full">
