@@ -1,12 +1,12 @@
 export default function Give() {
     return (
-        <div className="flex ml-1 bg-white">
+        <div className="flex bg-white">
             <div className="font-semibold text-4xl">
                 <h2>3. Give Final Details</h2>
                 <div className="text-xl font-normal text-[#475467]">
                     <h2>What it's about your campaign?</h2>
                 </div>
-                <div className="ml-1 mb-6 mt-12">
+                <div className=" mb-6 mt-12">
                     <label 
                         htmlFor="campaign-title" 
                         className="block mb-4 text-xl font-medium text-black dark:text-white"
@@ -21,7 +21,7 @@ export default function Give() {
                         required
                     />
                 </div>
-                <div className="ml-1 mb-6 mt-6">
+                <div className="mb-6 mt-6">
                     <label 
                         htmlFor="campaign-date" 
                         className="block mb-4 text-xl font-medium text-black dark:text-white"
@@ -36,7 +36,7 @@ export default function Give() {
                         required
                     />
                 </div>
-                <div className="ml-1 mb-6 mt-6">
+                <div className="mb-6 mt-6">
                     <label 
                         htmlFor="campaign-goal" 
                         className="block mb-4 text-xl font-medium text-black dark:text-white"
