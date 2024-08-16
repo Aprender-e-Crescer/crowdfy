@@ -23,21 +23,21 @@ export default function Footer() {
             <h1>Explore</h1>
 
             <p>Lists</p>
-            <p>Maps</p>
+            <p className='flex'>Maps <Badge variant="success">New</Badge></p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1>Campaigns</h1>
 
             <p>Home</p>
-            <p>Campaigns</p>
-            <p>Donations</p>
+            <p className='flex'>Campaigns <Badge variant="success">12</Badge></p>
+            <p className='flex'>Donations <Badge variant="success">4</Badge></p>
             <p>Analytics</p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1>Profile</h1>
 
             <p>Settings</p>
-            <p>Notifications</p>
+            <p className='flex'>Notifications <Badge variant="success">10</Badge></p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1>Resources</h1>
