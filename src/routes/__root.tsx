@@ -15,7 +15,7 @@ export const Route = createRootRoute({
         My Campaigns
         </Link>
       </div>
-      <hr/>
+
       <Outlet />
       <TanStackRouterDevtools />
     </>
