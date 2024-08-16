@@ -6,6 +6,8 @@ import {
 } from '@/components/ui/accordion'
 import { Badge } from './badge'
 
+import iconfooter from '@/assets/icon-footer.png'
+
 export default function Footer() {
   return (
     <>
@@ -117,8 +119,11 @@ export default function Footer() {
               Merch
             </AccordionContent>
           </AccordionItem>
-          <div>
-            <img src="" alt="" />
+          <div className="flex ml-3 py-5">
+            <div className="flex gap-x-2">
+              <img src={iconfooter} alt="" />
+              <p className="size-4 font-bold">Crowdfy</p>
+            </div>
           </div>
         </Accordion>
       </div>
