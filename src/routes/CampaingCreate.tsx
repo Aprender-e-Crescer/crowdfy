@@ -1,3 +1,4 @@
+import  Give  from '@/components/ui/give'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/CampaingCreate')({
@@ -5,5 +6,16 @@ export const Route = createFileRoute('/CampaingCreate')({
 })
 
 function CampaingCreate() {
-  return <div className="p-2">Coloquem seus componentes aqui</div>
+  return (
+  
+  <Give />
+
+
+)
+
+
+  
+
+
+
 }
