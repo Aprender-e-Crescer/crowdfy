@@ -1,10 +1,12 @@
-import { useState } from "react";
-import logoImage from "../img/logo.png";
-import settingsImage from "../img/perfil.png";
+import { useState } from "react"; // Importa o hook useState do React para gerenciar o estado
+import logoImage from "@/img/logo.png"; // Importa a imagem do logo
+import settingsImage from "@/img/perfil.png"; // Importa a imagem do avatar do usuário
+import iconButom from "@/img/iconButom.png"; // Importa a imagem do ícone
 
 function Header() {
-  const [activeLink, setActiveLink] = useState("Campaigns");
+  const [activeLink, setActiveLink] = useState("Campaigns"); // Estado para armazenar o link ativo
 
+  // Função para definir as classes dos links de navegação com base no link ativo
   const linkClasses = (link: string) =>
     link === activeLink
       ? "text-black font-medium"
@@ -15,8 +17,8 @@ function Header() {
       {/* Logo */}
       <div className="flex items-center">
         <div className="flex items-center space-x-1">
-          <img src={logoImage} alt="Logo" className="w-8 h-8" />
-          <div className="text-black text-xl font-bold">Crowdfy</div>
+          <img src={logoImage} alt="Logo" className="w-8 h-8" /> {/* Imagem do logo */}
+          <div className="text-black text-xl font-bold">Crowdfy</div> {/* Nome da marca */}
         </div>
         {/* Links de navegação */}
         <nav className="hidden md:flex ml-8 space-x-8">
@@ -54,8 +56,8 @@ function Header() {
       {/* Ações do usuário */}
       <div className="flex items-center space-x-4">
         {/* Botão de Adicionar */}
-        <button className="bg-gray-100 p-2 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center border border-gray-400 relative">
-          <div className="absolute inset-0 m-1 border border-gray-400 rounded-lg flex items-center justify-center">
+        <button className="p-2 w-10 h-10 rounded-lg flex items-center justify-center relative z-10000">
+          <div className="bg-[#EDEDED] border-[#F6F6F6] absolute inset-0 border-2 rounded-lg flex items-center justify-center">
             <div className="w-6 h-6 border-2 border-gray-400 rounded-full flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +78,7 @@ function Header() {
         </button>
 
         {/* Avatar do usuário */}
-        <div className="bg-gray-100 p-2 w-10 h-10 rounded-full shadow-md flex items-center justify-center">
+        <div className="bg-[#EDEDED] border-[#F6F6F6] border-2 p-2 w-10 h-10 rounded-full shadow-md flex items-center justify-center">
           <img
             src={settingsImage}
             alt="Avatar do Usuário"
@@ -85,21 +87,12 @@ function Header() {
         </div>
 
         {/* Ícone de Configurações */}
-        <div className="bg-gray-100 p-2 w-10 h-10 rounded-lg shadow-md flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-6 h-6 text-gray-700"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 8v4m0 4h.01M4.929 4.929l1.415 1.415m12.728 12.728l1.415 1.415M18.364 5.636l1.415-1.415M6.343 18.364l1.415-1.415M12 2a10 10 0 100 20 10 10 0 000-20z"
-            />
-          </svg>
+        <div className="p-2 rounded-lg w-10 h-10 bg-[#EDEDED] border-[#F6F6F6] border-2 shadow-md flex items-center justify-center">
+          <img
+            src={iconButom}
+            alt="Ícone de Configurações"
+            className="w-full h-full bg-[#EDEDED]"
+          />
         </div>
       </div>
     </header>
