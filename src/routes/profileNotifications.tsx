@@ -15,13 +15,14 @@ export const Route = createFileRoute(`/profileNotifications`)({
 })
 
 function ProfileNotifications() {
-  return <div className="flex justify-evenly w-full">
-   <Pagination className="flex justify-between w-full">
+  return <div>
+   <Pagination className="flex justify-evenly">
   <PaginationContent >
     <PaginationItem>
       <PaginationPrevious href="#" />
       
     </PaginationItem>
+    <div className="flex">
     <PaginationItem >
       <PaginationLink href="#">1</PaginationLink>
       <PaginationLink href="#">2</PaginationLink>
@@ -33,8 +34,8 @@ function ProfileNotifications() {
     <PaginationLink href="#">8</PaginationLink>
     <PaginationLink href="#">9</PaginationLink>
     <PaginationLink href="#">10</PaginationLink>
+    </div>
     <PaginationItem>
-
       <PaginationNext href="#" />
     </PaginationItem>
   </PaginationContent>
