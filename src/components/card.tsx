@@ -3,7 +3,7 @@ import avatar from '../assets/Avatar.png'
 import avatar2 from '../assets/Avatar2.png'
 import icon from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
-import { Progress } from '@radix-ui/react-progress'
+import { Progress } from './ui/progress'
 
 export default function Card() {
   return (
@@ -34,9 +34,10 @@ export default function Card() {
                 <p className="text-[#475467] text-[12px] ">São Paulo, Brazil</p>
               </div>
             </div>
-            <div className="flex mt-3 ml-3">
+            <div className="flex mt-3 ml-3 items-center">
               <img className="w-36 h-6" src={iconAvatar} alt="" />
-              <Progress value={52} />
+              <Progress className="w-32 h-2 ml-4" value={50} />
+              <p className="mr-8">4.533/9.000</p>
             </div>
           </div>
           <img src={imagemFundo} alt="" />
