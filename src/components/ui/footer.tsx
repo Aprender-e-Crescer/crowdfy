@@ -9,23 +9,41 @@ import { Badge } from './badge'
 export default function Footer() {
   return (
     <>
-      {/* Layout visível em telas maiores que 768px */}
-      <div className="hidden md:flex bg-gray-500 flex-wrap justify-around w-full">
+      
+      <div className="hidden md:flex bg-slate-100 justify-center items-center w-full">
         <div className="flex justify-around items-center">
-          <div>
-            <h1>HOME</h1>
+          <div className='flex flex-col'>
+            <h1>Home</h1>
+
+            <p>My favorites</p>
+            <p>Recents</p>
           </div>
-          <div>
-            <h1>HOME</h1>
+          <div className='flex flex-col'>
+            <h1>Explore</h1>
+
+            <p>Lists</p>
+            <p>Maps</p>
+
           </div>
-          <div>
-            <h1>HOME</h1>
+          <div className='flex flex-col'>
+            <h1>Campaigns</h1>
+
+            <p>Home</p>
+            <p>Campaigns</p>
+            <p>Donations</p>
+            <p>Analytics</p>
+
+
           </div>
-          <div>
-            <h1>HOME</h1>
+          <div className='flex flex-col'>
+            <h1>Profile</h1>
+
+            <p>Settings</p>
+            <p>Notifications</p>
+
           </div>
-          <div>
-            <h1>HOME</h1>
+          <div className='flex flex-col'>
+            <h1>Resources</h1>
           </div>
         </div>
       </div>
@@ -33,11 +51,11 @@ export default function Footer() {
       <div className=" md:hidden flex flex-wrap bg-slate-100">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger className=" text-foreground text-green-300">
+            <AccordionTrigger className=" text-foreground text-lime-700">
               Home
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              My favorites <Badge variant="success">Badge</Badge>
+              My favorites 
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               Recents
@@ -51,44 +69,63 @@ export default function Footer() {
               Lists
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Maps
+              Maps <Badge variant="success">New</Badge>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className=" text-foreground">
-              How do I get started with the app?
+            Campaigns
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              To get started, simply download the app from your device's app
-              store and follow the on-screen instructions to set up your
-              account. Once you've completed the registration process, you'll
-              have full access to all the app's features and can start exploring
-              its capabilities.
+              Home
+            </AccordionContent>
+            <AccordionContent className="bg-muted text-muted-foreground p-4">
+              Campaigns<Badge variant="success">12</Badge>
+            </AccordionContent>
+            <AccordionContent className="bg-muted text-muted-foreground p-4">
+              Donations<Badge variant="success">4</Badge>
+            </AccordionContent>
+            <AccordionContent className="bg-muted text-muted-foreground p-4">
+              Analytics
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger className=" text-foreground">
-              Is the app secure?
+              Profile
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Absolutely. We take the security and privacy of our users very
-              seriously. The app employs industry-leading encryption
-              technologies and follows strict data protection protocols to
-              ensure that your information is always safe and secure.
+             Settings
+            </AccordionContent>
+            <AccordionContent className="bg-muted text-muted-foreground p-4">
+              Notifications<Badge variant="success">10</Badge>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
             <AccordionTrigger className=" text-foreground">
-              How can I get support if I have any issues?
+              Resources
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              If you encounter any issues or have questions about the app, our
-              dedicated support team is available 24/7 to assist you. You can
-              reach out to us through the in-app chat, email, or by calling our
-              toll-free number. We're here to help you get the most out of your
-              mobile experience.
+              How to use crouwdfy
+            </AccordionContent>
+            <AccordionContent className="bg-muted text-muted-foreground p-4">
+              Docs
+            </AccordionContent>
+            <AccordionContent className="bg-muted text-muted-foreground p-4">
+              Legal Terms
+            </AccordionContent>
+            <AccordionContent className="bg-muted text-muted-foreground p-4">
+              Blog
+            </AccordionContent>
+            <AccordionContent className="bg-muted text-muted-foreground p-4">
+              Merch
             </AccordionContent>
           </AccordionItem>
+          <div>
+
+            <img src="" alt="" />
+          </div>
+
+
         </Accordion>
       </div>
     </>
