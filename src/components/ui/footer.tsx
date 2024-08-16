@@ -9,41 +9,38 @@ import { Badge } from './badge'
 export default function Footer() {
   return (
     <>
-      
-      <div className="hidden md:flex bg-slate-100 justify-center items-center w-full">
-        <div className="flex justify-around items-center">
-          <div className='flex flex-col'>
+      <div className="hidden md:flex bg-slate-100 w-full">
+        <div className="flex justify-center gap-x-16 py-4 flex-1 px-8">
+          <div className="flex flex-col flex-1 items-start max-w-40">
             <h1>Home</h1>
 
             <p>My favorites</p>
             <p>Recents</p>
           </div>
-          <div className='flex flex-col'>
+          <div className="flex flex-col flex-1 items-start max-w-40">
             <h1>Explore</h1>
 
             <p>Lists</p>
             <p>Maps</p>
-
           </div>
-          <div className='flex flex-col'>
+          <div className="flex flex-col flex-1 items-start max-w-40">
             <h1>Campaigns</h1>
 
             <p>Home</p>
             <p>Campaigns</p>
             <p>Donations</p>
             <p>Analytics</p>
-
-
           </div>
-          <div className='flex flex-col'>
+          <div className="flex flex-col flex-1 items-start max-w-40">
             <h1>Profile</h1>
 
             <p>Settings</p>
             <p>Notifications</p>
-
           </div>
-          <div className='flex flex-col'>
+          <div className="flex flex-col flex-1 items-start max-w-40">
             <h1>Resources</h1>
+
+            <p>How to use crouwdfy</p>
           </div>
         </div>
       </div>
@@ -55,7 +52,7 @@ export default function Footer() {
               Home
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              My favorites 
+              My favorites
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               Recents
@@ -74,7 +71,7 @@ export default function Footer() {
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className=" text-foreground">
-            Campaigns
+              Campaigns
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               Home
@@ -94,7 +91,7 @@ export default function Footer() {
               Profile
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-             Settings
+              Settings
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               Notifications<Badge variant="success">10</Badge>
@@ -121,11 +118,8 @@ export default function Footer() {
             </AccordionContent>
           </AccordionItem>
           <div>
-
             <img src="" alt="" />
           </div>
-
-
         </Accordion>
       </div>
     </>
