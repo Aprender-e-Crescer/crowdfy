@@ -1,10 +1,11 @@
 export function HeaderCard() {
   return (
-    <div>
-      <h1 className="font-bold">Explore</h1>
-      <p>Where do you want to help</p>
-      <button className="border rounded-sm p-1">Price</button>
-      <button className="border rounded-sm p-1">Date</button>
+    <div className="">
+      <h1 className="font-bold text-3xl pb-2">Explore</h1>
+      <p className="pb-3">Where do you want to help</p>
+      <button className="border rounded-lg p-2 bg-[#ffffff] font-medium">All views</button>
+      <button className="border rounded-lg p-2 bg-[#CBD5E1] text-[#64748B] font-medium ">Petitions</button>
+      <button className="border rounded-lg p-2 bg-[#CBD5E1] text-[#64748B] font-medium">Donations</button>
     </div>
   )
 }
