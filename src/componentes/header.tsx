@@ -1,10 +1,10 @@
-import { useState } from "react"; // Importa o hook useState do React para gerenciar o estado
-import logoImage from "@/img/logo.png"; // Importa a imagem do logo
-import settingsImage from "@/img/perfil.png"; // Importa a imagem do avatar do usuário
-import iconButom from "@/img/iconButom.png"; // Importa a imagem do ícone
+import { useState } from "react";
+import logoImage from "@/img/logo.png";
+import settingsImage from "@/img/perfil.png";
+import iconButom from "@/img/iconButom.png";
 
 function Header() {
-  const [activeLink, setActiveLink] = useState("Campaigns"); // Estado para armazenar o link ativo
+  const [activeLink, setActiveLink] = useState("Campaigns");
 
   // Função para definir as classes dos links de navegação com base no link ativo
   const linkClasses = (link: string) =>
@@ -17,8 +17,8 @@ function Header() {
       {/* Logo */}
       <div className="flex items-center">
         <div className="flex items-center space-x-1">
-          <img src={logoImage} alt="Logo" className="w-8 h-8" /> {/* Imagem do logo */}
-          <div className="text-black text-xl font-bold">Crowdfy</div> {/* Nome da marca */}
+          <img src={logoImage} alt="Logo" className="w-8 h-8" />
+          <div className="text-black text-xl font-bold">Crowdfy</div>
         </div>
         {/* Links de navegação */}
         <nav className="hidden md:flex ml-8 space-x-8">
