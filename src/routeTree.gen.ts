@@ -11,7 +11,7 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as ProfileNotificationsImport } from './routes/profileNotifications'
+import { Route as ProfileNotificationsImport } from './routes/profileNotifications
 import { Route as MyCampaignsImport } from './routes/my-campaigns'
 import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
@@ -92,8 +92,11 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/about",
+
+        "/my-campaigns"
         "/my-campaigns",
         "/profileNotifications"
+
       ]
     },
     "/": {
