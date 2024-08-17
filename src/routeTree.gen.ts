@@ -13,7 +13,6 @@
 import { Route as rootRoute } from './routes/__root'
 import { Route as MyCampaignsImport } from './routes/my-campaigns'
 import { Route as AboutImport } from './routes/about'
-import { Route as HomeImport } from './routes/Home'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
@@ -25,11 +24,6 @@ const MyCampaignsRoute = MyCampaignsImport.update({
 
 const AboutRoute = AboutImport.update({
   path: '/about',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const HomeRoute = HomeImport.update({
-  path: '/Home',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -47,13 +41,6 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/Home': {
-      id: '/Home'
-      path: '/Home'
-      fullPath: '/Home'
-      preLoaderRoute: typeof HomeImport
       parentRoute: typeof rootRoute
     }
     '/about': {
@@ -77,7 +64,6 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
-  HomeRoute,
   AboutRoute,
   MyCampaignsRoute,
 })
@@ -91,16 +77,12 @@ export const routeTree = rootRoute.addChildren({
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/Home",
         "/about",
         "/my-campaigns"
       ]
     },
     "/": {
       "filePath": "index.tsx"
-    },
-    "/Home": {
-      "filePath": "Home.tsx"
     },
     "/about": {
       "filePath": "about.tsx"
