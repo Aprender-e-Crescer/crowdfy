@@ -1,4 +1,7 @@
 import React from 'react';
+import { FiUploadCloud } from "react-icons/fi"; // Ícone de upload
+import { IoAddCircleOutline } from "react-icons/io5"; // Ícone de adicionar
+import { Button } from "@/components/ui/button"; // Ajuste o caminho conforme necessário
 
 const TituloPage: React.FC = () => {
     return (
@@ -10,30 +13,14 @@ const TituloPage: React.FC = () => {
                         <p className="mt-1 text-gray-500 text-sm sm:text-base">Your current sales summary and activity</p>
                     </div>
                     <div className="flex space-x-2">
-                        <button className="bg-green-200 text-black py-1 px-2 rounded-md font-semibold border border-gray-300 flex items-center space-x-1.5">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                className="w-4 h-4"
-                            >
-                                {/* Nuvem */}
-                                <path d="M20.39 15.39a4.5 4.5 0 0 0-8.79-1.08 4.5 4.5 0 1 0-4.19 8.25h12a4.5 4.5 0 0 0 0-8.17zM12 15v4" />
-                                {/* Seta na nuvem */}
-                                <path d="M12 11l-4 4m4-4l4 4" />
-                            </svg>
+                        <Button variant="hoverWhiteBorder" className="py-1 px-2 rounded-md font-semibold flex items-center space-x-1.5">
+                            <FiUploadCloud className="w-4 h-4" /> {/* Ícone de upload */}
                             <span className="text-sm">Export report</span>
-                        </button>
-                        <button className="bg-white text-black py-1 px-2 rounded-md font-semibold border border-green-500 flex items-center space-x-2">
-                            <span className="border-2 border-black text-black rounded-full w-4 h-4 flex items-center justify-center text-sm font-bold bg-white">
-                                +
-                            </span>
-                            <span className="text-sm">Invite</span>
-                        </button>
+                        </Button>
+                        <Button variant="blackOnHover" className="py-1 px-2 rounded-md font-semibold flex items-center space-x-2 bg-white text-black border border-gray-300 hover:bg-gray-100">
+                            <IoAddCircleOutline className="w-5 h-5 text-white" /> {/* Ícone de adicionar */}
+                            <span className="text-sm text-white">Invite</span>
+                        </Button>
                     </div>
                 </div>
             </div>
