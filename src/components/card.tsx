@@ -10,7 +10,7 @@ export default function Card() {
     <div>
       <div>
         <div>
-          <div className="flex flex-col  bg-white  w-96 h-56 ml-2 rounded-xl">
+          <div className="flex flex-col absolute bg-white mt-40 w-96 h-56 ml-2 rounded-xl">
             <div className="flex">
               <img className="w-14 h-14 ml-4 mt-2" src={avatar} alt="" />
               <p className="mt-3 ml-2 text-[#101828] font-semibold">
@@ -40,6 +40,7 @@ export default function Card() {
               <p className="mr-8">4.533/9.000</p>
             </div>
           </div>
+          <img src={imagemFundo} alt="" />
         </div>
       </div>
     </div>
