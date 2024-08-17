@@ -1,3 +1,5 @@
+import Card from '@/components/card'
+import { Roadmap } from '@/components/roadmap'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute(`/profileNotifications`)({
@@ -6,6 +8,9 @@ export const Route = createFileRoute(`/profileNotifications`)({
 
 function ProfileNotifications() {
   return <div className="p-2">
-    Coloquem seus Componentes aqui para testar
+    <div className='border-white flex flex-col'>
+    <Card/>
+    <Roadmap/>
+    </div>
   </div>
 }
