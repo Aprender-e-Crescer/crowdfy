@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { DESTRUCTION } from 'dns'
 import share from '@/assets/share.svg'
 import Heart from '@/assets/HeartFav.svg'
+import { Textarea } from '@/components/ui/textarea'
 
 /*Arrumar o label  e  estilizar o input*/
 export const Route = createFileRoute('/my-campaigns') ({
@@ -32,11 +33,11 @@ export function LiveCampaigns() {
 
     <div className='font-[inter] m-5 py-2 px-3 border shadow-md shadow-gray-200 rounded-[12px] max-w-96'>
     <h1 className='mt-1 mb-4 font-semibold text-xl text-[#475467]'>💪 Fund this campaign</h1>
-    <h1 itemID='Fund' className='text-[#0F172A] base ml-1 font-medium'>Funding</h1>
+    <h1 itemID='Fund' className='text-[#0F172A] text-sm ml-1 tracking-wide font-medium'>Funding</h1>
     <Input/> 
     <p className='text-[#64748B] m-1 text-sm'>~$950,23</p>
-    <h1 itemID='Fund' className='text-[#0F172A] text-sm base ml-1 font-medium'>Words of Support 🕊️</h1>
-    <Input className='' placeholder='Wish you a nice weekend and stay strong guys, Im here with you all 💪🫡💚️ '/>
+    <h1 itemID='Fund' className='text-[#0F172A] text-sm base ml-1 tracking-wide font-medium'>Words of Support 🕊️</h1>
+    <Textarea placeholder='Wish you a nice weekend and stay strong guys, I m here with you all 💪🫡💚️'/>
     </div>
     </>
     )
