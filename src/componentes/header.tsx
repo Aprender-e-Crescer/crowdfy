@@ -5,6 +5,19 @@ import iconButom from "@/img/iconButom.png";
 
 function Header() {
   const [activeLink, setActiveLink] = useState("Campaigns");
+  const [isTransparent, setIsTransparent] = useState(false);
+
+  // Atualiza a transparência do cabeçalho com base no link clicado
+  const handleLinkClick = (link: string) => {
+    setActiveLink(link);
+
+    // Define o cabeçalho como transparente para "Home" e "Explore"
+    if (link === "Home" || link === "Explore") {
+      setIsTransparent(true);
+    } else {
+      setIsTransparent(false);
+    }
+  };
 
   // Função para definir as classes dos links de navegação com base no link ativo
   const linkClasses = (link: string) =>
@@ -13,7 +26,11 @@ function Header() {
       : "text-gray-400 hover:text-gray-900";
 
   return (
-    <header className="flex flex-wrap items-center justify-between bg-white shadow-sm px-4 py-3 md:px-8">
+    <header
+      className={`flex flex-wrap items-center justify-between ${
+        isTransparent ? "bg-transparent" : "bg-white"
+      } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
+    >
       {/* Logo */}
       <div className="flex items-center">
         <div className="flex items-center space-x-1">
@@ -25,28 +42,28 @@ function Header() {
           <a
             href="#"
             className={linkClasses("Home")}
-            onClick={() => setActiveLink("Home")}
+            onClick={() => handleLinkClick("Home")}
           >
             Home
           </a>
           <a
             href="#"
             className={linkClasses("Explore")}
-            onClick={() => setActiveLink("Explore")}
+            onClick={() => handleLinkClick("Explore")}
           >
             Explore
           </a>
           <a
             href="#"
             className={linkClasses("Campaigns")}
-            onClick={() => setActiveLink("Campaigns")}
+            onClick={() => handleLinkClick("Campaigns")}
           >
             Campaigns
           </a>
           <a
             href="#"
             className={linkClasses("Profile")}
-            onClick={() => setActiveLink("Profile")}
+            onClick={() => handleLinkClick("Profile")}
           >
             Profile
           </a>
