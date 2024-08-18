@@ -17,10 +17,12 @@ const TituloPage: React.FC = () => {
                             <FiUploadCloud className="w-4 h-4" /> {/* Ícone de upload */}
                             <span className="text-sm">Export report</span>
                         </Button>
-                        <Button variant="blackOnHover" className="py-1 px-2 rounded-md font-semibold flex items-center space-x-2 bg-white text-black border border-gray-300 hover:bg-gray-100">
-                            <IoAddCircleOutline className="w-5 h-5 text-white" /> {/* Ícone de adicionar */}
-                            <span className="text-sm text-white">Invite</span>
+                        
+                        <Button variant="blackOnHover" className="py-1 px-2 rounded-md font-semibold flex items-center space-x-2 bg-white text-black border border-gray-300 hover:text-white">
+                            <IoAddCircleOutline className="w-5 h-5 text-black " /> {/* Ícone de adicionar */}
+                            <span className="text-sm text-black ">Invite</span>
                         </Button>
+                        
                     </div>
                 </div>
             </div>
