@@ -18,7 +18,7 @@ const TituloPage: React.FC = () => {
                             <span className="text-sm">Export report</span>
                         </Button>
                         
-                        <Button variant="blackOnHover" className="py-1 px-2 rounded-md font-semibold flex items-center space-x-2 bg-white text-black border border-gray-300 hover:text-white">
+                        <Button  className="py-1 px-2 rounded-md font-semibold flex items-center space-x-2 bg-white text-black border border-gray-300 ">
                             <IoAddCircleOutline className="w-5 h-5 text-black " /> {/* Ícone de adicionar */}
                             <span className="text-sm text-black ">Invite</span>
                         </Button>
