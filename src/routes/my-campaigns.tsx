@@ -3,6 +3,9 @@ import { Input } from "@/components/ui/input"
 import { SubHeader } from '@/components/subHeader'
 import { Button } from '@/components/ui/button'
 import { DESTRUCTION } from 'dns'
+import { Textarea } from '@/components/ui/textarea'
+import { UserProfile } from '@/components/ui/userProfile'
+import { Progress } from '@/components/ui/progress'
 //imagens
 import share from '@/assets/share.svg'
 import Heart from '@/assets/HeartFav.svg'
@@ -14,8 +17,7 @@ import AdilsonFranciPerfil from '@/assets/AdilsonFranciPerfil.svg'
 import JocelynPerfil from '@/assets/JocelynPerfil.svg'
 
 
-import { Textarea } from '@/components/ui/textarea'
-import { UserProfile } from '@/components/ui/userProfile'
+
 
 /*Arrumar o label  e  estilizar o input*/
 export const Route = createFileRoute('/my-campaigns') ({
@@ -25,12 +27,12 @@ export const Route = createFileRoute('/my-campaigns') ({
 export function LiveCampaigns() {
     return (
     <>
-    <SubHeader />
+    
 
 
-    <div className='font-[inter] m-5 py-2 px-3 border shadow-md shadow-gray-200 rounded-[12px] max-w-96'>
+    <div className='font-[inter] m-5 p-[18px] border-[1.58px] border-[#EAECF0] shadow-md  shadow-gray-200 rounded-[12px] max-w-96'>
         <h1 className='text-[#475467]  mt-1 mb-4 font-semibold text-xl'>🫰Funds donated to this campaign</h1>
-        <p className='text-[#1E293B] text-3xl'>$15.000 /<span className='font-bold'> $20.000</span></p>
+        <p className='text-[#1E293B]  text-3xl'>$15.000 /<span className='font-bold'> $20.000</span></p>
         <div className="my-3 w-full h-[6px] bg-[#84CC16] rounded-full"></div> 
         <p className='mb-4 text-base'>185 doações</p>
         <div className='mt-2'>
@@ -46,9 +48,9 @@ export function LiveCampaigns() {
         </div>
     </div>
 
-        {/*Começo do segundo card de financie esta campanha */}
+        {/*Começo do segundo card de financie esta campanha  */}
 
-    <div className='font-[inter] m-5 py-2 px-3 border shadow-md shadow-gray-200 rounded-[12px] max-w-96'>
+    <div className='font-[inter] m-5  p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] max-w-96'>
     <h1 className='mt-1 mb-4  font-semibold text-xl text-[#475467]'>💪 Fund this campaign</h1>
     <div className='my-5'>
     <h1 itemID='Fund' className='text-[#0F172A] mb-1 text-sm ml-1 tracking-wide font-medium'>Funding</h1>
@@ -56,11 +58,15 @@ export function LiveCampaigns() {
     <p className='text-[#64748B] mt-1 text-sm'>~$950,23</p>
     </div>
     <div className='mb-4'>
-    <h1 itemID='Fund' className='text-[#0F172A] text-sm base ml-1 tracking-wide font-medium'>Words of Support 🕊️</h1>
+    <h1 itemID='Fund' className='text-[#0F172A] text-sm base ml-1 mb-1 tracking-wide font-medium'>Words of Support 🕊️</h1>
     <Textarea placeholder='Wish you a nice weekend and stay strong guys, I m here with you all 💪🫡💚️'/>
     <p className='text-[#64748B] mt-1 ml-1 text-sm'>Not only numbers make the difference on our lives :)</p>
     </div>
     <Button className=' w-full bg-[#84CC16] text-white' variant={'default'}><img src={IconDonate}/>Donate now</Button>
+    <div className='flex mt-3'>
+    <Progress/>
+    <p className='text-[#344054] text-base leading-6 mt-[7px] ml-3'>1/3</p>
+    </div>
     </div>
     </>
     )
