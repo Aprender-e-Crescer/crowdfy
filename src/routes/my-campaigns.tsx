@@ -31,9 +31,9 @@ export function LiveCampaigns() {
 
 
     <div className='font-[inter] m-5 p-[18px] border-[1.58px] border-[#EAECF0] shadow-md  shadow-gray-200 rounded-[12px] max-w-96'>
-        <h1 className='text-[#475467]  mt-1 mb-4 font-semibold text-xl'>🫰Funds donated to this campaign</h1>
-        <p className='text-[#1E293B]  text-3xl'>$15.000 /<span className='font-bold'> $20.000</span></p>
-        <div className="my-3 w-full h-[6px] bg-[#84CC16] rounded-full"></div> 
+        <h1 className='text-[#475467]  mt-1 mb-5 font-semibold text-xl'>🫰Funds donated to this campaign</h1>
+        <p className='text-[#1E293B]   text-3xl'>$15.000 /<span className='font-bold'> $20.000</span></p>
+        <div className="my-4 w-full h-[6px] bg-[#84CC16] rounded-full"></div> 
         <p className='mb-4 text-base'>185 doações</p>
         <div className='mt-2'>
         <UserProfile title='Marilyn Aminoff' img={MarilyUser} text1='$39.03' text2='8 horas'/>
