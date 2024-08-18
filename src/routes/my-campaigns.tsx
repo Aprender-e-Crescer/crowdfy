@@ -1,19 +1,26 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { SubHeader } from '@/components/subHeader';
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { UserProfile } from "@/components/userProfile";
-import FemalePerfil from "../assets/FemalePerfil.svg"
-import { Flag, MapPin } from "lucide-react";
-import { Input } from "@/components/ui/input"
-import { SubHeader } from '@/components/subHeader'
+import { createFileRoute } from '@tanstack/react-router';
+import { Eye, Flag, MapPin, Rocket } from "lucide-react";
+import FemalePerfil from "../assets/FemalePerfil.svg";
         
 export const Route = createFileRoute('/my-campaigns') ({
     component: LiveCampaigns
 })
 
 export function LiveCampaigns() {
+
+     const buttons = [
+        { title: 'Overview', variant:'ghost', icon: <Eye />},
+        { title: 'My Campaigns', variant:'destructive', icon: <Rocket /> }
+    ];
+
     return (
          <> 
-        <SubHeader />
+        <SubHeader buttons={buttons}/>
+
             <h1 className=" font-semibold mb-5">👥 Organizadora</h1>
         
             <UserProfile
