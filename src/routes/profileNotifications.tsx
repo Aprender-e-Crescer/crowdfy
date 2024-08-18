@@ -1,5 +1,6 @@
 
 import { createFileRoute } from '@tanstack/react-router'
+import { BackgroundButton } from '@/components/backgroundButton'
 
 export let Route = createFileRoute(`/profileNotifications`)({
   component: ProfileNotifications,
@@ -7,9 +8,8 @@ export let Route = createFileRoute(`/profileNotifications`)({
 
 function ProfileNotifications() {
   return <div className="p-2">
-
    
-backgroundButton();
+<BackgroundButton />
 
   </div>
 }
