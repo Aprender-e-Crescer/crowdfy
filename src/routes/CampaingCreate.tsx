@@ -1,3 +1,5 @@
+
+import Choose from '@/components/ui/Choose'
 import Card from '@/components/card'
 import { createFileRoute } from '@tanstack/react-router'
 import imagemFundo from '../assets/Image.png'
@@ -9,6 +11,7 @@ export const Route = createFileRoute('/CampaingCreate')({
 function CampaingCreate() {
   return (
     <div className="p-2">
+      <Choose/>
       <Card
         numerosBarra="4.533/9.000"
         localização="São Paulo, Brazil"
