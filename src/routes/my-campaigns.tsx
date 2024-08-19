@@ -13,8 +13,8 @@ export const Route = createFileRoute('/my-campaigns') ({
 export function LiveCampaigns() {
 
      const buttons = [
-        { title: 'Overview', variant:'ghost', icon: <Eye />},
-        { title: 'My Campaigns', variant:'destructive', icon: <Rocket /> }
+        { title: 'Overview', variant:'ghost', className: '', route: '', icon: <Eye />},
+        { title: 'My Campaigns', variant:'', className: 'bg-lime-200 hover:bg-lime-300', route: '', icon: <Rocket /> }
     ];
 
     return (
@@ -22,6 +22,7 @@ export function LiveCampaigns() {
         <SubHeader buttons={buttons}/>
 
             <h1 className=" font-semibold mb-5">👥 Organizadora</h1>
+
         
             <UserProfile
                 title={'Sindy Rheaume'}
