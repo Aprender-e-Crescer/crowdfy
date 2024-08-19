@@ -1,9 +1,9 @@
 export default function Give() {
     return (
-        <div className="flex bg-white">
+        <div className="flex bg-white flex-col">
             <div className="text-black font-semibold text-2xl">
                 <h2>3. Give Final Details</h2>
-                <div className="text-sm font-normal text-[#475467]">
+                <div className="text-xl font-normal text-[#475467]">
                     <h2>What it's about your campaign?</h2>
                 </div>
                 <div className=" mb-6 mt-12">
@@ -13,11 +13,11 @@ export default function Give() {
                     >
                         Your campaign title
                     </label>
-                    <textarea 
+                    <input 
                         type="text" 
                         id="campaign-title"
-                        className="font-light border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-lg text-xl " 
-                        placeholder="Write here your beautiful title" 
+                        className="flex flex-col font-light border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-lg text-xl " 
+                        placeholder="Write here your beautiful title 🪴" 
                         required
                     />
                 </div>
@@ -28,10 +28,10 @@ export default function Give() {
                     >
                         Campaign date
                     </label>
-                    <textarea 
+                    <input 
                         type="text" 
                         id="campaign-date"
-                        className="border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl text-xl" 
+                        className="flex flex-col font-light border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl text-xl" 
                         placeholder="dd/mm/aaaa" 
                         required
                     />
@@ -43,10 +43,10 @@ export default function Give() {
                     >
                         Goal
                     </label>
-                    <textarea
+                    <input
                         type="text" 
                         id="campaign-goal"
-                        className="border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl text-xl" 
+                        className="flex flex-col font-light border border-gray-300 rounded-sm w-80 h-10 placeholder-gray-400 placeholder:text-xl text-xl" 
                         placeholder="$10,000" 
                         required
 
