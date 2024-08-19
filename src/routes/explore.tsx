@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Cardmapa } from '@/components/component/Cardmapa'
+import { CardMapa } from '@/components/component/Cardmapa'
 
 export const Route = createFileRoute('/explore')({
   component: Explore,
@@ -8,7 +8,8 @@ export const Route = createFileRoute('/explore')({
 function Explore() {
   return (
     <>
-    <Cardmapa></Cardmapa>
+      <CardMapa></CardMapa>
     </>
   )
 }
+;<CardMapa></CardMapa>
