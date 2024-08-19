@@ -1,6 +1,5 @@
-import { createFileRoute } from '@tanstack/react-router'
+
 import { SubHeader } from '@/components/subHeader'
-import { DESTRUCTION } from 'dns'
 import { Textarea } from '@/components/ui/textarea'
 import { UserProfile } from '@/components/ui/userProfile'
 import { Progress } from '@/components/ui/progress'
@@ -14,7 +13,7 @@ import AdilsonFranciPerfil from '@/assets/AdilsonFranciPerfil.svg'
 import JocelynPerfil from '@/assets/JocelynPerfil.svg'
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { UserProfile } from "@/components/userProfile";
+
 import { createFileRoute } from '@tanstack/react-router';
 import { Eye, Flag, MapPin, Rocket } from "lucide-react";
 import FemalePerfil from "../assets/FemalePerfil.svg";
@@ -77,7 +76,8 @@ export function LiveCampaigns() {
             <UserProfile
                 title={'Sindy Rheaume'}
                 img={FemalePerfil}
-                text={'Bragança • Organizadora'}
+                text1='Bragança'
+                text2='Organizadora'
             />
         
             <Button className="mb-4" variant={"outline"}> Contact</Button>
@@ -92,7 +92,8 @@ export function LiveCampaigns() {
             <UserProfile  
                 title={`Sindy Rheaume`}
                 img={FemalePerfil}
-                text={'$150 • 10 Horas'}
+                text1='$150'
+                text2='10 horas'
             />
         
             <p className="mb-4 font-medium italic">Thinking of you two and hoping you get better soon! 🙏</p>
@@ -100,7 +101,8 @@ export function LiveCampaigns() {
             <UserProfile 
                 title={`Michael O'Keff`}
                 img={FemalePerfil}
-                text={'$150 • 10 Horas'}
+                text1='$150'
+                text2='10 horas'
             />
         
             <p className="mb-4 font-medium italic">Keep strong both 🫡</p>
@@ -108,7 +110,8 @@ export function LiveCampaigns() {
             <UserProfile
                 title={`Michael Millward`}
                 img={FemalePerfil}
-                text={'$150 • 10 Horas'}
+                text1='$150'
+                text2='10 Horas'
             />
         
             <Button className="mb-4" variant={"outline"}> Show more</Button>
