@@ -8,7 +8,7 @@ export const Route = createFileRoute('/CampaingCreate')({
 function CampaingCreate() {
 return(
   <>
-  <Uploadimagens />
+  <Uploadimagens tiposEnvio='SVG, PNG, JPG ou GIF (max. 1MB)' descricao='ou solte sua foto aqui' enviar='Clique para enviar'/>
   </>
 )
 
