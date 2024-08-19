@@ -6,47 +6,62 @@ import {
 } from '@/components/ui/accordion'
 import { Badge } from './badge'
 
+import iconfooter from '@/assets/icon-footer.png'
+
 export default function Footer() {
   return (
     <>
-      
-      <div className="hidden md:flex bg-slate-100 justify-center items-center w-full">
-        <div className="flex justify-around items-center">
-          <div className='flex flex-col'>
-            <h1>Home</h1>
+      <div className="hidden md:flex bg-slate-100 w-full flex-col">
+        <div className="flex justify-center gap-x-16 py-20 flex-1 px-8">
+          <div className="flex flex-col flex-1 items-start max-w-40">
+            <h1 className='text-lime-700 font-semibold'>Home</h1>
 
-            <p>My favorites</p>
-            <p>Recents</p>
+            <p className='text-slate-600'>My favorites</p>
+            <p className='text-slate-600'>Recents</p>
           </div>
-          <div className='flex flex-col'>
-            <h1>Explore</h1>
+          <div className="flex flex-col flex-1 items-start max-w-40">
+            <h1 className='font-semibold'>Explore</h1>
 
-            <p>Lists</p>
-            <p>Maps</p>
-
+            <p className='text-slate-600'>Lists</p>
+            <p className='flex text-slate-600'>Maps <Badge variant="success">New</Badge></p>
           </div>
-          <div className='flex flex-col'>
-            <h1>Campaigns</h1>
+          <div className="flex flex-col flex-1 items-start max-w-40">
+            <h1 className='font-semibold'>Campaigns</h1>
 
-            <p>Home</p>
-            <p>Campaigns</p>
-            <p>Donations</p>
-            <p>Analytics</p>
-
-
+            <p className='text-slate-600 ' >Home</p>
+            <p className='flex text-slate-600'>Campaigns <Badge variant="success">12</Badge></p>
+            <p className='flex text-slate-600'>Donations <Badge variant="success">4</Badge></p>
+            <p className='text-slate-600'>Analytics</p>
           </div>
-          <div className='flex flex-col'>
-            <h1>Profile</h1>
+          <div className="flex flex-col flex-1 items-start max-w-40">
+            <h1 className='font-semibold'>Profile</h1>
 
-            <p>Settings</p>
-            <p>Notifications</p>
-
+            <p className='text-slate-600'>Settings</p>
+            <p className='flex text-slate-600'>Notifications <Badge variant="success">10</Badge></p>
           </div>
-          <div className='flex flex-col'>
-            <h1>Resources</h1>
+          <div className="flex flex-col flex-1 items-start max-w-40">
+            <h1 className='font-semibold'>Resources</h1>
+
+            <p className='text-slate-600'>How to use crouwdfy</p>
+            <p className='text-slate-600'>Docs</p>
+            <p className='text-slate-600'>Legal Terms</p>
+            <p className='text-slate-600'>Blog</p>
+            <p className='text-slate-600'>Merch</p>
           </div>
         </div>
+        <hr />
+        <div className="flex mx-20 py-5 items-center justify-between">
+            <div className="flex gap-x-2">
+              <img src={iconfooter} alt="" />
+              <p className="font-bold text-lg">Crowdfy</p>
+            </div>
+            <div className='flex'>
+              <p className='flex flex-wrap text-[#667085]'>© 2077 Mainnet Design. All rights reserved.</p>
+            </div>
+          </div>
+        
       </div>
+      
 
       <div className=" md:hidden flex flex-wrap bg-slate-100">
         <Accordion type="single" collapsible className="w-full">
@@ -55,7 +70,7 @@ export default function Footer() {
               Home
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              My favorites 
+              My favorites
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               Recents
@@ -74,7 +89,7 @@ export default function Footer() {
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className=" text-foreground">
-            Campaigns
+              Campaigns
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               Home
@@ -94,7 +109,7 @@ export default function Footer() {
               Profile
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-             Settings
+              Settings
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               Notifications<Badge variant="success">10</Badge>
@@ -120,12 +135,16 @@ export default function Footer() {
               Merch
             </AccordionContent>
           </AccordionItem>
-          <div>
-
-            <img src="" alt="" />
+          <hr />
+          <div className="flex mx-4 py-5 items-center justify-between">
+            <div className="flex gap-x-2">
+              <img src={iconfooter} alt="" />
+              <p className="font-bold text-lg">Crowdfy</p>
+            </div>
+            <div className='flex'>
+              <p className='flex flex-wrap text-[#667085] font-light'>© 2077 Mainnet Design.<br /> All rights reserved.</p>
+            </div>
           </div>
-
-
         </Accordion>
       </div>
     </>
