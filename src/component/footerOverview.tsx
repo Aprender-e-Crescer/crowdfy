@@ -3,11 +3,11 @@ import { EllipsisVerticalIcon } from '@heroicons/react/24/outline';
 
 function FooterOverview() {
   return (
-    <div className="flex gap-4 w-full max-w-6xl mx-auto px-4 py-12" style={{ fontFamily: 'Plus Jakarta Sans' }}>
-      <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative" style={{ width: '216px', height: '166px' }}>
+    <div className="flex flex-wrap gap-4 w-full max-w-6xl mx-auto px-4 py-12" style={{ fontFamily: 'Plus Jakarta Sans' }}>
+      <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative w-full sm:w-[216px] h-[166px]">
         <div className="p-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-sm text-[#475467] fontFamily">Donations</h3>
+            <h3 className="text-sm text-[#475467]">Donations</h3>
             <EllipsisVerticalIcon className="h-5 w-5 text-gray-400" />
           </div>
           <div className="flex flex-col items-start gap-2 mt-2">
@@ -22,10 +22,10 @@ function FooterOverview() {
         </div>
       </div>
 
-      <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative" style={{ width: '216px', height: '166px' }}>
+      <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative w-full sm:w-[216px] h-[166px]">
         <div className="p-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-sm text-[#475467] fontFamily">Signatures</h3>
+            <h3 className="text-sm text-[#475467]">Signatures</h3>
             <EllipsisVerticalIcon className="h-5 w-5 text-gray-400" />
           </div>
           <div className="flex flex-col items-start gap-2 mt-2">
@@ -40,10 +40,10 @@ function FooterOverview() {
         </div>
       </div>
 
-      <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative" style={{ width: '216px', height: '166px' }}>
+      <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative w-full sm:w-[216px] h-[166px]">
         <div className="p-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-sm text-[#475467] fontFamily">Likes</h3>
+            <h3 className="text-sm text-[#475467]">Likes</h3>
             <EllipsisVerticalIcon className="h-5 w-5 text-gray-400" />
           </div>
           <div className="flex flex-col items-start gap-2 mt-2">
@@ -58,10 +58,10 @@ function FooterOverview() {
         </div>
       </div>
 
-      <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative" style={{ width: '216px', height: '166px' }}>
+      <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative w-full sm:w-[216px] h-[166px]">
         <div className="p-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-sm text-[#475467] fontFamily">Views</h3>
+            <h3 className="text-sm text-[#475467]">Views</h3>
             <EllipsisVerticalIcon className="h-5 w-5 text-gray-400" />
           </div>
           <div className="flex flex-col items-start gap-2 mt-2">
