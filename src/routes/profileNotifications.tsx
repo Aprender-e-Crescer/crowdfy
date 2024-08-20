@@ -1,5 +1,5 @@
-import img from '@/assets/img.png'
-import { NotificationComponent } from '@/components/NotificationComponent'
+import Card from '@/components/card'
+import { Roadmap } from '@/components/roadmap'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute(`/profileNotifications`)({
