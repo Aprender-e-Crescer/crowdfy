@@ -55,7 +55,7 @@ export default function Card({
         </div>
         {temImagemFundo && (
           <div>
-            <img src={outraImagemFundo} alt="" />
+            <img className="rounded-md" src={outraImagemFundo} alt="" />
           </div>
         )}
       </div>
@@ -102,7 +102,7 @@ export default function Card({
           </div>
           {temImagemFundo && (
             <div>
-              <img src={outraImagemFundo} alt="" />
+              <img className="rounded-md" src={outraImagemFundo} alt="" />
             </div>
           )}
         </div>
