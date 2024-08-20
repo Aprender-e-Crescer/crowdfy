@@ -1,9 +1,10 @@
 
+import Choose from '@/components/ui/Choose'
 import  ReturnNext from '@/components/ui/ReturnNext'
 import Tell from '@/components/ui/Tell'
 import Card from '@/components/card'
 import { createFileRoute } from '@tanstack/react-router'
-import imagemFundo from '../assets/Image.png'
+
 
 export const Route = createFileRoute('/CampaingCreate')({
  component: CampaingCreate,
@@ -11,6 +12,14 @@ export const Route = createFileRoute('/CampaingCreate')({
 
 function CampaingCreate() {
   return (
+    <div className="p-2">
+      <Choose 
+      tittle='1. Choose your campaign style' 
+      subtittle='What its about your campaign?'
+      donation='Donation'
+      petition='Petition'
+      descrição1='Create a donation to receive funds'
+      descrição2='Create a petition to crowd signatures'/>  
     <div className="p-2 flex gap-5 flex-col">
       <Card
         numerosBarra="4.533/9.000"
