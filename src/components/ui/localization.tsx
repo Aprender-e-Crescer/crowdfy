@@ -15,18 +15,20 @@ export function Localization() {
     <>
       <div className="hidden md:flex w-full">
         <div className="flex flex-col gap-y-5">
-          <div className="relative flex bg-[#F7FEE7]">
+          <div className="relative flex rounded-md bg-[#F7FEE7]">
             <div className="absolute top-[-5px] left-[10px] bg-lime-200 w-12 h-12 rounded-full flex justify-center items-center border-4 border-lime-100">
               <img src={icon} alt="Dollar Sign" />
             </div>
             <div className="py-2 text-center ml-20">
-              <h1>You will get 99.9% of the raised amount cavalo </h1>
+              <h1>You will get 99.9% of the raised amount</h1>
             </div>
           </div>
 
           <div className="flex justify-start py-2 grid grid-cols-2 gap-4 items-center">
             <div>
-              <h1 className="text-xl font-normal">Localization</h1>
+              <h1 className="text-[16px] text-[#344054] font-normal">
+                Localization
+              </h1>
             </div>
             <div className="w-full">
               <Select>
@@ -41,7 +43,7 @@ export function Localization() {
           </div>
 
           <div className="grid grid-cols-2 gap-4 items-start">
-            <div className="text-xl">
+            <div className="text-[16px] text-[#344054]">
               <p>Banner Image</p>
             </div>
 
@@ -62,22 +64,22 @@ export function Localization() {
       </div>
 
       <div className="md:hidden flex flex-col gap-y-4">
-        <div className="relative flex bg-[#F7FEE7]">
+        <div className="relative flex rounded-md bg-[#F7FEE7]">
           <div className="absolute top-[-5px] left-[10px] bg-lime-200 w-12 h-12 rounded-full flex justify-center items-center border-4 border-lime-100">
             <img src={icon} alt="Dollar Sign" />
           </div>
-          <div className="py-2 text-center ml-20">
+          <div className=" text-[#0F172A] font-semibold py-2 text-center ml-20">
             <h1>You will get 99.9% of the raised amount</h1>
           </div>
         </div>
 
-        <div className="py-2 mx-5 mt-0 mb-1">
-          <h1 className="text-xl font-normal">Localization</h1>
+        <div className=" py-2 mx-5 mt-0 mb-1">
+          <h1 className=" text-[#344054] text-xl font-normal">Localization</h1>
         </div>
 
         <div className="flex flex-col mx-5">
           <Select>
-            <SelectTrigger className="w-full">
+            <SelectTrigger className=" text-[#slate/800] w-full">
               <SelectValue placeholder="Rio de Janeiro, Brasil" />
             </SelectTrigger>
             <SelectContent>
