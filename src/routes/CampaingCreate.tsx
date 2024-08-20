@@ -10,7 +10,6 @@ export const Route = createFileRoute('/CampaingCreate')({
 function CampaingCreate() {
   return (
     <div className="p-2 flex gap-5 flex-col">
-      <Choose />
       <Card
         numerosBarra="4.533/9.000"
         localização="São Paulo, Brazil"
