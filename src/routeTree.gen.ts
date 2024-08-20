@@ -14,7 +14,6 @@ import { Route as rootRoute } from './routes/__root'
 import { Route as AboutImport } from './routes/about'
 import { Route as CampaingCreateImport } from './routes/CampaingCreate'
 import { Route as IndexImport } from './routes/index'
-import { Route as Tell } from './components/ui/Tell'
 
 // Create/Update Routes
 

@@ -4,7 +4,7 @@ export default function Tell() {
   return (
     <div className="flex flex-col gap-4 w-96">
       <div className="flex flex-col gap-2">
-        <h2 className="text-[#101828] font-semibold text-4xl ">
+        <h2 className="text-[#101828] font-semibold text-3xl ">
           2. Tell more about your campaign
         </h2>
         <p className="text-[#475467] font-normal text-base">
