@@ -9,7 +9,7 @@ interface FooterOverviewProps {
 
 const FooterOverview: React.FC<FooterOverviewProps> = ({ titulo, valor, link }) => {
   return (
-    <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative w-full sm:w-[216px] h-auto sm:h-[166px] p-4">
+    <div className="bg-background rounded-xl border border-gray-200 shadow-sm relative w-full sm:w-[216px] h-auto sm:h-[166px] p-4 font-plus-jakarta-sans">
       <div className="flex flex-col justify-between h-full">
         <div>
           <div className="flex items-center justify-between">
