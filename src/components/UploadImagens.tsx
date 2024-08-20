@@ -1,4 +1,4 @@
-import simbolo from '..//../assets/CloudArrowUp.png'
+import simbolo from '@/assets/CloudArrowUp.png'
 
 export function Uploadimagens({
   enviar,

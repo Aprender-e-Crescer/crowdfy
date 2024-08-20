@@ -4,16 +4,16 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
+} from '@/components/select'
 
-import icon from '../../assets/dollar-sign.png'
-import localimage from '../../assets/localimage.png'
-import { Uploadimagens } from '@/components/ui/UploadImagens'
+import icon from '@/assets/dollar-sign.png'
+import localimage from '@/assets/localimage.png'
+import { Uploadimagens } from '@/components/UploadImagens'
 
 export function Localization() {
   return (
     <>
-      <div className="hidden md:flex w-full">
+      <div className="hidden md:flex ">
         <div className="flex flex-col gap-y-5">
           <div className="relative flex rounded-md bg-[#F7FEE7]">
             <div className="absolute top-[-5px] left-[10px] bg-lime-200 w-12 h-12 rounded-full flex justify-center items-center border-4 border-lime-100">
