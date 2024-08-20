@@ -15,7 +15,7 @@ export function NotificationComponent({
 }) {
   return (
     <div className="flex gap-6  max-[415px]:flex">
-      <div className="flex flex-col pt-6 justify-center">
+      <div className="flex flex-col justify-center">
         <div>
           <Avatar className="flex justify-center items-center size-14  ">
             <AvatarImage className="bg-lime-100 " src={img} />
@@ -27,7 +27,7 @@ export function NotificationComponent({
         </div>
         <div className="line-clamp-2"></div>
       </div>
-      <div className="flex flex-col  gap-3 pt-6 ">
+      <div className="flex flex-col  gap-3  ">
         <div className="flex gap-3 items-center ">
           <p className="text-[#475467] text-[20px] font-medium">{nome}</p>
           <p className="text-[#94A3B8]">{postedIn}</p>
