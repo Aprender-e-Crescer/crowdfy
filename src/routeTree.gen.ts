@@ -11,14 +11,14 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as LiveCampaignsImport } from './routes/my-campaigns'
+import { Route as MyCampaignsImport } from './routes/my-campaigns'
 import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
 
-const LiveCampaignsRoute = LiveCampaignsImport.update({
-  path: '/live-campaigns',
+const MyCampaignsRoute = MyCampaignsImport.update({
+  path: '/my-campaigns',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -50,11 +50,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutImport
       parentRoute: typeof rootRoute
     }
-    '/live-campaigns': {
-      id: '/live-campaigns'
-      path: '/live-campaigns'
-      fullPath: '/live-campaigns'
-      preLoaderRoute: typeof LiveCampaignsImport
+    '/my-campaigns': {
+      id: '/my-campaigns'
+      path: '/my-campaigns'
+      fullPath: '/my-campaigns'
+      preLoaderRoute: typeof MyCampaignsImport
       parentRoute: typeof rootRoute
     }
   }
@@ -65,7 +65,7 @@ declare module '@tanstack/react-router' {
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
   AboutRoute,
-  LiveCampaignsRoute,
+  MyCampaignsRoute,
 })
 
 /* prettier-ignore-end */
@@ -78,7 +78,7 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/about",
-        "/live-campaigns"
+        "/my-campaigns"
       ]
     },
     "/": {
@@ -87,8 +87,8 @@ export const routeTree = rootRoute.addChildren({
     "/about": {
       "filePath": "about.tsx"
     },
-    "/live-campaigns": {
-      "filePath": "live-campaigns.tsx"
+    "/my-campaigns": {
+      "filePath": "my-campaigns.tsx"
     }
   }
 }
