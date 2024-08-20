@@ -1,9 +1,9 @@
 import ReturnNext from '@/components/ui/ReturnNext'
-import Tell from '@/components/ui/Tell'
 import Card from '@/components/card'
 import { createFileRoute } from '@tanstack/react-router'
 import imagemFundo from '../assets/Image.png'
 import Tell from '@/components/ui/Tell'
+import Choose from '@/components/ui/Choose'
 
 export const Route = createFileRoute('/CampaingCreate')({
   component: CampaingCreate,
@@ -12,6 +12,7 @@ export const Route = createFileRoute('/CampaingCreate')({
 function CampaingCreate() {
   return (
     <div className="p-2 flex gap-5 flex-col">
+      <Choose />
       <Card
         numerosBarra="4.533/9.000"
         localização="São Paulo, Brazil"
@@ -25,8 +26,13 @@ function CampaingCreate() {
         outraImagemFundo={imagemFundo}
         temImagemFundo={true}
       />
-      <ReturnNext />
-      <Tell />
+      <ReturnNext
+        circulo1={true}
+        circulo2={true}
+        circulo3={true}
+        next="Next"
+        previous="Previous"
+      />
     </div>
   )
 }
