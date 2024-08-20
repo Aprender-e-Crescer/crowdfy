@@ -10,14 +10,12 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+        letraVerde:
+          "text-[#65A30D] text-[14px] hover:text-[#475467]",
+        BrancoBorda:
+          "text-[#0F172A] text-[14px] bg-[#FFFFFF] hover:text-[#475467] border-solid border-[2px] border-[#E2E8F0]]",
+        AcinzentadoIcon:
+          "text-[#94A3B8] text-[14px] bg-[#F8FAFC] hover:text-[#475467] border-solid border-[2px] border-[#CBD5E1]]",
       },
       size: {
         default: "h-10 px-4 py-2",
