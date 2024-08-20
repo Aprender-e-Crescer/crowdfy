@@ -1,6 +1,6 @@
 import { Map } from '@/components/map'
 import { createFileRoute } from '@tanstack/react-router'
-import { Sectionheader } from '@/components/component/sectionheader'
+import { Sectionheader } from '@/components/component/Sectionheader'
 
 export const Route = createFileRoute('/explore')({
   component: Explore,
