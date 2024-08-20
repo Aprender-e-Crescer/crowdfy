@@ -77,6 +77,7 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
+  CampaingCreateRoute,
   AboutRoute,
   ProfileSettingsRoute,
 })
