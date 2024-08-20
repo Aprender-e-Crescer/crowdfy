@@ -1,5 +1,5 @@
-
 import { Localization } from '@/components/ui/localization'
+
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/profile-settings')({
@@ -7,7 +7,5 @@ export const Route = createFileRoute('/profile-settings')({
 })
 
 function ProfileSettings() {
-  return (
-    <Localization />
-  )
+  return <Localization />
 }
