@@ -3,6 +3,7 @@ import avatar2 from '../assets/Avatar2.png'
 import icon from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
 import { Progress } from './ui/progress'
+import { Button } from './ui/button'
 
 export default function Card({
   temImagemFundo,
@@ -61,7 +62,7 @@ export default function Card({
 
       <div className="hidden sm:flex max-w-80 sm:max-w-full">
         <div className="flex justify-center items-center">
-          <div className="flex flex-col absolute  bg-white w-[658px] h-[323px] rounded-xl">
+          <div className="flex flex-col absolute  bg-white w-[658px] h-[323px] rounded-xl p-4">
             <div className="flex gap-3 justify-center items-center">
               <img className="w-16 h-16 ml-4 mt-2" src={avatar} alt="" />
               <p className="flex text-2xl items-center justify-center text-[#101828] font-bold">
@@ -81,12 +82,13 @@ export default function Card({
               <div className="flex ml-2 gap-1">
                 <img className="w-5 h-5 mt-1 ml-5" src={icon} alt="" />
                 <p className="text-[#475467] text-base ">{localização}</p>
+                <Button variant={}></Button>
               </div>
             </div>
-            <div className="flex mt-3 ml-3 items-center">
-              <img className="w-56 h-9" src={iconAvatar} alt="" />
-              <Progress className="bg-blue-800 w-28 h-[5px] ml-4" value={50} />
-              <p className="mr-3 ml-3 font-bold">{numerosBarra}</p>
+            <div className="flex mt-3 ml-3 items-center gap-7">
+              <img className="w-60 h-9" src={iconAvatar} alt="" />
+              <Progress className="bg-blue-800 w-44 h-3 ml-4" value={50} />
+              <p className="text-xl font-bold">{numerosBarra}</p>
             </div>
           </div>
           {temImagemFundo && (
