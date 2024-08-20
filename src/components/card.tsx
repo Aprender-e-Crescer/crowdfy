@@ -79,10 +79,19 @@ export default function Card({
                 alt=""
               />
               <p className="text-[#475467] text-base ml-2">{nomeUser}</p>
-              <div className="flex ml-2 gap-1">
-                <img className="w-5 h-5 mt-1 ml-5" src={icon} alt="" />
-                <p className="text-[#475467] text-base ">{localização}</p>
-                <Button variant={}></Button>
+              <div className="flex ml-2 gap-1 items-center justify-center">
+                <div className="flex gap-32">
+                  <div className="flex items-center justify-center gap-2">
+                    <img className="w-5 h-5 mt-1 ml-5" src={icon} alt="" />
+                    <p className="text-[#475467] text-base ">{localização}</p>
+                  </div>
+                  <Button
+                    className="bg-[#84CC16] text-white "
+                    variant={'shadow'}
+                  >
+                    Sign Campaing
+                  </Button>
+                </div>
               </div>
             </div>
             <div className="flex mt-3 ml-3 items-center gap-7">
