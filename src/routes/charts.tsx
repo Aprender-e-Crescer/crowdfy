@@ -1,3 +1,4 @@
+import ChartContent from '@/components/ChartsContent'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/charts')({
@@ -23,6 +24,7 @@ function Charts() {
                 <button className="px-5 py-1 border rounded-md font-semibold text-[#1F2937] active:bg-[#84CC16] active:text-white">Values</button>
             </div>
         </div>
+        <ChartContent></ChartContent>
     </div>
   )
 }
