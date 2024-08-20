@@ -9,7 +9,7 @@ const cardData = [
     imageSrc: imagem1,
     name: 'Ms. Saint-Martin Doranyia Pascal',
     description:
-      'In 2022 my husband and I moved to Portugal to follow our simple life dream and build our..',
+      'In 2022 my husband and I moved to Portugal to follow our simple life dream and build our',
     location: 'São Paulo, Brasil',
     amount: '€3,182.49',
     progress: 45,
