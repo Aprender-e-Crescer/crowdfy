@@ -4,6 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
+
+import { Link } from '@tanstack/react-router'
 import { Badge } from './badge'
 
 import iconfooter from '@/assets/icon-footer.png'
@@ -15,38 +17,37 @@ export default function Footer() {
         <div className="flex justify-center gap-x-16 py-20 flex-1 px-8">
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className='text-lime-700 font-semibold'>Home</h1>
-
-            <p className='text-slate-600'>My favorites</p>
-            <p className='text-slate-600'>Recents</p>
+            <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>My favorites</p></Link>
+            <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Recents</p></Link>
+            
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className='font-semibold'>Explore</h1>
-
-            <p className='text-slate-600'>Lists</p>
-            <p className='flex text-slate-600'>Maps <Badge variant="success">New</Badge></p>
+            <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Lists</p></Link>
+            <Link to="/" className="[&.active]:font-bold"><p className='flex text-slate-600'>Maps <Badge variant="success">New</Badge></p></Link>
+            
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className='font-semibold'>Campaigns</h1>
 
             <p className='text-slate-600 ' >Home</p>
-            <p className='flex text-slate-600'>Campaigns <Badge variant="success">12</Badge></p>
-            <p className='flex text-slate-600'>Donations <Badge variant="success">4</Badge></p>
-            <p className='text-slate-600'>Analytics</p>
+            <Link to="/" className="[&.active]:font-bold"><p className='flex text-slate-600'>Campaigns <Badge variant="success">12</Badge></p></Link>
+            <Link to="/" className="[&.active]:font-bold"> <p className='flex text-slate-600'>Donations <Badge variant="success">4</Badge></p></Link>
+            <Link to="/" className="[&.active]:font-bold"> <p className='text-slate-600'>Analytics</p></Link>
+           
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className='font-semibold'>Profile</h1>
-
-            <p className='text-slate-600'>Settings</p>
-            <p className='flex text-slate-600'>Notifications <Badge variant="success">10</Badge></p>
+            <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Settings</p></Link>
+            <Link to="/" className="[&.active]:font-bold"><p className='flex text-slate-600'>Notifications <Badge variant="success">10</Badge></p></Link>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className='font-semibold'>Resources</h1>
-
-            <p className='text-slate-600'>How to use crouwdfy</p>
-            <p className='text-slate-600'>Docs</p>
-            <p className='text-slate-600'>Legal Terms</p>
-            <p className='text-slate-600'>Blog</p>
-            <p className='text-slate-600'>Merch</p>
+            <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>How to use crouwdfy</p></Link>
+            <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Docs</p></Link>
+            <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Legal Terms</p></Link>
+            <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Blog</p></Link>
+            <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Merch</p></Link>
           </div>
         </div>
         <hr />
@@ -61,6 +62,9 @@ export default function Footer() {
           </div>
         
       </div>
+      
+
+
       
 
       <div className=" md:hidden flex flex-wrap bg-slate-100">
