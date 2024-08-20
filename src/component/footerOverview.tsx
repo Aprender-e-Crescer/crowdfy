@@ -22,7 +22,7 @@ const FooterOverview: React.FC<FooterOverviewProps> = ({ titulo, valor, link }) 
         </div>
 
         <div className="mt-2 sm:mt-4 -mx-4 border-t border-gray-200" />
-        <div className="mt-4">
+        <div className="mt-4 flex justify-end">
           <Link href={link} className="text-sm text-[#65A30D] hover:underline">
             {link}
           </Link>
