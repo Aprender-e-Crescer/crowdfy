@@ -1,4 +1,5 @@
 
+import  Give  from '@/components/ui/give'
 import Choose from '@/components/ui/Choose'
 import  ReturnNext from '@/components/ui/ReturnNext'
 import Tell from '@/components/ui/Tell'
@@ -12,6 +13,14 @@ export const Route = createFileRoute('/CampaingCreate')({
 
 function CampaingCreate() {
   return (
+  <Give title='3. Give final details'
+        subtitle="What it's about your campaign?"
+        label1='Your campaign title'
+        label2='Create a deadline for your campaign'
+        label3='Goal'
+        placeholder1='Write here your beautiful title 🪴'
+        placeholder2='dd/mm/aaaa'
+        placeholder3='$10.000'/>
     <div className="p-2">
       <Choose 
       tittle='1. Choose your campaign style' 
@@ -39,3 +48,4 @@ function CampaingCreate() {
     </div>
   )
 }
+      )
