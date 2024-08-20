@@ -22,44 +22,78 @@ export default function Card({
   outraImagemFundo: string
 }) {
   return (
-    <div>
-      <div>
-        <div className='flex justify-center items-center'>
-          <div className="flex flex-col absolute max-w-80 sm:max-w-full bg-white w-96 h-56 rounded-xl">
-            <div className="flex">
-              <img className="w-14 h-14 ml-4 mt-2" src={avatar} alt="" />
-              <p className="flex items-center justify-center text-[#101828] font-bold">
-                {titulo}
-              </p>
-            </div>
-            <div className=" text-[10px] mr-4 ml-4 mt-1 text-[#475467]">
-              {descrição}
-            </div>
-            <div className="flex items-center">
-              <img
-                className="w-8 h-8 items-center justify-center ml-3 mt-"
-                src={avatar2}
-                alt=""
-              />
-              <p className="text-[#475467] text-[14px] ml-2">{nomeUser}</p>
-              <div className="flex ml-2 gap-1">
-                <img className="w-2 h-3 mt-1" src={icon} alt="" />
-                <p className="text-[#475467] text-[12px] ">{localização}</p>
-              </div>
-            </div>
-            <div className="flex mt-3 ml-3 items-center">
-              <img className="w-36 h-6" src={iconAvatar} alt="" />
-              <Progress className="bg-blue-800 w-28 h-[5px] ml-4" value={50} />
-              <p className="mr-3 ml-3 font-bold">{numerosBarra}</p>
+    <>
+      <div className="flex sm:hidden  justify-center items-center max-w-full sm:max-w-full">
+        <div className="flex flex-col absolute  bg-white w-80 h-56 rounded-xl">
+          <div className="flex">
+            <img className="w-14 h-14 ml-4 mt-2" src={avatar} alt="" />
+            <p className="flex items-center justify-center text-[#101828] font-bold">
+              {titulo}
+            </p>
+          </div>
+          <div className=" text-[10px] mr-4 ml-4 mt-1 text-[#475467]">
+            {descrição}
+          </div>
+          <div className="flex items-center">
+            <img
+              className="w-8 h-8 items-center justify-center ml-3 mt-"
+              src={avatar2}
+              alt=""
+            />
+            <p className="text-[#475467] text-[14px] ml-2">{nomeUser}</p>
+            <div className="flex ml-2 gap-1">
+              <img className="w-2 h-3 mt-1" src={icon} alt="" />
+              <p className="text-[#475467] text-[12px] ">{localização}</p>
             </div>
           </div>
-          {temImagemFundo && (
-            <div>
-              <img src={outraImagemFundo} alt="" />
-            </div>
-          )}
+          <div className="flex mt-3 ml-3 items-center">
+            <img className="w-36 h-6" src={iconAvatar} alt="" />
+            <Progress className="bg-blue-800 w-28 h-[5px] ml-4" value={50} />
+            <p className="mr-3 ml-3 font-bold">{numerosBarra}</p>
+          </div>
         </div>
+        {temImagemFundo && (
+          <div>
+            <img src={outraImagemFundo} alt="" />
+          </div>
+        )}
       </div>
-    </div>
+
+      <div className="hidden sm:flex max-w-80 sm:max-w-full justify-center items-center">
+        <div className="flex flex-col absolute  bg-white w-[658px] h-[323px] rounded-xl">
+          <div className="flex gap-3 justify-center items-center">
+            <img className="w-16 h-16 ml-4 mt-2" src={avatar} alt="" />
+            <p className="flex text-2xl items-center justify-center text-[#101828] font-bold">
+              {titulo}
+            </p>
+          </div>
+          <div className="text-base mr-4 ml-4 mt-1 text-[#475467]">
+            {descrição}
+          </div>
+          <div className="flex items-center">
+            <img
+              className="w-10 h-10 items-center justify-center ml-3 mt-2"
+              src={avatar2}
+              alt=""
+            />
+            <p className="text-[#475467] text-[14px] ml-2">{nomeUser}</p>
+            <div className="flex ml-2 gap-1">
+              <img className="w-2 h-3 mt-1" src={icon} alt="" />
+              <p className="text-[#475467] text-[12px] ">{localização}</p>
+            </div>
+          </div>
+          <div className="flex mt-3 ml-3 items-center">
+            <img className="w-36 h-6" src={iconAvatar} alt="" />
+            <Progress className="bg-blue-800 w-28 h-[5px] ml-4" value={50} />
+            <p className="mr-3 ml-3 font-bold">{numerosBarra}</p>
+          </div>
+        </div>
+        {temImagemFundo && (
+          <div>
+            <img src={outraImagemFundo} alt="" />
+          </div>
+        )}
+      </div>
+    </>
   )
 }
