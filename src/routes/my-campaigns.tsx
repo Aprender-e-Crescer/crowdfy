@@ -1,4 +1,3 @@
-
 import { SubHeader } from '@/components/subHeader'
 import { Textarea } from '@/components/ui/textarea'
 import { UserProfile } from '@/components/ui/userProfile'
@@ -13,7 +12,6 @@ import AdilsonFranciPerfil from '@/assets/AdilsonFranciPerfil.svg'
 import JocelynPerfil from '@/assets/JocelynPerfil.svg'
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
 import { createFileRoute } from '@tanstack/react-router';
 import { Eye, Flag, MapPin, Rocket } from "lucide-react";
 import FemalePerfil from "../assets/FemalePerfil.svg";
