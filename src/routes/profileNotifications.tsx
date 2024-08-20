@@ -9,7 +9,7 @@ export let Route = createFileRoute(`/profileNotifications`)({
 function ProfileNotifications() {
   return <div className="p-2">
    
-<BackgroundButton />
+<BackgroundButton  preço='$53.88'/>
 
   </div>
 }
