@@ -1,3 +1,5 @@
+import ReturnNext from '@/components/ui/ReturnNext'
+import Tell from '@/components/ui/Tell'
 import Card from '@/components/card'
 import { createFileRoute } from '@tanstack/react-router'
 import imagemFundo from '../assets/Image.png'
@@ -23,6 +25,7 @@ function CampaingCreate() {
         outraImagemFundo={imagemFundo}
         temImagemFundo={true}
       />
+      <ReturnNext />
       <Tell />
     </div>
   )
