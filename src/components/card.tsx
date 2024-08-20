@@ -24,7 +24,7 @@ export default function Card({
   return (
     <div>
       <div>
-        <div>
+        <div className='flex justify-center items-center'>
           <div className="flex flex-col absolute bg-white w-96 h-56 rounded-xl">
             <div className="flex">
               <img className="w-14 h-14 ml-4 mt-2" src={avatar} alt="" />
@@ -55,7 +55,7 @@ export default function Card({
           </div>
           {temImagemFundo && (
             <div>
-              <img className="rounded-lg" src={outraImagemFundo} alt="" />
+              <img src={outraImagemFundo} alt="" />
             </div>
           )}
         </div>
