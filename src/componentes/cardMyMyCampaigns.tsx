@@ -7,9 +7,10 @@ interface CardProps {
   Imagem: string;
   CorFundo: string;
   CorTexto: string;
+  ValorCard: string;
 }
 
-const Card: React.FC<CardProps> = ({ Titulo, Nome, NumeroId, Imagem, CorFundo, CorTexto }) => {
+const Card: React.FC<CardProps> = ({ Titulo, Nome, NumeroId, Imagem, CorFundo, CorTexto, ValorCard }) => {
   return (
     <div className="flex-col">
       <div
@@ -54,7 +55,7 @@ const Card: React.FC<CardProps> = ({ Titulo, Nome, NumeroId, Imagem, CorFundo, C
           Total donations
         </p>
         <p className="font-bold text-[19.92px] mt-[22.77px] text-[#344054]">
-          $2,840.40
+          {ValorCard}
         </p>
       </div>
     </div>

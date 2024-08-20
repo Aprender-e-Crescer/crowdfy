@@ -31,21 +31,21 @@ function CardOverview() {
         </div>
         <div className="flex mb-[20px] ml-[20px]">
           <div className="mr-[20px]">
-            <Card Titulo={<span>Renovate<br />Kingstown<br />Orphanage</span>} Nome={'ANA YAMAMOTO'} NumeroId={'0xbb AC23 43af 98fg'} Imagem={'https://www.brighthope.org/wp-content/uploads/2022/02/tim-trad-sS28i1H39AY-unsplash-800x533.jpg'} CorFundo={"#BEF264"} CorTexto={"#1E293B"}/>
+            <Card Titulo={<span>Renovate<br />Kingstown<br />Orphanage</span>} Nome={'ANA YAMAMOTO'} NumeroId={'0xbb AC23 43af 98fg'} Imagem={'https://www.brighthope.org/wp-content/uploads/2022/02/tim-trad-sS28i1H39AY-unsplash-800x533.jpg'} CorFundo={"#BEF264"} CorTexto={"#1E293B"} ValorCard={"$2,840.40"}/>
             <Progress value={55} className="mt-2" />
           </div>
           <div>
-            <Card Titulo={<span>Install Water<br />Well in<br />Kingstown</span>} Nome={'ANA YAMAMOTO'} NumeroId={'5226 6749 6789 4341'} Imagem={'https://th.bing.com/th/id/OIP.Rsr2pvOkUH8jQy3TajZ6LAAAAA?pid=ImgDet&w=200&h=200&c=7'} CorFundo={"#3F6212"} CorTexto={"#FFFFFF"}/>
+            <Card Titulo={<span>Install Water<br />Well in<br />Kingstown</span>} Nome={'ANA YAMAMOTO'} NumeroId={'5226 6749 6789 4341'} Imagem={'https://th.bing.com/th/id/OIP.Rsr2pvOkUH8jQy3TajZ6LAAAAA?pid=ImgDet&w=200&h=200&c=7'} CorFundo={"#3F6212"} CorTexto={"#FFFFFF"} ValorCard={"$1,260.20"}/>
             <Progress value={30} className="mt-2" />
           </div>
         </div>
         <div className="flex ml-[20px]">
           <div className="mr-[20px] ">
-            <Card Titulo={<span>Install Water<br />Well in<br />Kingstown</span>} Nome={'ANA YAMAMOTO'} NumeroId={'5226 6749 6789 4341'} Imagem={'https://th.bing.com/th/id/OIP.cKrnleA9Ut-H9geNg99UwgHaFj?pid=ImgDet&w=200&h=150&c=7'} CorFundo={"#BEF264"} CorTexto={"#1E293B"}/>
+            <Card Titulo={<span>Install Water<br />Well in<br />Kingstown</span>} Nome={'ANA YAMAMOTO'} NumeroId={'5226 6749 6789 4341'} Imagem={'https://th.bing.com/th/id/OIP.cKrnleA9Ut-H9geNg99UwgHaFj?pid=ImgDet&w=200&h=150&c=7'} CorFundo={"#BEF264"} CorTexto={"#1E293B"} ValorCard={"$1,260.20"}/>
             <Progress value={30} className="mt-2" />
           </div>
           <div>
-            <Card Titulo={<span>Install Water<br />Well in<br />Kingstown</span>} Nome={'ANA YAMAMOTO'} NumeroId={'5226 6749 6789 4341'} Imagem={'https://th.bing.com/th/id/OIP.cKrnleA9Ut-H9geNg99UwgHaFj?pid=ImgDet&w=200&h=150&c=7'} CorFundo={"#BEF264"} CorTexto={"#1E293B"}/>
+            <Card Titulo={<span>Install Water<br />Well in<br />Kingstown</span>} Nome={'ANA YAMAMOTO'} NumeroId={'5226 6749 6789 4341'} Imagem={'https://th.bing.com/th/id/OIP.cKrnleA9Ut-H9geNg99UwgHaFj?pid=ImgDet&w=200&h=150&c=7'} CorFundo={"#BEF264"} CorTexto={"#1E293B"} ValorCard={"$1,260.20"}/>
             <Progress value={30} className="mt-2" />
           </div>
         </div>
