@@ -71,72 +71,72 @@ export default function Footer() {
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className=" text-foreground text-lime-700">
-              Home
+            Home
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              My favorites
+               <Link to="/" className="[&.active]:font-bold">My favorites</Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Recents
+              <Link to="/" className="[&.active]:font-bold">Recents</Link>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className=" text-foreground">
-              Explore
+            Explore
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Lists
+            <Link to="/" className="[&.active]:font-bold">Lists</Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Maps <Badge variant="success">New</Badge>
+              <Link to="/" className="[&.active]:font-bold">Maps <Badge variant="success">New</Badge></Link>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className=" text-foreground">
-              Campaigns
+            Campaigns
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Home
+             <Link to="/" className="[&.active]:font-bold"> Home</Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Campaigns<Badge variant="success">12</Badge>
+             <Link to="/" className="[&.active]:font-bold"> Campaigns<Badge variant="success">12</Badge></Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Donations<Badge variant="success">4</Badge>
+               <Link to="/" className="[&.active]:font-bold">Donations<Badge variant="success">4</Badge></Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Analytics
+              <Link to="/" className="[&.active]:font-bold">Analytics</Link>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger className=" text-foreground">
-              Profile
+             Profile
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Settings
+              <Link to="/" className="[&.active]:font-bold">Settings</Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Notifications<Badge variant="success">10</Badge>
+              <Link to="/" className="[&.active]:font-bold">Notifications<Badge variant="success">10</Badge></Link>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
             <AccordionTrigger className=" text-foreground">
-              Resources
+             Resources
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              How to use crouwdfy
+              <Link to="/" className="[&.active]:font-bold">How to use crouwdfy</Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Docs
+              <Link to="/" className="[&.active]:font-bold">Docs</Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Legal Terms
+              <Link to="/" className="[&.active]:font-bold">Legal Terms</Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Blog
+              <Link to="/" className="[&.active]:font-bold">Blog</Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Merch
+             <Link to="/" className="[&.active]:font-bold"> Merch</Link>
             </AccordionContent>
           </AccordionItem>
           <hr />
