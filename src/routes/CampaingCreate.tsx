@@ -1,4 +1,5 @@
 
+import  ReturnNext from '@/components/ui/ReturnNext'
 import Tell from '@/components/ui/Tell'
 import Card from '@/components/card'
 import { createFileRoute } from '@tanstack/react-router'
@@ -9,9 +10,6 @@ export const Route = createFileRoute('/CampaingCreate')({
 })
 
 function CampaingCreate() {
-  return(
-    <Tell/>
-)
   return (
     <div className="p-2 flex gap-5 flex-col">
       <Card
@@ -27,6 +25,8 @@ function CampaingCreate() {
         outraImagemFundo={imagemFundo}
         temImagemFundo={true}
       />
+       <ReturnNext/>
+        <Tell/>
     </div>
   )
 }
