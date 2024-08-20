@@ -1,12 +1,17 @@
+
+import Tell from '@/components/ui/Tell'
 import Card from '@/components/card'
 import { createFileRoute } from '@tanstack/react-router'
 import imagemFundo from '../assets/Image.png'
 
 export const Route = createFileRoute('/CampaingCreate')({
-  component: CampaingCreate,
+ component: CampaingCreate,
 })
 
 function CampaingCreate() {
+  return(
+    <Tell/>
+)
   return (
     <div className="p-2 flex gap-5 flex-col">
       <Card
