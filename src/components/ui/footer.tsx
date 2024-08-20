@@ -48,6 +48,8 @@ export default function Footer() {
             <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Legal Terms</p></Link>
             <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Blog</p></Link>
             <Link to="/" className="[&.active]:font-bold"><p className='text-slate-600'>Merch</p></Link>
+            
+
           </div>
         </div>
         <hr />
@@ -169,7 +171,7 @@ export default function Footer() {
 //     { value: 'item-3', label: 'Campaigns' },
 //     { value: 'item-4', label: 'Profile' },
 //     { value: 'item-5', label: 'Resources' },
-//   ]
+//   ] <Link to="/" className="[&.active]:font-bold"></Link>
 
 //   return (
 //     <>
