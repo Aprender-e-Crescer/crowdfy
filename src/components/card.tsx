@@ -23,7 +23,7 @@ export default function Card({
 }) {
   return (
     <>
-      <div className="flex sm:hidden  justify-center items-center max-w-full sm:max-w-full">
+      <div className="flex sm:hidden  justify-center items-center max-w-full">
         <div className="flex flex-col absolute  bg-white w-80 h-56 rounded-xl">
           <div className="flex">
             <img className="w-14 h-14 ml-4 mt-2" src={avatar} alt="" />
@@ -59,7 +59,8 @@ export default function Card({
         )}
       </div>
 
-      <div className="hidden sm:flex max-w-80 sm:max-w-full justify-center items-center">
+      <div className="hidden sm:flex max-w-80 sm:max-w-full">
+        <div className='flex justify-center items-center'>
         <div className="flex flex-col absolute  bg-white w-[658px] h-[323px] rounded-xl">
           <div className="flex gap-3 justify-center items-center">
             <img className="w-16 h-16 ml-4 mt-2" src={avatar} alt="" />
@@ -93,6 +94,7 @@ export default function Card({
             <img src={outraImagemFundo} alt="" />
           </div>
         )}
+        </div>
       </div>
     </>
   )
