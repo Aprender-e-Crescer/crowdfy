@@ -14,15 +14,15 @@ export function NotificationComponent({
   text2: string
 }) {
   return (
-    <div className="flex gap-6  max-[415px]:flex">
+    <div className="flex gap-6">
       <div className="flex flex-col justify-center">
-        <div>
-          <Avatar className="flex justify-center items-center size-14  ">
+        <div className='flex flex-col flex-1 gap-y-2'>
+          <Avatar className="flex justify-center items-center size-14">
             <AvatarImage className="bg-lime-100 " src={img} />
             <AvatarFallback></AvatarFallback>
           </Avatar>
-          <div className="flex items-center justify-center">
-            <img src={connector} alt="aaaa" />
+          <div className="flex flex-col items-center justify-center flex-1">
+            <hr className='flex-1 h-full border border-gray-400' />
           </div>
         </div>
         <div className="line-clamp-2"></div>
