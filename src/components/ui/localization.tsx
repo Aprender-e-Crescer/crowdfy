@@ -91,8 +91,8 @@ export function Localization() {
         </div>
 
         <div className="flex flex-col justify-center items-center">
-          <div className="text-[16px] mt-4">
-            <p>Banner</p>
+          <div className="text-[#344054] text-[16px] mt-4">
+            <p>Banner Image</p>
           </div>
 
           <div className="flex flex-col items-center gap-2">
