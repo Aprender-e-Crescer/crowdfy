@@ -8,10 +8,7 @@ import {
   PaginationPrevious,
 } from '@/components/ui/pagination'
 
-
-import imagemFundo from '../assets/Image.png'
 import { BackgroundButton } from '@/components/backgroundButton'
-import Card from '@/components/card'
 import { NotificationComponent } from '@/components/NotificationComponent'
 import { Roadmap } from '@/components/roadmap'
 import { FundCampaing } from '@/components/ui/Fund-Campaing'
@@ -23,64 +20,87 @@ export let Route = createFileRoute(`/profileNotifications`)({
 
 function ProfileNotifications() {
   return (
-    <div className="flex justify-evenly w-full">
-      <Pagination className="flex justify-between w-full">
-    <div className="flex flex-col ">
-      <NotificationComponent
-        nome="Matheus Rodrigues"
-        text1="is gathering 9000 signs to citys prefecture"
-        postedIn="in 20 days"
-        text2="“We need to deliver this about of 9.000 signs to the mayor to he approve us as
-       international english teacher”"
-      />
+    <div className="flex flex-col justify-evenly w-full">
+      <div className="flex flex-col">
+        <NotificationComponent
+          nome="Matheus Rodrigues"
+          text1="is gathering 9000 signs to citys prefecture"
+          postedIn="in 20 days"
+          text2="“We need to deliver this amount of 9.000 signs to the mayor so he can approve us as international English teachers.”"
+        />
 
-      <NotificationComponent
-        nome="Matheus Rodrigues"
-        text1="is gathering 9000 signs to citys prefecture"
-        postedIn="in 20 days"
-        text2="“We need to deliver this about of 9.000 signs to the mayor to he approve us as
-       international english teacher”"
-      />
+        <NotificationComponent
+          nome="Matheus Rodrigues"
+          text1="is gathering 9000 signs to citys prefecture"
+          postedIn="in 20 days"
+          text2="“We need to deliver this amount of 9.000 signs to the mayor so he can approve us as international English teachers.”"
+        />
 
-      <NotificationComponent
-        nome="Matheus Rodrigues"
-        text1="is gathering 9000 signs to citys prefecture"
-        postedIn="in 20 days"
-        text2="“We need to deliver this about of 9.000 signs to the mayor to he approve us as
-       international english teacher”"
-      />
+        <NotificationComponent
+          nome="Matheus Rodrigues"
+          text1="is gathering 9000 signs to citys prefecture"
+          postedIn="in 20 days"
+          text2="“We need to deliver this amount of 9.000 signs to the mayor so he can approve us as international English teachers.”"
+        />
 
-      <FundCampaing
-        nome="Matheus Rodrigues"
-        text1="is gathering 9000 signs to citys prefecture"
-        postedIn="in 20 days"
-      />
+        <FundCampaing
+          nome="Matheus Rodrigues"
+          text1="is gathering 9000 signs to citys prefecture"
+          postedIn="in 20 days"
+        />
 
-      <NotificationComponent
-        nome="Matheus Rodrigues"
-        text1="is gathering 9000 signs to citys prefecture"
-        postedIn="in 20 days"
-        text2="“We need to deliver this about of 9.000 signs to the mayor to he approve us as
-       international english teacher”"
-      />
+        <NotificationComponent
+          nome="Matheus Rodrigues"
+          text1="is gathering 9000 signs to citys prefecture"
+          postedIn="in 20 days"
+          text2="“We need to deliver this amount of 9.000 signs to the mayor so he can approve us as international English teachers.”"
+        />
 
-      <FundCampaing
-        nome="Matheus Rodrigues"
-        text1="is gathering 9000 signs to citys prefecture"
-        postedIn="in 20 days"
-      />
+        <FundCampaing
+          nome="Matheus Rodrigues"
+          text1="is gathering 9000 signs to citys prefecture"
+          postedIn="in 20 days"
+        />
 
-      <BackgroundButton preço="$53.88" />
+        <BackgroundButton preço="$53.88" />
+      </div>
 
       <div className="mt-36">
         <Roadmap
-          titulo="Help us Teach English for Kids on China Countryside"
-          descrição="I need about 9.000 signatures to deliver to my mayor in two weeks and get that grant! Check more about our project and if you want to see how we are changing lovely children lifes on China countryside just teaching how they can use the internet."
+          titulo="Help us Teach English for Kids in China Countryside"
+          descrição="I need about 9.000 signatures to deliver to my mayor in two weeks and get that grant! Check more about our project, and if you want to see how we are changing the lives of lovely children in China's countryside, just teaching them how they can use the internet."
           localização="São Paulo, Brazil"
-          nomeUser="Mateus Rodrigues"
+          nomeUser="Matheus Rodrigues"
           numerosBarra="4.533/9.000"
         />
       </div>
+
+      <Pagination className="flex justify-evenly w-full mt-10">
+        <PaginationContent>
+          <PaginationItem>
+            <PaginationPrevious href="#" />
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#">1</PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#" isActive>
+              2
+            </PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#">3</PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationEllipsis />
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationNext href="#" />
+          </PaginationItem>
+        </PaginationContent>
+      </Pagination>
     </div>
   )
 }
+
+export default ProfileNotifications
