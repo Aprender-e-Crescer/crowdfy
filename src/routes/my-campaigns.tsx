@@ -23,8 +23,8 @@ export const Route = createFileRoute('/my-campaigns') ({
 
 export function LiveCampaigns() {
      const buttons = [
-        { title: 'Overview', variant:'ghost', className: '', route: '', icon: <Eye />},
-        { title: 'My Campaigns', variant:'', className: 'bg-lime-200 hover:bg-lime-300', route: '', icon: <Rocket /> }
+        { title: 'Overview', variant:'ghost' as const, route: '', icon: <Eye />},
+        { title: 'My Campaigns', variant:'green' as const, route: '', icon: <Rocket /> }
     ];
 
     return (   
