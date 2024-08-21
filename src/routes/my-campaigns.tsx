@@ -31,37 +31,35 @@ export function LiveCampaigns() {
     <> 
     <SubHeader buttons={buttons}/>
         
-<main className='md:m-28'>
-    <div className='flex'>
-        <div>
-        <h1 className ="font-semibold pl-6 pt-2 font-[inter] flex text-3xl" >Help me Fight Cancer</h1>
-        <p className = "pl-6 pb-4 mt-1 text-[#475467] font-normal text-xl">Your current sales summary and activity.</p>
-        <img className='pt-2 pb-2 max-h[776]' src={ImagemMaeEFilha} />
+<main className='m-28 w-fit'>
+    <div className='lg:flex'>
+        <div className='sm:m-6'>
+            <h1 className ="font-semibold pl-6 font-[inter] flex text-3xl" >Help me Fight Cancer</h1>
+            <p className = "pb-4 mt-1 text-[#475467] font-normal text-xl">Your current sales summary and activity.</p>
+            <img className='pt-2 pb-2 max-h[876]' src={ImagemMaeEFilha} />
 
-        <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-3xl text-justify"> In 2022 my husband and I moved to Portugal to follow our simple life dream and build our home and 
-        homestead after completing a 4 years renovation project which we sold at a profit to finance our dream.</p>
+            <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-3xl text-justify"> In 2022 my husband and I moved to Portugal to follow our simple life dream and build our home and 
+            homestead after completing a 4 years renovation project which we sold at a profit to finance our dream.</p>
 
-        <p className='sm:pl-6 pt-2 text-[#475467] text-3xl text-justify'> Building our own home after COVID certainly had its challenges which My husband and I overcame with
-        a smile and a lot of creativity. Yet what we didn't know is that our biggest challenge was still to come.</p>
+            <p className='sm:pl-6 pt-2 text-[#475467] text-3xl text-justify'> Building our own home after COVID certainly had its challenges which My husband and I overcame with
+            a smile and a lot of creativity. Yet what we didn't know is that our biggest challenge was still to come.</p>
 
-        <p className='sm:pl-6 pt-2 pb-3 text-[#475467] underline decoration-1 text-2xl mt-16'>Read more.</p>
-        <hr/>
-</div>
+            <p className='sm:pl-6 pt-2 text-[#475467] underline decoration-1 text-2xl mt-5 mb-5'>Read more.</p>
+            <hr/>
+        </div>
 
     <div>
         <div className='flex ml-28 mb-6'>
             <Button className='bg-[#D9F99D] text-[#1F2937] max-w-40 border-[#F7FEE7] font-medium' variant={'shadow'}><img src={share} className='mx-2' />Share Campaign </Button>
 
             <Button className='border-[#E2E8F0] drop-shadow-sm text-[#1E293B] max-w-44 px-16 mx-2' variant={'outline'}><img src={Heart}/>Like</Button>
-    </div>
-
-{/* Quando for pequeno imagem deve ficar inteira */}
+        </div>
 
 
 {/* RAUL inicio*/}
 <div>
 
-    <div className='font-[inter] mx-5 p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] w-96  sm:ml-28 ml-16'>
+    <div className='font-[inter] mx-5 p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] w-96  sm:ml-16'>
         
             <h1 className='text-[#475467]  mt-1 mb-5 font-semibold text-xl'>🫰Funds donated to this campaign</h1>
             <p className='text-[#1E293B]   text-3xl'>$15.000 /<span className='font-bold'> $20.000</span></p>
@@ -83,7 +81,7 @@ export function LiveCampaigns() {
     </div>
 
 
-    <div className='font-[inter] m-5  p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] lg:w-[500px] sm:ml-28 ml-16 items-center'>
+    <div className='font-[inter] m-5  p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] sm:ml-16 items-center'>
         <h1 className='mt-1 mb-4  font-semibold text-xl text-[#475467]'>💪 Fund this campaign</h1>
     <div className='my-5'>
             <h1 itemID='Fund' className='text-[#0F172A] mb-1 text-sm ml-1 tracking-wide font-medium'>Funding</h1>
@@ -97,15 +95,14 @@ export function LiveCampaigns() {
             <p className='text-[#64748B] mt-1 ml-1 text-sm'>Not only numbers make the difference on our lives :)</p>
     </div>
 
-    <Button className=' w-full bg-[#84CC16] text-white' variant={'default'}><img src={IconDonate}/>Donate now</Button>
+            <Button className=' w-full bg-[#84CC16] text-white' variant={'default'}><img src={IconDonate}/>Donate now</Button>
 
-    <div className='flex mt-3'>
-            <Progress/>
-            <p className='text-[#344054] text-base leading-6 mt-[7px] ml-3'>1/3</p>
+        <div className='flex mt-3'>
+                <Progress/>
+                <p className='text-[#344054] text-base leading-6 mt-[7px] ml-3'>1/3</p>
         </div>
-        </div>
+    </div>
     </div> 
-
     </div>
 </div>    
 
@@ -115,7 +112,8 @@ export function LiveCampaigns() {
 
 
 {/* ENZO */}
-         <h1 className=" font-semibold mb-5 mt-5">👥 Organizadora</h1>
+        <div className='sm:ml-16'>
+         <h1 className="font-semibold mb-5 mt-5">👥 Organizadora</h1>
             <UserProfile
                 title={'Sindy Rheaume'}
                 img={FemalePerfil}
@@ -171,7 +169,8 @@ export function LiveCampaigns() {
             <div className="flex my-4">
                 <Flag className="fill-black" />
                 <p className="font-medium">Denunciar esta campanha</p> 
-            </div>   
+            </div>  
+        </div> 
 </main>
     </>
     )
