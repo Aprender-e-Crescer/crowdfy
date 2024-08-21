@@ -11,15 +11,21 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as CampaingFormSecondStepImport } from './routes/campaing-form-second-step'
+import { Route as CampaingformtreestepImport } from './routes/campaingformtreestep'
+import { Route as CampaingformsecondstepImport } from './routes/campaingformsecondstep'
 import { Route as AboutImport } from './routes/about'
 import { Route as CampaingCreateImport } from './routes/CampaingCreate'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
 
-const CampaingFormSecondStepRoute = CampaingFormSecondStepImport.update({
-  path: '/campaing-form-second-step',
+const CampaingformtreestepRoute = CampaingformtreestepImport.update({
+  path: '/campaingformtreestep',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const CampaingformsecondstepRoute = CampaingformsecondstepImport.update({
+  path: '/campaingformsecondstep',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -63,11 +69,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutImport
       parentRoute: typeof rootRoute
     }
-    '/campaing-form-second-step': {
-      id: '/campaing-form-second-step'
-      path: '/campaing-form-second-step'
-      fullPath: '/campaing-form-second-step'
-      preLoaderRoute: typeof CampaingFormSecondStepImport
+    '/campaingformsecondstep': {
+      id: '/campaingformsecondstep'
+      path: '/campaingformsecondstep'
+      fullPath: '/campaingformsecondstep'
+      preLoaderRoute: typeof CampaingformsecondstepImport
+      parentRoute: typeof rootRoute
+    }
+    '/campaingformtreestep': {
+      id: '/campaingformtreestep'
+      path: '/campaingformtreestep'
+      fullPath: '/campaingformtreestep'
+      preLoaderRoute: typeof CampaingformtreestepImport
       parentRoute: typeof rootRoute
     }
   }
@@ -79,7 +92,8 @@ export const routeTree = rootRoute.addChildren({
   IndexRoute,
   CampaingCreateRoute,
   AboutRoute,
-  CampaingFormSecondStepRoute,
+  CampaingformsecondstepRoute,
+  CampaingformtreestepRoute,
 })
 
 /* prettier-ignore-end */
@@ -93,7 +107,8 @@ export const routeTree = rootRoute.addChildren({
         "/",
         "/CampaingCreate",
         "/about",
-        "/campaing-form-second-step"
+        "/campaingformsecondstep",
+        "/campaingformtreestep"
       ]
     },
     "/": {
@@ -105,8 +120,11 @@ export const routeTree = rootRoute.addChildren({
     "/about": {
       "filePath": "about.tsx"
     },
-    "/campaing-form-second-step": {
-      "filePath": "campaing-form-second-step.tsx"
+    "/campaingformsecondstep": {
+      "filePath": "campaingformsecondstep.tsx"
+    },
+    "/campaingformtreestep": {
+      "filePath": "campaingformtreestep.tsx"
     }
   }
 }

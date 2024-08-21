@@ -7,17 +7,21 @@ export default function ReturnNext({
   circulo3,
   previous,
   next,
+  linkVai,
+  linkVem,
 }: {
   circulo1: boolean
   circulo2: boolean
   circulo3: boolean
   previous: string
   next: string
+  linkVai: string
+  linkVem: string
 }) {
   return (
     <div className=" flex flex-1 justify-between ">
       <div className="flex justify-center">
-        <Link to="/" className="[&.active]: flex justify-center">
+        <Link to={linkVem} className="[&.active]: flex justify-center">
           <button className="flex items-center text-[#475467] font-semibold gap-2">
             <ArrowLeft className="ml-2 font-semibold" />
             {previous}
@@ -43,7 +47,7 @@ export default function ReturnNext({
       </div>
 
       <div className="flex justify-center">
-        <Link to="/" className="[&.active]: flex justify-center">
+        <Link to={linkVai} className="[&.active]: flex justify-center">
           <button className="flex items-center text-[#475467] font-semibold gap-2">
             {next}
             <ArrowRight className="mr-2 font-semibold" />
