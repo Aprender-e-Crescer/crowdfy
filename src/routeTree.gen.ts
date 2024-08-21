@@ -11,11 +11,17 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as CampaingFormSecondStepImport } from './routes/campaing-form-second-step'
 import { Route as AboutImport } from './routes/about'
 import { Route as CampaingCreateImport } from './routes/CampaingCreate'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
+
+const CampaingFormSecondStepRoute = CampaingFormSecondStepImport.update({
+  path: '/campaing-form-second-step',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const AboutRoute = AboutImport.update({
   path: '/about',
@@ -57,6 +63,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutImport
       parentRoute: typeof rootRoute
     }
+    '/campaing-form-second-step': {
+      id: '/campaing-form-second-step'
+      path: '/campaing-form-second-step'
+      fullPath: '/campaing-form-second-step'
+      preLoaderRoute: typeof CampaingFormSecondStepImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -66,6 +79,7 @@ export const routeTree = rootRoute.addChildren({
   IndexRoute,
   CampaingCreateRoute,
   AboutRoute,
+  CampaingFormSecondStepRoute,
 })
 
 /* prettier-ignore-end */
@@ -78,7 +92,8 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/CampaingCreate",
-        "/about"
+        "/about",
+        "/campaing-form-second-step"
       ]
     },
     "/": {
@@ -89,6 +104,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/about": {
       "filePath": "about.tsx"
+    },
+    "/campaing-form-second-step": {
+      "filePath": "campaing-form-second-step.tsx"
     }
   }
 }

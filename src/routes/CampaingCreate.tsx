@@ -15,7 +15,7 @@ function CampaingCreate() {
   return (
     <>
       <div className="p-2">
-        <div>
+        <div className="md:flex gap-10">
           <Choose
             tittle="1. Choose your campaign style"
             subtittle="What its about your campaign?"
@@ -24,6 +24,7 @@ function CampaingCreate() {
             descrição1="Create a donation to receive funds"
             descrição2="Create a petition to crowd signatures"
           />
+
           <div className="p-2 flex gap-5 flex-col">
             <Card
               numerosBarra="4.533/9.000"
@@ -48,22 +49,24 @@ function CampaingCreate() {
           previous="Previous"
         />
       </div>
-      <Give
-        title="3. Give final details"
-        subtitle="What it's about your campaign?"
-        label1="Your campaign title"
-        label2="Create a deadline for your campaign"
-        label3="Goal"
-        placeholder1="Write here your beautiful title 🪴"
-        placeholder2="dd/mm/aaaa"
-        placeholder3="$10.000"
-      />
-      <Tell />
-      <Uploadimagens
-        tiposEnvio="SVG, PNG, JPG ou GIF (max. 1MB)"
-        descricao="ou solte sua foto aqui"
-        enviar="Clique para enviar"
-      />
+      {/* <div>
+        <Give
+          title="3. Give final details"
+          subtitle="What it's about your campaign?"
+          label1="Your campaign title"
+          label2="Create a deadline for your campaign"
+          label3="Goal"
+          placeholder1="Write here your beautiful title 🪴"
+          placeholder2="dd/mm/aaaa"
+          placeholder3="$10.000"
+        />
+        <Uploadimagens
+          tiposEnvio="SVG, PNG, JPG ou GIF (max. 1MB)"
+          descricao="ou solte sua foto aqui"
+          enviar="Clique para enviar"
+        />
+      </div>
+      <Tell /> */}
     </>
   )
 }
