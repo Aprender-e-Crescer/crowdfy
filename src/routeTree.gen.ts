@@ -79,6 +79,7 @@ export const routeTree = rootRoute.addChildren({
   IndexRoute,
   AboutRoute,
   ExploreRoute,
+  ProfileSettingsRoute,
 })
 
 /* prettier-ignore-end */
