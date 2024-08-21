@@ -1,15 +1,17 @@
+
+import { HeaderCard } from '@/components/headerCard'
 import { Map } from '@/components/map'
 import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/component/card'
 import { SectionHeader } from '@/components/component/Sectionheader'
 import { CardMapa } from '@/components/component/Cardmapa'
 import Footer from '@/components/ui/footer'
-
 export const Route = createFileRoute('/explore')({
   component: Explore,
 })
 
 function Explore() {
+  return <HeaderCard />
   return (
     <>
       <SectionHeader title="Favorites" /> {}
