@@ -12,19 +12,21 @@ export const Route = createFileRoute('/profile-settings')({
 function ProfileSettings() {
   return (
     <>
-      <div className="flex">
-        <Localization />
-        <Card
-          avatarName="Marcus Dutra"
-          avatarSrc={ImageAvatar}
-          cardDescription="Designer, Rio de Janeiro, Brasil"
-          cardTitle=""
-          donationValue="18.543 XP/20.000 XP"
-          imageSrc={ImageFundo}
-          progressValue={80}
-        />
+      <div className="flex flex-col mx-3 gap-y-4">
+        <div className="flex gap-x-5">
+          <Localization />
+          <Card
+            avatarName="Marcus Dutra"
+            avatarSrc={ImageAvatar}
+            cardDescription="Designer, Rio de Janeiro, Brasil"
+            cardTitle=""
+            donationValue="18.543 XP/20.000 XP"
+            imageSrc={ImageFundo}
+            progressValue={80}
+          />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }
