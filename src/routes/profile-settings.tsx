@@ -12,8 +12,27 @@ export const Route = createFileRoute('/profile-settings')({
 function ProfileSettings() {
   return (
     <>
-      <div className="flex flex-col mx-3 gap-y-4">
-        <div className="flex gap-x-5">
+      <div className=" md:hidden  flex flex-col mx-3 gap-y-4">
+        <div className="flex flex-col gap-x-5">
+          <Localization />
+
+          <div className="flex justify-center ">
+            <Card
+              avatarName="Marcus Dutra"
+              avatarSrc={ImageAvatar}
+              cardDescription="Designer, Rio de Janeiro, Brasil"
+              cardTitle=""
+              donationValue="18.543 XP/20.000 XP"
+              imageSrc={ImageFundo}
+              progressValue={80}
+            />
+          </div>
+        </div>
+        <Footer />
+      </div>
+
+      <div className=" hidden md:flex flex-col mx-3 gap-y-4">
+        <div className="flex  gap-x-5">
           <Localization />
           <Card
             avatarName="Marcus Dutra"
