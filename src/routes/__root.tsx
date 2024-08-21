@@ -1,4 +1,4 @@
-import Footer from '@/components/ui/footer'
+import Footer from '@/components/footer'
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 
