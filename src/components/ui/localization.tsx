@@ -24,7 +24,7 @@ export function Localization() {
             </div>
           </div>
 
-          <div className="flex justify-start py-2 grid grid-cols-2 gap-4 items-center">
+          <div className="justify-start py-2 grid grid-cols-2 gap-4 items-center">
             <div>
               <h1 className="text-[16px] text-[#344054] font-normal">
                 Localization
