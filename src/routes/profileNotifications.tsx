@@ -8,6 +8,7 @@ import {
   PaginationPrevious,
 } from '@/components/ui/pagination'
 
+
 import imagemFundo from '../assets/Image.png'
 import { BackgroundButton } from '@/components/backgroundButton'
 import Card from '@/components/card'
@@ -22,6 +23,8 @@ export let Route = createFileRoute(`/profileNotifications`)({
 
 function ProfileNotifications() {
   return (
+    <div className="flex justify-evenly w-full">
+      <Pagination className="flex justify-between w-full">
     <div className="flex flex-col ">
       <NotificationComponent
         nome="Matheus Rodrigues"
@@ -78,34 +81,6 @@ function ProfileNotifications() {
           numerosBarra="4.533/9.000"
         />
       </div>
-      {/* <Pagination>
-        <PaginationContent>
-          <PaginationItem>
-            <PaginationPrevious href="#" />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink className="py-0 pt-0" href="#">
-              1
-            </PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink className="py-0 pt-0" href="#" isActive>
-              2
-            </PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink className="py-0 pt-0" href="#">
-              3
-            </PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationEllipsis />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationNext href="#" />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination> */}
     </div>
   )
 }
