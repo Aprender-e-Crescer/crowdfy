@@ -22,14 +22,14 @@ export const Route = createFileRoute('/my-campaigns') ({
 })
 
 export function LiveCampaigns() {
-     const buttons = [
+     const buttonsSubHeader = [
         { title: 'Overview', variant:'ghost' as const, route: '', icon: <Eye />},
         { title: 'My Campaigns', variant:'green' as const, route: '', icon: <Rocket /> }
     ];
 
     return (   
     <> 
-    <SubHeader buttons={buttons}/>
+    <SubHeader buttons={buttonsSubHeader}/>
         
 <main className='m-28 w-fit'>
     <div className='lg:flex'>
