@@ -1,7 +1,7 @@
 import { Map } from '@/components/map'
 import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/component/card'
-import { SectionHeader } from '@/components/component/Sectionheader'
+import { SectionHeader } from '@/components/component/SectionHeader'
 
 export const Route = createFileRoute('/explore')({
   component: Explore,
