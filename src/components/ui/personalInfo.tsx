@@ -138,7 +138,7 @@ export default function PersonalInfo() {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div className="grid grid-cols-2 gap-2 items-center-start mt-2 text-sm">
+                  <div className="flex gap-2 items-center-start mt-2 text-sm">
                     <label className="inline-block">Type</label>
                     <RadioGroup defaultValue="male" className="flex space-x-4">
                       <div className="flex items-center">
