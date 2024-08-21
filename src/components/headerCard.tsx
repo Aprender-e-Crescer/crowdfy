@@ -6,6 +6,7 @@ import filter from "../assets/filter2.png";
 import list from "../assets/list.png";
 import markerPin from "../assets/marker-pin-02.png";
 
+
 export function HeaderCard() {
   return (
     <div className="p-4 col-auto ">
