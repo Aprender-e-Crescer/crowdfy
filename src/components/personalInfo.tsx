@@ -4,9 +4,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
-import { Input } from '@/components/ui/input'
+} from '@/components/select'
+import { RadioGroup, RadioGroupItem } from '@/components/radio-group'
+import { Input } from '@/components/input'
 import { Avatar, AvatarImage } from '@radix-ui/react-avatar'
 
 export default function PersonalInfo() {
