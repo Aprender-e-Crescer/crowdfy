@@ -31,20 +31,20 @@ export function LiveCampaigns() {
     <> 
     <SubHeader buttons={buttonsSubHeader}/>
         
-<main className='m-28 w-fit'>
+<main className='w-[610px] my-28 mx-20 sm:my-28 sm:mx-20 sm:justify-center  sm:w-full w-fit'>
     <div className='lg:flex'>
         <div className='sm:m-6'>
             <h1 className ="font-semibold pl-6 font-[inter] flex text-3xl" >Help me Fight Cancer</h1>
             <p className = "pb-4 mt-1 text-[#475467] font-normal text-xl">Your current sales summary and activity.</p>
-            <img className='pt-2 pb-2 max-h[876]' src={ImagemMaeEFilha} />
+            <img className='pt-2 pb-2 max-h[876px]' src={ImagemMaeEFilha} />
 
-            <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-3xl text-justify"> In 2022 my husband and I moved to Portugal to follow our simple life dream and build our home and 
+            <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-3xl  text-justify"> In 2022 my husband and I moved to Portugal to follow our simple life dream and build our home and 
             homestead after completing a 4 years renovation project which we sold at a profit to finance our dream.</p>
 
             <p className='sm:pl-6 pt-2 text-[#475467] text-3xl text-justify'> Building our own home after COVID certainly had its challenges which My husband and I overcame with
             a smile and a lot of creativity. Yet what we didn't know is that our biggest challenge was still to come.</p>
 
-            <p className='sm:pl-6 pt-2 text-[#475467] underline decoration-1 text-2xl mt-5 mb-5'>Read more.</p>
+            <p className='sm:pl-6 pt-2 text-[#475467] underline decoration-1 text-2xl my-5'>Read more.</p>
             <hr/>
         </div>
 
