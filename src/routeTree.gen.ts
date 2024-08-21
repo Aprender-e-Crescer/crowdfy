@@ -11,11 +11,17 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as ProfileSettingsImport } from './routes/profile-settings'
 import { Route as ExploreImport } from './routes/explore'
 import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
+
+const ProfileSettingsRoute = ProfileSettingsImport.update({
+  path: '/profile-settings',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const ExploreRoute = ExploreImport.update({
   path: '/explore',
@@ -57,6 +63,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExploreImport
       parentRoute: typeof rootRoute
     }
+    '/profile-settings': {
+      id: '/profile-settings'
+      path: '/profile-settings'
+      fullPath: '/profile-settings'
+      preLoaderRoute: typeof ProfileSettingsImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -66,6 +79,7 @@ export const routeTree = rootRoute.addChildren({
   IndexRoute,
   AboutRoute,
   ExploreRoute,
+  ProfileSettingsRoute,
 })
 
 /* prettier-ignore-end */
@@ -78,7 +92,8 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/about",
-        "/explore"
+        "/explore",
+        "/profile-settings"
       ]
     },
     "/": {
@@ -89,6 +104,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/explore": {
       "filePath": "explore.tsx"
+    },
+    "/profile-settings": {
+      "filePath": "profile-settings.tsx"
     }
   }
 }
