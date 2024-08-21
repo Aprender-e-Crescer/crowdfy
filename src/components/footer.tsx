@@ -4,6 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/accordion'
+
+import { Link } from '@tanstack/react-router'
 import { Badge } from './badge'
 
 import iconfooter from '@/assets/icon-footer.png'
@@ -15,46 +17,72 @@ export default function Footer() {
         <div className="flex justify-center gap-x-16 py-20 flex-1 px-8">
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className="text-lime-700 font-semibold">Home</h1>
-
-            <p className="text-slate-600">My favorites</p>
-            <p className="text-slate-600">Recents</p>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="text-slate-600">My favorites</p>
+            </Link>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="text-slate-600">Recents</p>
+            </Link>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className="font-semibold">Explore</h1>
-
-            <p className="text-slate-600">Lists</p>
-            <p className="flex text-slate-600">
-              Maps <Badge variant="success">New</Badge>
-            </p>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="text-slate-600">Lists</p>
+            </Link>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="flex text-slate-600">
+                Maps <Badge variant="success">New</Badge>
+              </p>
+            </Link>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className="font-semibold">Campaigns</h1>
 
             <p className="text-slate-600 ">Home</p>
-            <p className="flex text-slate-600">
-              Campaigns <Badge variant="success">12</Badge>
-            </p>
-            <p className="flex text-slate-600">
-              Donations <Badge variant="success">4</Badge>
-            </p>
-            <p className="text-slate-600">Analytics</p>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="flex text-slate-600">
+                Campaigns <Badge variant="success">12</Badge>
+              </p>
+            </Link>
+            <Link to="/" className="[&.active]:font-bold">
+              {' '}
+              <p className="flex text-slate-600">
+                Donations <Badge variant="success">4</Badge>
+              </p>
+            </Link>
+            <Link to="/" className="[&.active]:font-bold">
+              {' '}
+              <p className="text-slate-600">Analytics</p>
+            </Link>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className="font-semibold">Profile</h1>
-
-            <p className="text-slate-600">Settings</p>
-            <p className="flex text-slate-600">
-              Notifications <Badge variant="success">10</Badge>
-            </p>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="text-slate-600">Settings</p>
+            </Link>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="flex text-slate-600">
+                Notifications <Badge variant="success">10</Badge>
+              </p>
+            </Link>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className="font-semibold">Resources</h1>
-
-            <p className="text-slate-600">How to use crouwdfy</p>
-            <p className="text-slate-600">Docs</p>
-            <p className="text-slate-600">Legal Terms</p>
-            <p className="text-slate-600">Blog</p>
-            <p className="text-slate-600">Merch</p>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="text-slate-600">How to use crouwdfy</p>
+            </Link>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="text-slate-600">Docs</p>
+            </Link>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="text-slate-600">Legal Terms</p>
+            </Link>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="text-slate-600">Blog</p>
+            </Link>
+            <Link to="/" className="[&.active]:font-bold">
+              <p className="text-slate-600">Merch</p>
+            </Link>
           </div>
         </div>
         <hr />
@@ -78,10 +106,14 @@ export default function Footer() {
               Home
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              My favorites
+              <Link to="/" className="[&.active]:font-bold">
+                My favorites
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Recents
+              <Link to="/" className="[&.active]:font-bold">
+                Recents
+              </Link>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -89,10 +121,14 @@ export default function Footer() {
               Explore
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Lists
+              <Link to="/" className="[&.active]:font-bold">
+                Lists
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Maps <Badge variant="success">New</Badge>
+              <Link to="/" className="[&.active]:font-bold">
+                Maps <Badge variant="success">New</Badge>
+              </Link>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
@@ -100,16 +136,26 @@ export default function Footer() {
               Campaigns
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Home
+              <Link to="/" className="[&.active]:font-bold">
+                {' '}
+                Home
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Campaigns<Badge variant="success">12</Badge>
+              <Link to="/" className="[&.active]:font-bold">
+                {' '}
+                Campaigns<Badge variant="success">12</Badge>
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Donations<Badge variant="success">4</Badge>
+              <Link to="/" className="[&.active]:font-bold">
+                Donations<Badge variant="success">4</Badge>
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Analytics
+              <Link to="/" className="[&.active]:font-bold">
+                Analytics
+              </Link>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -117,10 +163,14 @@ export default function Footer() {
               Profile
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Settings
+              <Link to="/" className="[&.active]:font-bold">
+                Settings
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Notifications<Badge variant="success">10</Badge>
+              <Link to="/" className="[&.active]:font-bold">
+                Notifications<Badge variant="success">10</Badge>
+              </Link>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
@@ -128,19 +178,30 @@ export default function Footer() {
               Resources
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              How to use crouwdfy
+              <Link to="/" className="[&.active]:font-bold">
+                How to use crouwdfy
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Docs
+              <Link to="/" className="[&.active]:font-bold">
+                Docs
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Legal Terms
+              <Link to="/" className="[&.active]:font-bold">
+                Legal Terms
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Blog
+              <Link to="/" className="[&.active]:font-bold">
+                Blog
+              </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              Merch
+              <Link to="/" className="[&.active]:font-bold">
+                {' '}
+                Merch
+              </Link>
             </AccordionContent>
           </AccordionItem>
           <hr />
