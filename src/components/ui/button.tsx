@@ -9,16 +9,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "flex gap-2 px-16 py-8 items-center",
+        default: 'flex gap-2 px-16 py-8 items-center',
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 flex gap-2 px-16 py-8 items-center",
+          'bg-destructive text-destructive-foreground hover:bg-destructive/90 flex gap-2 px-16 py-8 items-center',
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground flex gap-2 px-16 py-8 items-center",
+          'border border-input bg-background hover:bg-accent hover:text-accent-foreground flex gap-2 px-16 py-8 items-center',
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground flex gap-2 px-16 py-8 items-center",
-        link: "text-primary underline-offset-4 hover:underline flex gap-2 px-16 py-8 items-center",
-        shadow: "rounded-[8px] border-4" // Utilizem border-NomeDaCor para definir cor da sombra
+          'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+        ghost:
+          'hover:bg-accent hover:text-accent-foreground flex gap-2 px-16 py-8 items-center',
+        link: 'text-primary underline-offset-4 hover:underline flex gap-2 px-16 py-8 items-center',
+        shadow: 'rounded-[8px] border-4', // Utilizem border-NomeDaCor para definir cor da sombra
       },
       size: {
         default: 'h-10 px-4 py-2',
