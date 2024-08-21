@@ -3,9 +3,9 @@ import Choose from '@/components/component/Choose'
 import ReturnNext from '@/components/component/ReturnNext'
 import Tell from '@/components/component/Tell'
 import Card from '@/components/card'
-
 import { createFileRoute } from '@tanstack/react-router'
 import { Uploadimagens } from '@/components/UploadImagens'
+import imagemFundo from '../assets/Image.png'
 
 export const Route = createFileRoute('/CampaingCreate')({
   component: CampaingCreate,
