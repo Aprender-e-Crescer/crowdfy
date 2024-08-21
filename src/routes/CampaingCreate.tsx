@@ -1,10 +1,11 @@
-import Give from '@/components/ui/give'
-import Choose from '@/components/ui/Choose'
-import ReturnNext from '@/components/ui/ReturnNext'
-import Tell from '@/components/ui/Tell'
+import Give from '@/components/component/give'
+import Choose from '@/components/component/Choose'
+import ReturnNext from '@/components/component/ReturnNext'
+import Tell from '@/components/component/Tell'
 import Card from '@/components/card'
+
 import { createFileRoute } from '@tanstack/react-router'
-import imagemFundo from '../assets/Image.png'
+import { Uploadimagens } from '@/components/UploadImagens'
 
 export const Route = createFileRoute('/CampaingCreate')({
   component: CampaingCreate,
@@ -58,6 +59,11 @@ function CampaingCreate() {
         placeholder3="$10.000"
       />
       <Tell />
+      <Uploadimagens
+        tiposEnvio="SVG, PNG, JPG ou GIF (max. 1MB)"
+        descricao="ou solte sua foto aqui"
+        enviar="Clique para enviar"
+      />
     </>
   )
 }
