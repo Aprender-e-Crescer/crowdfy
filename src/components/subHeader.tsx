@@ -3,11 +3,13 @@ import { InputSubHeader } from "./ui/input-sub-header"
 
 export function SubHeader({buttons} :
     {
-        title: string,
-        variant: string,
-        icon: JSX.Element,
-        className: string,
-        route: string,
+        buttons: {
+            title: string,
+            variant: string,
+            icon: JSX.Element,
+            className: string,
+            route: string,
+        }[]
     }
 ) {
     return (
