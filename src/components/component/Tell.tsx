@@ -1,10 +1,9 @@
 import { Bold, Italic, Link2, Logs, Menu } from 'lucide-react'
-import ReturnNext from './ReturnNext'
 
 export default function Tell() {
   return (
     <>
-      <div className="flex-col">
+      <div className=" md:flex flex-col justify-center items-center p-3">
         <div className="flex flex-col gap-4 w-96">
           <div className="flex flex-col gap-2">
             <h2 className="text-[#101828] font-semibold text-3xl ">
@@ -45,17 +44,7 @@ export default function Tell() {
             </div>
           </div>
         </div>
-        <div className="mr-3">
-          <ReturnNext
-            linkVem="/campaingformsecondstep"
-            linkVai="/campaingformsecondstep"
-            circulo1={true}
-            circulo2={true}
-            circulo3={true}
-            next="next"
-            previous="previous"
-          />
-        </div>
+      
       </div>
     </>
   )

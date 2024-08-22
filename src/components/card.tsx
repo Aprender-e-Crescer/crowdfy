@@ -25,7 +25,7 @@ export default function Card({
   return (
     <>
       <div className="flex sm:hidden  justify-center items-center max-w-full">
-        <div className="flex flex-col absolute  bg-white w-80 h-56 rounded-xl">
+        <div className="flex flex-col absolute  bg-white w-96 h-56 rounded-xl">
           <div className="flex">
             <img className="w-14 h-14 ml-4 mt-2" src={avatar} alt="" />
             <p className="flex items-center justify-center text-[#101828] font-bold">
@@ -35,16 +35,23 @@ export default function Card({
           <div className=" text-[10px] mr-4 ml-4 mt-1 text-[#475467]">
             {descrição}
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <img
               className="w-8 h-8 items-center justify-center ml-3 mt-"
               src={avatar2}
               alt=""
             />
             <p className="text-[#475467] text-[14px] ml-2">{nomeUser}</p>
-            <div className="flex ml-2 gap-1">
+            <div className="flex  gap-1">
               <img className="w-2 h-3 mt-1" src={icon} alt="" />
-              <p className="text-[#475467] text-[12px] ">{localização}</p>
+              <p className="text-[#475467] text-xs ">{localização}</p>
+              <Button
+                className="bg-lime-500 text-white"
+                size={'sm'}
+                variant={'shadow'}
+              >
+                Sign campaign
+              </Button>
             </div>
           </div>
           <div className="flex mt-3 ml-3 items-center">
