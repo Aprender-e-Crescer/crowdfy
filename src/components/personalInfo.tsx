@@ -11,9 +11,9 @@ import { Avatar, AvatarImage } from '@radix-ui/react-avatar'
 
 export default function PersonalInfo() {
   return (
-    <div className="md:flex ">
-      {/*pc*/}
-      <div className="hidden md:block">
+    <div>
+      {/* PC */}
+      <div className="hidden md:flex">
         <div className="">
           <form className="w-full">
             <div className="">
@@ -47,12 +47,12 @@ export default function PersonalInfo() {
               <div className="col-span-2">
                 <Input
                   id="tituloCampanha"
-                  placeholder="email@exemplo.com"
+                  placeholder="Título da Campanha"
                   className="mt-1"
                 />
               </div>
             </div>
-            <div className="flex gap-x-2 gap-y-0">
+            <div className="flex gap-x-2 w-full">
               <div>
                 <label className="flex text-sm font-medium text-[#1E293B]">
                   Sua Foto de Perfil
@@ -153,8 +153,8 @@ export default function PersonalInfo() {
         </div>
       </div>
 
-      {/*mobile*/}
-      <div className="md:hidden">
+      {/* Mobile */}
+      <div className="md:hidden flex flex-col">
         <div>
           <div className="font-semibold text-[#101828] text-3xl">
             <h1>Personal Info</h1>
@@ -166,7 +166,7 @@ export default function PersonalInfo() {
 
         <hr className="my-4 border-[#EAECF0]" />
 
-        <div className="">
+        <div>
           <form className="space-y-6">
             <div className="grid grid-cols-2 gap-4">
               <div>
@@ -206,7 +206,7 @@ export default function PersonalInfo() {
               </label>
               <Input
                 id="tituloCampanha"
-                placeholder="email@exemplo.com"
+                placeholder="Título da Campanha"
                 className="mt-1"
               />
             </div>
@@ -225,7 +225,7 @@ export default function PersonalInfo() {
               <div className="grid grid-cols-2 gap-2 items-center-start">
                 <label
                   htmlFor="person"
-                  className="text-sm-[#1E293B] font-normal"
+                  className="text-sm text-[#1E293B] font-normal"
                 >
                   Person
                 </label>
@@ -243,7 +243,7 @@ export default function PersonalInfo() {
               <div className="grid grid-cols-2 gap-2 items-center-start">
                 <label
                   htmlFor="skinTone"
-                  className="text-sm-[#1E293B] font-normal"
+                  className="text-sm text-[#1E293B] font-normal"
                 >
                   Skin Tone
                 </label>
@@ -263,7 +263,10 @@ export default function PersonalInfo() {
               </div>
 
               <div className="grid grid-cols-2 gap-2 items-center-start">
-                <label htmlFor="pose" className="text-sm-[#1E293B] font-normal">
+                <label
+                  htmlFor="pose"
+                  className="text-sm text-[#1E293B] font-normal"
+                >
                   Pose
                 </label>
                 <Select>
