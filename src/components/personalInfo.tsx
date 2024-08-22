@@ -14,9 +14,6 @@ export default function PersonalInfo() {
     <div className="sm:max-w-md md:max-w-lg lg:max-w-xl">
       {/*pc*/}
       <div className="hidden md:block">
-
-        <hr className="my-4 border-[#EAECF0]" />
-
         <div className="">
           <form className="space-y-6">
             <div className="">

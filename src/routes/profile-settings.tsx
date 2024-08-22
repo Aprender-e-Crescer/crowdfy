@@ -36,17 +36,26 @@ function ProfileSettings() {
         <Footer />
       </div>
 
-      <div className=" hidden md:flex flex-col mx-20 gap-y-4">
+      <div className=" hidden md:flex flex-col mx-32 gap-y-4">
         <div className="flex flex-col gap-y-5 gap-x-5 ">
           <div className="flex w-full justify-between items-center">
             <ProfileInfo />
-            <Button className="bg-lime-500 text-white" variant={'shadow'}>
+
+            <Button
+              className="bg-lime-500 text-white"
+              variant={'shadow'}
+              size={'lg'}
+            >
               Save Settings
             </Button>
           </div>
+          <hr className="my-4 border-[#EAECF0]" />
 
-          <div className="flex gap-x-10">
-            <PersonalInfo />
+          <div className="flex gap-x-24">
+            <div className="w-2/4">
+              <PersonalInfo />
+            </div>
+
             <Card
               avatarName="Marcus Dutra"
               avatarSrc={ImageAvatar}
@@ -58,7 +67,7 @@ function ProfileSettings() {
             />
           </div>
         </div>
-        <div className="flex ">
+        <div className="flex">
           <Localization />
         </div>
       </div>
