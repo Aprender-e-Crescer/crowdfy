@@ -4,7 +4,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/component/card'
 import { SectionHeader } from '@/components/component/Sectionheader'
 import { CardMapa } from '@/components/component/Cardmapa'
-import { HeaderCard } from '@/components/headerCard'
+import { HeaderCard } from '@/components/HeaderCard'
 import Footer from '@/components/ui/footer'
 export const Route = createFileRoute('/explore')({
   component: Explore,
@@ -12,10 +12,11 @@ export const Route = createFileRoute('/explore')({
 
 function Explore() {
   return (
-    <>
+    <> 
+    <div>
       <SectionHeader title="Favorites" /> {}
       
-      <div className='flex'>
+      <div className='flex flex-col'>
       <HeaderCard/>
         <Map />
         <Card 
@@ -31,7 +32,7 @@ function Explore() {
       
       <CardMapa/>
       <Footer />
-      
+      </div>
     </>
   )
 }
