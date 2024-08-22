@@ -11,17 +11,11 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as ProfileNotificationsImport } from './routes/profileNotifications'
 import { Route as ProfileSettingsImport } from './routes/profile-settings'
 import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
-
-const ProfileNotificationsRoute = ProfileNotificationsImport.update({
-  path: '/profileNotifications',
-  getParentRoute: () => rootRoute,
-} as any)
 
 const ProfileSettingsRoute = ProfileSettingsImport.update({
   path: '/profile-settings',
@@ -63,13 +57,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProfileSettingsImport
       parentRoute: typeof rootRoute
     }
-    '/profileNotifications': {
-      id: '/profileNotifications'
-      path: '/profileNotifications'
-      fullPath: '/profileNotifications'
-      preLoaderRoute: typeof ProfileNotificationsImport
-      parentRoute: typeof rootRoute
-    }
   }
 }
 
@@ -79,7 +66,6 @@ export const routeTree = rootRoute.addChildren({
   IndexRoute,
   AboutRoute,
   ProfileSettingsRoute,
-  ProfileNotificationsRoute,
 })
 
 /* prettier-ignore-end */
@@ -92,8 +78,7 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/about",
-        "/profile-settings",
-        "/profileNotifications"
+        "/profile-settings"
       ]
     },
     "/": {
@@ -104,9 +89,6 @@ export const routeTree = rootRoute.addChildren({
     },
     "/profile-settings": {
       "filePath": "profile-settings.tsx"
-    },
-    "/profileNotifications": {
-      "filePath": "profileNotifications.tsx"
     }
   }
 }
