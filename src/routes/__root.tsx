@@ -9,8 +9,10 @@ export const Route = createRootRoute({
     <>
 
 
-    <Outlet />
+    
      < Header />
+     
+     <Outlet />
      < TanStackRouterDevtools />
 
 
