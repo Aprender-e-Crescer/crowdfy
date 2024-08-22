@@ -33,8 +33,8 @@ function ProfileSettings() {
         <Footer />
       </div>
 
-      <div className=" hidden md:flex flex-col mx-3 gap-y-4 justify-center items-center">
-        <div className="flex gap-x-5 justify-center items-center">
+      <div className=" hidden md:flex flex-col mx-20 gap-y-4">
+        <div className="flex gap-x-5 ">
           <PersonalInfo />
           <Card
             avatarName="Marcus Dutra"
@@ -46,10 +46,9 @@ function ProfileSettings() {
             progressValue={80}
           />
         </div>
-        <div className="flex ml-10">
+        <div className="flex ">
           <Localization />
         </div>
-        <Footer />
       </div>
     </>
   )
