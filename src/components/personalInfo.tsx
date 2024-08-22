@@ -14,14 +14,6 @@ export default function PersonalInfo() {
     <div className="sm:max-w-md md:max-w-lg lg:max-w-xl">
       {/*pc*/}
       <div className="hidden md:block">
-        <div>
-          <div className="font-semibold text-[#101828] text-3xl">
-            <h1>Personal Info</h1>
-          </div>
-          <div className="text-base font-normal text-[#475467]">
-            <p>Update your personal info with your data preferences</p>
-          </div>
-        </div>
 
         <hr className="my-4 border-[#EAECF0]" />
 
