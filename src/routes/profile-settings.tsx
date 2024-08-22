@@ -38,7 +38,7 @@ function ProfileSettings() {
 
       <div className=" hidden md:flex flex-col mx-20 gap-y-4">
         <div className="flex flex-col gap-y-5 gap-x-5 ">
-          <div className="flex w-full justify-between">
+          <div className="flex w-full justify-between items-center">
             <ProfileInfo />
             <Button className="bg-lime-500 text-white" variant={'shadow'}>
               Save Settings
