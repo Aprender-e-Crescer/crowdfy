@@ -11,11 +11,11 @@ import { Avatar, AvatarImage } from '@radix-ui/react-avatar'
 
 export default function PersonalInfo() {
   return (
-    <div className="sm:max-w-md md:max-w-lg lg:max-w-xl">
+    <div className="md:flex ">
       {/*pc*/}
       <div className="hidden md:block">
         <div className="">
-          <form className="space-y-6">
+          <form className="w-full">
             <div className="">
               <div className="grid grid-cols-3 gap-2 items-center-start">
                 <label
@@ -75,17 +75,19 @@ export default function PersonalInfo() {
                     >
                       Person
                     </label>
-                    <Select>
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder="Select" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="matthew">Matthew</SelectItem>
-                        <SelectItem value="sarah">Sarah</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <div>
+                      <Select>
+                        <SelectTrigger className="w-full">
+                          <SelectValue placeholder="Select" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="matthew">Matthew</SelectItem>
+                          <SelectItem value="sarah">Sarah</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-2 items-center-start mt-2">
+                  <div className="grid grid-cols-2 gap-2 items-center-start mt-2 w-full">
                     <label
                       htmlFor="skinTone"
                       className="text-sm text-[#1E293B] font-normal"
