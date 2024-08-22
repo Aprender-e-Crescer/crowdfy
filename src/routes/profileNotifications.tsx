@@ -20,7 +20,7 @@ export let Route = createFileRoute(`/profileNotifications`)({
 
 function ProfileNotifications() {
   return (
-    <div className="flex flex-col justify-evenly w-full">
+    <div className="flex flex-col ml-3 mr-3">
       <div className="flex flex-col">
         <NotificationComponent
           nome="Matheus Rodrigues"

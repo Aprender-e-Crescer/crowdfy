@@ -7,8 +7,6 @@ import { Progress } from './ui/progress'
 import { Button } from './ui/button'
 
 export function Roadmap({
-  temImagemFundo,
-  outraImagemFundo,
   titulo,
   descrição,
   nomeUser,
@@ -20,8 +18,6 @@ export function Roadmap({
   nomeUser: string
   descrição: string
   titulo: string
-  temImagemFundo: boolean
-  outraImagemFundo: string
 }) {
   return (
     <>
@@ -111,7 +107,7 @@ export function Roadmap({
       <div className="mt-28">
         <div className="flex flex-col">
           <div className="flex flex-col gap-y-6">
-            <p className="title font-bold text-2xl ml-8 mr-8">Roadmap</p>
+            <p className="title font-bold text-2xl">Roadmap</p>
             <div className="flex gap-3">
               <NotificationComponent
                 nome="Matheus Rodrigues"

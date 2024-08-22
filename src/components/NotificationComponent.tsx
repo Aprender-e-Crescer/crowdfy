@@ -1,4 +1,3 @@
-import connector from '@/assets/connector.png'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import img from '@/assets/img.png'
 
@@ -14,7 +13,7 @@ export function NotificationComponent({
   text2: string
 }) {
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-6 ">
       <div className="flex flex-col justify-center">
         <div className="flex flex-col flex-1 gap-y-2">
           <Avatar className="flex justify-center items-center size-14">

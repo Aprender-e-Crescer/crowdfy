@@ -25,7 +25,7 @@ export default function Card({
   return (
     <>
       <div className="flex sm:hidden  justify-center items-center max-w-full">
-        <div className="flex flex-col absolute  bg-white w-80 h-56 rounded-xl">
+        <div className="flex flex-col absolute  bg-white w-72 h-56 rounded-xl">
           <div className="flex">
             <img className="w-14 h-14 ml-4 mt-2" src={avatar} alt="" />
             <p className="flex items-center justify-center text-[#101828] font-bold">
