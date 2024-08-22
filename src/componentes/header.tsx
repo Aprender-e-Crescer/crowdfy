@@ -2,6 +2,7 @@ import { useState } from "react";
 import logoImage from "@/img/logo.png";
 import settingsImage from "@/img/perfil.png";
 import iconButom from "@/img/iconButom.png";
+import { Link } from "@tanstack/react-router";
 
 function Header() {
   const [activeLink, setActiveLink] = useState("Campaigns");
@@ -25,9 +26,8 @@ function Header() {
 
   return (
     <header
-      className={`flex flex-wrap items-center justify-between ${
-        isTransparent ? "bg-transparent" : "bg-white"
-      } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
+      className={`flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
+        } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
     >
       {/* Logo */}
       <div className="flex items-center flex-grow-0">
@@ -53,13 +53,11 @@ function Header() {
         >
           Explore
         </a>
-        <a
-          href="#"
-          className={linkClasses("Campaigns")}
-          onClick={() => handleLinkClick("Campaigns")}
-        >
+
+
+        <Link to="/Campaigns" className={linkClasses("Campaigns")} onClick={() => handleLinkClick("Campaigns")}>
           Campaigns
-        </a>
+        </Link>
         <a
           href="#"
           className={linkClasses("Profile")}
