@@ -67,7 +67,7 @@ export default function PersonalInfo() {
                     />
                   </Avatar>
                 </div>
-                <div className="flex flex-1 flex-col">
+                <div className="flex flex-1 flex-col gap-2">
                   <div className="grid grid-cols-2 gap-2 items-center-start">
                     <label
                       htmlFor="person"
@@ -129,22 +129,27 @@ export default function PersonalInfo() {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div className="flex gap-2 items-center-start mt-2 text-sm">
+                  <div className="flex text-sm flex-1 justify-between">
                     <label className="inline-block">Type</label>
-                    <RadioGroup defaultValue="male" className="flex space-x-4">
-                      <div className="flex items-center">
-                        <RadioGroupItem value="male" id="male" />
-                        <label htmlFor="male" className="ml-2">
-                          Male
-                        </label>
-                      </div>
-                      <div className="flex items-center">
-                        <RadioGroupItem value="female" id="female" />
-                        <label htmlFor="female" className="ml-2">
-                          Female
-                        </label>
-                      </div>
-                    </RadioGroup>
+                    <div className="flex flex-1 max-w-[260px]">
+                      <RadioGroup
+                        defaultValue="male"
+                        className="flex space-x-4"
+                      >
+                        <div className="flex items-center">
+                          <RadioGroupItem value="male" id="male" />
+                          <label htmlFor="male" className="ml-2">
+                            Male
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <RadioGroupItem value="female" id="female" />
+                          <label htmlFor="female" className="ml-2">
+                            Female
+                          </label>
+                        </div>
+                      </RadioGroup>
+                    </div>
                   </div>
                 </div>
               </div>
