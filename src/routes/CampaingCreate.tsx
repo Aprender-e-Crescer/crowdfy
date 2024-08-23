@@ -12,7 +12,7 @@ function CampaingCreate() {
   return (
     <>
       <div className="p-2">
-        <div className="md:flex gap-10">
+        <div className="md:flex gap-10 justify-center ">
           <div>
             <Choose
               tittle="1. Choose your campaign style"
