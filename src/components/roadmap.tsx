@@ -22,7 +22,7 @@ export function Roadmap({
   return (
     <>
       <div>
-        <div className="flex sm:hidden justify-center items-center max-w-full">
+        <div className="flex sm:hidden justify-center items-center max-w-full mb-28 mt-32">
           <div className="flex flex-col absolute bg-white w-96 h-56 rounded-xl">
             <div className="flex">
               <img className="w-14 h-14 ml-4 mt-2" src={avatar} alt="Avatar" />
@@ -53,9 +53,9 @@ export function Roadmap({
           </div>
         </div>
 
-        <div className="hidden sm:flex max-w-80 sm:max-w-full">
+        <div className="hidden sm:flex sm:justify-start ">
           <div className="flex justify-center items-center">
-            <div className="flex flex-col absolute bg-white w-[658px] h-[323px] rounded-xl p-4">
+            <div className="flex flex-col bg-white w-[658px] h-[323px] rounded-xl p-4">
               <div className="flex gap-3 justify-center items-center">
                 <img
                   className="w-16 h-16 ml-4 mt-2"
@@ -104,7 +104,7 @@ export function Roadmap({
           </div>
         </div>
       </div>
-      <div className="mt-28">
+      <div>
         <div className="flex flex-col">
           <div className="flex flex-col gap-y-6">
             <p className="title font-bold text-2xl">Roadmap</p>

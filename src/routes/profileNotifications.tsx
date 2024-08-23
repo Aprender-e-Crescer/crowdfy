@@ -65,7 +65,7 @@ function ProfileNotifications() {
         <BackgroundButton preço="$53.88" />
       </div>
 
-      <div className="mt-36">
+      <div>
         <Roadmap
           titulo="Help us Teach English for Kids in China Countryside"
           descrição="I need about 9.000 signatures to deliver to my mayor in two weeks and get that grant! Check more about our project, and if you want to see how we are changing the lives of lovely children in China's countryside, just teaching them how they can use the internet."
