@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <header
-      className={`flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
+      className={` ml-20 mr-48 flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
         } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
     >
       {/* Logo */}
