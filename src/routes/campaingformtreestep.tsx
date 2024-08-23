@@ -13,7 +13,7 @@ function campaingformtreestep() {
   return (
     <>
       <div className="p-2">
-        <div className="md:flex gap-60">
+        <div className="md:flex  justify-center">
           <div>
             <Give
               title="3. Give final details"

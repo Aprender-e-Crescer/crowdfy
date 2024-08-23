@@ -3,7 +3,7 @@ import { Bold, Italic, Link2, Logs, Menu } from 'lucide-react'
 export default function Tell() {
   return (
     <>
-      <div className=" md:flex flex-col justify-center items-center p-3">
+      <div className="flex md:flex flex-col justify-center items-center p-3">
         <div className="flex flex-col gap-4 w-96">
           <div className="flex flex-col gap-2">
             <h2 className="text-[#101828] font-semibold text-3xl ">
@@ -44,7 +44,6 @@ export default function Tell() {
             </div>
           </div>
         </div>
-      
       </div>
     </>
   )

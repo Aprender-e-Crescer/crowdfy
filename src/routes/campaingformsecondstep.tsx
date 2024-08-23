@@ -12,7 +12,7 @@ function campaingformsecondstep() {
   return (
     <>
       <div className="p-2">
-        <div className="md:flex gap-60">
+        <div className="md:flex  justify-center">
           <div>
             <Tell />
           </div>
