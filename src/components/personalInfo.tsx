@@ -11,10 +11,10 @@ import { Avatar, AvatarImage } from '@radix-ui/react-avatar'
 
 export default function PersonalInfo() {
   return (
-    <div className="flex flex-1">
+    <div className="flex flex-1 max-w-[1030px]">
       {/* PC */}
-      <div className="hidden md:flex flex-1">
-        <div className="flex flex-1 max-w-[1030px]">
+      <div className="hidden md:flex flex-1 max-w-[1030px]">
+        <div className="flex flex-1 ">
           <form className="w-full flex flex-col gap-y-4 min-w-[600px]">
             <div className="">
               <div className="grid grid-cols-3 gap-2 items-center-start">

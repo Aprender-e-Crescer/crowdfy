@@ -15,7 +15,7 @@ function ProfileSettings() {
   return (
     <>
       {/*Mobile*/}
-      <div className="md:hidden flex flex-col mx-3 gap-y-4 justify-center items-">
+      <div className="md:hidden flex flex-col mx-3 gap-y-4 justify-center items-center">
         <div className="flex flex-col gap-y-5">
           <div className="flex flex-col justify-center items-center gap-y-8">
             <PersonalInfo />
@@ -59,7 +59,7 @@ function ProfileSettings() {
           </div>
           <hr className="my-4 border-[#EAECF0]" />
 
-          <div className="flex gap-8 flex-col lg:flex-row items-center">
+          <div className="flex gap-20 flex-col lg:flex-row justify-around items-center max-w-[1500px]">
             <PersonalInfo />
 
             <Card
@@ -73,7 +73,7 @@ function ProfileSettings() {
             />
           </div>
         </div>
-        <div className="flex">
+        <div className="mt-8">
           <Localization />
         </div>
       </div>
