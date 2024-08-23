@@ -14,7 +14,7 @@ export default function PersonalInfo() {
     <div className="flex flex-1">
       {/* PC */}
       <div className="hidden md:flex flex-1">
-        <div className="flex flex-1">
+        <div className="flex flex-1 max-w-[1030px]">
           <form className="w-full flex flex-col gap-y-4 min-w-[600px]">
             <div className="">
               <div className="grid grid-cols-3 gap-2 items-center-start">
