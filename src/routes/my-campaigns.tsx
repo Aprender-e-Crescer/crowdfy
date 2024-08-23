@@ -31,19 +31,19 @@ export function LiveCampaigns() {
     <> 
     <SubHeader buttons={buttonsSubHeader}/>
         
-<main className='w-[610px] my-28 mx-20 sm:my-28 sm:mx-20 sm:justify-center  sm:w-full w-fit'>
-    <div className='lg:flex'>
-        <div className='sm:m-6'>
-            <h1 className ="font-semibold pl-6 font-[inter] flex text-3xl" >Help me Fight Cancer</h1>
+ <main className='sm:justify-center  sm:w-full'>
+    <div className='lg:flex w-full'>
+        <div className='m-6'>
+            <h1 className ="font-semibold font-[inter] text-3xl" >Help me Fight Cancer</h1>
             <p className = "pb-4 mt-1 text-[#475467] font-normal text-xl">Your current sales summary and activity.</p>
-            <img className='pt-2 pb-2 max-h[876px]' src={ImagemMaeEFilha} />
+            <img className='py-2  max-h-[876px] ' src={ImagemMaeEFilha} />
 
             <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-3xl  text-justify"> In 2022 my husband and I moved to Portugal to follow our simple life dream and build our home and 
             homestead after completing a 4 years renovation project which we sold at a profit to finance our dream.</p>
 
             <p className='sm:pl-6 pt-2 text-[#475467] text-3xl text-justify'> Building our own home after COVID certainly had its challenges which My husband and I overcame with
             a smile and a lot of creativity. Yet what we didn't know is that our biggest challenge was still to come.</p>
-
+        
             <p className='sm:pl-6 pt-2 text-[#475467] underline decoration-1 text-2xl my-5'>Read more.</p>
             <hr/>
         </div>
@@ -56,10 +56,12 @@ export function LiveCampaigns() {
         </div>
 
 
-{/* RAUL inicio*/}
-<div>
+{/* RAUL inicio w-fit(main) */}
+<div className='flex flex-col items-center'>
 
-    <div className='font-[inter] mx-5 p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] w-96  sm:ml-16'>
+
+        {/*Card Donate */}
+    <div className='font-[inter] mx-5 p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] w-[496px]  sm:ml-16'>
         
             <h1 className='text-[#475467]  mt-1 mb-5 font-semibold text-xl'>🫰Funds donated to this campaign</h1>
             <p className='text-[#1E293B]   text-3xl'>$15.000 /<span className='font-bold'> $20.000</span></p>
@@ -74,14 +76,16 @@ export function LiveCampaigns() {
             </div>
 
             <div className='flex justify-between'>
-                <Button className='bg-[#D9F99D] text-[#1F2937] max-w-40 border-[#F7FEE7] font-medium' variant={'shadow'}><img src={share} className='mx-2' />Share Campaign </Button>
+                <Button className='bg-[#D9F99D] text-[#1F2937] w-full border-[#F7FEE7] font-medium' variant={'shadow'}><img src={share} className='mx-2' />Share Campaign </Button>
 
-                <Button className='border-[#E2E8F0] drop-shadow-sm text-[#1E293B] max-w-44 px-16 mx-2' variant={'outline'}><img src={Heart}/>Like</Button>
+                <Button className='border-[#E2E8F0] drop-shadow-sm text-[#1E293B] w-full  mx-2' variant={'outline'}><img src={Heart}/>Like</Button>
             </div>
     </div>
 
 
-    <div className='font-[inter] m-5  p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] sm:ml-16 items-center'>
+
+        {/*Segundon card */}
+    <div className='font-[inter] w-[496px] m-5  p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] sm:ml-16 items-center'>
         <h1 className='mt-1 mb-4  font-semibold text-xl text-[#475467]'>💪 Fund this campaign</h1>
     <div className='my-5'>
             <h1 itemID='Fund' className='text-[#0F172A] mb-1 text-sm ml-1 tracking-wide font-medium'>Funding</h1>
@@ -103,6 +107,10 @@ export function LiveCampaigns() {
         </div>
     </div>
     </div> 
+
+
+
+
     </div>
 </div>    
 
@@ -112,7 +120,7 @@ export function LiveCampaigns() {
 
 
 {/* ENZO */}
-        <div className='sm:ml-16'>
+        <div className='sm:ml-16  items-center flex-col'>
          <h1 className="font-semibold mb-5 mt-5">👥 Organizadora</h1>
             <UserProfile
                 title={'Sindy Rheaume'}

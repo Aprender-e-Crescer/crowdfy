@@ -26,7 +26,7 @@ export function InputSubHeader() {
       <Input
         type="search"
         placeholder="Search"
-        className="pl-8 rounded-md border border-neutral-300 bg-background shadow-sm focus:border-primary focus:ring-primary text-sm flex items-center w-80 mr-5"
+        className="pl-8 rounded-md border border-neutral-300 bg-background shadow-sm focus:border-primary focus:ring-primary text-sm flex items-center w-56 sm:w-80 mr-5"
       />
     </div>
   )
