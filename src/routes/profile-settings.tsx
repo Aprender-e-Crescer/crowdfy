@@ -59,7 +59,7 @@ function ProfileSettings() {
           </div>
           <hr className="my-4 border-[#EAECF0]" />
 
-          <div className="flex gap-20 flex-col lg:flex-row justify-around items-center max-w-[1500px]">
+          <div className="flex gap-20 flex-col xl:flex-row justify-around items-center max-w-[1500px]">
             <PersonalInfo />
 
             <Card
