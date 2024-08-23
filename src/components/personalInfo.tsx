@@ -58,7 +58,7 @@ export default function PersonalInfo() {
                   Sua Foto de Perfil
                 </label>
               </div>
-              <div className="flex items-start space-x-4 ml-24 flex-1">
+              <div className="flex items-start space-x-4 justify-end  flex-1">
                 <div>
                   <Avatar>
                     <AvatarImage
@@ -67,7 +67,7 @@ export default function PersonalInfo() {
                     />
                   </Avatar>
                 </div>
-                <div className="flex flex-1 flex-col gap-2">
+                <div className="flex flex-1 flex-col gap-2 max-w-[500px] justify-end">
                   <div className="grid grid-cols-2 gap-2 items-center-start">
                     <label
                       htmlFor="person"
@@ -131,7 +131,7 @@ export default function PersonalInfo() {
                   </div>
                   <div className="flex text-sm flex-1 justify-between">
                     <label className="inline-block">Type</label>
-                    <div className="flex flex-1 max-w-[260px]">
+                    <div className="flex justify-normal max-w-[240px]">
                       <RadioGroup
                         defaultValue="male"
                         className="flex space-x-4"

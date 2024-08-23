@@ -15,7 +15,7 @@ function ProfileSettings() {
   return (
     <>
       {/*Mobile*/}
-      <div className="md:hidden flex flex-col mx-3 gap-y-4 justify-center items-center">
+      <div className="md:hidden flex flex-col mx-3 gap-y-4 justify-center items-">
         <div className="flex flex-col gap-y-5">
           <div className="flex flex-col justify-center items-center gap-y-8">
             <PersonalInfo />
