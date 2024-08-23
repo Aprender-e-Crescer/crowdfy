@@ -11,11 +11,11 @@ import { Avatar, AvatarImage } from '@radix-ui/react-avatar'
 
 export default function PersonalInfo() {
   return (
-    <div>
+    <div className="flex flex-1">
       {/* PC */}
-      <div className="hidden md:flex">
-        <div className="">
-          <form className="w-full">
+      <div className="hidden md:flex flex-1">
+        <div className="flex flex-1">
+          <form className="w-full flex flex-col gap-y-4 min-w-[600px]">
             <div className="">
               <div className="grid grid-cols-3 gap-2 items-center-start">
                 <label
@@ -58,7 +58,7 @@ export default function PersonalInfo() {
                   Sua Foto de Perfil
                 </label>
               </div>
-              <div className="flex items-start space-x-4 ml-24 m-4">
+              <div className="flex items-start space-x-4 ml-24 flex-1">
                 <div>
                   <Avatar>
                     <AvatarImage
@@ -67,7 +67,7 @@ export default function PersonalInfo() {
                     />
                   </Avatar>
                 </div>
-                <div>
+                <div className="flex flex-1 flex-col">
                   <div className="grid grid-cols-2 gap-2 items-center-start">
                     <label
                       htmlFor="person"
@@ -154,7 +154,7 @@ export default function PersonalInfo() {
       </div>
 
       {/* Mobile */}
-      <div className="md:hidden flex flex-col">
+      <div className="md:hidden flex flex-col flex-1">
         <div>
           <div className="font-semibold text-[#101828] text-3xl">
             <h1>Personal Info</h1>

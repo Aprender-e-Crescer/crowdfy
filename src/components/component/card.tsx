@@ -23,7 +23,7 @@ export function Card({
   progressValue,
 }: CardProps) {
   return (
-    <div className="max-w-[396px] rounded-lg overflow-hidden shadow-lg font-plusjakartasans">
+    <div className="max-w-[396px] min-w-[260px] rounded-lg overflow-hidden shadow-lg font-plusjakartasans">
       <div className="relative">
         <img src={imageSrc} alt="Card Image" className="w-full h-auto" />
         <div className="absolute bottom-2 right-2 flex gap-2">

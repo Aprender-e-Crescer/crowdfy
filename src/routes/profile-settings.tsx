@@ -14,7 +14,7 @@ export const Route = createFileRoute('/profile-settings')({
 function ProfileSettings() {
   return (
     <>
-      <div className=" md:hidden flex flex-col mx-3 gap-y-4">
+      <div className="md:hidden flex flex-col mx-3 gap-y-4">
         <div className="flex flex-col gap-y-5">
           <div className="flex flex-col justify-center gap-y-8">
             <PersonalInfo />
@@ -56,10 +56,8 @@ function ProfileSettings() {
           </div>
           <hr className="my-4 border-[#EAECF0]" />
 
-          <div className="flex gap-x-24">
-            <div className="w-2/4">
-              <PersonalInfo />
-            </div>
+          <div className="flex gap-8 flex-col lg:flex-row items-center">
+            <PersonalInfo />
 
             <Card
               avatarName="Marcus Dutra"
