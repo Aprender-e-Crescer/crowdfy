@@ -1,34 +1,36 @@
-import { createFileRoute } from '@tanstack/react-router';
+import { createFileRoute } from "@tanstack/react-router";
 import TituloPage from "@/componentes/tituloPage";
 import CardOverview from "@/componentes/CardOverview";
 import ViewActivity from "@/componentes/ViewActivity";
-import Titulo from '@/componentes/Titulo';
-import CardsViews from '@/componentes/cardsViews';
+import Titulo from "@/componentes/Titulo";
+import CardsViews from "@/componentes/cardsViews";
 
-export const Route = createFileRoute('/Campaigns')({
+export const Route = createFileRoute("/Campaigns")({
   component: Campaigns,
 });
 
 function Campaigns() {
   return (
-    <div className="Campaigns ml-[16px] md:ml-[110px]">
-      <div className='mt-[24px] mb-[16px] md:mt-[48px] md:mb-[32px]'>
+    <div className="Campaigns px-4 sm:px-6 md:px-10 lg:px-16 ">
+      {/* Ajuste para centralizar o TituloPage e manter responsividade */}
+      <div className="mt-8 mb-4 sm:mt-8 sm:mb-6 mx-auto sm:max-w-[95%] md:max-w-[85%]">
         <TituloPage />
       </div>
-      <div className='flex flex-col md:flex-row'>
-        <div>
+      
+      {/* Ajustes no layout flex e overflow */}
+      <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center justify-center max-w-full m-auto">
+        {/* Primeira Coluna com os Cards */}
+        <div className="flex flex-col items-center w-full sm:w-auto">
           <CardOverview />
-          <div className='mt-6 md:mt-10'>
+          <div className="mt-4 sm:mt-6">
             <CardsViews />
           </div>
         </div>
 
-        <div className='flex flex-col md:ml-5 mt-6 md:mt-0'>
+        {/* Segunda Coluna com o Titulo e as Atividades */}
+        <div className="flex flex-col items-center sm:items-start sm:ml-4 mt-4 sm:mt-0 w-full sm:w-auto">
           <Titulo />
-          {/* Envolva as atividades em uma div com rolagem vertical em telas pequenas */}
-          <div className='flex flex-col gap-4 overflow-y-auto max-h-[400px] md:max-h-full'>
-            <ViewActivity />
-            <ViewActivity />
+          <div className="flex flex-col gap-4 overflow-y-auto max-h-[400px] sm:max-h-[500px] md:max-h-full w-full">
             <ViewActivity />
             <ViewActivity />
             <ViewActivity />
