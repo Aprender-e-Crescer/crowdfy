@@ -81,7 +81,7 @@ export function Card({
         <div className="p-4 pt-5">
           <div className="relative flex items-center mb-4">
             <div className="w-14 h-14 bg-lime-100 rounded-full flex items-center justify-center relative">
-              <div className="w-12 h-12 bg-lime-300 rounded-full flex items-center justify-center relative">
+              <div className="w-12 h-12 bg-lime-200 rounded-full flex items-center justify-center relative">
                 <img
                   src={avatarSrc}
                   alt="Avatar"
