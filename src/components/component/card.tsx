@@ -80,19 +80,22 @@ export function Card({
       {avatarAvengers && (
         <div className="p-4 pt-5">
           <div className="relative flex items-center mb-4">
-            <div className="w-12 h-12 bg-lime-300 rounded-full flex items-center justify-center relative ">
-              <img
-                src={avatarSrc}
-                alt="Avatar"
-                className="w-12 h-12 rounded-full"
-              />
-              <div
-                className="flex absolute justify-center items-center
+            <div className="w-14 h-14 bg-lime-100 rounded-full flex items-center justify-center relative">
+              <div className="w-12 h-12 bg-lime-300 rounded-full flex items-center justify-center relative">
+                <img
+                  src={avatarSrc}
+                  alt="Avatar"
+                  className="w-12 h-12 rounded-full"
+                />
+                <div
+                  className="flex absolute justify-center items-center
                bg-[#84CC16] rounded-full w-[16hpx] h-[16px] p-1 top-8 left-8"
-              >
-                <p className="text-white font-extrabold">8</p>
+                >
+                  <p className="text-white font-extrabold">8</p>
+                </div>
               </div>
             </div>
+
             <div className="flex flex-col">
               <p className="ml-3 font-bold text-2xl">{avatarName}</p>
               <p className="ml-3 text-base text-gray-600">
