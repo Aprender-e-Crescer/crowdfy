@@ -10,13 +10,11 @@ interface CardProps {
   cardTitle: string
   cardDescription: string
   donationValue: string
-  temProgressValue: boolean
   progressValue: number
-  temLevel: boolean
   level: string
-  temDonationValue: boolean
-  temExperience: boolean
   experience: string
+  avatarDefault: boolean
+  avatarAvengers: boolean
 }
 
 export function Card({
@@ -28,11 +26,9 @@ export function Card({
   donationValue,
   progressValue,
   level,
-  temProgressValue,
-  temLevel,
-  temDonationValue,
-  temExperience,
   experience,
+  avatarDefault,
+  avatarAvengers,
 }: CardProps) {
   return (
     <div className="max-w-[396px] min-w-[260px] rounded-lg overflow-hidden shadow-lg font-plusjakartasans">
@@ -47,48 +43,67 @@ export function Card({
           </div>
         </div>
       </div>
-      <div className="p-4 pt-5">
-        <div className="relative flex items-center mb-4">
-          <div className="w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center">
-            <img
-              src={avatarSrc}
-              alt="Avatar"
-              className="w-10 h-10 rounded-full"
-            />
+      {avatarDefault && (
+        <div className="p-4 pt-5">
+          <div className="relative flex items-center mb-4">
+            <div className="w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center">
+              <img
+                src={avatarSrc}
+                alt="Avatar"
+                className="w-10 h-10 rounded-full"
+              />
+            </div>
+            <p className="ml-3 text-base font-medium text-[#475467]">
+              {avatarName}
+            </p>
           </div>
-          <p className="ml-3 text-base font-medium text-[#475467]">
-            {avatarName}
-          </p>
-        </div>
-        <h3 className="text-2xl font-semibold font-inter mb-4">{cardTitle}</h3>
-        <p className="text-[#475467] mb-4">{cardDescription}</p>
-        <Progress value={progressValue} className="mb-4" />
-        <div className="mt-2 flex items-center justify-between">
-          {temDonationValue && (
+          <h3 className="text-2xl font-semibold font-inter mb-4">
+            {cardTitle}
+          </h3>
+          <p className="text-[#475467] mb-4">{cardDescription}</p>
+          <Progress value={progressValue} className="mb-4" />
+          <div className="mt-2 flex items-center justify-between">
             <div className="flex items-center">
               <FiGift className="text-black text-lg" />
               <p className="ml-2 text-base font-medium leading-none">
                 €{donationValue}
               </p>
             </div>
-          )}
-          {temProgressValue && (
             <p className="text-base font-medium leading-none">
               {progressValue}%
             </p>
-          )}
-          {temExperience && (
+          </div>
+        </div>
+      )}
+      {avatarAvengers && (
+        <div className="p-4 pt-5">
+          <div className="relative flex items-center mb-4">
+            <div className="w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center">
+              <img
+                src={avatarSrc}
+                alt="Avatar"
+                className="w-10 h-10 rounded-full"
+              />
+            </div>
+            <p className="ml-3 text-base font-medium text-[#475467]">
+              {avatarName}
+            </p>
+          </div>
+          <h3 className="text-2xl font-semibold font-inter mb-4">
+            {cardTitle}
+          </h3>
+          <p className="text-[#475467] mb-4">{cardDescription}</p>
+          <Progress value={progressValue} className="mb-4" />
+          <div className="mt-2 flex items-center justify-between">
             <div className="flex items-center">
               <p className="ml-2 text-base text-[#475467] leading-none">
                 {experience}
               </p>
             </div>
-          )}
-          {temLevel && (
             <p className="text-base text-[#475467]  leading-none">{level}</p>
-          )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   )
 }
