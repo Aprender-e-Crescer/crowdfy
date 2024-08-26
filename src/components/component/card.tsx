@@ -15,6 +15,7 @@ interface CardProps {
   experience: string
   avatarDefault: boolean
   avatarAvengers: boolean
+  avatarDescription: string
 }
 
 export function Card({
@@ -29,6 +30,7 @@ export function Card({
   experience,
   avatarDefault,
   avatarAvengers,
+  avatarDescription,
 }: CardProps) {
   return (
     <div className="max-w-[396px] min-w-[260px] rounded-lg overflow-hidden shadow-lg font-plusjakartasans">
@@ -78,16 +80,25 @@ export function Card({
       {avatarAvengers && (
         <div className="p-4 pt-5">
           <div className="relative flex items-center mb-4">
-            <div className="w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center">
+            <div className="w-12 h-12 bg-lime-300 rounded-full flex items-center justify-center relative ">
               <img
                 src={avatarSrc}
                 alt="Avatar"
-                className="w-10 h-10 rounded-full"
+                className="w-12 h-12 rounded-full"
               />
+              <div
+                className="flex absolute justify-center items-center
+               bg-[#84CC16] rounded-full w-[16hpx] h-[16px] p-1 top-8 left-8"
+              >
+                <p className="text-white font-extrabold">8</p>
+              </div>
             </div>
-            <p className="ml-3 text-base font-medium text-[#475467]">
-              {avatarName}
-            </p>
+            <div className="flex flex-col">
+              <p className="ml-3 font-bold text-2xl">{avatarName}</p>
+              <p className="ml-3 text-base text-gray-600">
+                {avatarDescription}
+              </p>
+            </div>
           </div>
           <h3 className="text-2xl font-semibold font-inter mb-4">
             {cardTitle}
@@ -96,11 +107,11 @@ export function Card({
           <Progress value={progressValue} className="mb-4" />
           <div className="mt-2 flex items-center justify-between">
             <div className="flex items-center">
-              <p className="ml-2 text-base text-[#475467] leading-none">
+              <p className="ml-2 text-base text-gray-600 leading-none">
                 {experience}
               </p>
             </div>
-            <p className="text-base text-[#475467]  leading-none">{level}</p>
+            <p className="text-base text-gray-600 leading-none">{level}</p>
           </div>
         </div>
       )}

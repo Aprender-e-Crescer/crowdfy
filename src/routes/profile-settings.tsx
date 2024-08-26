@@ -25,15 +25,16 @@ function ProfileSettings() {
         <Card
           avatarName="Marcus Dutra"
           avatarSrc={ImageAvatar}
-          cardDescription="Designer, Rio de Janeiro, Brasil"
+          cardDescription=""
           cardTitle=""
           donationValue="18.543 XP/20.000 XP"
           imageSrc={ImageFundo}
           progressValue={80}
           avatarAvengers={true}
           avatarDefault={false}
+          avatarDescription="Designer, Rio de Janeiro, Brasil"
           level="level 8"
-          experience="XP 2000"
+          experience="18.543 XP/20.000 XP"
         />
         <div className="flex justify-center gap-10 mb-5">
           <Button
@@ -65,19 +66,19 @@ function ProfileSettings() {
 
           <div className="flex gap-20 flex-col xl:flex-row justify-around items-center max-w-[1500px]">
             <PersonalInfo />
-
             <Card
               avatarName="Marcus Dutra"
               avatarSrc={ImageAvatar}
-              cardDescription="Designer, Rio de Janeiro, Brasil"
+              cardDescription=""
               cardTitle=""
               donationValue="18.543 XP/20.000 XP"
               imageSrc={ImageFundo}
               progressValue={80}
               avatarAvengers={true}
               avatarDefault={false}
+              avatarDescription="Designer, Rio de Janeiro, Brasil"
               level="level 8"
-              experience="XP 2000"
+              experience="18.543 XP/20.000 XP"
             />
           </div>
         </div>
