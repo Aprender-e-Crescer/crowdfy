@@ -29,7 +29,13 @@ function ProfileSettings() {
           cardTitle=""
           donationValue="18.543 XP/20.000 XP"
           imageSrc={ImageFundo}
+          temProgressValue={false}
           progressValue={80}
+          temLevel={true}
+          level="level 8"
+          temDonationValue={false}
+          temExperience={true}
+          experience="XP 2000"
         />
         <div className="flex justify-center gap-10 mb-5">
           <Button
@@ -69,7 +75,13 @@ function ProfileSettings() {
               cardTitle=""
               donationValue="18.543 XP/20.000 XP"
               imageSrc={ImageFundo}
+              temProgressValue={false}
               progressValue={80}
+              temLevel={true}
+              level="level 8"
+              temDonationValue={false}
+              temExperience={true}
+              experience="XP 2000"
             />
           </div>
         </div>

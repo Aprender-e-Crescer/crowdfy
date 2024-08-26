@@ -10,7 +10,13 @@ interface CardProps {
   cardTitle: string
   cardDescription: string
   donationValue: string
+  temProgressValue: boolean
   progressValue: number
+  temLevel: boolean
+  level: string
+  temDonationValue: boolean
+  temExperience: boolean
+  experience: string
 }
 
 export function Card({
@@ -21,6 +27,12 @@ export function Card({
   cardDescription,
   donationValue,
   progressValue,
+  level,
+  temProgressValue,
+  temLevel,
+  temDonationValue,
+  temExperience,
+  experience,
 }: CardProps) {
   return (
     <div className="max-w-[396px] min-w-[260px] rounded-lg overflow-hidden shadow-lg font-plusjakartasans">
@@ -52,13 +64,29 @@ export function Card({
         <p className="text-[#475467] mb-4">{cardDescription}</p>
         <Progress value={progressValue} className="mb-4" />
         <div className="mt-2 flex items-center justify-between">
-          <div className="flex items-center">
-            <FiGift className="text-black text-lg" />
-            <p className="ml-2 text-base font-medium leading-none">
-              €{donationValue}
+          {temDonationValue && (
+            <div className="flex items-center">
+              <FiGift className="text-black text-lg" />
+              <p className="ml-2 text-base font-medium leading-none">
+                €{donationValue}
+              </p>
+            </div>
+          )}
+          {temProgressValue && (
+            <p className="text-base font-medium leading-none">
+              {progressValue}%
             </p>
-          </div>
-          <p className="text-base font-medium leading-none">{progressValue}%</p>
+          )}
+          {temExperience && (
+            <div className="flex items-center">
+              <p className="ml-2 text-base text-[#475467] leading-none">
+                {experience}
+              </p>
+            </div>
+          )}
+          {temLevel && (
+            <p className="text-base text-[#475467]  leading-none">{level}</p>
+          )}
         </div>
       </div>
     </div>
