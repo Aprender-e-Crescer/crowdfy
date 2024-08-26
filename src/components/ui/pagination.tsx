@@ -1,5 +1,6 @@
 import * as React from "react"
-import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react"
+import { ChevronRight, MoreHorizontal } from "lucide-react"
+import { FaArrowLeft } from "react-icons/fa6";
 import { Link } from '@tanstack/react-router'
 import { cn } from "@/lib/utils"
 import { ButtonProps, buttonVariants } from "@/components/ui/button"
@@ -65,7 +66,7 @@ const PaginationPrevious = (
   ...props
 }: React.ComponentProps<typeof PaginationLink>) => (
   <Link
-    to="/explore"
+    to="/expxlore"
     className={cn("text-start rounded-lg overflow-hidden font-sans", className)}
     aria-label="Go to next page"
   >
@@ -74,8 +75,8 @@ const PaginationPrevious = (
       className={cn("gap-1 pr-2.5", className)}
       {...props}
     >
+      <FaArrowLeft className="h-4 w-4" />
       <span>Previous</span>
-      <ChevronRight className="h-4 w-4" />
     </PaginationLink>
   </Link>
 )

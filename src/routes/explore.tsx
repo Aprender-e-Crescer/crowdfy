@@ -117,7 +117,7 @@ function Explore() {
     <>
       <div>
         <HeaderCard />
-        <div className=" gap-5 mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+        <div className=" gap-5 sm:mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {cardsData.map((card, index) => (
             <Card
               key={index}
