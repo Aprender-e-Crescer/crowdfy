@@ -27,7 +27,7 @@ function ProfileSettings() {
           avatarSrc={ImageAvatar}
           cardDescription=""
           cardTitle=""
-          donationValue="18.543 XP/20.000 XP"
+          donationValue=""
           imageSrc={ImageFundo}
           progressValue={80}
           avatarAvengers={true}
