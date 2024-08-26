@@ -36,7 +36,12 @@ export function Localization() {
                   <SelectValue placeholder="Rio de Janeiro, Brasil" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="matthew">Dois Vizinhos, Brasil</SelectItem>
+                  <SelectItem value="doisvizinhos">
+                    Dois Vizinhos, Brasil
+                  </SelectItem>
+                  <SelectItem value="riodejaneiro">
+                    Rio de Janeiro, Brasil
+                  </SelectItem>
                 </SelectContent>
               </Select>
             </div>
