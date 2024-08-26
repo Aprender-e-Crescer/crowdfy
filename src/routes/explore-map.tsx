@@ -22,7 +22,8 @@ const cardData = [
     description:
       'In 2022 my husband and I moved to Portugal to follow our simple life dream and build our',
     location: 'São Paulo, Brasil',
-    amount: '€3,182.49',
+    amount: '€3,182.49 ',
+    moeda: 'euros',
     progress: 45,
     donationText: 'Donations',
   },
@@ -33,9 +34,10 @@ const cardData = [
     description:
       'I tend not to speak too much about this work, perhaps it is to be experienced and not to be explained.',
     location: 'São Paulo, Brasil',
-    amount: '4.141',
+    amount: '4.141 ',
+    moeda: ' signs',
     progress: 45,
-    donationText: 'Donations',
+    donationText: 'Petition',
   },
   {
     id: 3,
@@ -45,8 +47,9 @@ const cardData = [
       'I tend not to speak too much about this work, perhaps it is to be experienced and not to be explained.',
     location: 'São Paulo, Brasil',
     amount: '4.141',
+    moeda: ' signs',
     progress: 45,
-    donationText: 'Donations',
+    donationText: 'Petition',
   },
 ]
 

@@ -28,7 +28,7 @@ function Explore() {
       cardTitle: 'Educación en Academia de...',
       cardDescription:
         'Hola, mi nombre es Bernal Torres y la educación de mi sobrino Christian Tomas es mi principal preocupación.',
-      donationValue: '4,177.20',
+      donationValue: '4,177.20 ',
       progressValue: 50,
     },
     {
@@ -131,6 +131,9 @@ function Explore() {
             />
           ))}
         </div>
+      </div>
+      <div>
+        
       </div>
       <div className="mt-5">
         <Footer />

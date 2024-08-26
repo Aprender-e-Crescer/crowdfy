@@ -1,6 +1,7 @@
 import { Card } from '@/components/ui/card'
 import { MapPin } from 'lucide-react'
 import { Progress } from '@/components/ui/progress'
+import { FaRegHeart } from 'react-icons/fa'
 
 interface CardData {
   id: number
@@ -9,6 +10,7 @@ interface CardData {
   description: string
   location: string
   amount: string
+  moeda: string
   progress: number
   donationText: string
 }
@@ -33,12 +35,19 @@ export function CardMapa({ cardData }: CardMapaProps) {
                 className="w-full h-at sm:w-1/3 lg:w-1/4 rounded-lg object-cover"
               />
               <div className="flex-1 flex flex-col gap-1">
-                <div className="text-xs sm:text-sm text-green-500">
-                  {card.donationText}
+                <div className='flex justify-between'>
+                  <div>
+                    <div className="text-xs sm:text-sm text-green-500">
+                      {card.donationText}
+                    </div>
+                    <h3 className="text-base sm:text-md md:text-lg font-bold text-[#1f2937]">
+                      {card.name}
+                    </h3>
+                  </div>
+                  <div className="flex items-center justify-center bg-gray-100 rounded-lg w-10 h-10 text-xs border border-[#E2E8F0]">
+                    <FaRegHeart className="text-black text-xs" />
+                  </div>
                 </div>
-                <h3 className="text-base sm:text-md md:text-lg font-bold text-[#1f2937]">
-                  {card.name}
-                </h3>
                 <p className="text-xs sm:text-sm md:text-base text-[#6b7280]">
                   {card.description}
                 </p>
@@ -47,9 +56,14 @@ export function CardMapa({ cardData }: CardMapaProps) {
                     <MapPin className="w-4 h-4" />
                     <span className="text-xs sm:text-sm">{card.location}</span>
                   </div>
-                  <span className="text-base sm:text-lg md:text-xl font-bold text-[#1f2937]">
-                    {card.amount}
-                  </span>
+                  <div className="flex items-center gap-1">
+                    <span className="text-base sm:text-lg md:text-xl font-semibold text-[#1f2937]">
+                      {card.amount}
+                    </span>
+                    <span className="text-base sm:text-lg md:text-xl text-[#475467]">
+                      {card.moeda}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
