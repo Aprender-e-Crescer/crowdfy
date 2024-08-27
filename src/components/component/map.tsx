@@ -20,4 +20,6 @@ export function Map() {
       </Marker>
     </MapContainer>
   )
+
+
 }
