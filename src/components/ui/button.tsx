@@ -18,7 +18,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground flex gap-2 px-16 py-8 items-center",
         link: "text-primary underline-offset-4 hover:underline flex gap-2 px-16 py-8 items-center",
-        shadow: "rounded-[8px] border-4" // Utilizem border-NomeDaCor para definir cor da sombra
+        shadow: "rounded-[8px] border-4",
+        green: "bg-lime-200 hover:bg-lime-300"
       },
       size: {
         default: "h-10 px-4 py-2",
