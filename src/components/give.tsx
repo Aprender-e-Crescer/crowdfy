@@ -1,4 +1,4 @@
-import { Uploadimagens } from '../UploadImagens'
+import { Uploadimagens } from '../components/UploadImagens'
 
 export default function Give({
   title,

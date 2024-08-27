@@ -1,5 +1,5 @@
-import Choose from '@/components/component/Choose'
-import ReturnNext from '@/components/component/ReturnNext'
+import Choose from '@/components/Choose'
+import ReturnNext from '@/components/ReturnNext'
 import Card from '@/components/card'
 import { createFileRoute } from '@tanstack/react-router'
 import imagemFundo from '../assets/Image.png'
