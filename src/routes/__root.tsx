@@ -15,6 +15,7 @@ export const Route = createRootRoute({
         </Link>
         <Link to="/CampaingCreate" className="[&.active]:font-bold">
           Campaign Create
+        </Link>
         <Link to="/profileNotifications" className="[&.active]:font-bold">
           profileNotifications
         </Link>

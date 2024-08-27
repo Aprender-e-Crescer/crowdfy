@@ -3,7 +3,6 @@ import avatar2 from '../assets/Avatar2.png'
 import icon from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
 import { Progress } from '../components/progress'
-import { Progress } from './ui/progress'
 import { Button } from './ui/button'
 
 export default function Card({
