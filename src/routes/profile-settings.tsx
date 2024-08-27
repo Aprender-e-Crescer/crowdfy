@@ -1,4 +1,3 @@
-import { Card } from '@/components/component/card'
 import { Localization } from '@/components/localization'
 import { createFileRoute } from '@tanstack/react-router'
 import ImageAvatar from '@/assets/imagemavatar.png'
@@ -6,6 +5,7 @@ import ImageFundo from '@/assets/Image overlay.png'
 import PersonalInfo from '@/components/personalInfo'
 import ProfileInfo from '@/components/profileInfo'
 import { Button } from '@/components/button'
+import { CardAvengers } from '@/components/cardAvengers'
 
 export const Route = createFileRoute('/profile-settings')({
   component: ProfileSettings,
@@ -22,20 +22,18 @@ function ProfileSettings() {
             <Localization />
           </div>
         </div>
-        <Card
+        <CardAvengers
           avatarName="Marcus Dutra"
           avatarSrc={ImageAvatar}
           cardDescription=""
           cardTitle=""
-          donationValue=""
-          imageSrc={ImageFundo}
           progressValue={90}
-          avatarAvengers={true}
-          avatarDefault={false}
-          avatarDescription="Designer, Rio de Janeiro, Brasil"
           level="level 8"
           experience="18.543 XP/20.000 XP"
+          avatarDescription="Designer, Rio de Janeiro, Brasil"
+          imageSrc={ImageFundo}
         />
+
         <div className="flex justify-center gap-10 mb-5">
           <Button
             className="bg-lime-500 text-white"
@@ -65,16 +63,13 @@ function ProfileSettings() {
 
           <div className="flex gap-20 flex-col xl:flex-row justify-around items-center max-w-[1500px]">
             <PersonalInfo />
-            <Card
+            <CardAvengers
               avatarName="Marcus Dutra"
               avatarSrc={ImageAvatar}
               cardDescription=""
               cardTitle=""
-              donationValue="18.543 XP/20.000 XP"
               imageSrc={ImageFundo}
               progressValue={90}
-              avatarAvengers={true}
-              avatarDefault={false}
               avatarDescription="Designer, Rio de Janeiro, Brasil"
               level="level 8"
               experience="18.543 XP/20.000 XP"
