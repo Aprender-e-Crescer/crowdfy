@@ -28,6 +28,7 @@ export default function Give({
             <div className="text-xl font-normal text-[#475467]">
               <h2>{subtitle}</h2>
             </div>
+
             <div className="mt-6">
               <label
                 htmlFor="campaign-title"
@@ -38,11 +39,12 @@ export default function Give({
               <input
                 type="text"
                 id="campaign-title"
-                className="flex flex-col font-light border border-gray-300 rounded-sm w-full h-10 placeholder-gray-400 placeholder:text-lg text-xl "
+                className="flex flex-col font-light border border-gray-300 rounded-sm w-full h-10 placeholder-gray-400 placeholder:text-lg text-xl"
                 placeholder={placeholder1}
                 required
               />
             </div>
+
             <div className="">
               <label
                 htmlFor="campaign-date"
@@ -58,6 +60,7 @@ export default function Give({
                 required
               />
             </div>
+
             <div className="">
               <label
                 htmlFor="campaign-goal"
@@ -74,13 +77,12 @@ export default function Give({
               />
             </div>
           </div>
-          <>
-            <Uploadimagens
-              descricao="ou solte sua foto aqui"
-              enviar="Clique para enviar"
-              tiposEnvio="SVG, PNG, JPG ou GIF (max. 1MB)"
-            />
-          </>
+
+          <Uploadimagens
+            descricao="ou solte sua foto aqui"
+            enviar="Clique para enviar"
+            tiposEnvio="SVG, PNG, JPG ou GIF (max. 1MB)"
+          />
         </div>
       </div>
 
@@ -91,6 +93,7 @@ export default function Give({
             <div className="text-xl font-normal text-[#475467]">
               <h2>{subtitle}</h2>
             </div>
+
             <div className="mt-6">
               <label
                 htmlFor="campaign-title"
@@ -101,11 +104,12 @@ export default function Give({
               <input
                 type="text"
                 id="campaign-title"
-                className="flex flex-col font-light border border-gray-300 rounded-sm w-full h-10 placeholder-gray-400 placeholder:text-lg text-xl "
+                className="flex flex-col font-light border border-gray-300 rounded-sm w-full h-10 placeholder-gray-400 placeholder:text-lg text-xl"
                 placeholder={placeholder1}
                 required
               />
             </div>
+
             <div className="">
               <label
                 htmlFor="campaign-date"
@@ -121,6 +125,7 @@ export default function Give({
                 required
               />
             </div>
+
             <div className="">
               <label
                 htmlFor="campaign-goal"
@@ -137,13 +142,12 @@ export default function Give({
               />
             </div>
           </div>
-          <div>
-            <Uploadimagens
-              descricao="ou solte sua foto aqui"
-              enviar="Clique para enviar"
-              tiposEnvio="SVG, PNG, JPG ou GIF (max. 1MB)"
-            />
-          </div>
+
+          <Uploadimagens
+            descricao="ou solte sua foto aqui"
+            enviar="Clique para enviar"
+            tiposEnvio="SVG, PNG, JPG ou GIF (max. 1MB)"
+          />
         </div>
       </div>
     </>

@@ -15,7 +15,7 @@ export default function ReturnNext({
   next: string
 }) {
   return (
-    <div className=" flex flex-1 justify-between ">
+    <div className="flex flex-1 justify-between">
       <div className="flex justify-center">
         <Link
           to="/campaingformtreestep"
@@ -27,17 +27,20 @@ export default function ReturnNext({
           </button>
         </Link>
       </div>
+
       <div className="flex justify-around bg-slate-50 rounded-full items-center h-10 w-20">
         <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
           {circulo1 && (
             <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
           )}
         </div>
+
         <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
           {circulo2 && (
             <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
           )}
         </div>
+
         <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
           {circulo3 && (
             <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>

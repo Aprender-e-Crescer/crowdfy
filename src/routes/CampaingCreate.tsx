@@ -48,24 +48,6 @@ function CampaingCreate() {
           previous="Previous"
         />
       </div>
-      {/* <div>
-        <Give
-          title="3. Give final details"
-          subtitle="What it's about your campaign?"
-          label1="Your campaign title"
-          label2="Create a deadline for your campaign"
-          label3="Goal"
-          placeholder1="Write here your beautiful title 🪴"
-          placeholder2="dd/mm/aaaa"
-          placeholder3="$10.000"
-        />
-        <Uploadimagens
-          tiposEnvio="SVG, PNG, JPG ou GIF (max. 1MB)"
-          descricao="ou solte sua foto aqui"
-          enviar="Clique para enviar"
-        />
-      </div>
-      <Tell /> */}
     </>
   )
 }
