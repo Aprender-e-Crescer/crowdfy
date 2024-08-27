@@ -5,6 +5,7 @@ import iconButom from "@/assets/iconButom.png";
 import { Link } from "@tanstack/react-router";
 
 
+
 function Header() {
   const [activeLink, setActiveLink] = useState("Campaigns");
   const [isTransparent, setIsTransparent] = useState(false);
@@ -55,14 +56,14 @@ function Header() {
           Explore
         </Link>
         <Link
-          to=""
+          to="/Campaigns"
           className={linkClasses("Campaigns")}
           onClick={() => handleLinkClick("Campaigns")}
         >
           Campaigns
         </Link>
         <Link
-          to="/Campaigns"
+          to=""
           className={linkClasses("Profile")}
           onClick={() => handleLinkClick("Profile")}
         >
