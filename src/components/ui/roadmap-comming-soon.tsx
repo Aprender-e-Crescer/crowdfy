@@ -5,6 +5,10 @@
 */
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
+import imageAvatar1 from "@/assets/images-roadmap/primeiraimagemavatar.png"
+import imageAvatar2 from "@/assets/images-roadmap/segundaimagemavatar.png"
+import imageAvatar3 from "@/assets/images-roadmap/terceiraimagemavatar.png"
+import { Loader2 } from "lucide-react"
 
 export function Roadmap() {
   return (
@@ -14,8 +18,8 @@ export function Roadmap() {
       </h1>
       <div className="space-y-6 relative before:absolute before:inset-y-0 before:left-[20px] before:w-px before:bg-muted">
         <div className="flex items-start space-x-4">
-          <Avatar>
-            <AvatarImage src="" alt="User Avatar" />
+          <Avatar className="bg-[#A3E635]">
+            <AvatarImage src={imageAvatar1} alt="User Avatar" />
             <AvatarFallback className="bg-[#A3E635]"></AvatarFallback>
           </Avatar>
           <div>
@@ -34,7 +38,7 @@ export function Roadmap() {
         </div>
         <div className="flex items-start space-x-4">
           <Avatar>
-            <AvatarImage src="/placeholder-user.jpg" alt="User Avatar" />
+            <AvatarImage src={imageAvatar2} alt="User Avatar" />
             <AvatarFallback className="bg-[#94A3B8]">add</AvatarFallback>
           </Avatar>
           <div>
@@ -45,14 +49,15 @@ export function Roadmap() {
             <p className="text-sm text-[#475467]">
               Raise together <span className="font-bold text-[#475569]">$1000</span> to pay for our (2 persons) flights to 1st weeks
             </p>
-            <Button variant="default" className="mt-2 bg-[#7B7B7B]">
-              Fund campaign
+           <Button variant={'outline'} className="bg-[#7B7B7B] text-white">
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            Fund compaign
             </Button>
           </div>
         </div>
         <div className="flex items-start space-x-4">
           <Avatar>
-            <AvatarImage src="/placeholder-user.jpg" alt="User Avatar" />
+            <AvatarImage src={imageAvatar3} alt="User Avatar" />
             <AvatarFallback className="bg-[#94A3B8]">add</AvatarFallback>
           </Avatar>
           <div>
@@ -71,7 +76,7 @@ export function Roadmap() {
             </Avatar>
             <Avatar>
             <AvatarImage src="/placeholder-user.jpg" alt="User Avatar" />
-              <AvatarFallback className="bg- bg-[#4B9F38] text-white">2</AvatarFallback>
+              <AvatarFallback className="bg- bg-[#4B9F38] text-white ">2</AvatarFallback>
             </Avatar>
             <Avatar>
             <AvatarImage src="/placeholder-user.jpg" alt="User Avatar" />

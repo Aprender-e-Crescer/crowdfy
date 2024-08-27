@@ -16,6 +16,7 @@ import { Route as MyCampaignsImport } from './routes/my-campaigns'
 import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
 
+// Create/Update Routes
 
 const ProfileNotificationsRoute = ProfileNotificationsImport.update({
   path: '/profileNotifications',
@@ -37,6 +38,7 @@ const IndexRoute = IndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
+// Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
@@ -78,7 +80,6 @@ export const routeTree = rootRoute.addChildren({
   AboutRoute,
   MyCampaignsRoute,
   ProfileNotificationsRoute,
-
 })
 
 /* prettier-ignore-end */
@@ -91,7 +92,6 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/about",
-        "/my-campaigns"
         "/my-campaigns",
         "/profileNotifications"
       ]
@@ -104,7 +104,6 @@ export const routeTree = rootRoute.addChildren({
     },
     "/my-campaigns": {
       "filePath": "my-campaigns.tsx"
-
     },
     "/profileNotifications": {
       "filePath": "profileNotifications.tsx"
