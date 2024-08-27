@@ -2,7 +2,7 @@ import React from "react";
 
 interface CardProps {
   Titulo: JSX.Element;
-  Nome: string;
+  NomeCard: string;
   NumeroId: string;
   Imagem: string;
   CorFundo: string;
@@ -10,7 +10,7 @@ interface CardProps {
   ValorCard: string;
 }
 
-const Card: React.FC<CardProps> = ({ Titulo, Nome, NumeroId, Imagem, CorFundo, CorTexto, ValorCard }) => {
+const Card: React.FC<CardProps> = ({ Titulo, NomeCard, NumeroId, Imagem, CorFundo, CorTexto, ValorCard }) => {
   return (
     <div className="flex flex-col items-start">
       <div
@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({ Titulo, Nome, NumeroId, Imagem, CorFundo, C
             {Titulo}
           </h1>
           <p className="font-semibold text-xs md:text-[10.8px] text-gray-10 mt-4 md:mt-16">
-            {Nome}
+            {NomeCard}
           </p>
           <p className="font-bold text-sm md:text-[14.4px]">
             {NumeroId}

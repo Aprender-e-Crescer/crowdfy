@@ -1,10 +1,10 @@
 import React from 'react';
-import Cristal from "@/assets/image.png"; 
+import Cristal from "@/assets/image.png";
 
 const ViewActivity: React.FC = () => {
     return (
-        <div className="flex justify-center p-4">
-            <div className="w-full max-w-[340px] sm:max-w-[480px] md:max-w-[600px] h-auto p-3 bg-white rounded-lg font-sans flex flex-col sm:flex-row">
+        <div className="flex justify-center p-4 w-full">
+            <div className="w-full max-w-full h-auto p-3 bg-white rounded-lg font-sans flex flex-col sm:flex-row">
                 <div className="flex flex-col items-center gap-3 sm:items-start sm:gap-5 sm:mr-4 mb-3 sm:mb-0">
                     <img
                         src="https://assets.vogue.com/photos/65fdd4c0da96444591b39091/4:3/pass/undefined"
@@ -24,7 +24,7 @@ const ViewActivity: React.FC = () => {
                         <h4 className="text-xs sm:text-sm text-gray-500">Funded</h4>
                         <h5 className="text-xs sm:text-sm text-[#65a30d] ml-2 truncate">Help my Friends wit...</h5>
                     </div>
-                    
+
                     <div className="flex items-center gap-4 mt-3">
                         <div className="relative flex items-center justify-center">
                             <div className="absolute w-7 h-7 sm:w-9 sm:h-9 bg-[#F7FEE7] rounded-full"></div>
