@@ -3,6 +3,7 @@ import avatar2 from '../assets/Avatar2.png'
 import icon from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
 import { Progress } from '../components/progress'
+import { Progress } from './ui/progress'
 import { Button } from './ui/button'
 
 export default function Card({
@@ -87,8 +88,8 @@ export default function Card({
               />
               <p className="text-[#475467] text-base ml-2">{nomeUser}</p>
               <div className="flex ml-2 gap-1 items-center justify-center">
-                <div className="flex">
-                  <div className="flex items-center justify-center gap-2 ml-7 ">
+                <div className="flex gap-32">
+                  <div className="flex items-center justify-center gap-2">
                     <img className="w-5 h-5 mt-1 ml-5" src={icon} alt="" />
                     <p className="text-[#475467] text-base ">{localização}</p>
                   </div>

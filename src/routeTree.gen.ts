@@ -13,12 +13,12 @@
 import { Route as rootRoute } from './routes/__root'
 import { Route as CampaingformtreestepImport } from './routes/campaingformtreestep'
 import { Route as CampaingformsecondstepImport } from './routes/campaingformsecondstep'
+import { Route as ProfileNotificationsImport } from './routes/profileNotifications'
 import { Route as AboutImport } from './routes/about'
 import { Route as CampaingCreateImport } from './routes/CampaingCreate'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
-
 const CampaingformtreestepRoute = CampaingformtreestepImport.update({
   path: '/campaingformtreestep',
   getParentRoute: () => rootRoute,
@@ -26,6 +26,8 @@ const CampaingformtreestepRoute = CampaingformtreestepImport.update({
 
 const CampaingformsecondstepRoute = CampaingformsecondstepImport.update({
   path: '/campaingformsecondstep',
+const ProfileNotificationsRoute = ProfileNotificationsImport.update({
+  path: '/profileNotifications',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -81,6 +83,12 @@ declare module '@tanstack/react-router' {
       path: '/campaingformtreestep'
       fullPath: '/campaingformtreestep'
       preLoaderRoute: typeof CampaingformtreestepImport
+    }
+    '/profileNotifications': {
+      id: '/profileNotifications'
+      path: '/profileNotifications'
+      fullPath: '/profileNotifications'
+      preLoaderRoute: typeof ProfileNotificationsImport
       parentRoute: typeof rootRoute
     }
   }
@@ -94,6 +102,8 @@ export const routeTree = rootRoute.addChildren({
   AboutRoute,
   CampaingformsecondstepRoute,
   CampaingformtreestepRoute,
+  AboutRoute,
+  ProfileNotificationsRoute,
 })
 
 /* prettier-ignore-end */
@@ -109,6 +119,8 @@ export const routeTree = rootRoute.addChildren({
         "/about",
         "/campaingformsecondstep",
         "/campaingformtreestep"
+        "/about",
+        "/profileNotifications"
       ]
     },
     "/": {
@@ -125,6 +137,8 @@ export const routeTree = rootRoute.addChildren({
     },
     "/campaingformtreestep": {
       "filePath": "campaingformtreestep.tsx"
+    "/profileNotifications": {
+      "filePath": "profileNotifications.tsx"
     }
   }
 }
