@@ -4,7 +4,7 @@ import ImageAvatar from '@/assets/imagemavatar.png'
 import ImageFundo from '@/assets/Image overlay.png'
 import PersonalInfo from '@/components/personalInfo'
 import ProfileInfo from '@/components/profileInfo'
-import { Button } from '@/components/button'
+import { Button } from '@/components/ui/button'
 import { CardAvengers } from '@/components/cardAvengers'
 
 export const Route = createFileRoute('/profile-settings')({
