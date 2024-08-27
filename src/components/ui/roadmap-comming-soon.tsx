@@ -20,7 +20,7 @@ export function Roadmap() {
         <div className="flex items-start space-x-4">
           <Avatar className="bg-[#A3E635]">
             <AvatarImage src={imageAvatar1} alt="User Avatar" />
-            <AvatarFallback className="bg-[#A3E635]"></AvatarFallback>
+            <AvatarFallback ></AvatarFallback>
           </Avatar>
           <div>
             <div className="flex items-center space-x-2">
@@ -37,9 +37,9 @@ export function Roadmap() {
           </div>
         </div>
         <div className="flex items-start space-x-4">
-          <Avatar>
+          <Avatar className="bg-[#94A3B8]">
             <AvatarImage src={imageAvatar2} alt="User Avatar" />
-            <AvatarFallback className="bg-[#94A3B8]">add</AvatarFallback>
+            <AvatarFallback >add</AvatarFallback>
           </Avatar>
           <div>
             <div className="flex items-center space-x-2">
@@ -56,9 +56,9 @@ export function Roadmap() {
           </div>
         </div>
         <div className="flex items-start space-x-4">
-          <Avatar>
+          <Avatar className="bg-[#94A3B8]">
             <AvatarImage src={imageAvatar3} alt="User Avatar" />
-            <AvatarFallback className="bg-[#94A3B8]">add</AvatarFallback>
+            <AvatarFallback >add</AvatarFallback>
           </Avatar>
           <div>
             <div className="flex items-center space-x-2">
