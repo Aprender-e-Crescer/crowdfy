@@ -71,8 +71,8 @@ export function LiveCampaigns() {
               <UserProfile
                 title={"Sindy Rheaume"}
                 img={FemalePerfil}
-                text1="Bragança"
-                text2="Organizadora"
+                valorDonate="Bragança"
+                horarioDonate="Organizadora"
               />
 
               <Button className="mb-4" variant={"outline"}>
@@ -91,8 +91,8 @@ export function LiveCampaigns() {
               <UserProfile
                 title={`Sindy Rheaume`}
                 img={FemalePerfil}
-                text1="$150"
-                text2="10 horas"
+                valorDonate="$150"
+                horarioDonate="10 horas"
               />
 
               <p className="mb-4 font-medium italic">
@@ -102,8 +102,8 @@ export function LiveCampaigns() {
               <UserProfile
                 title={`Michael O'Keff`}
                 img={FemalePerfil}
-                text1="$150"
-                text2="10 horas"
+                valorDonate="$150"
+                horarioDonate="10 horas"
               />
 
               <p className="mb-4 font-medium italic">Keep strong both 🫡</p>
@@ -111,8 +111,8 @@ export function LiveCampaigns() {
               <UserProfile
                 title={`Michael Millward`}
                 img={FemalePerfil}
-                text1="$150"
-                text2="10 Horas"
+                valorDonate="$150"
+                horarioDonate="10 Horas"
               />
 
               <Button className="mb-4" variant={"outline"}>
@@ -168,32 +168,32 @@ export function LiveCampaigns() {
                   <UserProfile
                     title="Marilyn Aminoff"
                     img={MarilyUser}
-                    text1="$39.03"
-                    text2="8 horas"
+                    valorDonate="$39.03"
+                    horarioDonate="8 horas"
                   />
                   <UserProfile
                     title="Cheyenne Dokidis"
                     img={CheyennePerfil}
-                    text1="$50.00"
-                    text2="7 horas"
+                    valorDonate="$50.00"
+                    horarioDonate="7 horas"
                   />
                   <UserProfile
                     title="Miracle Franci"
                     img={FranciPerfil}
-                    text1="$51.04"
-                    text2="5 horas"
+                    valorDonate="$51.04"
+                    horarioDonate="5 horas"
                   />
                   <UserProfile
                     title="Adison Franci"
                     img={AdilsonFranciPerfil}
-                    text1="$57.25"
-                    text2="4 horas"
+                    valorDonate="$57.25"
+                    horarioDonate="4 horas"
                   />
                   <UserProfile
                     title="Jocelyn Rhiel Madsen"
                     img={JocelynPerfil}
-                    text1="$84.60"
-                    text2="10 horas"
+                    valorDonate="$84.60"
+                    horarioDonate="10 horas"
                   />
                 </div>
 
