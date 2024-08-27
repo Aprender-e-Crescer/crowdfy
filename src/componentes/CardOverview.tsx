@@ -1,6 +1,6 @@
 import Card from '@/componentes/cardMyMyCampaigns'
-import { Button } from "@/components/ui/button"
-import { Progress } from "@/components/ui/progress"
+import { Button } from "@/componentes/ui/button"
+import { Progress } from "@/componentes/ui/progress"
 import { PiTimer } from "react-icons/pi";
 import { LuCheckCheck } from "react-icons/lu";
 

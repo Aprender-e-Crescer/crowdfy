@@ -4,6 +4,7 @@ import settingsImage from "@/img/perfil.png";
 import iconButom from "@/img/iconButom.png";
 import { Link } from "@tanstack/react-router";
 
+
 function Header() {
   const [activeLink, setActiveLink] = useState("Campaigns");
   const [isTransparent, setIsTransparent] = useState(false);
@@ -26,7 +27,7 @@ function Header() {
 
   return (
     <header
-      className={` ml-20 mr-48 flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
+      className={`ml-20 mr-48 flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
         } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
     >
       {/* Logo */}
@@ -39,32 +40,34 @@ function Header() {
 
       {/* Links de navegação (escondidos em telas pequenas) */}
       <nav className="hidden md:flex ml-8 space-x-8 flex-grow">
-        <a
-          href="#"
+        <Link
+          to=""
           className={linkClasses("Home")}
           onClick={() => handleLinkClick("Home")}
         >
           Home
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to=""
           className={linkClasses("Explore")}
           onClick={() => handleLinkClick("Explore")}
         >
           Explore
-        </a>
-
-
-        <Link to="/Campaigns" className={linkClasses("Campaigns")} onClick={() => handleLinkClick("Campaigns")}>
+        </Link>
+        <Link
+          to=""
+          className={linkClasses("Campaigns")}
+          onClick={() => handleLinkClick("Campaigns")}
+        >
           Campaigns
         </Link>
-        <a
-          href="#"
+        <Link
+          to="/Campaigns"
           className={linkClasses("Profile")}
           onClick={() => handleLinkClick("Profile")}
         >
           Profile
-        </a>
+        </Link>
       </nav>
 
       {/* Menu Hamburguer Responsivo */}
@@ -132,34 +135,34 @@ function Header() {
           {/* Dropdown Menu (exibido quando o botão é clicado) */}
           {isMenuOpen && (
             <div className="absolute top-14 left-0 w-full bg-white shadow-lg z-50">
-              <a
-                href="#"
+              <Link
+                to=""
                 className={`block px-4 py-2 ${linkClasses("Home")}`}
                 onClick={() => handleLinkClick("Home")}
               >
                 Home
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to=""
                 className={`block px-4 py-2 ${linkClasses("Explore")}`}
                 onClick={() => handleLinkClick("Explore")}
               >
                 Explore
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/Campaigns"
                 className={`block px-4 py-2 ${linkClasses("Campaigns")}`}
                 onClick={() => handleLinkClick("Campaigns")}
               >
                 Campaigns
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to=""
                 className={`block px-4 py-2 ${linkClasses("Profile")}`}
                 onClick={() => handleLinkClick("Profile")}
               >
                 Profile
-              </a>
+              </Link>
             </div>
           )}
         </div>
