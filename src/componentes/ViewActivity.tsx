@@ -1,5 +1,5 @@
 import React from 'react';
-import Cristal from "@/assets/image.png"; 
+import Cristal from "@/assets/image.png";
 
 const ViewActivity: React.FC = () => {
     return (
@@ -24,7 +24,7 @@ const ViewActivity: React.FC = () => {
                         <h4 className="text-xs sm:text-sm text-gray-500">Funded</h4>
                         <h5 className="text-xs sm:text-sm text-[#65a30d] ml-2 truncate">Help my Friends wit...</h5>
                     </div>
-                    
+
                     <div className="flex items-center gap-4 mt-3">
                         <div className="relative flex items-center justify-center">
                             <div className="absolute w-7 h-7 sm:w-9 sm:h-9 bg-[#F7FEE7] rounded-full"></div>
