@@ -1,14 +1,11 @@
 import simbolo from '@/assets/CloudArrowUp.png'
 
-export function Uploadimagens({
-  enviar,
-  descricao,
-  tiposEnvio,
-}: {
+interface Props {
   enviar: string
   descricao: string
   tiposEnvio: string
-}) {
+}
+export function Uploadimagens({ enviar, descricao, tiposEnvio }: Props) {
   return (
     <div className="flex flex-col justify-center items-center border rounded-2xl p-5">
       <div className="bg-[#EDEDED] border-4 rounded-full border-[#F6F6F6] p-1 flex justify-center items-center ">

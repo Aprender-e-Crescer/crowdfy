@@ -1,5 +1,12 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
+interface Props {
+  circulo1: boolean
+  circulo2: boolean
+  circulo3: boolean
+  previous: string
+  next: string
+}
 
 export default function ReturnNext({
   circulo1,
@@ -7,13 +14,7 @@ export default function ReturnNext({
   circulo3,
   previous,
   next,
-}: {
-  circulo1: boolean
-  circulo2: boolean
-  circulo3: boolean
-  previous: string
-  next: string
-}) {
+}: Props) {
   return (
     <div className="flex flex-1 justify-between">
       <div className="flex justify-center">

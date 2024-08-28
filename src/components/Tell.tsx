@@ -28,7 +28,7 @@ export default function Tell() {
           <div className="flex flex-col gap-4">
             <p className="text-[#344054] font-medium text-lg">Story</p>
             <div className="flex flex-col gap-0">
-              <div className="flex text-[#BABABA] gap-2">
+              <div className="flex text-[#BABABA] gap-2 mb-2">
                 <Bold className="w-5 h-5" />
                 <Italic className="w-5 h-5" />
                 <Link2 className="w-5 h-5" />

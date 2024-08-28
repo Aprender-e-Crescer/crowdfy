@@ -1,10 +1,19 @@
 import avatar from '../assets/Avatar.png'
 import avatar2 from '../assets/Avatar2.png'
-import icon from '../assets/Icon.png'
+import iconLocalização from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
 import { Progress } from '../components/progress'
 import { Button } from './ui/button'
 
+interface Props {
+  numerosBarra: string
+  localização: string
+  nomeUser: string
+  descrição: string
+  titulo: string
+  temImagemFundo: boolean
+  outraImagemFundo: string
+}
 export default function Card({
   temImagemFundo,
   outraImagemFundo,
@@ -13,18 +22,10 @@ export default function Card({
   nomeUser,
   localização,
   numerosBarra,
-}: {
-  numerosBarra: string
-  localização: string
-  nomeUser: string
-  descrição: string
-  titulo: string
-  temImagemFundo: boolean
-  outraImagemFundo: string
-}) {
+}: Props) {
   return (
     <>
-      <div className="flex sm:hidden  justify-center items-center w-full min-w-[650px]">
+      <div className="flex sm:hidden justify-center items-center w-full min-w-[650px]">
         <div className="flex flex-col absolute  bg-white w-[600px] h-72 rounded-xl p-3">
           <div className="flex gap-3">
             <img className="w-16 h-16 ml-4 mt-2" src={avatar} alt="" />
@@ -42,8 +43,8 @@ export default function Card({
               alt=""
             />
             <p className="text-[#475467] text-base ml-2">{nomeUser}</p>
-            <div className="flex  gap-1 ml-10 items-center ">
-              <img className="w-5 h-5 mt-1" src={icon} alt="" />
+            <div className="flex  gap-1 ml-10 items-center">
+              <img className="w-5 h-5 mt-1" src={iconLocalização} />
               <p className="text-[#475467] text-base ">{localização}</p>
               <Button
                 className="bg-lime-500 text-white items-center ml-12"
@@ -55,14 +56,14 @@ export default function Card({
             </div>
           </div>
           <div className="flex mt-3 ml-3 items-center">
-            <img className="w-60 h-9" src={iconAvatar} alt="" />
+            <img className="w-60 h-9" src={iconAvatar} />
             <Progress className="bg-blue-800 w-44 h-3 ml-4" value={50} />
             <p className="mr-3 ml-3 font-bold text-xl">{numerosBarra}</p>
           </div>
         </div>
         {temImagemFundo && (
           <div>
-            <img className="rounded-md" src={outraImagemFundo} alt="" />
+            <img className="rounded-md" src={outraImagemFundo} />
           </div>
         )}
       </div>
@@ -87,10 +88,14 @@ export default function Card({
               />
               <p className="text-[#475467] text-base ml-2">{nomeUser}</p>
               <div className="flex ml-2 gap-1 items-center justify-center">
-                <div className="flex gap-32">
-                  <div className="flex items-center justify-center gap-2">
-                    <img className="w-5 h-5 mt-1 ml-5" src={icon} alt="" />
-                    <p className="text-[#475467] text-base ">{localização}</p>
+                <div className="flex">
+                  <div className="flex items-center justify-center gap-2 w-max ml-5">
+                    <img
+                      className="w-5 h-5 mt-1 ml-5"
+                      src={iconLocalização}
+                      alt=""
+                    />
+                    <p className="text-[#475467] text-base">{localização}</p>
                   </div>
                   <Button
                     className="bg-[#84CC16] text-white ml-24"

@@ -1,5 +1,13 @@
 import { PiggyBank, FilePenLine } from 'lucide-react'
 
+interface Props {
+  tittle: string
+  subtittle: string
+  donation: string
+  petition: string
+  descrição1: string
+  descrição2: string
+}
 export default function Choose({
   tittle,
   subtittle,
@@ -7,14 +15,7 @@ export default function Choose({
   petition,
   descrição1,
   descrição2,
-}: {
-  tittle: string
-  subtittle: string
-  donation: string
-  petition: string
-  descrição1: string
-  descrição2: string
-}) {
+}: Props) {
   return (
     <>
       <div className="flex md:hidden flex-col gap-4 justify-center">
