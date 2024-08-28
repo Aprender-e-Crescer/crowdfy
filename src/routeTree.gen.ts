@@ -11,8 +11,8 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as ProfileSettingsImport } from './routes/profile-settings'
 import { Route as ProfileNotificationsImport } from './routes/profileNotifications'
+import { Route as ProfileSettingsImport } from './routes/profile-settings'
 import { Route as MyCampaignsImport } from './routes/my-campaigns'
 import { Route as CampaingformtreestepImport } from './routes/campaingformtreestep'
 import { Route as CampaingformsecondstepImport } from './routes/campaingformsecondstep'
@@ -22,13 +22,13 @@ import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
 
-const ProfileSettingsRoute = ProfileSettingsImport.update({
-  path: '/profile-settings',
+const ProfileNotificationsRoute = ProfileNotificationsImport.update({
+  path: '/profileNotifications',
   getParentRoute: () => rootRoute,
 } as any)
 
-const ProfileNotificationsRoute = ProfileNotificationsImport.update({
-  path: '/profileNotifications',
+const ProfileSettingsRoute = ProfileSettingsImport.update({
+  path: '/profile-settings',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -87,40 +87,40 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutImport
       parentRoute: typeof rootRoute
     }
+    '/campaingformsecondstep': {
+      id: '/campaingformsecondstep'
+      path: '/campaingformsecondstep'
+      fullPath: '/campaingformsecondstep'
+      preLoaderRoute: typeof CampaingformsecondstepImport
+      parentRoute: typeof rootRoute
+    }
+    '/campaingformtreestep': {
+      id: '/campaingformtreestep'
+      path: '/campaingformtreestep'
+      fullPath: '/campaingformtreestep'
+      preLoaderRoute: typeof CampaingformtreestepImport
+      parentRoute: typeof rootRoute
+    }
+    '/my-campaigns': {
+      id: '/my-campaigns'
+      path: '/my-campaigns'
+      fullPath: '/my-campaigns'
+      preLoaderRoute: typeof MyCampaignsImport
+      parentRoute: typeof rootRoute
+    }
     '/profile-settings': {
       id: '/profile-settings'
       path: '/profile-settings'
       fullPath: '/profile-settings'
       preLoaderRoute: typeof ProfileSettingsImport
-
-      '/campaingformsecondstep': {
-        id: '/campaingformsecondstep'
-        path: '/campaingformsecondstep'
-        fullPath: '/campaingformsecondstep'
-        preLoaderRoute: typeof CampaingformsecondstepImport
-        parentRoute: typeof rootRoute
-      }
-      '/campaingformtreestep': {
-        id: '/campaingformtreestep'
-        path: '/campaingformtreestep'
-        fullPath: '/campaingformtreestep'
-        preLoaderRoute: typeof CampaingformtreestepImport
-        parentRoute: typeof rootRoute
-      }
-      '/my-campaigns': {
-        id: '/my-campaigns'
-        path: '/my-campaigns'
-        fullPath: '/my-campaigns'
-        preLoaderRoute: typeof MyCampaignsImport
-        parentRoute: typeof rootRoute
-      }
-      '/profileNotifications': {
-        id: '/profileNotifications'
-        path: '/profileNotifications'
-        fullPath: '/profileNotifications'
-        preLoaderRoute: typeof ProfileNotificationsImport
-        parentRoute: typeof rootRoute
-      }
+      parentRoute: typeof rootRoute
+    }
+    '/profileNotifications': {
+      id: '/profileNotifications'
+      path: '/profileNotifications'
+      fullPath: '/profileNotifications'
+      preLoaderRoute: typeof ProfileNotificationsImport
+      parentRoute: typeof rootRoute
     }
   }
 }
@@ -129,13 +129,12 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
-  AboutRoute,
-  ProfileSettingsRoute,
   CampaingCreateRoute,
   AboutRoute,
   CampaingformsecondstepRoute,
   CampaingformtreestepRoute,
   MyCampaignsRoute,
+  ProfileSettingsRoute,
   ProfileNotificationsRoute,
 })
 
@@ -148,13 +147,12 @@ export const routeTree = rootRoute.addChildren({
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/about",
-        "/profile-settings"
         "/CampaingCreate",
         "/about",
         "/campaingformsecondstep",
         "/campaingformtreestep",
         "/my-campaigns",
+        "/profile-settings",
         "/profileNotifications"
       ]
     },
@@ -167,8 +165,6 @@ export const routeTree = rootRoute.addChildren({
     "/about": {
       "filePath": "about.tsx"
     },
-    "/profile-settings": {
-      "filePath": "profile-settings.tsx"
     "/campaingformsecondstep": {
       "filePath": "campaingformsecondstep.tsx"
     },
@@ -177,6 +173,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/my-campaigns": {
       "filePath": "my-campaigns.tsx"
+    },
+    "/profile-settings": {
+      "filePath": "profile-settings.tsx"
     },
     "/profileNotifications": {
       "filePath": "profileNotifications.tsx"
