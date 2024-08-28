@@ -15,7 +15,7 @@ import { Input } from "@/components/ui/input";
 import { createFileRoute } from "@tanstack/react-router";
 import { Eye, Flag, MapPin, Rocket } from "lucide-react";
 import FemalePerfil from "../assets/FemalePerfil.svg";
-import ImagemMaeEFilha from "@/assets/Image.png";
+import ImagemMaeEFilha from "@/assets/ImageLiveCampaings.png";
 
 export const Route = createFileRoute("/my-campaigns")({
   component: LiveCampaigns,
