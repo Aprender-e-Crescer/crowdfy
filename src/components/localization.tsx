@@ -52,7 +52,7 @@ export function Localization() {
               <p>Banner Image</p>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex flex-col lg:flex-row lg:gap-3 xl:flex-col">
               <img
                 className="w-[125px] h-[74px]"
                 src={localimage}

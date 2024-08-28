@@ -14,9 +14,9 @@ export default function PersonalInfo() {
     <div className="flex flex-1 max-w-[1030px]">
       {/* PC */}
       <div className="hidden md:flex flex-1 max-w-[1030px]">
-        <div className="flex flex-1 ">
+        <div className="flex flex-1">
           <form className="w-full flex flex-col gap-y-4 min-w-[600px]">
-            <div className="">
+            <div>
               <div className="grid grid-cols-3 gap-2 items-center-start">
                 <label
                   htmlFor="nome"
@@ -58,7 +58,7 @@ export default function PersonalInfo() {
                   Sua Foto de Perfil
                 </label>
               </div>
-              <div className="flex items-start space-x-4 justify-end  flex-1">
+              <div className="flex items-start space-x-4 justify-end flex-1">
                 <div>
                   <Avatar>
                     <AvatarImage

@@ -6,8 +6,6 @@ interface CardProps {
   imageSrc: string
   avatarSrc: string
   avatarName: string
-  cardTitle: string
-  cardDescription: string
   progressValue: number
   level: string
   experience: string
@@ -18,8 +16,6 @@ export function CardAvengers({
   imageSrc,
   avatarSrc,
   avatarName,
-  cardTitle,
-  cardDescription,
   progressValue,
   level,
   experience,
@@ -61,8 +57,6 @@ export function CardAvengers({
             <p className="ml-3 text-base text-gray-600">{avatarDescription}</p>
           </div>
         </div>
-        <h3 className="text-2xl font-semibold font-inter mb-4">{cardTitle}</h3>
-        <p className="text-[#475467] mb-4">{cardDescription}</p>
         <Progress value={progressValue} className="mb-4" />
         <div className="mt-2 flex items-center justify-between">
           <div className="flex items-center">

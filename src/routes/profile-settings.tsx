@@ -25,8 +25,6 @@ function ProfileSettings() {
         <CardAvengers
           avatarName="Marcus Dutra"
           avatarSrc={ImageAvatar}
-          cardDescription=""
-          cardTitle=""
           progressValue={90}
           level="level 8"
           experience="18.543 XP/20.000 XP"
@@ -66,8 +64,6 @@ function ProfileSettings() {
             <CardAvengers
               avatarName="Marcus Dutra"
               avatarSrc={ImageAvatar}
-              cardDescription=""
-              cardTitle=""
               imageSrc={ImageFundo}
               progressValue={90}
               avatarDescription="Designer, Rio de Janeiro, Brasil"
