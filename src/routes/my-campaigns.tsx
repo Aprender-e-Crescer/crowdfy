@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { createFileRoute } from "@tanstack/react-router";
 import { Eye, Flag, MapPin, Rocket } from "lucide-react";
-import FemalePerfil from "../assets/FemalePerfil.svg";
+import FemalePerfil from "@/assets/FemalePerfil.svg";
 import ImagemMaeEFilha from "@/assets/ImageLiveCampaings.png";
 
 export const Route = createFileRoute("/my-campaigns")({
@@ -36,7 +36,7 @@ export function LiveCampaigns() {
     <>
       <SubHeader buttons={buttonsSubHeader} />
 
-      <main className="mt-12 sm:justify-center  sm:w-full">
+      <main className="mt-12 sm:justify-center sm:w-full">
         <div className="lg:flex w-full">
           <div className="ml-6 mr-6 mb-6">
             <h1 className="font-semibold font-[inter] text-3xl">
@@ -45,9 +45,9 @@ export function LiveCampaigns() {
             <p className="pb-4 mt-1 text-[#475467] font-normal text-xl">
               Your current sales summary and activity.
             </p>
-            <img className="py-2  max-h-[876px] " src={ImagemMaeEFilha} />
+            <img className="py-2 max-h-[876px]" src={ImagemMaeEFilha} />
 
-            <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-3xl  text-justify">
+            <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-3xl text-justify">
               In 2022 my husband and I moved to Portugal to follow our simple
               life dream and build our home and homestead after completing a 4
               years renovation project which we sold at a profit to finance our
@@ -69,27 +69,27 @@ export function LiveCampaigns() {
             <div className="ml-5 flex-col">
               <h1 className="font-semibold mb-5 mt-5">👥 Organizadora</h1>
               <UserProfile
-                title={"Sindy Rheaume"}
+                title="Sindy Rheaume"
                 img={FemalePerfil}
                 valorDonate="Bragança"
                 horarioDonate="Organizadora"
               />
 
-              <Button className="mb-4" variant={"outline"}>
+              <Button className="mb-4" variant="outline">
                 Contract
               </Button>
 
               <hr />
 
               <div className="my-4">
-                <h1 className="my-4 font-semibold "> 🕊️ Words of support </h1>
+                <h1 className="my-4 font-semibold"> 🕊️ Words of support</h1>
                 <p className="mb-4 font-medium italic">
                   I just wanted to help 💪
                 </p>
               </div>
 
               <UserProfile
-                title={`Sindy Rheaume`}
+                title="Sindy Rheaume"
                 img={FemalePerfil}
                 valorDonate="$150"
                 horarioDonate="10 horas"
@@ -100,7 +100,7 @@ export function LiveCampaigns() {
               </p>
 
               <UserProfile
-                title={`Michael O'Keff`}
+                title="Michael O'Keff"
                 img={FemalePerfil}
                 valorDonate="$150"
                 horarioDonate="10 horas"
@@ -109,13 +109,13 @@ export function LiveCampaigns() {
               <p className="mb-4 font-medium italic">Keep strong both 🫡</p>
 
               <UserProfile
-                title={`Michael Millward`}
+                title="Michael Millward"
                 img={FemalePerfil}
                 valorDonate="$150"
                 horarioDonate="10 Horas"
               />
 
-              <Button className="mb-4" variant={"outline"}>
+              <Button className="mb-4" variant="outline">
                 Show more
               </Button>
 
@@ -139,15 +139,15 @@ export function LiveCampaigns() {
             <div className="flex justify-start ml-5 lg:justify-center mb-6">
               <Button
                 className="bg-[#D9F99D] text-[#1F2937] max-w-40 border-[#F7FEE7] font-medium"
-                variant={"shadow"}
+                variant="shadow"
               >
                 <img src={share} className="mx-2" />
-                Share Campaign{" "}
+                Share Campaign
               </Button>
 
               <Button
                 className="border-[#E2E8F0] drop-shadow-sm text-[#1E293B] max-w-44 px-16 mx-2"
-                variant={"outline"}
+                variant="outline"
               >
                 <img src={Heart} />
                 Like
@@ -156,10 +156,10 @@ export function LiveCampaigns() {
 
             <div className="flex flex-col">
               <div className="font-[inter] mx-5 p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px] w-[496px]">
-                <h1 className="text-[#475467]  mt-1 mb-5 font-semibold text-xl">
+                <h1 className="text-[#475467] mt-1 mb-5 font-semibold text-xl">
                   🫰Funds donated to this campaign
                 </h1>
-                <p className="text-[#1E293B]   text-3xl">
+                <p className="text-[#1E293B] text-3xl">
                   $15.000 /<span className="font-bold"> $20.000</span>
                 </p>
                 <div className="my-4 w-full h-[6px] bg-[#84CC16] rounded-full"></div>
@@ -200,15 +200,15 @@ export function LiveCampaigns() {
                 <div className="flex justify-between">
                   <Button
                     className="bg-[#D9F99D] text-[#1F2937] w-full border-[#F7FEE7] font-medium"
-                    variant={"shadow"}
+                    variant="shadow"
                   >
                     <img src={share} className="mx-2" />
-                    Share Campaign{" "}
+                    Share Campaign
                   </Button>
 
                   <Button
-                    className="border-[#E2E8F0] drop-shadow-sm text-[#1E293B] w-full  mx-2"
-                    variant={"outline"}
+                    className="border-[#E2E8F0] drop-shadow-sm text-[#1E293B] w-full mx-2"
+                    variant="outline"
                   >
                     <img src={Heart} />
                     Like
@@ -216,8 +216,8 @@ export function LiveCampaigns() {
                 </div>
               </div>
 
-              <div className="font-[inter] w-[496px] m-5  p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px]">
-                <h1 className="mt-1 mb-4  font-semibold text-xl text-[#475467]">
+              <div className="font-[inter] w-[496px] m-5 p-[18px] border-[1.58px] border-[#EAECF0] shadow-md shadow-gray-200 rounded-[12px]">
+                <h1 className="mt-1 mb-4 font-semibold text-xl text-[#475467]">
                   💪 Fund this campaign
                 </h1>
                 <div className="my-5">
@@ -245,8 +245,8 @@ export function LiveCampaigns() {
                 </div>
 
                 <Button
-                  className=" w-full bg-[#84CC16] hover:bg-green-600 text-white"
-                  variant={"default"}
+                  className="w-full bg-[#84CC16] hover:bg-green-600 text-white"
+                  variant="default"
                 >
                   <img src={IconDonate} />
                   Donate now
