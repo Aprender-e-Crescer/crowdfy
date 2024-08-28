@@ -24,9 +24,9 @@ export default function Give({
   return (
     <div className="flex flex-col md:flex-row items-center justify-center p-5 w-full">
       <div className="flex flex-col gap-4 w-full md:w-96">
-        <div className="text-[#101828] font-semibold text-2xl">
+        <div className="text-[#101828] font-semibold text-3xl">
           <h2>{title}</h2>
-          <div className="text-xl font-normal text-[#475467]">
+          <div className="text-base font-normal text-[#475467]">
             <h2>{subtitle}</h2>
           </div>
 
@@ -40,7 +40,7 @@ export default function Give({
             <input
               type="text"
               id="campaign-title"
-              className="flex font-light border border-gray-300 rounded-md w-full h-10 placeholder-gray-400 text-xl"
+              className="flex font-light border border-gray-300 rounded-md w-full p-4 h-10 placeholder-gray-400 text-base"
               placeholder={placeholder1}
               required
             />
@@ -56,7 +56,7 @@ export default function Give({
             <input
               type="text"
               id="campaign-date"
-              className="flex font-light border border-gray-300 rounded-md w-full h-10 placeholder-gray-400 text-xl"
+              className="flex font-light border border-gray-300 rounded-md w-full p-4 h-10 placeholder-gray-400 text-base"
               placeholder={placeholder2}
               required
             />
@@ -72,7 +72,7 @@ export default function Give({
             <input
               type="text"
               id="campaign-goal"
-              className="flex font-light border border-gray-300 rounded-md w-full h-10 placeholder-gray-400 text-xl"
+              className="flex font-light border border-gray-300 rounded-md w-full p-4 h-10 placeholder-gray-400 text-base"
               placeholder={placeholder3}
               required
             />
