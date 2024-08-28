@@ -1,8 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router';
-import TituloPage from "@/componentes/tituloPage";
+import TituloPage from "@/componentes/titlePage";
 import CardOverview from "@/componentes/CardOverview";
 import ViewActivity from "@/componentes/ViewActivity";
-import Titulo from '@/componentes/Titulo';
+import Titulo from '@/componentes/titleViewActivity';
 import CardsViews from '@/componentes/cardsViews';
 
 export const Route = createFileRoute('/Campaigns')({

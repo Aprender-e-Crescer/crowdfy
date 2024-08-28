@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TituloPage: React.FC = () => {
+const TitlePage: React.FC = () => {
     return (
         <div className="flex justify-center sm:justify-start">
             <div className="bg-white rounded-lg p-4 w-full sm:w-4/5 md:w-3/4 lg:w-2/3">
@@ -17,4 +17,4 @@ const TituloPage: React.FC = () => {
     );
 };
 
-export default TituloPage;
+export default TitlePage;
