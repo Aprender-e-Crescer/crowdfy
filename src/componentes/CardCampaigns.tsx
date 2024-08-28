@@ -1,41 +1,43 @@
 import React from "react";
 
 interface CardProps {
-  Titulo: JSX.Element;
-  NomeCard: string;
-  NumeroId: string;
-  Imagem: string;
-  CorFundo: string;
-  CorTexto: string;
-  ValorCard: string;
+  titulo: JSX.Element;
+  nomeCard: string;
+  numeroId: string;
+  imagem: string;
+  corFundo: string;
+  corTexto: string;
+  valorCard: string;
 }
 
-const Card: React.FC<CardProps> = ({ Titulo, NomeCard, NumeroId, Imagem, CorFundo, CorTexto, ValorCard }) => {
+const Card: React.FC<CardProps> = ({
+  titulo,
+  nomeCard,
+  numeroId,
+  imagem,
+  corFundo,
+  corTexto,
+  valorCard
+}) => {
   return (
     <div className="flex flex-col items-start">
       <div
         className="relative flex flex-col md:flex-row w-full md:w-[429.77px] h-auto md:h-[259px] rounded-2xl shadow-lg overflow-hidden"
-        style={{ backgroundColor: CorFundo, color: CorTexto }}
+        style={{ backgroundColor: corFundo, color: corTexto }}
       >
         <div className="p-5 w-full md:w-4/5">
-          <p className="font-semibold text-sm md:text-[14.51px] mb-0">
-            Crowdfy
-          </p>
+          <p className="font-semibold text-sm md:text-[14.51px] mb-0">Crowdfy</p>
           <h1 className="font-semibold text-xl md:text-[27.2px] leading-tight mb-0">
-            {Titulo}
+            {titulo}
           </h1>
           <p className="font-semibold text-xs md:text-[10.8px] text-gray-10 mt-4 md:mt-16">
-            {NomeCard}
+            {nomeCard}
           </p>
-          <p className="font-bold text-sm md:text-[14.4px]">
-            {NumeroId}
-          </p>
+          <p className="font-bold text-sm md:text-[14.4px]">{numeroId}</p>
         </div>
         <div
           className="w-full md:w-[35%] h-[150px] md:h-auto bg-cover bg-center relative"
-          style={{
-            backgroundImage: `url(${Imagem})`,
-          }}
+          style={{ backgroundImage: `url(${imagem})` }}
         >
           <img
             src="https://i.im.ge/2024/08/15/fIhBKm.icon-crowdfy.png"
@@ -54,7 +56,7 @@ const Card: React.FC<CardProps> = ({ Titulo, NomeCard, NumeroId, Imagem, CorFund
           Total donations
         </p>
         <p className="font-bold text-lg md:text-[19.92px] mt-[22.77px] text-[#344054]">
-          {ValorCard}
+          {valorCard}
         </p>
       </div>
     </div>

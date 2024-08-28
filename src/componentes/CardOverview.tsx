@@ -1,6 +1,6 @@
-import Card from '@/componentes/CardCampaigns'
-import { Button } from "@/componentes/ui/button"
-import { Progress } from "@/componentes/ui/progress"
+import Card from '@/componentes/CardCampaigns';
+import { Button } from "@/componentes/ui/button";
+import { Progress } from "@/componentes/ui/progress";
 import { PiTimer } from "react-icons/pi";
 import { LuCheckCheck } from "react-icons/lu";
 
@@ -27,21 +27,53 @@ function CardOverview() {
       </div>
       <div className="flex flex-col lg:flex-row mb-[20px] lg:ml-[0px]">
         <div className="mb-[20px] lg:mr-[20px]">
-          <Card Titulo={<span>Celso<br />Kingstown<br />Orphanage</span>} NomeCard={'ANA YAMAMOTO'} NumeroId={'0xbb AC23 43af 98fg'} Imagem={'https://www.brighthope.org/wp-content/uploads/2022/02/tim-trad-sS28i1H39AY-unsplash-800x533.jpg'} CorFundo={"#BEF264"} CorTexto={"#1E293B"} ValorCard={"$2,840.40"} />
+          <Card
+            titulo={<span>Celso<br />Kingstown<br />Orphanage</span>}
+            nomeCard={'ANA YAMAMOTO'}
+            numeroId={'0xbb AC23 43af 98fg'}
+            imagem={'https://www.brighthope.org/wp-content/uploads/2022/02/tim-trad-sS28i1H39AY-unsplash-800x533.jpg'}
+            corFundo={"#BEF264"}
+            corTexto={"#1E293B"}
+            valorCard={"$2,840.40"}
+          />
           <Progress value={55} className="mt-2" />
         </div>
         <div className="mb-[20px]">
-          <Card Titulo={<span>Install Water<br />Well in<br />Kingstown</span>} NomeCard={'ANA YAMAMOTO'} NumeroId={'5226 6749 6789 4341'} Imagem={'https://th.bing.com/th/id/OIP.Rsr2pvOkUH8jQy3TajZ6LAAAAA?pid=ImgDet&w=200&h=200&c=7'} CorFundo={"#3F6212"} CorTexto={"#FFFFFF"} ValorCard={"$1,260.20"} />
+          <Card
+            titulo={<span>Install Water<br />Well in<br />Kingstown</span>}
+            nomeCard={'ANA YAMAMOTO'}
+            numeroId={'5226 6749 6789 4341'}
+            imagem={'https://th.bing.com/th/id/OIP.Rsr2pvOkUH8jQy3TajZ6LAAAAA?pid=ImgDet&w=200&h=200&c=7'}
+            corFundo={"#3F6212"}
+            corTexto={"#FFFFFF"}
+            valorCard={"$1,260.20"}
+          />
           <Progress value={30} className="mt-2" />
         </div>
       </div>
       <div className="flex flex-col lg:flex-row lg:ml-[0px]">
         <div className="mb-[20px] lg:mr-[20px]">
-          <Card Titulo={<span>Install Water<br />Well in<br />Kingstown</span>} NomeCard={'ANA YAMAMOTO'} NumeroId={'5226 6749 6789 4341'} Imagem={'https://th.bing.com/th/id/OIP.cKrnleA9Ut-H9geNg99UwgHaFj?pid=ImgDet&w=200&h=150&c=7'} CorFundo={"#BEF264"} CorTexto={"#1E293B"} ValorCard={"$1,260.20"} />
+          <Card
+            titulo={<span>Install Water<br />Well in<br />Kingstown</span>}
+            nomeCard={'ANA YAMAMOTO'}
+            numeroId={'5226 6749 6789 4341'}
+            imagem={'https://th.bing.com/th/id/OIP.cKrnleA9Ut-H9geNg99UwgHaFj?pid=ImgDet&w=200&h=150&c=7'}
+            corFundo={"#BEF264"}
+            corTexto={"#1E293B"}
+            valorCard={"$1,260.20"}
+          />
           <Progress value={30} className="mt-2" />
         </div>
         <div className="mb-[20px]">
-          <Card Titulo={<span>Install Water<br />Well in<br />Kingstown</span>} NomeCard={'ANA YAMAMOTO'} NumeroId={'5226 6749 6789 4341'} Imagem={'https://th.bing.com/th/id/OIP.cKrnleA9Ut-H9geNg99UwgHaFj?pid=ImgDet&w=200&h=150&c=7'} CorFundo={"#BEF264"} CorTexto={"#1E293B"} ValorCard={"$1,260.20"} />
+          <Card
+            titulo={<span>Install Water<br />Well in<br />Kingstown</span>}
+            nomeCard={'ANA YAMAMOTO'}
+            numeroId={'5226 6749 6789 4341'}
+            imagem={'https://th.bing.com/th/id/OIP.cKrnleA9Ut-H9geNg99UwgHaFj?pid=ImgDet&w=200&h=150&c=7'}
+            corFundo={"#BEF264"}
+            corTexto={"#1E293B"}
+            valorCard={"$1,260.20"}
+          />
           <Progress value={30} className="mt-2" />
         </div>
       </div>
