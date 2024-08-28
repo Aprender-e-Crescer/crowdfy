@@ -1,6 +1,6 @@
 
 import { createFileRoute } from '@tanstack/react-router';
-import TitlePage from "@/componentes/tituloPage";
+import TitlePage from "@/componentes/titlePage";
 import CardOverview from "@/componentes/CardOverview";
 import ViewActivity from  "@/componentes/ViewActivity"
 import CardsViews from '@/componentes/cardsViews';
