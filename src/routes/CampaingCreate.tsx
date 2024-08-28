@@ -1,6 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
 import Choose from '@/components/Choose-campaings-create'
-import imagemFundo from '../assets/Image.png'
 import Card from '@/components/card-help-campaings-create'
 import ReturnNext from '@/components/Return-Next-pagination-campaings-create'
 
@@ -11,8 +10,8 @@ export const Route = createFileRoute('/CampaingCreate')({
 function CampaingCreate() {
   return (
     <>
-      <div className="p-2">
-        <div className="md:flex gap-10 justify-center ">
+      <div className="p-2 ">
+        <div className="xl:flex gap-10 justify-center ">
           <div>
             <Choose
               tittle="1. Choose your campaign style"
@@ -35,7 +34,6 @@ function CampaingCreate() {
               lifes on China countryside just teaching how they can use the
               internet."
               titulo=" Help us Teach English for Kids on China Countryside"
-              outraImagemFundo={imagemFundo}
               temImagemFundo
             />
           </div>

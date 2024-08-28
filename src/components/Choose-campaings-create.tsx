@@ -18,7 +18,7 @@ export default function Choose({
 }: Props) {
   return (
     <>
-      <div className="flex md:hidden flex-col gap-4 justify-center">
+      <div className="flex md:hidden flex-col gap-4 justify-center ">
         <div className="flex flex-col">
           <div className="flex">
             <p className="text-2xl text-[#101828] font-bold">{tittle}</p>
@@ -29,8 +29,8 @@ export default function Choose({
             </p>
           </div>
         </div>
-        <div className="flex gap-1 flex-1">
-          <div className="flex w-[320px] h-[165px] border-2 rounded-xl items-center flex-1">
+        <div className="flex gap-1 flex-col items-center w-full">
+          <div className="flex h-[165px] border-2 rounded-xl items-center flex-1 w-full">
             <div className="flex-col pt-2 pl-4 justify-center items-center">
               <div className="flex items-center justify-center border-4 border-slate-100 bg-[#FFFFFF] rounded-full w-16">
                 <PiggyBank
@@ -47,7 +47,7 @@ export default function Choose({
             </div>
           </div>
 
-          <div className="flex w-[320px] h-[165px] border-2 rounded-xl items-center flex-1">
+          <div className="flex h-[165px] border-2 rounded-xl items-center flex-1 w-full">
             <div className="flex-col pt-2 pl-4">
               <div className="flex items-center justify-center border-4 border-slate-100 bg-[#FFFF] rounded-full w-16">
                 <FilePenLine
@@ -66,7 +66,7 @@ export default function Choose({
         </div>
       </div>
 
-      <div className="hidden md:flex flex-col gap-4">
+      <div className="hidden md:flex flex-col gap-4 w-full mr-52">
         <div className="flex flex-col">
           <div className="flex">
             <p className="text-2xl text-[#101828] font-bold">{tittle}</p>
@@ -77,8 +77,8 @@ export default function Choose({
             </p>
           </div>
         </div>
-        <div className="flex gap-1">
-          <div className="flex w-[320px] h-[593px] border-2 rounded-xl items-center">
+        <div className="flex gap-1 ">
+          <div className="flex h-[593px] border-2 rounded-xl items-center w-full">
             <div className="flex-col pt-96 pl-4 justify-center items-center">
               <div className="flex items-center justify-center border-4 border-slate-100 bg-[#FFFFFF] rounded-full w-16">
                 <PiggyBank
@@ -95,7 +95,7 @@ export default function Choose({
             </div>
           </div>
 
-          <div className="flex w-[320px] h-[593px] border-2 rounded-xl items-center">
+          <div className="flex h-[593px] border-2 rounded-xl items-center w-full">
             <div className="flex-col pt-96 pl-4">
               <div className="flex items-center justify-center border-4 border-slate-100 bg-[#FFFF] rounded-full w-16">
                 <FilePenLine
