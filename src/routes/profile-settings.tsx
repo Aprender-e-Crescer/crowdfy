@@ -45,7 +45,7 @@ function ProfileSettings() {
 
       {/*PC*/}
 
-      <div className="hidden md:flex flex-col mx-32 gap-y-4">
+      <div className="hidden md:flex flex-col mx-32 gap-y-4 mb-5">
         <div className="flex flex-col gap-y-5 gap-x-5 ">
           <div className="flex w-full justify-between items-center mt-5">
             <ProfileInfo />
@@ -72,7 +72,7 @@ function ProfileSettings() {
             />
           </div>
         </div>
-        <div className="mt-8">
+        <div>
           <Localization />
         </div>
       </div>
