@@ -12,6 +12,7 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as ProfileNotificationsImport } from './routes/profileNotifications'
+import { Route as ProfileSettingsImport } from './routes/profile-settings'
 import { Route as MyCampaignsImport } from './routes/my-campaigns'
 import { Route as CampaingformtreestepImport } from './routes/campaingformtreestep'
 import { Route as CampaingformsecondstepImport } from './routes/campaingformsecondstep'
@@ -23,6 +24,11 @@ import { Route as IndexImport } from './routes/index'
 
 const ProfileNotificationsRoute = ProfileNotificationsImport.update({
   path: '/profileNotifications',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ProfileSettingsRoute = ProfileSettingsImport.update({
+  path: '/profile-settings',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -102,6 +108,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MyCampaignsImport
       parentRoute: typeof rootRoute
     }
+    '/profile-settings': {
+      id: '/profile-settings'
+      path: '/profile-settings'
+      fullPath: '/profile-settings'
+      preLoaderRoute: typeof ProfileSettingsImport
+      parentRoute: typeof rootRoute
+    }
     '/profileNotifications': {
       id: '/profileNotifications'
       path: '/profileNotifications'
@@ -121,6 +134,7 @@ export const routeTree = rootRoute.addChildren({
   CampaingformsecondstepRoute,
   CampaingformtreestepRoute,
   MyCampaignsRoute,
+  ProfileSettingsRoute,
   ProfileNotificationsRoute,
 })
 
@@ -138,6 +152,7 @@ export const routeTree = rootRoute.addChildren({
         "/campaingformsecondstep",
         "/campaingformtreestep",
         "/my-campaigns",
+        "/profile-settings",
         "/profileNotifications"
       ]
     },
@@ -158,6 +173,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/my-campaigns": {
       "filePath": "my-campaigns.tsx"
+    },
+    "/profile-settings": {
+      "filePath": "profile-settings.tsx"
     },
     "/profileNotifications": {
       "filePath": "profileNotifications.tsx"
