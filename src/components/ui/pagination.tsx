@@ -1,5 +1,6 @@
 import * as React from "react"
-import { ChevronRight, MoreHorizontal } from "lucide-react"
+import { MoreHorizontal } from "lucide-react"
+import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
 import { Link } from '@tanstack/react-router'
 import { cn } from "@/lib/utils"
@@ -66,7 +67,7 @@ const PaginationPrevious = (
   ...props
 }: React.ComponentProps<typeof PaginationLink>) => (
   <Link
-    to="/expxlore"
+    to="/explore"
     className={cn("text-start rounded-lg overflow-hidden font-sans", className)}
     aria-label="Go to next page"
   >
@@ -96,7 +97,7 @@ const PaginationNext = ({
       {...props}
     >
       <span>Next</span>
-      <ChevronRight className="h-4 w-4" />
+      <FaArrowRight className="h-4 w-4" />
     </PaginationLink>
   </Link>
 )
