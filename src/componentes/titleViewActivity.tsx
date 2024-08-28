@@ -1,4 +1,4 @@
-function Titulo() {
+function TitleViewActivity() {
   return (
     <div className="flex justify-between items-center px-4 lg:px-6 mb-4 lg:mb-1">
       <h1 className="text-lg lg:text-2xl font-semibold font-sans text-gray-900">
@@ -11,4 +11,4 @@ function Titulo() {
   );
 }
 
-export default Titulo;
+export default TitleViewActivity;
