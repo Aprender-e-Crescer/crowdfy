@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Give from '../components/give'
-import Card from '@/components/card'
+import Give from '../components/give-form-campaings-create'
+import Card from '@/components/card-help-campaings-create'
 import imagemFundo from '../assets/Image.png'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
@@ -39,7 +39,7 @@ function campaingformtreestep() {
                   internet."
               titulo=" Help us Teach English for Kids on China Countryside"
               outraImagemFundo={imagemFundo}
-              temImagemFundo={true}
+              temImagemFundo
             />
           </div>
         </div>

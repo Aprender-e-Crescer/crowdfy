@@ -1,4 +1,4 @@
-import { Uploadimagens } from '../components/UploadImagens'
+import { Uploadimagens } from '../components/Upload-Imagens-campaings-create'
 
 interface Props {
   title: string

@@ -1,8 +1,8 @@
-import Choose from '@/components/Choose'
-import ReturnNext from '@/components/ReturnNext'
-import Card from '@/components/card'
 import { createFileRoute } from '@tanstack/react-router'
+import Choose from '@/components/Choose-campaings-create'
 import imagemFundo from '../assets/Image.png'
+import Card from '@/components/card-help-campaings-create'
+import ReturnNext from '@/components/Return-Next-pagination-campaings-create'
 
 export const Route = createFileRoute('/CampaingCreate')({
   component: CampaingCreate,
@@ -36,7 +36,7 @@ function CampaingCreate() {
               internet."
               titulo=" Help us Teach English for Kids on China Countryside"
               outraImagemFundo={imagemFundo}
-              temImagemFundo={true}
+              temImagemFundo
             />
           </div>
         </div>
