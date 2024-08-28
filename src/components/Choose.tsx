@@ -5,16 +5,16 @@ interface Props {
   subtittle: string
   donation: string
   petition: string
-  descrição1: string
-  descrição2: string
+  donationDescrição: string
+  petitionDescrição: string
 }
 export default function Choose({
   tittle,
   subtittle,
   donation,
   petition,
-  descrição1,
-  descrição2,
+  donationDescrição,
+  petitionDescrição,
 }: Props) {
   return (
     <>
@@ -42,7 +42,7 @@ export default function Choose({
                 <p className="text-[24px] font-bold">{donation}</p>
               </div>
               <div className="flex">
-                <p className="text-[#64748B] text-[16px]">{descrição1}</p>
+                <p className="text-[#64748B] text-[16px]">{donationDescrição}</p>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Choose({
                 <p className="text-[24px] font-bold">{petition}</p>
               </div>
               <div className="flex">
-                <p className="text-[#64748B]">{descrição2}</p>
+                <p className="text-[#64748B]">{petitionDescrição}</p>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function Choose({
                 <p className="text-[35px] font-bold">{donation}</p>
               </div>
               <div className="flex">
-                <p className="text-[#64748B] text-[21px]">{descrição1}</p>
+                <p className="text-[#64748B] text-[21px]">{donationDescrição}</p>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Choose({
                 <p className="text-[35px] font-bold">{petition}</p>
               </div>
               <div className="flex">
-                <p className="text-[#64748B] text-[21px]">{descrição2}</p>
+                <p className="text-[#64748B] text-[21px]">{petitionDescrição}</p>
               </div>
             </div>
           </div>

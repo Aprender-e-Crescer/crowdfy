@@ -19,8 +19,8 @@ function CampaingCreate() {
               subtittle="What its about your campaign?"
               donation="Donation"
               petition="Petition"
-              descrição1="Create a donation to receive funds"
-              descrição2="Create a petition to crowd signatures"
+              donationDescrição="Create a donation to receive funds"
+              petitionDescrição="Create a petition to crowd signatures"
             />
           </div>
 
@@ -41,9 +41,9 @@ function CampaingCreate() {
           </div>
         </div>
         <ReturnNext
-          circulo1={true}
-          circulo2={true}
-          circulo3={true}
+          circuloEsquerdo={true}
+          circuloCentral={true}
+          circuloDireito={true}
           next="Next"
           previous="Previous"
         />
