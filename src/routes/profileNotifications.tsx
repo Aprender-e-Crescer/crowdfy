@@ -8,7 +8,7 @@ import {
   PaginationPrevious,
 } from '@/components/ui/pagination'
 
-import { BackgroundButton } from '@/components/backgroundButton'
+import { BackgroundButton } from '@/components/background_button'
 import { NotificationComponent } from '@/components/NotificationComponent'
 import { Roadmap } from '@/components/roadmap'
 import { FundCampaing } from '@/components/ui/Fund-Campaing'
