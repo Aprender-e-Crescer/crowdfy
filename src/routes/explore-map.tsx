@@ -65,24 +65,18 @@ function Explore() {
           <HeaderCard />
           <CardMapa cardData={cardData} />
           <Pagination className="flex items-center justify-center mt-4">
-            <PaginationContent className="flex items-center justify-between w-full space-x-2">
+            <PaginationContent className="flex items-center justify-between w-full ">
               <PaginationItem>
                 <PaginationPrevious href="#" />
               </PaginationItem>
-              <PaginationItem className="flex">
-                <PaginationItem>
-                  <PaginationLink href="#">1</PaginationLink>
-                  <PaginationLink href="#">2</PaginationLink>
-                  <PaginationLink href="#">3</PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationEllipsis />
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationLink href="#">8</PaginationLink>
-                  <PaginationLink href="#">9</PaginationLink>
-                  <PaginationLink href="#">10</PaginationLink>
-                </PaginationItem>
+              <PaginationItem className="flex ">
+                <PaginationLink href="#">1</PaginationLink>
+                <PaginationLink href="#">2</PaginationLink>
+                <PaginationLink href="#">3</PaginationLink>
+                <PaginationEllipsis />
+                <PaginationLink href="#">8</PaginationLink>
+                <PaginationLink href="#">9</PaginationLink>
+                <PaginationLink href="#">10</PaginationLink>
               </PaginationItem>
               <PaginationItem>
                 <PaginationNext href="#" />
