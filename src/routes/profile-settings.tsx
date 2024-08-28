@@ -2,10 +2,10 @@ import { Localization } from '@/components/localization'
 import { createFileRoute } from '@tanstack/react-router'
 import ImageAvatar from '@/assets/imagemavatar.png'
 import ImageFundo from '@/assets/Image overlay.png'
-import PersonalInfo from '@/components/personalInfo'
-import ProfileInfo from '@/components/profileInfo'
+import PersonalInfo from '@/components/personal-info'
+import ProfileInfo from '@/components/profile-info'
 import { Button } from '@/components/ui/button'
-import { CardAvengers } from '@/components/cardAvengers'
+import { CardAvengers } from '@/components/card-profile'
 
 export const Route = createFileRoute('/profile-settings')({
   component: ProfileSettings,
@@ -47,7 +47,7 @@ function ProfileSettings() {
 
       {/*PC*/}
 
-      <div className=" hidden md:flex flex-col mx-32 gap-y-4">
+      <div className="hidden md:flex flex-col mx-32 gap-y-4">
         <div className="flex flex-col gap-y-5 gap-x-5 ">
           <div className="flex w-full justify-between items-center mt-5">
             <ProfileInfo />
