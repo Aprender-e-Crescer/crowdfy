@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Button } from "./ui/button";
 import { InputSubHeader } from "./ui/input-sub-header";
-// import { Link } from "@tanstack/react-router";
 
 interface Props {
   buttons: {
@@ -17,8 +16,8 @@ export function SubHeader({ buttons }: Props) {
     <div className="flex justify-between">
       <div className="flex gap-3 mr-5">
         {buttons.map(({ title, variant, icon, route }) => (
-          <Link to={route}>
-            <Button key={title} variant={variant}>
+          <Link to={route} key={title}>
+            <Button variant={variant}>
               {icon} {title}
             </Button>
           </Link>
