@@ -1,8 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/component/card'
-import { SectionHeader } from '@/components/component/Sectionheader'
-import Footer from '@/components/ui/footer'
-import { SubHeader } from '@/components/subHeader'
+
+
 import { HeaderCard } from '@/components/headerCard'
 
 export const Route = createFileRoute('/explore')({
@@ -131,12 +130,6 @@ function Explore() {
             />
           ))}
         </div>
-      </div>
-      <div>
-        
-      </div>
-      <div className="mt-5">
-        <Footer />
       </div>
     </>
   )

@@ -84,8 +84,7 @@ function Explore() {
             </PaginationContent>
           </Pagination>
         </div>
-
-        <div className="flex-none w-full md:w-1/2 min-h-[20rem]">
+        <div className="flex-none w-full md:w-1/2 h-96 md:h-auto">
           <Map />
         </div>
       </div>

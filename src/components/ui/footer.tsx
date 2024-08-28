@@ -60,13 +60,7 @@ export default function Footer() {
               <p className='flex flex-wrap text-[#667085]'>© 2077 Mainnet Design. All rights reserved.</p>
             </div>
           </div>
-        
       </div>
-      
-
-
-      
-
       <div className=" md:hidden flex flex-wrap bg-slate-100">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
