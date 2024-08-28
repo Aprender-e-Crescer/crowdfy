@@ -19,7 +19,7 @@ const buttonVariants = cva(
         ghost:
           'hover:bg-accent hover:text-accent-foreground flex gap-2 px-16 py-8 items-center',
         link: 'text-primary underline-offset-4 hover:underline flex gap-2 px-16 py-8 items-center',
-        shadow: 'rounded-[8px] border-4 flex gap-2 py-2 px-4', // Utilizem border-NomeDaCor para definir cor da sombra
+        shadow: 'rounded-[8px] border-4 flex gap-2 py-2 px-4',
       },
       size: {
         default: 'h-10 px-4 py-2',
@@ -32,6 +32,10 @@ const buttonVariants = cva(
         gray: 'bg-[#0F172A] bg-opacity-50 border-[#7B7B7B opacity-[18]',
         purple: 'bg-purple-500 border-[#7B7B7B opacity-[18]',
       },
+    },
+    defaultVariants: {
+      variant: 'default',
+      size: 'default',
     },
   }
 )
