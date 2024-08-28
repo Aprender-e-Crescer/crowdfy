@@ -8,10 +8,20 @@ export const Route = createRootRoute({
       <div className="p-2 flex gap-2">
         <Link to="/" className="[&.active]:font-bold">
           Home
-        </Link>{' '}
+        </Link>
+        
         <Link to="/about" className="[&.active]:font-bold">
           About
         </Link>
+
+        <Link to='/my-campaigns'>
+        My Campaigns
+        </Link>
+
+        <Link to='/Home'>
+        HOME
+        </Link>
+
         <Link to="/CampaingCreate" className="[&.active]:font-bold">
           Campaign Create
         </Link>
@@ -22,6 +32,7 @@ export const Route = createRootRoute({
 
       <hr />
       <Header />
+
       <Outlet />
       <TanStackRouterDevtools />
     </>
