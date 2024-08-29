@@ -13,8 +13,8 @@ interface Props {
 
 export function SubHeader({ buttons }: Props) {
   return (
-    <div className="flex justify-start sm:justify-between">
-      <div className="flex gap-3 mr-5">
+    <div className="flex justify-start sm:justify-between max-[450px]:flex-col max-[450px]:gap-2 ml-2">
+      <div className="flex gap-3 mr-2 sm:mr-5">
         {buttons.map(({ title, variant, icon, route }) => (
           <Link to={route} key={title}>
             <Button variant={variant}>
