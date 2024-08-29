@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/component/card'
-
-
+import Footer from '@/components/ui/footer'
 import { HeaderCard } from '@/components/headerCard'
 import Footer from '@/components/ui/footer'
 
@@ -112,23 +111,28 @@ function Explore() {
       progressValue: 75,
     },
   ]
-
   return (
     <>
       <div>
         <HeaderCard />
         <div className=" gap-5 sm:mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {cardsData.map((card, index) => (
-            <Card
-              key={index}
-              imageSrc={card.imageSrc}
-              avatarSrc={card.avatarSrc}
-              avatarName={card.avatarName}
-              cardTitle={card.cardTitle}
-              cardDescription={card.cardDescription}
-              donationValue={card.donationValue}
-              progressValue={card.progressValue}
-            />
+            <div key={index} className="flex items-stretch">
+              <Card
+                imageSrc={card.imageSrc}
+                avatarSrc={card.avatarSrc}
+                avatarName={card.avatarName}
+                type="default"
+                cardTitle={card.cardTitle}
+                cardDescription={card.cardDescription}
+                donationValue={card.donationValue}
+                progressValue={card.progressValue}
+                level=""
+                experience={card.experience}
+                avatarDescription=""
+                isLink={card.isLink}
+              />
+            </div>
           ))}
         </div>
       </div>
