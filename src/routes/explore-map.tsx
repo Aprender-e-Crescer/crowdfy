@@ -1,5 +1,4 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Footer from '@/components/ui/footer'
 import { HeaderCard } from '@/components/headerCard'
 import { CardMapa } from '@/components/component/Cardmapa'
 import { Map } from '@/components/map'
@@ -13,6 +12,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination'
+import Footer from '@/components/ui/footer'
 
 const cardData = [
   {
@@ -88,7 +88,7 @@ function Explore() {
           <Map />
         </div>
       </div>
-      <div className="mt-4 flex-shrink-0">
+      <div className="mt-5">
         <Footer />
       </div>
     </div>

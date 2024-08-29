@@ -1,4 +1,4 @@
-import Footer from '@/components/ui/footer'
+
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 
@@ -16,9 +16,6 @@ export const Route = createRootRoute({
         <Link to="/explore" className="[&.active]:font-bold">
           Explore
         </Link>
-      </div>
-      <div className="mt-5">
-        <Footer />
       </div>
       <Outlet />
       <TanStackRouterDevtools />
