@@ -3,7 +3,7 @@ interface Props {
   preço: string;
 }
 
-export function background_button({ preço }: Props) {
+export function BackgroundButton({ preço }: Props) {
   return (
     <div className="flex items-center justify-center bg-lime-100 border-2 border-lime-50 rounded-full w-24 h-7 p-0">
       <div className="flex items-center">

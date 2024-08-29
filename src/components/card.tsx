@@ -89,7 +89,7 @@ export default function Card({
                   </div>
                   <Button
                     className="bg-[#84CC16] text-white"
-                    variant={'shadow'}
+                    variant="shadow"
                   >
                     Sign Campaing
                   </Button>
