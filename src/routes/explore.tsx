@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/component/card'
-
-
+import Footer from '@/components/ui/footer'
 import { HeaderCard } from '@/components/headerCard'
 
 export const Route = createFileRoute('/explore')({
@@ -19,6 +18,9 @@ function Explore() {
         'In 2022 my husband and I moved to Portugal to follow our simple life dream and build our...',
       donationValue: '3,182.49',
       progressValue: 50,
+      experience: '5 years',
+      avatarDescription: 'Profile of Olivia Reyes',
+      isLink: true,
     },
     {
       imageSrc: '/imagemCard2.png',
@@ -27,8 +29,11 @@ function Explore() {
       cardTitle: 'Educación en Academia de...',
       cardDescription:
         'Hola, mi nombre es Bernal Torres y la educación de mi sobrino Christian Tomas es mi principal preocupación.',
-      donationValue: '4,177.20 ',
+      donationValue: '4,177.20',
       progressValue: 50,
+      experience: '', // Deixe em branco se não houver valor
+      avatarDescription: '', // Deixe em branco se não houver valor
+      isLink: false, // Defina um valor padrão se não houver necessidade
     },
     {
       imageSrc: '/imagemCard.png',
@@ -39,6 +44,9 @@ function Explore() {
         'Je suis Bernard REPER. Ce projet est très important pour moi car cela aide une famille dans le besoin.',
       donationValue: '3,100.50',
       progressValue: 75,
+      experience: '', // Deixe em branco se não houver valor
+      avatarDescription: '', // Deixe em branco se não houver valor
+      isLink: false, // Defina um valor padrão se não houver necessidade
     },
     {
       imageSrc: '/imagemCard4.png',
@@ -49,6 +57,9 @@ function Explore() {
         'I tend not to speak too much about this work, perhaps it is to be experienced and not to be explained.',
       donationValue: '5,411.79',
       progressValue: 75,
+      experience: '', // Deixe em branco se não houver valor
+      avatarDescription: '', // Deixe em branco se não houver valor
+      isLink: false, // Defina um valor padrão se não houver necessidade
     },
     {
       imageSrc: '/imagemCard5.png',
@@ -59,6 +70,9 @@ function Explore() {
         'Im David Perez aka Chino, who started skating this spot some years ago with my...',
       donationValue: '7,490.26',
       progressValue: 75,
+      experience: '', // Deixe em branco se não houver valor
+      avatarDescription: '', // Deixe em branco se não houver valor
+      isLink: false, // Defina um valor padrão se não houver necessidade
     },
     {
       imageSrc: '/imagemCard6.png',
@@ -69,6 +83,9 @@ function Explore() {
         'In March 2022 the secondary school of Bobrytskiy Lyceum of Kyiv Region...',
       donationValue: '3,427.64',
       progressValue: 75,
+      experience: '', // Deixe em branco se não houver valor
+      avatarDescription: '', // Deixe em branco se não houver valor
+      isLink: false, // Defina um valor padrão se não houver necessidade
     },
     {
       imageSrc: '/imagemCard7.png',
@@ -79,6 +96,9 @@ function Explore() {
         'For the last 6 years we are saving and collecting animals from different farms...',
       donationValue: '6,691.26',
       progressValue: 75,
+      experience: '', // Deixe em branco se não houver valor
+      avatarDescription: '', // Deixe em branco se não houver valor
+      isLink: false, // Defina um valor padrão se não houver necessidade
     },
     {
       imageSrc: '/imagemCard8.png',
@@ -89,6 +109,9 @@ function Explore() {
         'I would like nothing more than to continue baking bread for you, to be able to ...',
       donationValue: '9,184.17',
       progressValue: 75,
+      experience: '', // Deixe em branco se não houver valor
+      avatarDescription: '', // Deixe em branco se não houver valor
+      isLink: false, // Defina um valor padrão se não houver necessidade
     },
     {
       imageSrc: '/imagemCard9.png',
@@ -99,6 +122,9 @@ function Explore() {
         'In the spirit of generosity and compassion, a charitable organization tirelessly...',
       donationValue: '3,182.49',
       progressValue: 75,
+      experience: '', // Deixe em branco se não houver valor
+      avatarDescription: '', // Deixe em branco se não houver valor
+      isLink: false, // Defina um valor padrão se não houver necessidade
     },
     {
       imageSrc: '/imagemCard10.png',
@@ -109,26 +135,36 @@ function Explore() {
         'Charitable endeavors blossom like flowers of goodwill, as individuals and communities...',
       donationValue: '8,207.41',
       progressValue: 75,
+      experience: '', // Deixe em branco se não houver valor
+      avatarDescription: '', // Deixe em branco se não houver valor
+      isLink: false, // Defina um valor padrão se não houver necessidade
     },
-  ]
-
+  ]  
   return (
     <>
-      <div>
+      <div className="overflow-hidden md:mx-24">
         <HeaderCard />
-        <div className=" gap-5 sm:mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+        <div className="gap-5 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {cardsData.map((card, index) => (
-            <Card
-              key={index}
-              imageSrc={card.imageSrc}
-              avatarSrc={card.avatarSrc}
-              avatarName={card.avatarName}
-              cardTitle={card.cardTitle}
-              cardDescription={card.cardDescription}
-              donationValue={card.donationValue}
-              progressValue={card.progressValue}
-            />
+            <div key={index} className="flex items-stretch">
+              <Card
+                imageSrc={card.imageSrc}
+                avatarSrc={card.avatarSrc}
+                avatarName={card.avatarName}
+                cardTitle={card.cardTitle}
+                cardDescription={card.cardDescription}
+                donationValue={card.donationValue}
+                progressValue={card.progressValue}
+                level={card.level}
+                experience={card.experience}
+                avatarDescription={card.avatarDescription}
+                isLink={card.isLink}
+              />
+            </div>
           ))}
+        </div>
+        <div className="mt-5">
+          <Footer />
         </div>
       </div>
     </>
