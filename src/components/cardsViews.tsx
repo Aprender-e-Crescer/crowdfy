@@ -1,4 +1,4 @@
-import FooterOverview from "@/componentes/footerOverview";
+import FooterOverview from "@/components/footerOverview";
 
 function CardsViews() {
   return (
