@@ -2,10 +2,12 @@
 module.exports = {
   darkMode: ["class"], // Mova darkMode para a raiz do objeto
   content: [
+    './index.html',
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    './index.html'
   ],
   theme: {
     container: {
