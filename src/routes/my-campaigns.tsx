@@ -52,14 +52,14 @@ export function LiveCampaigns() {
             </p>
             <img className="py-2 max-h-[876px]" src={ImagemMaeEFilha} />
 
-            <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-3xl text-justify">
+            <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-xl text-justify">
               In 2022 my husband and I moved to Portugal to follow our simple
               life dream and build our home and homestead after completing a 4
               years renovation project which we sold at a profit to finance our
               dream.
             </p>
 
-            <p className="sm:pl-6 pt-2 text-[#475467] text-3xl text-justify">
+            <p className="sm:pl-6 pt-2 text-[#475467] text-xl text-justify">
               Building our own home after COVID certainly had its challenges
               which My husband and I overcame with a smile and a lot of
               creativity. Yet what we didn't know is that our biggest challenge
