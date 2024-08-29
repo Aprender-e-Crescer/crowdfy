@@ -155,9 +155,9 @@ function Explore() {
                 cardDescription={card.cardDescription}
                 donationValue={card.donationValue}
                 progressValue={card.progressValue}
-                level={card.level}
+                level=''
                 experience={card.experience}
-                avatarDescription={card.avatarDescription}
+                avatarDescription={false}
                 isLink={card.isLink}
               />
             </div>
