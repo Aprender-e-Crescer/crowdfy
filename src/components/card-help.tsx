@@ -11,10 +11,8 @@ interface Props {
   nomeUser: string
   descrição: string
   titulo: string
-  temImagemFundo: boolean
 }
 export default function Card({
-  temImagemFundo,
   titulo,
   descrição,
   nomeUser,

@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Choose from '@/components/Choose-campaings-create'
-import Card from '@/components/card-help-campaings-create'
-import ReturnNext from '@/components/Return-Next-pagination-campaings-create'
+import Choose from '@/components/choose-action-inition'
+import Card from '@/components/card-help'
+import ReturnNext from '@/components/return-next-pagination'
 
 export const Route = createFileRoute('/CampaingCreate')({
   component: CampaingCreate,
@@ -14,12 +14,12 @@ function CampaingCreate() {
         <div className="xl:flex gap-10 justify-center ">
           <div>
             <Choose
-              tittle="1. Choose your campaign style"
+              title="1. Choose your campaign style"
               subtittle="What its about your campaign?"
               donation="Donation"
               petition="Petition"
-              descrição1="Create a donation to receive funds"
-              descrição2="Create a petition to crowd signatures"
+              donationDescrition="Create a donation to receive funds"
+              petitionDescrition="Create a petition to crowd signatures"
             />
           </div>
 
@@ -34,14 +34,13 @@ function CampaingCreate() {
               lifes on China countryside just teaching how they can use the
               internet."
               titulo=" Help us Teach English for Kids on China Countryside"
-              temImagemFundo
             />
           </div>
         </div>
         <ReturnNext
-          circulo1={true}
-          circulo2={true}
-          circulo3={true}
+          circleLeft
+          circleCenter={false}
+          circleRigth={false}
           next="Next"
           previous="Previous"
         />

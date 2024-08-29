@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Tell from '@/components/Tell-form-campaings-create'
-import Card from '@/components/card-help-campaings-create'
+import Tell from '@/components/tell-form'
+import Card from '@/components/card-help'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 
@@ -28,7 +28,6 @@ function campaingformsecondstep() {
               lifes on China countryside just teaching how they can use the
               internet."
                 titulo=" Help us Teach English for Kids on China Countryside"
-                temImagemFundo
               />
             </div>
           </div>
@@ -48,13 +47,13 @@ function campaingformsecondstep() {
             </div>
             <div className="flex justify-around bg-slate-50 rounded-full items-center h-10 w-20">
               <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
-                <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
+                <div className="flex bg-[#F1F5F9] rounded-full h-2 w-2"></div>
               </div>
               <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
                 <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
               </div>
               <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
-                <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
+                <div className="flex bg-[#F1F5F9 rounded-full h-2 w-2"></div>
               </div>
             </div>
 

@@ -1,25 +1,25 @@
-import { Uploadimagens } from '../components/Upload-Imagens-campaings-create'
+import { Uploadimagens } from '../components/upload-Imagens'
 
 interface Props {
   title: string
   subtitle: string
-  label1: string
-  label2: string
-  label3: string
-  placeholder1: string
-  placeholder2: string
-  placeholder3: string
+  labelTitle: string
+  labelDateBirth: string
+  labelMoney: string
+  placeholderTitle: string
+  placeholderDateBirth: string
+  placeholderMoney: string
 }
 
 export default function Give({
   title,
   subtitle,
-  label1,
-  label2,
-  label3,
-  placeholder1,
-  placeholder2,
-  placeholder3,
+  labelTitle,
+  labelDateBirth,
+  labelMoney,
+  placeholderTitle,
+  placeholderDateBirth,
+  placeholderMoney,
 }: Props) {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center p-5 w-full">
@@ -35,13 +35,13 @@ export default function Give({
               htmlFor="campaign-title"
               className="block mb-3 text-xl text-[#1E293B]"
             >
-              {label1}
+              {labelTitle}
             </label>
             <input
               type="text"
               id="campaign-title"
               className="flex font-light border border-gray-300 rounded-md w-full p-4 h-10 placeholder-gray-400 text-base"
-              placeholder={placeholder1}
+              placeholder={placeholderTitle}
               required
             />
           </div>
@@ -51,13 +51,13 @@ export default function Give({
               htmlFor="campaign-date"
               className="block mb-3 text-xl text-[#344054]"
             >
-              {label2}
+              {labelDateBirth}
             </label>
             <input
               type="text"
               id="campaign-date"
               className="flex font-light border border-gray-300 rounded-md w-full p-4 h-10 placeholder-gray-400 text-base"
-              placeholder={placeholder2}
+              placeholder={placeholderDateBirth}
               required
             />
           </div>
@@ -67,22 +67,22 @@ export default function Give({
               htmlFor="campaign-goal"
               className="block mb-3 text-xl text-[#344054]"
             >
-              {label3}
+              {labelMoney}
             </label>
             <input
               type="text"
               id="campaign-goal"
               className="flex font-light border border-gray-300 rounded-md w-full p-4 h-10 placeholder-gray-400 text-base"
-              placeholder={placeholder3}
+              placeholder={placeholderMoney}
               required
             />
           </div>
         </div>
 
         <Uploadimagens
-          descricao="ou solte sua foto aqui"
-          enviar="Clique para enviar"
-          tiposEnvio="SVG, PNG, JPG ou GIF (max. 1MB)"
+          descrition="ou solte sua foto aqui"
+          toSendHover="Clique para enviar"
+          shippingTypes="SVG, PNG, JPG ou GIF (max. 1MB)"
         />
       </div>
     </div>

@@ -1,27 +1,27 @@
 import { PiggyBank, FilePenLine } from 'lucide-react'
 
 interface Props {
-  tittle: string
+  title: string
   subtittle: string
   donation: string
   petition: string
-  descrição1: string
-  descrição2: string
+  donationDescrition: string
+  petitionDescrition: string
 }
 export default function Choose({
-  tittle,
+  title,
   subtittle,
   donation,
   petition,
-  descrição1,
-  descrição2,
+  donationDescrition,
+  petitionDescrition,
 }: Props) {
   return (
     <>
       <div className="flex md:hidden flex-col gap-4 justify-center ">
         <div className="flex flex-col">
           <div className="flex">
-            <p className="text-2xl text-[#101828] font-bold">{tittle}</p>
+            <p className="text-2xl text-[#101828] font-bold">{title}</p>
           </div>
           <div className="flex">
             <p className="text-[#475467] font-normal text-[16px]">
@@ -42,7 +42,7 @@ export default function Choose({
                 <p className="text-[24px] font-bold">{donation}</p>
               </div>
               <div className="flex">
-                <p className="text-[#64748B] text-[16px]">{descrição1}</p>
+                <p className="text-[#64748B] text-[16px]">{donationDescrition}</p>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Choose({
                 <p className="text-[24px] font-bold">{petition}</p>
               </div>
               <div className="flex">
-                <p className="text-[#64748B]">{descrição2}</p>
+                <p className="text-[#64748B]">{petitionDescrition}</p>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function Choose({
       <div className="hidden md:flex flex-col gap-4 w-full mr-52">
         <div className="flex flex-col">
           <div className="flex">
-            <p className="text-2xl text-[#101828] font-bold">{tittle}</p>
+            <p className="text-2xl text-[#101828] font-bold">{title}</p>
           </div>
           <div className="flex">
             <p className="text-[#475467] font-normal text-[20px]">
@@ -90,7 +90,7 @@ export default function Choose({
                 <p className="text-[35px] font-bold">{donation}</p>
               </div>
               <div className="flex">
-                <p className="text-[#64748B] text-[21px]">{descrição1}</p>
+                <p className="text-[#64748B] text-[21px]">{donationDescrition}</p>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Choose({
                 <p className="text-[35px] font-bold">{petition}</p>
               </div>
               <div className="flex">
-                <p className="text-[#64748B] text-[21px]">{descrição2}</p>
+                <p className="text-[#64748B] text-[21px]">{petitionDescrition}</p>
               </div>
             </div>
           </div>

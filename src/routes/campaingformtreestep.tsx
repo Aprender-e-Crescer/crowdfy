@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Give from '../components/give-form-campaings-create'
-import Card from '@/components/card-help-campaings-create'
-import imagemFundo from '../assets/Image.png'
+import Give from '../components/give-form'
+import Card from '@/components/card-help'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 
@@ -18,12 +17,12 @@ function campaingformtreestep() {
             <Give
               title="3. Give final details"
               subtitle="What it's about your campaign?"
-              label1="Your campaign title"
-              label2="Create a deadline for your campaign"
-              label3="Goal"
-              placeholder1="Write here your beautiful title 🪴"
-              placeholder2="dd/mm/aaaa"
-              placeholder3="$10.000"
+              labelTitle="Your campaign title"
+              labelDateBirth="Create a deadline for your campaign"
+              labelMoney="Goal"
+              placeholderTitle="Write here your beautiful title 🪴"
+              placeholderDateBirth="dd/mm/aaaa"
+              placeholderMoney="$10.000"
             />
           </div>
 
@@ -38,8 +37,6 @@ function campaingformtreestep() {
                   lifes on China countryside just teaching how they can use the
                   internet."
               titulo=" Help us Teach English for Kids on China Countryside"
-              outraImagemFundo={imagemFundo}
-              temImagemFundo
             />
           </div>
         </div>
@@ -59,10 +56,10 @@ function campaingformtreestep() {
           </div>
           <div className="flex justify-around bg-slate-50 rounded-full items-center h-10 w-20">
             <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
-              <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
+              <div className="flex bg-[#F1F5F9] rounded-full h-2 w-2"></div>
             </div>
             <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
-              <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
+              <div className="flex bg-[#F1F5F9] rounded-full h-2 w-2"></div>
             </div>
             <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
               <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>

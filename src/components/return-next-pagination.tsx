@@ -1,17 +1,17 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 interface Props {
-  circulo1: boolean
-  circulo2: boolean
-  circulo3: boolean
+  circleLeft: boolean
+  circleCenter: boolean
+  circleRigth: boolean
   previous: string
   next: string
 }
 
 export default function ReturnNext({
-  circulo1,
-  circulo2,
-  circulo3,
+  circleLeft,
+  circleCenter,
+  circleRigth,
   previous,
   next,
 }: Props) {
@@ -31,19 +31,19 @@ export default function ReturnNext({
 
       <div className="flex justify-around bg-slate-50 rounded-full items-center h-10 w-20">
         <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
-          {circulo1 && (
+          {circleLeft && (
             <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
           )}
         </div>
 
         <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
-          {circulo2 && (
+          {circleCenter && (
             <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
           )}
         </div>
 
         <div className="flex rounded-full h-2 w-2 bg-[#F1F5F9]">
-          {circulo3 && (
+          {circleRigth && (
             <div className="flex bg-[#84CC16] rounded-full h-2 w-2"></div>
           )}
         </div>
