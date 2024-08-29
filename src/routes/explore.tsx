@@ -2,7 +2,6 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/component/card'
 import Footer from '@/components/ui/footer'
 import { HeaderCard } from '@/components/headerCard'
-import Footer from '@/components/ui/footer'
 
 export const Route = createFileRoute('/explore')({
   component: Explore,
@@ -128,9 +127,9 @@ function Explore() {
                 donationValue={card.donationValue}
                 progressValue={card.progressValue}
                 level=""
-                experience={card.experience}
+                experience=""
                 avatarDescription=""
-                isLink={card.isLink}
+                isLink={true}
               />
             </div>
           ))}
