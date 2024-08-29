@@ -43,16 +43,20 @@ export function LiveCampaigns() {
 
       <main className="mt-12 sm:justify-center sm:w-full">
         <div className="lg:flex w-full">
-          <div className="ml-6 mr-6 mb-6">
+          <div className="ml-2 w-auto  mr-6 mb-6">
             <h1 className="font-semibold font-[inter] text-3xl">
               Help me Fight Cancer
             </h1>
             <p className="pb-4 mt-1 text-[#475467] font-normal text-xl">
               Your current sales summary and activity.
             </p>
-            <img className="py-2 max-h-[876px]" src={ImagemMaeEFilha} />
+             
+             { /*max-sm:max-h-full 
+             Grudar o texto junto com a imagem, para o container acompanhar*/}
+  
+            <img className="py-2 max-h-full  max-xs:max-h-[175px] max-xs:w-fit max-sm:w-10/12 " src={ImagemMaeEFilha} />
 
-            <p className="sm:pl-6 pb-2 text-[#475467] pt-3 text-xl text-justify">
+            <p className="sm:pl-6 pb-5 max-xs:text-base text-[#475467]  pt-3 text-xl text-justify">
               In 2022 my husband and I moved to Portugal to follow our simple
               life dream and build our home and homestead after completing a 4
               years renovation project which we sold at a profit to finance our
