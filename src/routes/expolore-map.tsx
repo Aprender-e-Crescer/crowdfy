@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { HeaderCard } from '@/components/headerCard'
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination'
-import { CardMapa } from '@/components/component/Cardmapa'
+import { CardMapa } from '@/components/Cardmapa'
 
 const cardData = [
   {

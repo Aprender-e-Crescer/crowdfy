@@ -6,7 +6,7 @@ import iconAvatar from '../assets/Avatars.png'
 import { Progress } from './ui/progress'
 import { Button } from './ui/button'
 import backgroundImage from '@/assets/images-roadmap/Image.png'
-import { FundCampaing } from './ui/Fund-Campaing'
+import { FundCampaing } from '@/components/Fund-Campaing'
 import { Loader2 } from 'lucide-react'
 import { BackgroundButton } from './backgroundButton'
 

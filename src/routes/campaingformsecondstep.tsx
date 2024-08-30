@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import Tell from '@/components/Tell'
-import Card from '@/components/card'
+import {Card} from '@/components/card'
 import imagemFundo from '../assets/Image.png'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@tanstack/react-router'

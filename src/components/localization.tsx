@@ -4,7 +4,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/select'
+} from '@/components/ui/select'
 
 import icon from '@/assets/dollar-sign.png'
 import localimage from '@/assets/localimage.png'

@@ -1,6 +1,14 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Card } from '@/components/component/card'
-
+import { Card } from '@/components/card'
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from '@/components/ui/pagination'
 
 import { HeaderCard } from '@/components/headerCard'
 
@@ -115,7 +123,7 @@ function Explore() {
   return (
     <>
       <div>
-        <HeaderCard />
+        <HeaderCard/>
         <div className=" gap-5 sm:mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {cardsData.map((card, index) => (
             <Card
@@ -128,6 +136,27 @@ function Explore() {
               donationValue={card.donationValue}
               progressValue={card.progressValue} type={'default'} level={''} experience={''} avatarDescription={''}            />
           ))}
+        </div>
+        <div>
+          <Pagination className="mt-6 px-28 sm:px-0">
+            <PaginationContent className="flex items-center justify-between w-full border-t border-gray-300 p-5 mx-4 sm:mx-0">
+              <PaginationItem>
+                <PaginationPrevious href="#" />
+              </PaginationItem>
+              <PaginationItem className="flex">
+                <PaginationLink href="#">1</PaginationLink>
+                <PaginationLink href="#">2</PaginationLink>
+                <PaginationLink href="#">3</PaginationLink>
+                <PaginationEllipsis />
+                <PaginationLink href="#">8</PaginationLink>
+                <PaginationLink href="#">9</PaginationLink>
+                <PaginationLink href="#">10</PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationNext href="#" />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
         </div>
       </div>
     </>

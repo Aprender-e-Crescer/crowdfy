@@ -1,4 +1,4 @@
-import { Progress } from '@/components/component/progress'
+import { Progress } from '@/components/progress'
 import { LuUpload } from 'react-icons/lu'
 import { FaRegHeart } from 'react-icons/fa'
 

@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import img from '@/assets/img.png'
-import { Button } from './button'
+import { Button } from '@/components/ui/button'
 
 export function FundCampaing({
   nome,

@@ -3,10 +3,10 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/accordion'
+} from '@/components/ui/accordion'
 
 import { Link } from '@tanstack/react-router'
-import { Badge } from './badge'
+import { Badge } from '@/components/ui/badge'
 
 import iconfooter from '@/assets/icon-footer.png'
 
