@@ -1,34 +1,30 @@
 import { createFileRoute } from '@tanstack/react-router';
-import TituloPage from "@/components/titlePage";
+import TitlePage from "@/components/titlePage";
 import CardOverview from "@/components/CardOverview";
 import ViewActivity from "@/components/ViewActivity";
-import Titulo from '@/components/titleViewActivity';
+import TitleViewActivity from '@/components/titleViewActivity';
 import CardsViews from '@/components/cardsViews';
 
-export const Route = createFileRoute('/Campaigns')({
-  component: Campaigns,
-});
 
 function Campaigns() {
   return (
-    <div className="Campaigns ml-[16px] md:ml-[110px]">
-      <div className='mt-[24px] mb-[16px] md:mt-[48px] md:mb-[32px]'>
-        <TituloPage />
+    <div className="Campaigns ml-[7px] md:ml-[100px] justify-center mr-[7px] md:mr-auto">
+         <div className='mt-[24px] mb-[16px] md:mt-[48px] md:mb-[32px]'>
+        <TitlePage />
       </div>
       <div className='flex flex-col md:flex-row'>
-        <div>
-          <div className='mr-4'>
-            <CardOverview />
-          </div>
-          <div className='mt-6 md:mt-10'>
+        <div className='flex flex-col md:flex-row'>
+          <div>
+            <div className='mb-11 md:mb-10 max-w-65'>
+              <CardOverview />
+            </div>
             <CardsViews />
           </div>
         </div>
-
-        <div className='flex flex-col md:ml-5 mt-6 md:mt-0'>
-          <Titulo />
+        <div className='flex-row md:flex-col mt-11 md:mt-10 ml-auto md:ml-[50px]'>
+          <TitleViewActivity />
           {/* Envolva as atividades em uma div com rolagem vertical em telas pequenas */}
-          <div className='flex flex-col gap-4 overflow-y-auto max-h-[400px] md:max-h-full'>
+          <div className='flex-row md:flex-col'>
             <ViewActivity />
             <ViewActivity />
             <ViewActivity />
@@ -41,3 +37,7 @@ function Campaigns() {
     </div>
   );
 }
+
+export const Route = createFileRoute('/Campaigns')({
+  component: Campaigns,
+});

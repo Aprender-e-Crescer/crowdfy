@@ -1,5 +1,5 @@
 import React from 'react';
-import Cristal from "@/assets/image.png";
+import Cristal from "@/assets/cristal.png";
 
 const ViewActivity: React.FC = () => {
     return (

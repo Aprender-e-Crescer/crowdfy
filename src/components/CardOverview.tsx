@@ -6,7 +6,7 @@ import { LuCheckCheck } from "react-icons/lu";
 
 function CardOverview() {
   return (
-    <div className="border-solid border-[#EAECF0] border-[2px] h-auto w-full lg:w-[936px] rounded-[12px] p-[20px]">
+    <div className="border-solid border-[#000000] border-[2px] h-auto w-full lg:w-[936px] rounded-[12px] p-[20px]">
       <div className="flex flex-col lg:flex-row justify-between">
         <h2 className="font-semibold text-[18px] mt-[28px] mb-[28px]">Your campaigns (2)</h2>
         <div className="flex justify-center lg:ml-[405px] mb-[28px]">
