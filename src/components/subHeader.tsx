@@ -27,3 +27,4 @@ export function SubHeader({ buttons }: Props) {
     </div>
   );
 }
+
