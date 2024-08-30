@@ -50,18 +50,6 @@ export default function Choose({tittle, subtittle, donation, petition, descri√ß√
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
         <div className="hidden md:flex flex-col gap-4">
             <div className="flex flex-col">
                 <div className="flex">
