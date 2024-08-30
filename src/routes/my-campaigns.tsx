@@ -31,7 +31,7 @@ export function LiveCampaigns() {
     <> 
     <SubHeader buttons={buttonsSubHeader}/>
         
-<main className='w-[610px] my-28 mx-20 sm:my-28 sm:mx-20 sm:justify-center  sm:w-full w-fit'>
+<main className='w-610px my-28 mx-20 sm:my-28 sm:mx-20 sm:justify-center  sm:w-full w-fit'>
     <div className='lg:flex'>
         <div className='sm:m-6'>
             <h1 className ="font-semibold pl-6 font-[inter] flex text-3xl" >Help me Fight Cancer</h1>
@@ -92,7 +92,7 @@ export function LiveCampaigns() {
     <div className='mb-4'>
             <h1 itemID='Fund' className='text-[#0F172A] text-sm base ml-1 mb-1 tracking-wide font-medium'>Words of Support 🕊️</h1>
             <Textarea placeholder='Wish you a nice weekend and stay strong guys, I m here with you all 💪🫡💚️'/>
-            <p className='text-[#64748B] mt-1 ml-1 text-sm'>Not only numbers make the difference on our lives :)</p>
+            <p className='text-[#64748B] mt-1 ml-1 text-sm'>Not only numbers make the difference on our lives :</p>
     </div>
 
             <Button className=' w-full bg-[#84CC16] text-white' variant={'default'}><img src={IconDonate}/>Donate now</Button>

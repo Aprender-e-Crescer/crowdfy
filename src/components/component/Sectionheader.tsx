@@ -8,7 +8,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
 <div className="flex justify-between p-4 md:p-8">
 <div>
 <h2 className="text-xl md:text-3xl font-bold tracking-tight mb-2 md:mb-1 font-inter">
-         {title} {}
+    History     {title} {}
 </h2>
 <p className="text-sm md:text-base text-muted-foreground font-plus-jakarta-sans">
          Como você pretende ajudar o mundo hoje.

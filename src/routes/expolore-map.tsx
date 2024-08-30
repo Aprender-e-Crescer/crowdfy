@@ -1,18 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { HeaderCard } from '@/components/headerCard'
+import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination'
 import { CardMapa } from '@/components/component/Cardmapa'
-import { Map } from '@/components/map'
-
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from '@/components/ui/pagination'
-import Footer from '@/components/ui/footer'
 
 const cardData = [
   {
@@ -23,7 +12,7 @@ const cardData = [
       'In 2022 my husband and I moved to Portugal to follow our simple life dream and build our',
     location: 'São Paulo, Brasil',
     amount: '€3,182.49 ',
-    moeda: 'euros',
+    moeda: 'euros', 
     progress: 45,
     donationText: 'Donations',
   },
@@ -34,8 +23,8 @@ const cardData = [
     description:
       'I tend not to speak too much about this work, perhaps it is to be experienced and not to be explained.',
     location: 'São Paulo, Brasil',
-    amount: '4.141 ',
-    moeda: ' signs',
+    amount: '4.141',
+    moeda: 'signs',
     progress: 45,
     donationText: 'Petition',
   },
@@ -47,13 +36,13 @@ const cardData = [
       'I tend not to speak too much about this work, perhaps it is to be experienced and not to be explained.',
     location: 'São Paulo, Brasil',
     amount: '4.141',
-    moeda: ' signs',
+    moeda: 'signs',
     progress: 45,
     donationText: 'Petition',
   },
 ]
 
-export const Route = createFileRoute('/explore-map')({
+export const Route = createFileRoute('/expolore-map')({
   component: Explore,
 })
 
@@ -65,11 +54,11 @@ function Explore() {
           <HeaderCard />
           <CardMapa cardData={cardData} />
           <Pagination className="flex items-center justify-center mt-4">
-            <PaginationContent className="flex items-center justify-between w-full ">
+            <PaginationContent className="flex items-center justify-between w-full">
               <PaginationItem>
                 <PaginationPrevious href="#" />
               </PaginationItem>
-              <PaginationItem className="flex ">
+              <PaginationItem className="flex">
                 <PaginationLink href="#">1</PaginationLink>
                 <PaginationLink href="#">2</PaginationLink>
                 <PaginationLink href="#">3</PaginationLink>
@@ -85,11 +74,9 @@ function Explore() {
           </Pagination>
         </div>
         <div className="flex-none w-full md:w-1/2 h-96 md:h-auto">
-          <Map />
         </div>
       </div>
-      <div className="mt-5">
-        <Footer />
+      <div className="mt-4 flex-shrink-0">
       </div>
     </div>
   )

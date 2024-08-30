@@ -14,6 +14,9 @@ import { Route as rootRoute } from './routes/__root'
 import { Route as ProfileNotificationsImport } from './routes/profileNotifications'
 import { Route as ProfileSettingsImport } from './routes/profile-settings'
 import { Route as MyCampaignsImport } from './routes/my-campaigns'
+import { Route as HistoryImport } from './routes/history'
+import { Route as FavoritesImport } from './routes/favorites'
+import { Route as ExpoloreMapImport } from './routes/expolore-map'
 import { Route as ExploreMapImport } from './routes/explore-map'
 import { Route as ExploreImport } from './routes/explore'
 import { Route as AboutImport } from './routes/about'
@@ -33,6 +36,21 @@ const ProfileSettingsRoute = ProfileSettingsImport.update({
 
 const MyCampaignsRoute = MyCampaignsImport.update({
   path: '/my-campaigns',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const HistoryRoute = HistoryImport.update({
+  path: '/history',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const FavoritesRoute = FavoritesImport.update({
+  path: '/favorites',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ExpoloreMapRoute = ExpoloreMapImport.update({
+  path: '/expolore-map',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -88,6 +106,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExploreMapImport
       parentRoute: typeof rootRoute
     }
+    '/expolore-map': {
+      id: '/expolore-map'
+      path: '/expolore-map'
+      fullPath: '/expolore-map'
+      preLoaderRoute: typeof ExpoloreMapImport
+      parentRoute: typeof rootRoute
+    }
+    '/favorites': {
+      id: '/favorites'
+      path: '/favorites'
+      fullPath: '/favorites'
+      preLoaderRoute: typeof FavoritesImport
+      parentRoute: typeof rootRoute
+    }
+    '/history': {
+      id: '/history'
+      path: '/history'
+      fullPath: '/history'
+      preLoaderRoute: typeof HistoryImport
+      parentRoute: typeof rootRoute
+    }
     '/my-campaigns': {
       id: '/my-campaigns'
       path: '/my-campaigns'
@@ -119,6 +158,9 @@ export const routeTree = rootRoute.addChildren({
   AboutRoute,
   ExploreRoute,
   ExploreMapRoute,
+  ExpoloreMapRoute,
+  FavoritesRoute,
+  HistoryRoute,
   MyCampaignsRoute,
   ProfileSettingsRoute,
   ProfileNotificationsRoute,
@@ -136,6 +178,9 @@ export const routeTree = rootRoute.addChildren({
         "/about",
         "/explore",
         "/explore-map",
+        "/expolore-map",
+        "/favorites",
+        "/history",
         "/my-campaigns",
         "/profile-settings",
         "/profileNotifications"
@@ -152,6 +197,15 @@ export const routeTree = rootRoute.addChildren({
     },
     "/explore-map": {
       "filePath": "explore-map.tsx"
+    },
+    "/expolore-map": {
+      "filePath": "expolore-map.tsx"
+    },
+    "/favorites": {
+      "filePath": "favorites.tsx"
+    },
+    "/history": {
+      "filePath": "history.tsx"
     },
     "/my-campaigns": {
       "filePath": "my-campaigns.tsx"

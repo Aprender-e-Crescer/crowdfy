@@ -1,14 +1,13 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/component/card'
+import { SectionHeader } from '@/components/component/Sectionheader'
 
 
-import { HeaderCard } from '@/components/headerCard'
-
-export const Route = createFileRoute('/explore')({
-  component: Explore,
+export const Route = createFileRoute('/favorites')({
+  component: Favorites,
 })
 
-function Explore() {
+function Favorites() {
   const cardsData = [
     {
       imageSrc: '/imagemCard1.png',
@@ -115,7 +114,7 @@ function Explore() {
   return (
     <>
       <div>
-        <HeaderCard />
+        <SectionHeader/>
         <div className=" gap-5 sm:mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {cardsData.map((card, index) => (
             <Card
