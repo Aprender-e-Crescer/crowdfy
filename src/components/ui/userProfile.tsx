@@ -1,10 +1,11 @@
-export function UserProfile({title, img, text1, text2} :
-    { 
-        title: string,
-        img: string
-        text1: string
-        text2: string
-    }
+interface Props {
+    title: string,
+    img: string
+    valorDonate: string
+    horarioDonate: string
+} 
+
+export function UserProfile({title, img, valorDonate, horarioDonate} : Props
     ) {
         return(
             <div className=" flex">
@@ -12,7 +13,7 @@ export function UserProfile({title, img, text1, text2} :
     
                 <div className="mb-4">
                     <h1 className="flex-col font-semibold">{title}</h1>
-                     <p className="flex text-sm font-medium">{text1} <div className="bg-black h-[6px] w-[6px] mt-[7px] rounded-full mx-3"/> {text2}</p>
+                    <p className="flex text-sm font-medium">{valorDonate} <div className="bg-black h-[6px] w-[6px] mt-[7px] rounded-full mx-3"/> {horarioDonate}</p>
                 </div>
                 </div> 
         )
