@@ -1,25 +1,30 @@
-import { Button } from "./ui/button"
-import { InputSubHeader } from "./ui/input-sub-header"
+import { Link } from "@tanstack/react-router";
+import { Button } from "./ui/button";
+import { InputSubHeader } from "./ui/input-sub-header";
 
-export function SubHeader({buttons} :
-    {
-        buttons: {
-            title: string,
-            variant:  "green" | "ghost",
-            icon: JSX.Element,
-            route: string,
-        }[]
-    }
-) {
-    return (
-        <div className="flex justify-between ml-28 mr-28">
-            <div className="flex gap-3 mr-5">
-                {buttons.map((button) => (
-                    <Button key={button.title} variant={button.variant}>
-                      {button.icon} {button.title}
-                    </Button>))}
-            </div>
-            <InputSubHeader />
-        </div>
-    )
+interface Props {
+  buttons: {
+    title: string;
+    variant: "green" | "ghost";
+    icon: JSX.Element;
+    route: string;
+  }[];
 }
+
+export function SubHeader({ buttons }: Props) {
+  return (
+    <div className="flex justify-start sm:justify-between pt-6 max-[450px]:flex-col max-[450px]:gap-2 ml-2">
+      <div className="flex gap-3 mr-2 sm:mr-5">
+        {buttons.map(({ title, variant, icon, route }) => (
+          <Link to={route} key={title}>
+            <Button variant={variant}>
+              {icon} {title}
+            </Button>
+          </Link>
+        ))}
+      </div>
+      <InputSubHeader />
+    </div>
+  );
+}
+
