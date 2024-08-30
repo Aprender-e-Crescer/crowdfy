@@ -1,4 +1,4 @@
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 
 export function Map() {
@@ -20,4 +20,6 @@ export function Map() {
       </Marker>
     </MapContainer>
   )
+
+
 }

@@ -1,7 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import img from '@/assets/img.png'
 import { Button } from './button'
-import { IconNode, Loader2, Pen } from 'lucide-react'
 
 export function FundCampaing({
   nome,
@@ -46,7 +45,7 @@ export function FundCampaing({
         </div>
         <Button
           className="mb-14 text-white w-max"
-          variant={Variant}
+          Variant={Variant}
           colorButton={colorButton}
         >
           {Icon}
