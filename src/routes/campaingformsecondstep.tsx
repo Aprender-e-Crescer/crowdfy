@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Tell from '@/components/tell-form'
+import Tell from '@/components/Tell-form'
 import Card from '@/components/card-help'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
@@ -19,15 +19,15 @@ function campaingformsecondstep() {
 
             <div className="p-2 flex gap-5 flex-col">
               <Card
-                numerosBarra="4.533/9.000"
-                localização="São Paulo, Brazil"
-                nomeUser="Mateus Rodrigues"
-                descrição=" I need about 9.000 signatures to deliver to my
+                barNumbers="4.533/9.000"
+                location="São Paulo, Brazil"
+                userName="Mateus Rodrigues"
+                descrition=" I need about 9.000 signatures to deliver to my
               mayor in two weeks and get that grant! Check more about our
               project and if you want to see how we are changing lovely children
               lifes on China countryside just teaching how they can use the
               internet."
-                titulo=" Help us Teach English for Kids on China Countryside"
+                title=" Help us Teach English for Kids on China Countryside"
               />
             </div>
           </div>

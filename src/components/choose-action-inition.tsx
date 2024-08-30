@@ -18,7 +18,7 @@ export default function Choose({
 }: Props) {
   return (
     <>
-      <div className="flex md:hidden flex-col gap-4 justify-center ">
+      <div className="flex md:hidden flex-col gap-4 justify-center">
         <div className="flex flex-col">
           <div className="flex">
             <p className="text-2xl text-[#101828] font-bold">{title}</p>
@@ -77,7 +77,7 @@ export default function Choose({
             </p>
           </div>
         </div>
-        <div className="flex gap-1 ">
+        <div className="flex gap-1">
           <div className="flex h-[593px] border-2 rounded-xl items-center w-full">
             <div className="flex-col pt-96 pl-4 justify-center items-center">
               <div className="flex items-center justify-center border-4 border-slate-100 bg-[#FFFFFF] rounded-full w-16">
