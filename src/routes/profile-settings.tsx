@@ -5,7 +5,7 @@ import ImageFundo from '@/assets/Image overlay.png'
 import PersonalInfo from '@/components/personal-info'
 import ProfileInfo from '@/components/profile-info'
 import { Button } from '@/components/ui/button'
-import { CardAvengers } from '@/components/card-profile'
+import { Card } from '@/components/card'
 
 export const Route = createFileRoute('/profile-settings')({
   component: ProfileSettings,
@@ -22,7 +22,12 @@ function ProfileSettings() {
             <Localization />
           </div>
         </div>
-        <CardAvengers
+        <Card
+          cardDescription=""
+          type="settings"
+          cardTitle=""
+          donationValue=""
+          isLink={false}
           avatarName="Marcus Dutra"
           avatarSrc={ImageAvatar}
           progressValue={90}
@@ -57,14 +62,19 @@ function ProfileSettings() {
 
           <div className="flex gap-20 flex-col xl:flex-row justify-around items-center max-w-[1500px]">
             <PersonalInfo />
-            <CardAvengers
+            <Card
+              cardDescription=""
+              type="settings"
+              cardTitle=""
+              donationValue=""
+              isLink={false}
               avatarName="Marcus Dutra"
               avatarSrc={ImageAvatar}
-              imageSrc={ImageFundo}
               progressValue={90}
-              avatarDescription="Designer, Rio de Janeiro, Brasil"
               level="level 8"
               experience="18.543 XP/20.000 XP"
+              avatarDescription="Designer, Rio de Janeiro, Brasil"
+              imageSrc={ImageFundo}
             />
           </div>
         </div>
