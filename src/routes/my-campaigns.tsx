@@ -1,6 +1,6 @@
 import { SubHeader } from "@/components/subHeader";
 import { Textarea } from "@/components/ui/textarea";
-import { UserProfile } from "@/components/ui/user-profile";
+import { UserProfile } from "@/components/user-profile";
 import { Progress } from "@/components/ui/progress";
 import share from "@/assets/share.svg";
 import Heart from "@/assets/HeartFav.svg";
