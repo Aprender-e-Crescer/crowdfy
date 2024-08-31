@@ -61,8 +61,7 @@ function ProfileNotifications() {
           text1="is raising $1000 to afford  their travel costs (2 persons)"
           postedIn="in 20 days"
           textbutton="Fund Campaing"
-          Variant="shadow"
-          colorButton="green"
+          variant="greenShadow"
         />
 
         <FundCampaing
@@ -70,8 +69,7 @@ function ProfileNotifications() {
           text1="is raising $1000 to afford  their travel costs (2 persons)"
           postedIn="in 20 days"
           textbutton="Fund Campaing"
-          Variant="shadow"
-          colorButton="green"
+          variant="grayShadow"
         />
 
         <FundCampaing
@@ -80,8 +78,7 @@ function ProfileNotifications() {
           postedIn="2 mins ago"
           textbutton="Get 300 uSDG"
           Icon={<Loader2 className="w-5 h-5" />}
-          Variant="shadow"
-          colorButton="gray"
+          variant="purpleShadow"
         />
 
         <FundCampaing
@@ -89,8 +86,7 @@ function ProfileNotifications() {
           text1="is teaching  english to 300 chinese children"
           postedIn="in 20 days"
           textbutton="Write Words of Support"
-          Variant="shadow"
-          colorButton="green"
+          variant="greenShadow"
           Icon={<Pen className="w-5 h-5" />}
         />
 
@@ -99,8 +95,7 @@ function ProfileNotifications() {
           text1="is teaching  english to 300 chinese children"
           postedIn="in 20 days"
           textbutton="Write Words of Support"
-          Variant="shadow"
-          colorButton="green"
+          variant="grayShadow"
           Icon={<Pen className="w-5 h-5" />}
         />
 
@@ -110,8 +105,7 @@ function ProfileNotifications() {
           postedIn="2 mins ago"
           textbutton="Get 300 uSDG"
           Icon={<Loader2 className="w-5 h-5" />}
-          Variant="shadow"
-          colorButton="purple"
+          variant="greenShadow"
         />
 
         <FundCampaing
@@ -119,8 +113,7 @@ function ProfileNotifications() {
           text1="Your 300 uSDG + 10.000 XP will be available in 3 days"
           postedIn="2 mins ago"
           textbutton="Get 300 uSDG"
-          Variant="shadow"
-          colorButton="gray"
+          variant="greenShadow"
           Icon={<Loader2 className="w-5 h-5" />}
         />
         <Pagination className=" hidden md:flex justify-evenly w-full mt-10 ">

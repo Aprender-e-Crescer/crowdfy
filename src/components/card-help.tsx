@@ -97,10 +97,7 @@ export default function Card({
                     />
                     <p className="text-[#475467] text-base">{localização}</p>
                   </div>
-                  <Button
-                    className="bg-[#84CC16] text-white ml-24"
-                    variant={'shadow'}
-                  >
+                  <Button className="ml-24" variant="greenShadow">
                     Sign Campaing
                   </Button>
                 </div>

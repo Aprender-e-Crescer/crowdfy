@@ -62,9 +62,7 @@ export function Roadmap({
                     alt="Location Icon"
                   />
                   <p className="text-[#475467] text-[12px]">{localização}</p>
-                  <Button className="bg-[#84CC16] text-white" variant="shadow">
-                    Sign Campaign
-                  </Button>
+                  <Button variant="greenShadow">Sign Campaign</Button>
                 </div>
               </div>
               <div className="flex mt-3  items-center">
@@ -110,12 +108,7 @@ export function Roadmap({
                         <p className="text-[#475467] text-base">
                           {localização}
                         </p>
-                        <Button
-                          className="bg-[#84CC16] text-white"
-                          variant="shadow"
-                        >
-                          Sign Campaign
-                        </Button>
+                        <Button variant="greenShadow">Sign Campaign</Button>
                       </div>
                     </div>
                   </div>
@@ -151,9 +144,8 @@ export function Roadmap({
                 text1="Raise together $1000 to pay for our (2 persons) flights for the 1st week"
                 postedIn="in 20 days"
                 textbutton="Fund campaign"
-                Variant="shadow"
+                variant="grayShadow"
                 Icon={<Loader2 className="w-5 h-5" />}
-                colorButton="gray"
               />
             </div>
           </div>

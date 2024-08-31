@@ -33,7 +33,7 @@ function ProfileSettings() {
         />
 
         <div className="flex justify-center gap-10 mb-5">
-          <Button className="bg-lime-500 text-white" variant="shadow" size="lg">
+          <Button variant="greenShadow" size="lg">
             Save Settings
           </Button>
         </div>
@@ -45,11 +45,7 @@ function ProfileSettings() {
         <div className="flex flex-col gap-y-5 gap-x-5 ">
           <div className="flex w-full justify-between items-center mt-5">
             <ProfileInfo />
-            <Button
-              className="bg-lime-500 text-white"
-              variant="shadow"
-              size="lg"
-            >
+            <Button variant="greenShadow" size="lg">
               Save Settings
             </Button>
           </div>
