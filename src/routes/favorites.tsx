@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Card } from '@/components/card'
+import { Card } from '@/components/card-donate'
 import { SectionHeader } from '@/components/Sectionheader'
 
 

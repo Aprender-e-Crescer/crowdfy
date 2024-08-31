@@ -28,8 +28,8 @@ function Header() {
 
   return (
     <header
-      className={`ml-20 mr-48 flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
-        } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
+      className={`flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
+        } shadow-sm px-2 py-3 md:px-2 transition-all duration-300`}
     >
       {/* Logo */}
       <div className="flex items-center flex-grow-0">

@@ -1,6 +1,6 @@
 import * as React from "react"
-import { MoreHorizontal } from "lucide-react"
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
+import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react"
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa6"
 import { Link } from '@tanstack/react-router'
 import { cn } from "@/lib/utils"
 import { ButtonProps, buttonVariants } from "@/components/ui/button"
@@ -53,7 +53,7 @@ const PaginationLink = ({
         variant: isActive ? "outline" : "ghost",
         size,
       }),
-      "px-2 py-1 text-sm", // Ajuste de padding e tamanho da fonte
+      "px-2 py-1 text-sm",
       className
     )}
     {...props}
@@ -61,12 +61,17 @@ const PaginationLink = ({
 )
 PaginationLink.displayName = "PaginationLink"
 
+type PaginationPreviousProps = React.ComponentProps<typeof PaginationLink> & {
+  useArrows: boolean
+}
+
 const PaginationPrevious = ({
   className,
+  useArrows = false,
   ...props
-}: React.ComponentProps<typeof PaginationLink>) => (
+}: PaginationPreviousProps) => (
   <Link
-    to="/explore"  // Adicionando rota ao Link
+    to="/explore"
     className={cn("text-start rounded-lg overflow-hidden font-sans", className)}
     aria-label="Go to previous page"
   >
@@ -75,19 +80,28 @@ const PaginationPrevious = ({
       className={cn("gap-1 pl-2.5", className)}
       {...props}
     >
-      <FaArrowLeft className="h-4 w-4" /> {/* Ícone FaArrowLeft */}
-      <span>Previous</span>
+      {useArrows ? (
+        <FaArrowLeft className="h-4 w-4" />
+      ) : (
+        <ChevronLeft className="h-4 w-4" />
+      )}
+      <span className="hidden sm:inline">Previous</span> {/* Esconde em telas pequenas */}
     </PaginationLink>
   </Link>
 )
 PaginationPrevious.displayName = "PaginationPrevious"
 
+type PaginationNextProps = React.ComponentProps<typeof PaginationLink> & {
+  useArrows: boolean
+}
+
 const PaginationNext = ({
   className,
+  useArrows = false,
   ...props
-}: React.ComponentProps<typeof PaginationLink>) => (
+}: PaginationNextProps) => (
   <Link
-    to="/explore"  // Adicionando rota ao Link
+    to="/explore"
     className={cn("text-start rounded-lg overflow-hidden font-sans", className)}
     aria-label="Go to next page"
   >
@@ -96,8 +110,12 @@ const PaginationNext = ({
       className={cn("gap-1 pr-2.5", className)}
       {...props}
     >
-      <span>Next</span>
-      <FaArrowRight className="h-4 w-4" /> {/* Ícone FaArrowRight */}
+      <span className="hidden sm:inline">Next</span> {/* Esconde em telas pequenas */}
+      {useArrows ? (
+        <FaArrowRight className="h-4 w-4" />
+      ) : (
+        <ChevronRight className="h-4 w-4" />
+      )}
     </PaginationLink>
   </Link>
 )
