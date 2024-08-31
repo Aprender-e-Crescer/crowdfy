@@ -1,4 +1,4 @@
-import { NotificationComponent } from './NotificationComponent'
+import { NotificationComponent } from './notification-component'
 import avatar from '../assets/Avatar.png'
 import avatar2 from '../assets/Avatar2.png'
 import icon from '../assets/Icon.png'
@@ -8,7 +8,7 @@ import { Button } from './ui/button'
 import backgroundImage from '@/assets/images-roadmap/Image.png'
 import { FundCampaing } from './ui/Fund-Campaing'
 import { Loader2 } from 'lucide-react'
-import { BackgroundButton } from './backgroundButton'
+import { BackgroundButton } from './background-button'
 
 export function Roadmap({
   titulo,
