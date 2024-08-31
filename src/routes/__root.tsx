@@ -13,26 +13,14 @@ export const Route = createRootRoute({
         <Link to="/about" className="[&.active]:font-bold">
           About
         </Link>
-        <Link to="/explore" className="[&.active]:font-bold">
-          Explore
-        </Link>
-        <Link to="/favorites" className="[&.active]:font-bold">
-          favorites
-        </Link>
-        <Link to="/history" className="[&.active]:font-bold">
-          history
-        </Link>
-        <Link to="/profile-settings" className="[&.active]:font-bold">
-          Profile Settings
+        <Link to="/campaing-create" className="[&.active]:font-bold">
+          Campaign Create
         </Link>
         <Link to="/profileNotifications" className="[&.active]:font-bold">
           Profile Notifications
         </Link>
         <Link to="/Campaigns" className="[&.active]:font-bold">
           Campaings
-        </Link>
-        <Link to="/CampaingCreate" className="[&.active]:font-bold">
-          Campaing Create
         </Link>
         <Link to="/explore-map" className="[&.active]:font-bold">
           Explore Map
