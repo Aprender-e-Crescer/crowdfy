@@ -1,12 +1,11 @@
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'
-import Header from '@/components/header'
 import Footer from '@/components/footer'
 
 export const Route = createRootRoute({
   component: () => (
     <>
-      <div className="p-2 flex gap-2">
+      <div className="p-2 flex flex-wrap gap-2 md:flex-nowrap">
         <Link to="/" className="[&.active]:font-bold">
           Home
         </Link>{' '}
@@ -20,7 +19,7 @@ export const Route = createRootRoute({
           Profile Notifications
         </Link>
         <Link to="/Campaigns" className="[&.active]:font-bold">
-          Campaings
+          Campaigns
         </Link>
         <Link to="/explore-map" className="[&.active]:font-bold">
           Explore Map
@@ -35,10 +34,8 @@ export const Route = createRootRoute({
           Explore
         </Link>
       </div>
-
       <Outlet />
       <TanStackRouterDevtools />
-
       <div className="mt-5">
         <Footer />
       </div>
