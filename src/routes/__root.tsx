@@ -28,6 +28,12 @@ export const Route = createRootRoute({
         <Link to="/my-campaigns" className="[&.active]:font-bold">
           My Campaigns
         </Link>
+        <Link to="/profile-settings" className="[&.active]:font-bold">
+          Profile Settings
+        </Link>
+        <Link to="/explore" className="[&.active]:font-bold">
+          Explore
+        </Link>
       </div>
 
       <Outlet />
