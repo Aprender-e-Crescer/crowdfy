@@ -5,8 +5,7 @@ import icon from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
 import { Progress } from './ui/progress'
 import { Button } from './ui/button'
-import backgroundImage from '@/assets/images-roadmap/Image.png'
-import { FundCampaing } from './ui/Fund-Campaing'
+import { FundCampaing } from '@/components/Fund-Campaing'
 import { Loader2 } from 'lucide-react'
 import { BackgroundButton } from './backgroundButton'
 
@@ -24,7 +23,7 @@ export function Roadmap({
   titulo: string
 }) {
   return (
-    <div className="bg-[url('@/assets/images-roadmap/Image.png')] pt-52 px-2 pb-2 rounded-xl md:h-full md:bg-cover md:bg-no-repeat md:pb-0 ">
+    <div className="bg-[url('@/assets/ImageBgCard.png')] pt-52 px-2 pb-2 rounded-xl md:h-full md:bg-cover md:bg-no-repeat md:pb-0 ">
       <div className="md:flex md:justify-end md:flex-col md:h-full">
         <div>
           <div className="flex justify-between">

@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { HeaderCard } from '@/components/headerCard'
-import { CardMapa } from '@/components/component/Cardmapa'
+import { CardMapa } from '@/components/Cardmapa'
 import { Map } from '@/components/map'
 
 import {
@@ -12,7 +12,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination'
-import Footer from '@/components/ui/footer'
+import Footer from '@/components/footer'
 
 const cardData = [
   {

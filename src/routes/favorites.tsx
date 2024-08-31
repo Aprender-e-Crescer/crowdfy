@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Card } from '@/components/component/card'
-import { SectionHeader } from '@/components/component/Sectionheader'
-
+import { Card } from '@/components/card'
+import { SectionHeader } from '@/components/Sectionheader'
 
 export const Route = createFileRoute('/favorites')({
   component: Favorites,
@@ -114,7 +113,7 @@ function Favorites() {
   return (
     <>
       <div>
-        <SectionHeader/>
+        <SectionHeader />
         <div className=" gap-5 sm:mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {cardsData.map((card, index) => (
             <Card
@@ -125,7 +124,12 @@ function Favorites() {
               cardTitle={card.cardTitle}
               cardDescription={card.cardDescription}
               donationValue={card.donationValue}
-              progressValue={card.progressValue} type={'default'} level={''} experience={''} avatarDescription={''}            />
+              progressValue={card.progressValue}
+              type={'default'}
+              level={''}
+              experience={''}
+              avatarDescription={''}
+            />
           ))}
         </div>
       </div>
