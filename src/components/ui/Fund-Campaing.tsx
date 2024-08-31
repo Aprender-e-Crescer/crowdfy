@@ -3,6 +3,16 @@ import img from '@/assets/img.png'
 import { Button } from './button'
 import { IconNode, Loader2, Pen } from 'lucide-react'
 
+interface Props{
+  nome: string
+  postedIn: string
+  text1: string
+  textbutton: string
+  Icon: React.ReactNode
+  Variant: string
+  colorButton: string
+}
+
 export function FundCampaing({
   nome,
   postedIn,
@@ -11,15 +21,9 @@ export function FundCampaing({
   Icon,
   Variant,
   colorButton,
-}: {
-  nome: string
-  postedIn: string
-  text1: string
-  textbutton: string
-  Icon: React.ReactNode
-  Variant: string
-  colorButton: string
-}) {
+}:
+  Props
+) {
   return (
     <div className="flex gap-3">
       <div className="flex flex-col justify-center">
@@ -47,7 +51,7 @@ export function FundCampaing({
         <Button
           className="mb-14 text-white w-max"
           variant={Variant}
-          colorButton={colorButton}
+          colorButton="gray"
         >
           {Icon}
           {textbutton}

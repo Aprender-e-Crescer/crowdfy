@@ -7,7 +7,15 @@ import { Progress } from './ui/progress'
 import { Button } from './ui/button'
 import { FundCampaing } from './ui/Fund-Campaing'
 import { Loader2 } from 'lucide-react'
-import { BackgroundButton } from './backgroundButton'
+import { BackgroundButton } from './background_button'
+
+interface Props {
+  titulo: string;
+  descrição: string;
+  nomeUser: string;
+  localização: string;
+  numerosBarra: string;
+}
 
 export function Roadmap({
   titulo,
@@ -15,26 +23,19 @@ export function Roadmap({
   nomeUser,
   localização,
   numerosBarra,
-}: {
-  numerosBarra: string
-  localização: string
-  nomeUser: string
-  descrição: string
-  titulo: string
-}) {
+}: Props) {
   return (
-    <div className="bg-[url('@/assets/images-roadmap/Image.png')] pt-52 px-2 pb-2 rounded-xl md:h-full md:bg-cover md:bg-no-repeat md:pb-0 ">
+    <div className="bg-[url('@/assets/images-roadmap/Image.png')] pt-52 px-2 pb-2 rounded-xl md:h-full md:bg-cover md:bg-no-repeat md:pb-0">
       <div className="md:flex md:justify-end md:flex-col md:h-full">
         <div>
           <div className="flex justify-between">
-            <div className="mb-10 md:hidden ">
+            <div className="mb-10 md:hidden">
               <BackgroundButton preço="R$ 76.97" />
             </div>
-            <div className="mb-10 md:hidden ">
+            <div className="mb-10 md:hidden">
               <BackgroundButton preço="R$ 895.10" />
             </div>
           </div>
-
           <div className="flex flex-col md:hidden justify-center items-center max-w-full">
             <div className="flex flex-col bg-white w-full h-max rounded-xl rounded-b-none gap-4 p-2 ">
               <div className="flex gap-3 ">
@@ -87,8 +88,8 @@ export function Roadmap({
           <div className="hidden md:flex md:justify-start">
             <div className="flex justify-center items-center">
               <div className="flex flex-col bg-white w-4/5 h-full rounded-xl rounded-b-none p-4">
-                <div className="flex gap-3  items-center">
-                  <img className="w-16 h-16  mt-2" src={avatar} alt="Avatar" />
+                <div className="flex gap-3 items-center">
+                  <img className="w-16 h-16 mt-2" src={avatar} alt="Avatar" />
                   <p className="flex text-2xl items-center justify-center text-[#101828] font-bold">
                     {titulo}
                   </p>
@@ -179,5 +180,6 @@ export function Roadmap({
         </div>
       </div>
     </div>
-  )
+  );
 }
+
