@@ -11,7 +11,7 @@ interface Props {
   userName: string
   descrition: string
   title: string
-  backgroundImage?: boolean 
+  backgroundImage?: boolean
 }
 
 export default function Card({
@@ -26,7 +26,7 @@ export default function Card({
     <>
       <div
         className={`pt-36 pb-64 px-2 rounded-xl md:bg-cover md:bg-no-repeat ${
-          backgroundImage ? "bg-[url('@/assets/images-roadmap/Image.png')]" : ''
+          backgroundImage ? "bg-[url('@/assets/ImageBgCard.png')]" : ''
         }`}
       >
         <div className="md:flex md:justify-end md:flex-col md:h-full">
@@ -59,9 +59,7 @@ export default function Card({
                     />
                     <p className="text-[#475467] text-[12px]">{location}</p>
                   </div>
-                  <Button className="bg-[#84CC16] text-white" variant="shadow">
-                    Sign Campaign
-                  </Button>
+                  <Button variant="greenShadow">Sign Campaign</Button>
                 </div>
               </div>
               <div className="flex mt-3 items-center max-[440px]:flex-col max-[440px]:gap-4">
@@ -117,12 +115,7 @@ export default function Card({
                             </p>
                           </div>
 
-                          <Button
-                            className="bg-[#84CC16] text-white"
-                            variant="shadow"
-                          >
-                            Sign Campaign
-                          </Button>
+                          <Button variant="greenShadow">Sign Campaign</Button>
                         </div>
                       </div>
                     </div>

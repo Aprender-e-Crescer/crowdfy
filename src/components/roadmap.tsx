@@ -5,8 +5,7 @@ import icon from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
 import { Progress } from './progress'
 import { Button } from './ui/button'
-import backgroundImage from '@/assets/images-roadmap/Image.png'
-import { FundCampaing } from './ui/Fund-Campaing'
+import { FundCampaing } from '@/components/Fund-Campaing'
 import { Loader2 } from 'lucide-react'
 import { BackgroundButton } from './backgroundButton'
 
@@ -24,7 +23,7 @@ export function Roadmap({
   titulo: string
 }) {
   return (
-    <div className="bg-[url('@/assets/images-roadmap/Image.png')] pt-52 px-2 pb-2 rounded-xl md:h-full md:bg-cover md:bg-no-repeat md:pb-0 ">
+    <div className="bg-[url('@/assets/ImageBgCard.png')] pt-52 px-2 pb-2 rounded-xl md:h-full md:bg-cover md:bg-no-repeat md:pb-0 ">
       <div className="md:flex md:justify-end md:flex-col md:h-full">
         <div>
           <div className="flex justify-between">
@@ -63,9 +62,7 @@ export function Roadmap({
                     alt="Location Icon"
                   />
                   <p className="text-[#475467] text-[12px]">{localização}</p>
-                  <Button className="bg-[#84CC16] text-white" variant="shadow">
-                    Sign Campaign
-                  </Button>
+                  <Button variant="greenShadow">Sign Campaign</Button>
                 </div>
               </div>
               <div className="flex mt-3  items-center">
@@ -111,12 +108,7 @@ export function Roadmap({
                         <p className="text-[#475467] text-base">
                           {localização}
                         </p>
-                        <Button
-                          className="bg-[#84CC16] text-white"
-                          variant="shadow"
-                        >
-                          Sign Campaign
-                        </Button>
+                        <Button variant="greenShadow">Sign Campaign</Button>
                       </div>
                     </div>
                   </div>
@@ -152,9 +144,8 @@ export function Roadmap({
                 text1="Raise together $1000 to pay for our (2 persons) flights for the 1st week"
                 postedIn="in 20 days"
                 textbutton="Fund campaign"
-                Variant="shadow"
+                variant="grayShadow"
                 Icon={<Loader2 className="w-5 h-5" />}
-                colorButton="gray"
               />
             </div>
           </div>
