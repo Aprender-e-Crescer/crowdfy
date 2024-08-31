@@ -1,7 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/card-donate'
 import { SectionHeader } from '@/components/Sectionheader'
-
+import Header from '@/components/header'
+import { SubHeader } from '@/components/subHeader'
 
 export const Route = createFileRoute('/favorites')({
   component: Favorites,
@@ -110,10 +111,34 @@ function Favorites() {
       progressValue: 75,
     },
   ]
-
+  const buttons = [
+    {
+      title: 'Gallery',
+      variant: 'green',
+      icon: <FiGrid className='text-2xl' />,
+      route: '/donate',
+    },
+    {
+      title: 'Maps',
+      variant: 'ghost',
+      icon: <FiMapPin className='text-2xl' />,
+      route: '/donate',
+    },
+    {
+      title: 'Feed',
+      variant: 'ghost',
+      icon: <LuNewspaper className='text-2xl' />,
+      route: '/donate',
+    },
+  ]
   return (
     <>
       <div>
+        <div className="px-4 sm:px-6 md:px-8 lg:px-24">
+        <Header />
+        <SubHeader buttons={buttons} />
+        <div className='mt-12 mb-24'>
+          <HeaderCard />
         <SectionHeader
           title='Favorites'/>
         <div className=" gap-5 sm:mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
@@ -126,7 +151,7 @@ function Favorites() {
               cardTitle={card.cardTitle}
               cardDescription={card.cardDescription}
               donationValue={card.donationValue}
-              progressValue={card.progressValue} type={'default'} level={''} experience={''} avatarDescription={''}            />
+              progressValue={card.progressValue} type={'default'} level={''} experience={''} avatarDescription={''}/>
           ))}
         </div>
       </div>
