@@ -19,7 +19,7 @@ export default function ReturnNext({
     <div className="flex flex-1 justify-between">
       <div className="flex justify-center">
         <Link
-          to="/campaingformtreestep"
+          to="/campaing-third-step"
           className="[&.active]: flex justify-center"
         >
           <button className="flex items-center text-[#475467] font-semibold gap-2">
@@ -51,7 +51,7 @@ export default function ReturnNext({
 
       <div className="flex justify-center">
         <Link
-          to="/campaingformsecondstep"
+          to="/campaing-second-step"
           className="[&.active]: flex justify-center"
         >
           <button className="flex items-center text-[#475467] font-semibold gap-2">

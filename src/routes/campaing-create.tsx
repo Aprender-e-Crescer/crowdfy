@@ -3,7 +3,7 @@ import Choose from '@/components/choose-action-inition'
 import Card from '@/components/card-help'
 import ReturnNext from '@/components/return-next-pagination'
 
-export const Route = createFileRoute('/CampaingCreate')({
+export const Route = createFileRoute('/campaing-create')({
   component: CampaingCreate,
 })
 

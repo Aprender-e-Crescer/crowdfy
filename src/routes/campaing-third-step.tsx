@@ -1,10 +1,12 @@
-import { createFileRoute } from '@tanstack/react-router'
-import Give from '../components/give-form'
+import { createFileRoute, Link } from '@tanstack/react-router'
+import Give from '@/components/give-form'
 import Card from '@/components/card-help'
-import { ArrowLeft, ArrowRight } from 'lucide-react'
-import { Link } from '@tanstack/react-router'
+import { ArrowLeft, ArrowRight, } from 'lucide-react'
 
-export const Route = createFileRoute('/campaingformtreestep')({
+
+
+
+export const Route = createFileRoute('/campaing-third-step')({
   component: campaingformtreestep,
 })
 
@@ -45,7 +47,7 @@ function campaingformtreestep() {
         <div className=" flex flex-1 justify-between mr-3 ">
           <div className="flex justify-center">
             <Link
-              to="/campaingformsecondstep"
+              to="/campaing-second-step"
               className="[&.active]: flex justify-center"
             >
               <button className="flex items-center text-[#475467] font-semibold gap-2">

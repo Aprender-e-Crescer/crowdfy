@@ -1,10 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Tell from '@/components/Tell-form'
+import Tell from '@/components/tell-form'
 import Card from '@/components/card-help'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/campaingformsecondstep')({
+export const Route = createFileRoute('/campaing-second-step')({
   component: campaingformsecondstep,
 })
 function campaingformsecondstep() {
@@ -36,7 +36,7 @@ function campaingformsecondstep() {
           <div className=" flex flex-1 justify-between ">
             <div className="flex justify-center">
               <Link
-                to="/CampaingCreate"
+                to="/campaing-create"
                 className="[&.active]: flex justify-center"
               >
                 <button className="flex items-center text-[#475467] font-semibold gap-2">
@@ -59,7 +59,7 @@ function campaingformsecondstep() {
 
             <div className="flex justify-center">
               <Link
-                to="/campaingformtreestep"
+                to="/campaing-third-step"
                 className="[&.active]: flex justify-center"
               >
                 <button className="flex items-center text-[#475467] font-semibold gap-2">

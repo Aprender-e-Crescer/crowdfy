@@ -12,10 +12,10 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as ProfileNotificationsImport } from './routes/profileNotifications'
-import { Route as CampaingformtreestepImport } from './routes/campaingformtreestep'
-import { Route as CampaingformsecondstepImport } from './routes/campaingformsecondstep'
+import { Route as CampaingThirdStepImport } from './routes/campaing-third-step'
+import { Route as CampaingSecondStepImport } from './routes/campaing-second-step'
+import { Route as CampaingCreateImport } from './routes/campaing-create'
 import { Route as AboutImport } from './routes/about'
-import { Route as CampaingCreateImport } from './routes/CampaingCreate'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
@@ -25,23 +25,23 @@ const ProfileNotificationsRoute = ProfileNotificationsImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const CampaingformtreestepRoute = CampaingformtreestepImport.update({
-  path: '/campaingformtreestep',
+const CampaingThirdStepRoute = CampaingThirdStepImport.update({
+  path: '/campaing-third-step',
   getParentRoute: () => rootRoute,
 } as any)
 
-const CampaingformsecondstepRoute = CampaingformsecondstepImport.update({
-  path: '/campaingformsecondstep',
+const CampaingSecondStepRoute = CampaingSecondStepImport.update({
+  path: '/campaing-second-step',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const CampaingCreateRoute = CampaingCreateImport.update({
+  path: '/campaing-create',
   getParentRoute: () => rootRoute,
 } as any)
 
 const AboutRoute = AboutImport.update({
   path: '/about',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const CampaingCreateRoute = CampaingCreateImport.update({
-  path: '/CampaingCreate',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -61,13 +61,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/CampaingCreate': {
-      id: '/CampaingCreate'
-      path: '/CampaingCreate'
-      fullPath: '/CampaingCreate'
-      preLoaderRoute: typeof CampaingCreateImport
-      parentRoute: typeof rootRoute
-    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -75,18 +68,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutImport
       parentRoute: typeof rootRoute
     }
-    '/campaingformsecondstep': {
-      id: '/campaingformsecondstep'
-      path: '/campaingformsecondstep'
-      fullPath: '/campaingformsecondstep'
-      preLoaderRoute: typeof CampaingformsecondstepImport
+    '/campaing-create': {
+      id: '/campaing-create'
+      path: '/campaing-create'
+      fullPath: '/campaing-create'
+      preLoaderRoute: typeof CampaingCreateImport
       parentRoute: typeof rootRoute
     }
-    '/campaingformtreestep': {
-      id: '/campaingformtreestep'
-      path: '/campaingformtreestep'
-      fullPath: '/campaingformtreestep'
-      preLoaderRoute: typeof CampaingformtreestepImport
+    '/campaing-second-step': {
+      id: '/campaing-second-step'
+      path: '/campaing-second-step'
+      fullPath: '/campaing-second-step'
+      preLoaderRoute: typeof CampaingSecondStepImport
+      parentRoute: typeof rootRoute
+    }
+    '/campaing-third-step': {
+      id: '/campaing-third-step'
+      path: '/campaing-third-step'
+      fullPath: '/campaing-third-step'
+      preLoaderRoute: typeof CampaingThirdStepImport
       parentRoute: typeof rootRoute
     }
     '/profileNotifications': {
@@ -103,10 +103,10 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
-  CampaingCreateRoute,
   AboutRoute,
-  CampaingformsecondstepRoute,
-  CampaingformtreestepRoute,
+  CampaingCreateRoute,
+  CampaingSecondStepRoute,
+  CampaingThirdStepRoute,
   ProfileNotificationsRoute,
 })
 
@@ -119,27 +119,27 @@ export const routeTree = rootRoute.addChildren({
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/CampaingCreate",
         "/about",
-        "/campaingformsecondstep",
-        "/campaingformtreestep",
+        "/campaing-create",
+        "/campaing-second-step",
+        "/campaing-third-step",
         "/profileNotifications"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
-    "/CampaingCreate": {
-      "filePath": "CampaingCreate.tsx"
-    },
     "/about": {
       "filePath": "about.tsx"
     },
-    "/campaingformsecondstep": {
-      "filePath": "campaingformsecondstep.tsx"
+    "/campaing-create": {
+      "filePath": "campaing-create.tsx"
     },
-    "/campaingformtreestep": {
-      "filePath": "campaingformtreestep.tsx"
+    "/campaing-second-step": {
+      "filePath": "campaing-second-step.tsx"
+    },
+    "/campaing-third-step": {
+      "filePath": "campaing-third-step.tsx"
     },
     "/profileNotifications": {
       "filePath": "profileNotifications.tsx"
