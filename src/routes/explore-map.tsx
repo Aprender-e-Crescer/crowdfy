@@ -66,7 +66,7 @@ function Explore() {
           <Pagination className="flex items-center justify-center mt-4">
             <PaginationContent className="flex items-center justify-between w-full ">
               <PaginationItem>
-                <PaginationPrevious href="#" />
+                <PaginationPrevious href="#" useArrows={true} />
               </PaginationItem>
               <PaginationItem className="flex ">
                 <PaginationLink href="#">1</PaginationLink>
@@ -78,7 +78,7 @@ function Explore() {
                 <PaginationLink href="#">10</PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationNext href="#" />
+                <PaginationNext href="#" useArrows={true} />
               </PaginationItem>
             </PaginationContent>
           </Pagination>

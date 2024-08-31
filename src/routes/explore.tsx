@@ -1,16 +1,16 @@
-import { createFileRoute } from '@tanstack/react-router'
-import { Card } from '@/components/card-donate'
-import {Pagination,PaginationContent,PaginationEllipsis,PaginationItem,PaginationLink, PaginationNext,PaginationPrevious,} from '@/components/ui/pagination'
-import { HeaderCard } from '@/components/headerCard'
-import Header from '@/components/header'
-import { SubHeader } from '@/components/subHeader'
-import { FiMapPin } from "react-icons/fi";
-import { FiGrid } from "react-icons/fi";
-import { LuNewspaper } from "react-icons/lu";
+import { createFileRoute } from '@tanstack/react-router';
+import { Card } from '@/components/card-donate';
+import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
+import { HeaderCard } from '@/components/headerCard';
+import Header from '@/components/header';
+import { SubHeader } from '@/components/subHeader';
+import { FiMapPin } from 'react-icons/fi';
+import { FiGrid } from 'react-icons/fi';
+import { LuNewspaper } from 'react-icons/lu';
 
 export const Route = createFileRoute('/explore')({
   component: Explore,
-})
+});
 
 function Explore() {
   const cardsData = [
@@ -140,45 +140,47 @@ function Explore() {
       <div className="px-4 sm:px-6 md:px-8 lg:px-24">
         <Header />
         <SubHeader buttons={buttons} />
-        <HeaderCard />
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {cardsData.map((card, index) => (
-            <Card
-              key={index}
-              imageSrc={card.imageSrc}
-              avatarSrc={card.avatarSrc}
-              avatarName={card.avatarName}
-              cardTitle={card.cardTitle}
-              cardDescription={card.cardDescription}
-              donationValue={card.donationValue}
-              progressValue={card.progressValue}
-              type={'default'}
-              level={''}
-              experience={''}
-              avatarDescription={''}
-            />
-          ))}
+        <div className='mt-12 mb-24'>
+          <HeaderCard />
+          <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {cardsData.map((card, index) => (
+              <Card
+                key={index}
+                imageSrc={card.imageSrc}
+                avatarSrc={card.avatarSrc}
+                avatarName={card.avatarName}
+                cardTitle={card.cardTitle}
+                cardDescription={card.cardDescription}
+                donationValue={card.donationValue}
+                progressValue={card.progressValue}
+                type={'default'}
+                level={''}
+                experience={''}
+                avatarDescription={''}
+              />
+            ))}
+          </div>
+          <Pagination className="mt-6">
+            <PaginationContent className="flex items-center justify-between w-full border-t border-[#475467] p-5 text-[#475467]">
+              <PaginationItem>
+                <PaginationPrevious href="#" useArrows={true} className="text-[#475467]" />
+              </PaginationItem>
+              <PaginationItem className="flex">
+                <PaginationLink href="#" className="text-[#475467]">1</PaginationLink>
+                <PaginationLink href="#" className="text-[#475467]">2</PaginationLink>
+                <PaginationLink href="#" className="text-[#475467]">3</PaginationLink>
+                <PaginationEllipsis className="text-[#475467]" />
+                <PaginationLink href="#" className="text-[#475467]">8</PaginationLink>
+                <PaginationLink href="#" className="text-[#475467]">9</PaginationLink>
+                <PaginationLink href="#" className="text-[#475467]">10</PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationNext href="#" useArrows={true} className="text-[#475467]" />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
         </div>
-        <Pagination className="mt-6">
-          <PaginationContent className="flex items-center justify-between w-full border-t border-gray-300 p-5">
-            <PaginationItem>
-              <PaginationPrevious href="#" useArrows={true} />
-            </PaginationItem>
-            <PaginationItem className="flex">
-              <PaginationLink href="#">1</PaginationLink>
-              <PaginationLink href="#">2</PaginationLink>
-              <PaginationLink href="#">3</PaginationLink>
-              <PaginationEllipsis />
-              <PaginationLink href="#">8</PaginationLink>
-              <PaginationLink href="#">9</PaginationLink>
-              <PaginationLink href="#">10</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationNext href="#" useArrows={true} />
-            </PaginationItem>
-          </PaginationContent>
-        </Pagination>
       </div>
     </>
-  )
+  );
 }
