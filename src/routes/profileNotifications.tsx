@@ -22,10 +22,10 @@ export let Route = createFileRoute(`/profileNotifications`)({
 
 function ProfileNotifications() {
   return (
-    <div className="flex ml-3 mr-3 md:mr-0 flex-col md:flex-row ">
-      <div className="flex flex-col md:w-4/5 ml-2 ">
-        <div className="flex md:gap-10 mr-5 max-md:flex-col max-md:mb-5 ">
-          <p className="font-bold text-3xl max-md:mb-5 mb-10 mt-10 ">
+    <div className="flex ml-3 mr-3 min-[1110px]:mr-0 flex-col min-[1110px]:flex-row ">
+      <div className="flex flex-col min-[1110px]:w-4/5 ml-2 ">
+        <div className="flex min-[1110px]:gap-10 mr-5 max-[1110px]:flex-col max-[1110px]:mb-5 ">
+          <p className="font-bold text-3xl max-[1110px]:mb-5 mb-10 mt-10 ">
             Notifications
           </p>
           <div className="flex items-center ">
@@ -124,7 +124,7 @@ function ProfileNotifications() {
           colorButton="gray"
           Icon={<Loader2 className="w-5 h-5" />}
         />
-        <Pagination className=" hidden md:flex justify-evenly w-full mt-10 ">
+        <Pagination className=" hidden min-[1110px]:flex justify-evenly w-full mt-10 ">
           <PaginationContent>
             <PaginationItem>
               <PaginationPrevious href="#" />
@@ -158,7 +158,7 @@ function ProfileNotifications() {
           numerosBarra="4.533/9.000"
         />
       </div>
-      <Pagination className="max-md:flex hidden justify-evenly w-full mt-10 ">
+      <Pagination className="max-[1110px]:flex hidden justify-evenly w-full mt-10 ">
         <PaginationContent>
           <PaginationItem>
             <PaginationPrevious href="#" />
