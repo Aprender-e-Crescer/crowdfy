@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import Tell from '@/components/tell-form'
+import Tell from '@/components/Tell-form'
 import Card from '@/components/card-help'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
@@ -28,6 +28,7 @@ function campaingformsecondstep() {
               lifes on China countryside just teaching how they can use the
               internet."
                 title=" Help us Teach English for Kids on China Countryside"
+                backgroundImage
               />
             </div>
           </div>

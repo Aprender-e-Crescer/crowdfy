@@ -28,12 +28,15 @@ function CampaingCreate() {
               barNumbers='4.533/9.000'
               location='São Paulo, Brazil'
               userName="Mateus Rodrigues"
-               descrition=" I need about 9.000 signatures to deliver to my
+              descrition=" I need about 9.000 signatures to deliver to my
               mayor in two weeks and get that grant! Check more about our
               project and if you want to see how we are changing lovely children
               lifes on China countryside just teaching how they can use the
               internet."
               title=" Help us Teach English for Kids on China Countryside"
+              backgroundImage
+              
+              
             />
           </div>
         </div>

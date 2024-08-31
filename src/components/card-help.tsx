@@ -11,22 +11,29 @@ interface Props {
   userName: string
   descrition: string
   title: string
+  backgroundImage?: boolean 
 }
+
 export default function Card({
   title,
   descrition,
   userName,
   location,
   barNumbers,
+  backgroundImage,
 }: Props) {
   return (
     <>
-      <div className="bg-[url('@/assets/images-roadmap/Image.png')] pt-36 pb-64 px-2 rounded-xl md:bg-cover md:bg-no-repeat">
+      <div
+        className={`pt-36 pb-64 px-2 rounded-xl md:bg-cover md:bg-no-repeat ${
+          backgroundImage ? "bg-[url('@/assets/images-roadmap/Image.png')]" : ''
+        }`}
+      >
         <div className="md:flex md:justify-end md:flex-col md:h-full">
           <div className="flex flex-col md:hidden justify-center items-center max-w-full">
             <div className="flex flex-col bg-white w-full h-max rounded-xl rounded-b-none gap-4 p-2">
-              <div className="flex gap-3 ">
-                <img className="w-14 h-14  mt-2" src={avatar} alt="Avatar"/>
+              <div className="flex gap-3">
+                <img className="w-14 h-14 mt-2" src={avatar} alt="Avatar" />
                 <p className="flex items-center justify-center text-[#101828] text-lg font-bold">
                   {title}
                 </p>
@@ -75,8 +82,8 @@ export default function Card({
           <div className="hidden md:flex md:justify-start">
             <div className="flex justify-center items-center">
               <div className="flex flex-col bg-white w-4/5 h-full rounded-xl rounded-b-none p-4">
-                <div className="flex gap-3  items-center">
-                  <img className="w-16 h-16  mt-2" src={avatar} alt="Avatar" />
+                <div className="flex gap-3 items-center">
+                  <img className="w-16 h-16 mt-2" src={avatar} alt="Avatar" />
                   <p className="flex text-2xl items-center justify-center text-[#101828] font-bold">
                     {title}
                   </p>
@@ -130,7 +137,7 @@ export default function Card({
 
                   <div className="flex items-center gap-5 max-[1060px]:flex-col">
                     <Progress
-                      className="bg-blue-800 w-44 h-3 ml-4 "
+                      className="bg-blue-800 w-44 h-3 ml-4"
                       value={50}
                     />
                     <p className="text-xl font-bold">{barNumbers}</p>

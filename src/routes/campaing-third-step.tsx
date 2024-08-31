@@ -39,6 +39,7 @@ function campaingformtreestep() {
                   lifes on China countryside just teaching how they can use the
                   internet."
               title=" Help us Teach English for Kids on China Countryside"
+              backgroundImage
             />
           </div>
         </div>
