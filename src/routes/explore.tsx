@@ -1,6 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Card } from '@/components/component/card'
-
+import { Card } from '@/components/card'
 
 import { HeaderCard } from '@/components/headerCard'
 
@@ -126,7 +125,12 @@ function Explore() {
               cardTitle={card.cardTitle}
               cardDescription={card.cardDescription}
               donationValue={card.donationValue}
-              progressValue={card.progressValue} type={'default'} level={''} experience={''} avatarDescription={''}            />
+              progressValue={card.progressValue}
+              type={'default'}
+              level={''}
+              experience={''}
+              avatarDescription={''}
+            />
           ))}
         </div>
       </div>

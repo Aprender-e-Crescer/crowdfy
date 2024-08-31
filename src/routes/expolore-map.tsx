@@ -1,7 +1,15 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { HeaderCard } from '@/components/headerCard'
-import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination'
-import { CardMapa } from '@/components/component/Cardmapa'
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from '@/components/ui/pagination'
+import { CardMapa } from '@/components/Cardmapa'
 
 const cardData = [
   {
@@ -12,7 +20,7 @@ const cardData = [
       'In 2022 my husband and I moved to Portugal to follow our simple life dream and build our',
     location: 'São Paulo, Brasil',
     amount: '€3,182.49 ',
-    moeda: 'euros', 
+    moeda: 'euros',
     progress: 45,
     donationText: 'Donations',
   },
@@ -73,11 +81,9 @@ function Explore() {
             </PaginationContent>
           </Pagination>
         </div>
-        <div className="flex-none w-full md:w-1/2 h-96 md:h-auto">
-        </div>
+        <div className="flex-none w-full md:w-1/2 h-96 md:h-auto"></div>
       </div>
-      <div className="mt-4 flex-shrink-0">
-      </div>
+      <div className="mt-4 flex-shrink-0"></div>
     </div>
   )
 }

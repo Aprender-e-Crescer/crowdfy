@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import img from '@/assets/img.png'
-import { Button } from './button'
+import { Button } from '@/components/ui/button'
 
 export function FundCampaing({
   nome,
@@ -8,16 +8,28 @@ export function FundCampaing({
   text1,
   textbutton,
   Icon,
-  Variant,
-  colorButton,
+  variant,
 }: {
   nome: string
   postedIn: string
   text1: string
   textbutton: string
-  Icon: React.ReactNode
-  Variant: string
-  colorButton: string
+  Icon?: React.ReactNode
+  variant?:
+    | 'default'
+    | 'destructive'
+    | 'outline'
+    | 'secondary'
+    | 'hoverWhiteBorder'
+    | 'blackOnHover'
+    | 'letraVerde'
+    | 'BrancoShadow'
+    | 'AcinzentadoIcon'
+    | 'ghost'
+    | 'link'
+    | 'greenShadow'
+    | 'purpleShadow'
+    | 'grayShadow'
 }) {
   return (
     <div className="flex gap-3">
@@ -43,11 +55,7 @@ export function FundCampaing({
         <div className="flex gap-3 ">
           <p className="flex gap-3 text-[#475569]">{text1}</p>
         </div>
-        <Button
-          className="mb-14 text-white w-max"
-          Variant={Variant}
-          colorButton={colorButton}
-        >
+        <Button className="mb-14 w-max" variant={variant}>
           {Icon}
           {textbutton}
         </Button>

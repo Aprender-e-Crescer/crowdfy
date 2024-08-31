@@ -4,11 +4,11 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/select'
+} from '@/components/ui/select'
 
 import icon from '@/assets/dollar-sign.png'
 import localimage from '@/assets/localimage.png'
-import { Uploadimagens } from '@/components/UploadImagens'
+import { Uploadimagens } from '@/components/upload-Imagens'
 
 export function Localization() {
   return (
@@ -59,9 +59,9 @@ export function Localization() {
                 alt="Banner"
               />
               <Uploadimagens
-                enviar="Click here to upload"
-                descricao="ou drag here your image"
-                tiposEnvio="Recommended 800x600 resolution (max. 1MB)"
+                toSendHover="Click here to upload"
+                descrition="ou drag here your image"
+                shippingTypes="Recommended 800x600 resolution (max. 1MB)"
               />
             </div>
           </div>
@@ -108,9 +108,9 @@ export function Localization() {
           <div className="flex flex-col items-center gap-2">
             <img className="h-[150px]" src={localimage} alt="Banner" />
             <Uploadimagens
-              enviar="Click here to upload"
-              descricao="ou drag here your image"
-              tiposEnvio="Recommended 800x600 resolution (max. 1MB)"
+              toSendHover="Click here to upload"
+              descrition="ou drag here your image"
+              shippingTypes="Recommended 800x600 resolution (max. 1MB)"
             />
           </div>
         </div>

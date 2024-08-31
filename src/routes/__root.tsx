@@ -1,46 +1,44 @@
-import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
-import Header from "@/componentes/header";
+import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
+import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import Footer from '@/components/footer'
 
 export const Route = createRootRoute({
   component: () => (
     <>
-      <div className="p-2 flex gap-2">
-        <Link to="/my-campaigns">My Campaigns</Link>
-
+      <div className="p-2 flex flex-wrap gap-2 md:flex-nowrap">
         <Link to="/" className="[&.active]:font-bold">
           Home
         </Link>{' '}
-        
         <Link to="/about" className="[&.active]:font-bold">
           About
         </Link>
-        
-        <Link to="/explore" className="[&.active]:font-bold">
-          Explore
+        <Link to="/campaing-create" className="[&.active]:font-bold">
+          Campaign Create
         </Link>
-        
-        <Link to="/favorites" className="[&.active]:font-bold">
-          favorites
+        <Link to="/profileNotifications" className="[&.active]:font-bold">
+          Profile Notifications
         </Link>
-     
-        <Link to="/history" className="[&.active]:font-bold">
-          history
+        <Link to="/Campaigns" className="[&.active]:font-bold">
+          Campaigns
         </Link>
-        
+        <Link to="/explore-map" className="[&.active]:font-bold">
+          Explore Map
+        </Link>
+        <Link to="/my-campaigns" className="[&.active]:font-bold">
+          My Campaigns
+        </Link>
         <Link to="/profile-settings" className="[&.active]:font-bold">
           Profile Settings
         </Link>
+        <Link to="/explore" className="[&.active]:font-bold">
+          Explore
+        </Link>
       </div>
-        
       <Outlet />
-      <Footer />
       <TanStackRouterDevtools />
-      
       <div className="mt-5">
         <Footer />
       </div>
     </>
   ),
-});
+})
