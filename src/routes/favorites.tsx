@@ -131,7 +131,7 @@ function Favorites() {
     },
     {
       title: 'Favorites',
-      variant: 'green',
+      variant: 'lightYellow',
       icon: <FaRegHeart className='text-2xl' />,
       route: '/favorites'
     },

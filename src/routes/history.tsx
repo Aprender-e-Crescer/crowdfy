@@ -137,7 +137,7 @@ function Favorites() {
     },
     {
       title: 'History',
-      variant: 'green',
+      variant: 'lightYellow',
       icon: <MdOutlineWatchLater className='text-2xl' />,
       route: '/history'
     }

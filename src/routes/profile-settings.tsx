@@ -5,7 +5,7 @@ import ImageFundo from '@/assets/Image overlay.png'
 import PersonalInfo from '@/components/personal-info'
 import ProfileInfo from '@/components/profile-info'
 import { Button } from '@/components/ui/button'
-import { Card } from '@/components/card'
+import { Card } from '@/components/card-donate'
 
 export const Route = createFileRoute('/profile-settings')({
   component: ProfileSettings,

@@ -111,7 +111,7 @@ function Explore() {
   const buttons = [
     {
       title: 'Gallery',
-      variant: 'green',
+      variant: 'lightYellow',
       icon: <FiGrid className='text-2xl' />,
       route: '/explore'
     },
