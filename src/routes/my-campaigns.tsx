@@ -31,7 +31,7 @@ export function LiveCampaigns() {
     },
     {
       title: "My Campaigns",
-      variant: "green" as const,
+      variant: "lightYellow" as const,
       route: "/my-campaigns",
       icon: <Rocket />,
     },
@@ -144,10 +144,7 @@ export function LiveCampaigns() {
 
         <div className="flex flex-col gap-4">
           <div className="flex justify-start lg:justify-center mb-6">
-            <Button
-              className="bg-[#D9F99D] text-[#1F2937] max-w-40 border-[#F7FEE7] font-medium"
-              variant="shadow"
-            >
+            <Button className="max-w-40" variant="lightYellow">
               <img src={share} className="mx-2" />
               Share Campaign
             </Button>
@@ -204,10 +201,7 @@ export function LiveCampaigns() {
             </div>
 
             <div className="flex justify-between">
-              <Button
-                className="bg-[#D9F99D] text-[#1F2937] w-full border-[#F7FEE7] font-medium"
-                variant="shadow"
-              >
+              <Button className="w-full" variant="lightYellow">
                 <img src={share} className="mx-2" />
                 Share Campaign
               </Button>
@@ -250,10 +244,7 @@ export function LiveCampaigns() {
               </p>
             </div>
 
-            <Button
-              className="w-full bg-[#84CC16] hover:bg-green-600 text-white"
-              variant="default"
-            >
+            <Button className="w-full" variant="greenShadow">
               <img src={IconDonate} />
               Donate now
             </Button>

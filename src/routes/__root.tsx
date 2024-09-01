@@ -1,52 +1,44 @@
-import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
-import Footer from '@/components/footer';
-import { useLocation } from '@tanstack/react-router';
+import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
+import { TanStackRouterDevtools } from '@tanstack/router-devtools'
+import Footer from '@/components/footer'
 
 export const Route = createRootRoute({
-  component: () => {
-    const location = useLocation();
-    const hideFooter = location.pathname === '/explore';
-
-    return (
-      <>
-        <div className="p-2 flex gap-2">
-          <Link to="/my-campaigns">
-            My Campaigns
-          </Link>
-
-          <Link to="/" className="[&.active]:font-bold">
-            Home
-          </Link>{' '}
-
-          <Link to="/about" className="[&.active]:font-bold">
-            About
-          </Link>
-
-          <Link to="/explore" className="[&.active]:font-bold">
-            Explore
-          </Link>
-
-          <Link to="/favorites" className="[&.active]:font-bold">
-            Favorites
-          </Link>
-
-          <Link to="/history" className="[&.active]:font-bold">
-            History
-          </Link>
-
-          <Link to="/profile-settings" className="[&.active]:font-bold">
-            Profile Settings
-          </Link>
-        </div>
-
-        <Outlet />
-        <TanStackRouterDevtools />
-
-        <div className={`mt-5 ${hideFooter ? 'hidden' : ''}`}>
-          <Footer />
-        </div>
-      </>
-    );
-  },
-});
+  component: () => (
+    <>
+      <div className="p-2 flex flex-wrap gap-2 md:flex-nowrap">
+        <Link to="/" className="[&.active]:font-bold">
+          Home
+        </Link>{' '}
+        <Link to="/about" className="[&.active]:font-bold">
+          About
+        </Link>
+        <Link to="/campaing-create" className="[&.active]:font-bold">
+          Campaign Create
+        </Link>
+        <Link to="/profileNotifications" className="[&.active]:font-bold">
+          Profile Notifications
+        </Link>
+        <Link to="/Campaigns" className="[&.active]:font-bold">
+          Campaigns
+        </Link>
+        <Link to="/explore-map" className="[&.active]:font-bold">
+          Explore Map
+        </Link>
+        <Link to="/my-campaigns" className="[&.active]:font-bold">
+          My Campaigns
+        </Link>
+        <Link to="/profile-settings" className="[&.active]:font-bold">
+          Profile Settings
+        </Link>
+        <Link to="/explore" className="[&.active]:font-bold">
+          Explore
+        </Link>
+      </div>
+      <Outlet />
+      <TanStackRouterDevtools />
+      <div className="mt-5">
+        <Footer />
+      </div>
+    </>
+  ),
+})

@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { HeaderCard } from '@/components/headerCard'
 import { CardMapa } from '@/components/Cardmapa'
+import { CardMapa } from '@/components/Cardmapa'
 import { Map } from '@/components/map'
 import Header from '@/components/header'
 import { SubHeader } from '@/components/subHeader'
@@ -135,3 +136,4 @@ function Explore() {
     </div>
   )
 }
+

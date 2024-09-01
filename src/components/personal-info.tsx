@@ -25,11 +25,13 @@ export default function PersonalInfo() {
                   Seu Nome
                 </label>
                 <Input
+                  type="settings"
                   id="primeiroNome"
                   placeholder="Primeiro Nome"
                   className="mt-1"
                 />
                 <Input
+                  type="settings"
                   id="sobrenome"
                   placeholder="Sobrenome"
                   className="mt-1"
@@ -46,6 +48,7 @@ export default function PersonalInfo() {
               </label>
               <div className="col-span-2">
                 <Input
+                  type="settings"
                   id="tituloCampanha"
                   placeholder="Título da Campanha"
                   className="mt-1"
@@ -182,6 +185,7 @@ export default function PersonalInfo() {
                   Seu Nome
                 </label>
                 <Input
+                  type="settings"
                   id="primeiroNome"
                   placeholder="Primeiro Nome"
                   className="mt-1"
@@ -195,6 +199,7 @@ export default function PersonalInfo() {
                   Sobrenome
                 </label>
                 <Input
+                  type="settings"
                   id="sobrenome"
                   placeholder="Sobrenome"
                   className="mt-1"
@@ -210,6 +215,7 @@ export default function PersonalInfo() {
                 Título da Campanha
               </label>
               <Input
+                type="settings"
                 id="tituloCampanha"
                 placeholder="Título da Campanha"
                 className="mt-1"
