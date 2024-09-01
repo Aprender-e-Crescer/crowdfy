@@ -18,22 +18,17 @@ const buttonVariants = cva(
           'bg-secondary text-secondary-foreground hover:bg-secondary/80',
         hoverWhiteBorder:
           'bg-green-200 text-black border border-gray-300 hover:bg-white hover:border-black',
-        blackOnHover:
-          'bg-black text-white hover:bg-black hover:text-white',
-        letraVerde:
-          'text-[#65A30D] text-[14px] hover:text-[#475467]',
+        blackOnHover: 'bg-black text-white hover:bg-black hover:text-white',
+        letraVerde: 'text-[#65A30D] text-[14px] hover:text-[#475467]',
         BrancoBorda:
           'text-[#0F172A] text-[14px] bg-[#FFFFFF] hover:text-[#475467] border-solid border-[2px] border-[#E2E8F0]',
         AcinzentadoIcon:
           'text-[#94A3B8] text-[14px] bg-[#F8FAFC] hover:text-[#475467] border-solid border-[2px] border-[#CBD5E1]',
         ghost:
           'hover:bg-accent hover:text-accent-foreground flex gap-2 px-16 py-8 items-center',
-        link:
-          'text-primary underline-offset-4 hover:underline flex gap-2 px-16 py-8 items-center',
-        shadow:
-          'rounded-[8px] border-4',
-        green:
-          'bg-lime-200 hover:bg-lime-300',
+        link: 'text-primary underline-offset-4 hover:underline flex gap-2 px-16 py-8 items-center',
+        shadow: 'rounded-[8px] border-4',
+        green: 'bg-lime-200 hover:bg-lime-300',
       },
       size: {
         default: 'h-10 px-4 py-2',
