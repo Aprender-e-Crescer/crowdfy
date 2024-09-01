@@ -26,7 +26,7 @@ export function NotificationComponent({
         </div>
         <div className="line-clamp-2"></div>
       </div>
-      <div className="flex flex-col  gap-3 ">
+      <div className="flex flex-col  gap-3">
         <div className="flex justify-between mr-5 items-center w-max gap-3">
           <p className="text-[#475467] text-[20px] font-medium max-[410px]:text-base">
             {nome}

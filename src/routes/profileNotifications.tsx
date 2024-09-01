@@ -23,25 +23,25 @@ export let Route = createFileRoute(`/profileNotifications`)({
 function ProfileNotifications() {
   return (
     <div className="flex ml-3 mr-3 min-[1110px]:mr-0 flex-col min-[1110px]:flex-row">
-      <div className="flex flex-col min-[1110px]:w-4/5 ml-2 ">
+      <div className="flex flex-col min-[1110px]:w-4/5 ml-2">
         <div className="flex min-[1110px]:gap-10 mr-5 max-[1110px]:flex-col max-[1110px]:mb-5">
           <p className="font-bold text-3xl max-[1110px]:mb-5 mb-10 mt-10">
             Notifications
           </p>
           <div className="flex items-center">
             <Button
-              variant="outline"
+              campaingButton="outline"
               size={'default'}
               className="rounded-r-none"
             >
               All Views
             </Button>
-            <Button variant="outline" size={'default'} className="rounded-none">
+            <Button campaingButton="outline" size={'default'} className="rounded-none">
               <PiggyBank />
               Funding
             </Button>
             <Button
-              variant="outline"
+              campaingButton="outline"
               size={'default'}
               className="rounded-l-none"
             >
@@ -86,7 +86,7 @@ function ProfileNotifications() {
         />
 
         <FundCampaing
-          nome="Matheus Rodrigues"
+          nome="MathcolorButtoneus Rodrigues"
           text1="is teaching  english to 300 chinese children"
           postedIn="in 20 days"
           textbutton="Write Words of Support"
