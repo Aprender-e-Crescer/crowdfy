@@ -5,7 +5,7 @@ import { InputSubHeader } from "./input-sub-header";
 interface Props {
   buttons: {
     title: string;
-    variant: "green" | "ghost";
+    variant: "lightYellow" | "ghost";
     icon: JSX.Element;
     route: string;
   }[];
@@ -27,4 +27,3 @@ export function SubHeader({ buttons }: Props) {
     </div>
   );
 }
-
