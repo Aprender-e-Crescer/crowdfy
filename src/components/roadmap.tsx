@@ -5,16 +5,16 @@ import icon from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
 import { Progress } from './ui/progress'
 import { Button } from './ui/button'
-import { FundCampaing } from './ui/Fund-Campaing'
+import { FundCampaing } from '@/components'
 import { Loader2 } from 'lucide-react'
 import { BackgroundButton } from './background_button'
 
 interface Props {
-  titulo: string;
-  descrição: string;
-  nomeUser: string;
-  localização: string;
-  numerosBarra: string;
+  titulo: string
+  descrição: string
+  nomeUser: string
+  localização: string
+  numerosBarra: string
 }
 
 export function Roadmap({
@@ -30,16 +30,16 @@ export function Roadmap({
         <div>
           <div className="flex justify-between">
             <div className="mb-10 md:hidden">
-              <BackgroundButton preço="R$ 76.97"/>
+              <BackgroundButton preço="R$ 76.97" />
             </div>
             <div className="mb-10 md:hidden">
-              <BackgroundButton preço="R$ 895.10"/>
+              <BackgroundButton preço="R$ 895.10" />
             </div>
           </div>
           <div className="flex flex-col md:hidden justify-center items-center max-w-full">
             <div className="flex flex-col bg-white w-full h-max rounded-xl rounded-b-none gap-4 p-2">
               <div className="flex gap-3">
-                <img className="w-14 h-14  mt-2" src={avatar} alt="Avatar"/>
+                <img className="w-14 h-14  mt-2" src={avatar} alt="Avatar" />
                 <p className="flex items-center justify-center text-[#101828] text-lg font-bold">
                   {titulo}
                 </p>
@@ -65,7 +65,10 @@ export function Roadmap({
                     />
                     <p className="text-[#475467] text-[12px]">{localização}</p>
                   </div>
-                  <Button className="bg-[#84CC16] text-white" campaingButton="shadow">
+                  <Button
+                    className="bg-[#84CC16] text-white"
+                    campaingButton="shadow"
+                  >
                     Sign Campaign
                   </Button>
                 </div>
@@ -180,6 +183,5 @@ export function Roadmap({
         </div>
       </div>
     </div>
-  );
+  )
 }
-
