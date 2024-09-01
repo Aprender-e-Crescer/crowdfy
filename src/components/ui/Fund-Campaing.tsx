@@ -2,24 +2,27 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import img from '@/assets/img.png'
 import { Button } from './button'
 import { IconNode, Loader2, Pen } from 'lucide-react'
-
-export function FundCampaign({
-  name,
-  postedIn,
-  description,
-  buttonText,
-  icon,
-  campaingButton,
-  buttonColor,
-}: {
-  name: string
+interface Props{
+  nome: string
   postedIn: string
-  description: string
-  buttonText: string
-  icon: React.ReactNode
-  campaingButton: string
-  buttonColor: string
-}) {
+  text1: string
+  textbutton: string
+  Icon: React.ReactNode
+  Variant: string
+  colorButton: string
+}
+
+export function FundCampaing({
+  nome,
+  postedIn,
+  text1,
+  textbutton,
+  Icon,
+  Variant,
+  colorButton,
+}:
+  Props
+) {
   return (
     <div className="flex gap-3">
       <div className="flex flex-col justify-center">

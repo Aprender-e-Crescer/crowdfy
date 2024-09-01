@@ -1,17 +1,19 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import img from '@/assets/img.png'
 
+interface Props {
+  nome: string;
+  postedIn: string;
+  text1: string;
+  text2: string;
+}
+
 export function NotificationComponent({
   nome,
   postedIn,
   text1,
   text2,
-}: {
-  nome: string
-  postedIn: string
-  text1: string
-  text2: string
-}) {
+}: Props) {
   return (
     <div className="flex gap-3">
       <div className="flex flex-col justify-center">
@@ -26,7 +28,7 @@ export function NotificationComponent({
         </div>
         <div className="line-clamp-2"></div>
       </div>
-      <div className="flex flex-col  gap-3">
+      <div className="flex flex-col gap-3">
         <div className="flex justify-between mr-5 items-center w-max gap-3">
           <p className="text-[#475467] text-[20px] font-medium max-[410px]:text-base">
             {nome}
@@ -41,5 +43,6 @@ export function NotificationComponent({
         </div>
       </div>
     </div>
-  )
+  );
 }
+

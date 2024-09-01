@@ -5,6 +5,16 @@ import iconAvatar from '../assets/Avatars.png'
 import { Progress } from './ui/progress'
 import { Button } from './ui/button'
 
+interface Props {
+  temImagemFundo: boolean;
+  outraImagemFundo: string;
+  titulo: string;
+  descrição: string;
+  nomeUser: string;
+  localização: string;
+  numerosBarra: string;
+}
+
 export default function Card({
   temImagemFundo,
   outraImagemFundo,
@@ -13,26 +23,18 @@ export default function Card({
   nomeUser,
   localização,
   numerosBarra,
-}: {
-  numerosBarra: string
-  localização: string
-  nomeUser: string
-  descrição: string
-  titulo: string
-  temImagemFundo: boolean
-  outraImagemFundo: string
-}) {
+}: Props) {
   return (
     <>
-      <div className="flex sm:hidden  justify-center items-center max-w-full">
-        <div className="flex flex-col absolute  bg-white w-72 h-56 rounded-xl">
+      <div className="flex sm:hidden justify-center items-center max-w-full">
+        <div className="flex flex-col absolute bg-white w-72 h-56 rounded-xl">
           <div className="flex">
             <img className="w-14 h-14 ml-4 mt-2" src={avatar} alt="" />
             <p className="flex items-center justify-center text-[#101828] font-bold">
               {titulo}
             </p>
           </div>
-          <div className=" text-[10px] mr-4 ml-4 mt-1 text-[#475467]">
+          <div className="text-[10px] mr-4 ml-4 mt-1 text-[#475467]">
             {descrição}
           </div>
           <div className="flex items-center">
@@ -44,7 +46,7 @@ export default function Card({
             <p className="text-[#475467] text-[14px] ml-2">{nomeUser}</p>
             <div className="flex ml-2 gap-1">
               <img className="w-2 h-3 mt-1" src={icon} alt="" />
-              <p className="text-[#475467] text-[12px] ">{localização}</p>
+              <p className="text-[#475467] text-[12px]">{localização}</p>
             </div>
           </div>
           <div className="flex mt-3 ml-3 items-center">
@@ -62,7 +64,7 @@ export default function Card({
 
       <div className="hidden sm:flex max-w-80 sm:max-w-full">
         <div className="flex justify-center items-center">
-          <div className="flex flex-col absolute  bg-white w-[658px] h-[323px] rounded-xl p-4">
+          <div className="flex flex-col absolute bg-white w-[658px] h-[323px] rounded-xl p-4">
             <div className="flex gap-3 justify-center items-center">
               <img className="w-16 h-16 ml-4 mt-2" src={avatar} alt="" />
               <p className="flex text-2xl items-center justify-center text-[#101828] font-bold">
@@ -83,11 +85,11 @@ export default function Card({
                 <div className="flex gap-32">
                   <div className="flex items-center justify-center gap-2">
                     <img className="w-5 h-5 mt-1 ml-5" src={icon} alt="" />
-                    <p className="text-[#475467] text-base ">{localização}</p>
+                    <p className="text-[#475467] text-base">{localização}</p>
                   </div>
                   <Button
                     className="bg-[#84CC16] text-white"
-                    campaingButton={'shadow'}
+                    variant="shadow"
                   >
                     Sign Campaing
                   </Button>
@@ -108,5 +110,6 @@ export default function Card({
         </div>
       </div>
     </>
-  )
+  );
 }
+
