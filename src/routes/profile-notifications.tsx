@@ -8,15 +8,15 @@ import {
   PaginationPrevious,
 } from '@/components/ui/pagination'
 
-import { BackgroundButton } from '@/components/background_button'
-import { NotificationComponent } from '@/components/NotificationComponent'
+import { BackgroundButton } from '@/components/background-button'
+import { NotificationComponent } from '@/components/notification-component'
 import { Roadmap } from '@/components/roadmap'
-import { FundCampaing } from '@/components/ui/Fund-Campaing'
+import { FundCampaing } from '@/components/Fund-Campaing'
 import { createFileRoute } from '@tanstack/react-router'
 import { FileSignature, Loader2, Pen, PiggyBank } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-export let Route = createFileRoute(`/profileNotifications`)({
+export const Route = createFileRoute(`/profileNotifications`)({
   component: ProfileNotifications,
 })
 
