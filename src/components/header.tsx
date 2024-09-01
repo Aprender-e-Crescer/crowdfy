@@ -1,32 +1,32 @@
-import { useState } from "react";
-import logoImage from "@/img/logo.png";
-import settingsImage from "@/img/perfil.png";
-import iconButom from "@/img/iconButom.png";
+import { useState } from 'react'
+import logoImage from '@/img/logo.png'
+import settingsImage from '@/img/perfil.png'
+import iconButom from '@/img/iconButom.png'
 
 function Header() {
-  const [activeLink, setActiveLink] = useState("Campaigns");
-  const [isTransparent, setIsTransparent] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('Campaigns')
+  const [isTransparent, setIsTransparent] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleLinkClick = (link: string) => {
-    setActiveLink(link);
-    if (link === "Home" || link === "Explore") {
-      setIsTransparent(true);
+    setActiveLink(link)
+    if (link === 'Home' || link === 'Explore') {
+      setIsTransparent(true)
     } else {
-      setIsTransparent(false);
+      setIsTransparent(false)
     }
-    setIsMenuOpen(false); // Fechar o menu após clicar em um link
-  };
+    setIsMenuOpen(false) // Fechar o menu após clicar em um link
+  }
 
   const linkClasses = (link: string) =>
     link === activeLink
-      ? "text-black font-medium"
-      : "text-gray-400 hover:text-gray-900";
+      ? 'text-black font-medium'
+      : 'text-gray-400 hover:text-gray-900'
 
   return (
     <header
       className={`flex flex-wrap items-center justify-between ${
-        isTransparent ? "bg-transparent" : "bg-white"
+        isTransparent ? 'bg-transparent' : 'bg-white'
       } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
     >
       {/* Logo */}
@@ -41,29 +41,29 @@ function Header() {
       <nav className="hidden md:flex ml-8 space-x-8 flex-grow">
         <a
           href="#"
-          className={linkClasses("Home")}
-          onClick={() => handleLinkClick("Home")}
+          className={linkClasses('Home')}
+          onClick={() => handleLinkClick('Home')}
         >
           Home
         </a>
         <a
           href="#"
-          className={linkClasses("Explore")}
-          onClick={() => handleLinkClick("Explore")}
+          className={linkClasses('Explore')}
+          onClick={() => handleLinkClick('Explore')}
         >
           Explore
         </a>
         <a
           href="#"
-          className={linkClasses("Campaigns")}
-          onClick={() => handleLinkClick("Campaigns")}
+          className={linkClasses('Campaigns')}
+          onClick={() => handleLinkClick('Campaigns')}
         >
           Campaigns
         </a>
         <a
           href="#"
-          className={linkClasses("Profile")}
-          onClick={() => handleLinkClick("Profile")}
+          className={linkClasses('Profile')}
+          onClick={() => handleLinkClick('Profile')}
         >
           Profile
         </a>
@@ -136,29 +136,29 @@ function Header() {
             <div className="absolute top-14 left-0 w-full bg-white shadow-lg z-50">
               <a
                 href="#"
-                className={`block px-4 py-2 ${linkClasses("Home")}`}
-                onClick={() => handleLinkClick("Home")}
+                className={`block px-4 py-2 ${linkClasses('Home')}`}
+                onClick={() => handleLinkClick('Home')}
               >
                 Home
               </a>
               <a
                 href="#"
-                className={`block px-4 py-2 ${linkClasses("Explore")}`}
-                onClick={() => handleLinkClick("Explore")}
+                className={`block px-4 py-2 ${linkClasses('Explore')}`}
+                onClick={() => handleLinkClick('Explore')}
               >
                 Explore
               </a>
               <a
                 href="#"
-                className={`block px-4 py-2 ${linkClasses("Campaigns")}`}
-                onClick={() => handleLinkClick("Campaigns")}
+                className={`block px-4 py-2 ${linkClasses('Campaigns')}`}
+                onClick={() => handleLinkClick('Campaigns')}
               >
                 Campaigns
               </a>
               <a
                 href="#"
-                className={`block px-4 py-2 ${linkClasses("Profile")}`}
-                onClick={() => handleLinkClick("Profile")}
+                className={`block px-4 py-2 ${linkClasses('Profile')}`}
+                onClick={() => handleLinkClick('Profile')}
               >
                 Profile
               </a>
@@ -167,7 +167,7 @@ function Header() {
         </div>
       </div>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

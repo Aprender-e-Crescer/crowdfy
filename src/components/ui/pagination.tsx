@@ -1,6 +1,7 @@
 import * as React from 'react'
-import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react'
-
+import { MoreHorizontal } from 'lucide-react'
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa6'
+import { Link } from '@tanstack/react-router'
 import { cn } from '@/lib/utils'
 import { ButtonProps, buttonVariants } from '@/components/ui/button'
 
@@ -42,16 +43,17 @@ type PaginationLinkProps = {
 const PaginationLink = ({
   className,
   isActive,
-  size = 'sm',
+  size = 'icon',
   ...props
 }: PaginationLinkProps) => (
   <a
     aria-current={isActive ? 'page' : undefined}
     className={cn(
       buttonVariants({
-        campaingButton: isActive ? 'outline' : 'ghost',
+        variant: isActive ? 'outline' : 'ghost',
         size,
       }),
+      'px-2 py-1 text-sm', // Ajuste de padding e tamanho da fonte
       className
     )}
     {...props}
@@ -63,15 +65,20 @@ const PaginationPrevious = ({
   className,
   ...props
 }: React.ComponentProps<typeof PaginationLink>) => (
-  <PaginationLink
+  <Link
+    to="/explore" // Adicionando rota ao Link
+    className={cn('text-start rounded-lg overflow-hidden font-sans', className)}
     aria-label="Go to previous page"
-    size="sm"
-    className={cn('gap-1 pl-2.5', className)}
-    {...props}
   >
-    <ChevronLeft className="h-4 w-4" />
-    <span>Previous</span>
-  </PaginationLink>
+    <PaginationLink
+      size="default"
+      className={cn('gap-1 pl-2.5', className)}
+      {...props}
+    >
+      <FaArrowLeft className="h-4 w-4" /> {/* Ícone FaArrowLeft */}
+      <span>Previous</span>
+    </PaginationLink>
+  </Link>
 )
 PaginationPrevious.displayName = 'PaginationPrevious'
 
@@ -79,15 +86,20 @@ const PaginationNext = ({
   className,
   ...props
 }: React.ComponentProps<typeof PaginationLink>) => (
-  <PaginationLink
+  <Link
+    to="/explore" // Adicionando rota ao Link
+    className={cn('text-start rounded-lg overflow-hidden font-sans', className)}
     aria-label="Go to next page"
-    size="sm"
-    className={cn('gap-1 pr-2.5', className)}
-    {...props}
   >
-    <span>Next</span>
-    <ChevronRight className="h-4 w-4" />
-  </PaginationLink>
+    <PaginationLink
+      size="default"
+      className={cn('gap-1 pr-2.5', className)}
+      {...props}
+    >
+      <span>Next</span>
+      <FaArrowRight className="h-4 w-4" /> {/* Ícone FaArrowRight */}
+    </PaginationLink>
+  </Link>
 )
 PaginationNext.displayName = 'PaginationNext'
 

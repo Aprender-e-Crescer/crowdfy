@@ -1,4 +1,4 @@
-import { NotificationComponent } from './NotificationComponent'
+import { NotificationComponent } from './notification-component'
 import avatar from '../assets/Avatar.png'
 import avatar2 from '../assets/Avatar2.png'
 import icon from '../assets/Icon.png'

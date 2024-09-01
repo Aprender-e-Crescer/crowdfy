@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+bun.lockb
+package-lock.json
+./src/routeTree.gen.ts
+.vite

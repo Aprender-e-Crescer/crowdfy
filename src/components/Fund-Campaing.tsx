@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import img from '@/assets/img.png'
 import { Button } from './button'
 import { IconNode, Loader2, Pen } from 'lucide-react'
-interface Props{
+interface Props {
   nome: string
   postedIn: string
   text1: string
@@ -20,9 +20,7 @@ export function FundCampaing({
   Icon,
   Variant,
   colorButton,
-}:
-  Props
-) {
+}: Props) {
   return (
     <div className="flex gap-3">
       <div className="flex flex-col justify-center">
@@ -32,7 +30,7 @@ export function FundCampaing({
             <AvatarFallback></AvatarFallback>
           </Avatar>
           <div className="flex flex-col items-center justify-center flex-1">
-            <hr className="flex-1 h-full border border-gray-400"/>
+            <hr className="flex-1 h-full border border-gray-400" />
           </div>
         </div>
         <div className="line-clamp-2"></div>

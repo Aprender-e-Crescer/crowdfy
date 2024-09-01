@@ -1,18 +1,18 @@
 import avatar from '../assets/Avatar.png'
 import avatar2 from '../assets/Avatar2.png'
-import icon from '../assets/Icon.png'
+import iconLocalização from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
-import { Progress } from './ui/progress'
+import { Progress } from '../components/progress'
 import { Button } from './ui/button'
 
 interface Props {
-  temImagemFundo: boolean;
-  outraImagemFundo: string;
-  titulo: string;
-  descrição: string;
-  nomeUser: string;
-  localização: string;
-  numerosBarra: string;
+  temImagemFundo: boolean
+  outraImagemFundo: string
+  titulo: string
+  descrição: string
+  nomeUser: string
+  localização: string
+  numerosBarra: string
 }
 
 export default function Card({
@@ -37,9 +37,9 @@ export default function Card({
           <div className="text-[10px] mr-4 ml-4 mt-1 text-[#475467]">
             {descrição}
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center mt-2">
             <img
-              className="w-8 h-8 items-center justify-center ml-3 mt-"
+              className="w-10 h-10 items-center justify-center ml-3"
               src={avatar2}
               alt=""
             />
@@ -50,14 +50,14 @@ export default function Card({
             </div>
           </div>
           <div className="flex mt-3 ml-3 items-center">
-            <img className="w-36 h-6" src={iconAvatar} alt="" />
-            <Progress className="bg-blue-800 w-28 h-[5px] ml-4" value={50} />
-            <p className="mr-3 ml-3 font-bold">{numerosBarra}</p>
+            <img className="w-60 h-9" src={iconAvatar} />
+            <Progress className="bg-blue-800 w-44 h-3 ml-4" value={50} />
+            <p className="mr-3 ml-3 font-bold text-xl">{numerosBarra}</p>
           </div>
         </div>
         {temImagemFundo && (
           <div>
-            <img src={outraImagemFundo} alt="" />
+            <img className="rounded-md" src={outraImagemFundo} />
           </div>
         )}
       </div>
@@ -87,10 +87,7 @@ export default function Card({
                     <img className="w-5 h-5 mt-1 ml-5" src={icon} alt="" />
                     <p className="text-[#475467] text-base">{localização}</p>
                   </div>
-                  <Button
-                    className="bg-[#84CC16] text-white"
-                    variant="shadow"
-                  >
+                  <Button className="bg-[#84CC16] text-white" variant="shadow">
                     Sign Campaing
                   </Button>
                 </div>
@@ -104,12 +101,15 @@ export default function Card({
           </div>
           {temImagemFundo && (
             <div>
-              <img src={outraImagemFundo} alt="" />
+              <img
+                className="rounded-md min-w-[700px]"
+                src={outraImagemFundo}
+                alt=""
+              />
             </div>
           )}
         </div>
       </div>
     </>
-  );
+  )
 }
-
