@@ -119,7 +119,7 @@ function ProfileNotifications() {
         <Pagination className=" hidden md:flex justify-evenly w-full mt-10 ">
           <PaginationContent>
             <PaginationItem>
-              <PaginationPrevious href="#" />
+              <PaginationPrevious href="#" useArrows={true}/>
             </PaginationItem>
             <PaginationItem>
               <PaginationLink href="#">1</PaginationLink>
@@ -136,7 +136,7 @@ function ProfileNotifications() {
               <PaginationEllipsis />
             </PaginationItem>
             <PaginationItem>
-              <PaginationNext href="#" />
+              <PaginationNext href="#" useArrows={true}/>
             </PaginationItem>
           </PaginationContent>
         </Pagination>
@@ -153,7 +153,7 @@ function ProfileNotifications() {
       <Pagination className="max-md:flex hidden justify-evenly w-full mt-10 ">
         <PaginationContent>
           <PaginationItem>
-            <PaginationPrevious href="#" />
+            <PaginationPrevious href="#" useArrows={true}/>
           </PaginationItem>
           <PaginationItem>
             <PaginationLink href="#">1</PaginationLink>
@@ -170,7 +170,7 @@ function ProfileNotifications() {
             <PaginationEllipsis />
           </PaginationItem>
           <PaginationItem>
-            <PaginationNext href="#" />
+            <PaginationNext href="#" useArrows={true}/>
           </PaginationItem>
         </PaginationContent>
       </Pagination>

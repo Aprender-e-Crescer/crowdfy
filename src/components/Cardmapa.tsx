@@ -21,8 +21,8 @@ interface CardMapaProps {
 
 export function CardMapa({ cardData }: CardMapaProps) {
   return (
-    <div className="flex justify-center p-4 m-4">
-      <div className="max-w-full">
+    <div className="flex justify-center m-4">
+      <div className="max-w-full space-y-4">
         {cardData.map((card) => (
           <Card
             key={card.id}
@@ -44,8 +44,8 @@ export function CardMapa({ cardData }: CardMapaProps) {
                       {card.name}
                     </h3>
                   </div>
-                  <div className="flex items-center justify-center bg-gray-100 rounded-lg w-10 h-10 text-xs border border-[#E2E8F0]">
-                    <FaRegHeart className="text-black text-xs" />
+                  <div className="flex items-center justify-center rounded-lg w-10 h-10 text-2x1 border border-[#E2E8F0]">
+                    <FaRegHeart className="text-black" />
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm md:text-base text-[#6b7280]">
@@ -65,10 +65,10 @@ export function CardMapa({ cardData }: CardMapaProps) {
                     </span>
                   </div>
                 </div>
+                <div className="flex flex-col gap-2 mt-2">
+                  <Progress value={card.progress} className="bg-slate-50" />
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col gap-2 mt-2">
-              <Progress value={card.progress} className="bg-slate-50" />
             </div>
           </Card>
         ))}

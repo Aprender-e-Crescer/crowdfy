@@ -28,8 +28,8 @@ function Header() {
 
   return (
     <header
-      className={`ml-20 mr-48 flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
-        } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
+      className={`flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
+        } px-2 pb-1 pt-3 md:px-2 transition-all duration-300`}
     >
       {/* Logo */}
       <div className="flex items-center flex-grow-0">
@@ -49,7 +49,7 @@ function Header() {
           Home
         </Link>
         <Link
-          to=""
+          to="/explore"
           className={linkClasses("Explore")}
           onClick={() => handleLinkClick("Explore")}
         >
