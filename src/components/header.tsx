@@ -29,7 +29,7 @@ function Header() {
   return (
     <header
       className={`flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
-        } shadow-sm px-2 py-3 md:px-2 transition-all duration-300`}
+        } px-2 pb-1 pt-3 md:px-2 transition-all duration-300`}
     >
       {/* Logo */}
       <div className="flex items-center flex-grow-0">

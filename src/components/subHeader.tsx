@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Button } from "./ui/button";
-import { InputSubHeader } from "./input-sub-header";
+import { Button } from "@/components/ui/button";
+import { InputSubHeader } from "@/components/input-sub-header";
 
 interface Props {
   buttons: {

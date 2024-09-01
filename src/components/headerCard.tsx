@@ -1,17 +1,17 @@
-import fileSignature from '../assets/file-signature.png'
-import Piggy_Bank from '../assets/piggy-bank.png'
-import arrowUp from '../assets/arrow-up.png'
-import arrowDown from '../assets/arrow-down.png'
-import filter from '../assets/filter2.png'
-import list from '../assets/list.png'
-import markerPin from '../assets/marker-pin-02.png'
+import fileSignature from '@/assets/file-signature.png'
+import Piggy_Bank from '@/assets/piggy-bank.png'
+import arrowUp from '@/assets/arrow-up.png'
+import arrowDown from '@/assets/arrow-down.png'
+import filter from '@/assets/filter2.png'
+import list from '@/assets/list.png'
+import markerPin from '@/assets/marker-pin-02.png'
 
 export function HeaderCard() {
   return (
-    <div className="p-4 col-auto">
-      <div className="flex flex-col justify-between md:flex-row md:items-center mb-4">
+    <div className="col-auto">
+      <div className="flex flex-col justify-between md:flex-row md:items-start mb-4">
         <div className="mb-6 flex flex-col mr-0 md:mr-4">
-          <h1 className="font-inter text-4xl md:text-5xl pb-2 font-bold">Explore</h1>
+          <h1 className="font-inter text-3xl pb-2 font-bold">Explore</h1>
           <p className="font-plus-jakarta-sans text-base text-[#64748B]">Where do you want to help</p>
         </div>
         <div className="flex flex-wrap justify-start mt-4 md:mt-0">
