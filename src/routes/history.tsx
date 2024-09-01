@@ -7,7 +7,6 @@ import { LuSettings } from "react-icons/lu"
 import { IoIosNotificationsOutline } from "react-icons/io"
 import { FaRegHeart } from "react-icons/fa"
 import { MdOutlineWatchLater } from "react-icons/md"
-import { link } from 'fs'
 
 export const Route = createFileRoute('/history')({
   component: Favorites,
@@ -119,16 +118,16 @@ function Favorites() {
 
   const buttons = [
     {
-      title: 'Gallery',
+      title: 'Settings',
       variant: 'ghost',
       icon: <LuSettings className='text-2xl' />,
-      route: '/explore'
+      route: '/profile-settings'
     },
     {
-      title: 'Maps',
+      title: 'Notifications',
       variant: 'ghost',
       icon: <IoIosNotificationsOutline className='text-3xl' />,
-      route: '/explore-map'
+      route: '/profileNotifications'
     },
     {
       title: 'Favorites',

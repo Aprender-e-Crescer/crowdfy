@@ -49,7 +49,7 @@ function Header() {
           Home
         </Link>
         <Link
-          to=""
+          to="/explore"
           className={linkClasses("Explore")}
           onClick={() => handleLinkClick("Explore")}
         >

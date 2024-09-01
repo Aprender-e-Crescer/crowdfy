@@ -125,7 +125,7 @@ function Explore() {
       title: 'Feed',
       variant: 'ghost',
       icon: <LuNewspaper className='text-2xl' />,
-      route: '/explore'
+      route: '#'
     }
   ]
 
@@ -162,18 +162,18 @@ function Explore() {
             ))}
           </div>
           <Pagination className="mt-6">
-            <PaginationContent className="flex items-center justify-between w-full border-t border-[#475467] p-5 text-[#475467]">
+            <PaginationContent className="flex items-center justify-between w-full border-t-2 border-gray-100 p-5 text-gray-100">
               <PaginationItem>
-                <PaginationPrevious href="#" useArrows={true} className="text-[#475467]" />
+                <PaginationPrevious href="#" useArrows={true} className="text-gray-600" />
               </PaginationItem>
               <PaginationItem className="flex">
-                <PaginationLink href="#" className="text-[#475467]">1</PaginationLink>
-                <PaginationLink href="#" className="text-[#475467]">2</PaginationLink>
-                <PaginationLink href="#" className="text-[#475467]">3</PaginationLink>
-                <PaginationEllipsis className="text-[#475467]" />
-                <PaginationLink href="#" className="text-[#475467]">8</PaginationLink>
-                <PaginationLink href="#" className="text-[#475467]">9</PaginationLink>
-                <PaginationLink href="#" className="text-[#475467]">10</PaginationLink>
+                <PaginationLink href="#" className="text-gray-600">1</PaginationLink>
+                <PaginationLink href="#" className="text-gray-600">2</PaginationLink>
+                <PaginationLink href="#" className="text-gray-600">3</PaginationLink>
+                <PaginationEllipsis className="text-gray-600" />
+                <PaginationLink href="#" className="text-gray-600">8</PaginationLink>
+                <PaginationLink href="#" className="text-gray-600">9</PaginationLink>
+                <PaginationLink href="#" className="text-gray-600">10</PaginationLink>
               </PaginationItem>
               <PaginationItem>
                 <PaginationNext href="#" useArrows={true} className="text-[#475467]" />

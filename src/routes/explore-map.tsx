@@ -23,19 +23,19 @@ const buttons = [
     title: 'Gallery',
     variant: 'ghost',
     icon: <FiGrid className='text-2xl' />,
-    route: '/donate'
+    route: '/explore'
   },
   {
     title: 'Maps',
     variant: 'green',
     icon: <FiMapPin className='text-2xl' />,
-    route: '/donate'
+    route: '#'
   },
   {
     title: 'Feed',
     variant: 'ghost',
     icon: <LuNewspaper className='text-2xl' />,
-    route: '/donate'
+    route: '#'
   }
 ]
 

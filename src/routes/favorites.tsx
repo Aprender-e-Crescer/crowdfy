@@ -118,16 +118,16 @@ function Favorites() {
 
   const buttons = [
     {
-      title: 'Gallery',
+      title: 'Settings',
       variant: 'ghost',
       icon: <LuSettings className='text-2xl' />,
-      route: '/explore'
+      route: '/profile-settings'
     },
     {
-      title: 'Maps',
+      title: 'Notifications',
       variant: 'ghost',
       icon: <IoIosNotificationsOutline className='text-3xl' />,
-      route: '/explore-map'
+      route: '/profileNotifications'
     },
     {
       title: 'Favorites',
