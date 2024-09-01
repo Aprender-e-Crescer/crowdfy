@@ -15,7 +15,7 @@ export default function ReturnNext({
   next: string
 }) {
   return (
-    <div className=" flex flex-1 justify-between ">
+    <div className=" flex flex-1 justify-between">
       <div className="flex justify-center">
         <Link to="/" className="[&.active]: flex justify-center">
           <button className="flex items-center text-[#475467] font-semibold gap-2">

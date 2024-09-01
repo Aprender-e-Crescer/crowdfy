@@ -23,7 +23,7 @@ export function NotificationComponent({
             <AvatarFallback></AvatarFallback>
           </Avatar>
           <div className="flex flex-col items-center justify-center flex-1">
-            <hr className="flex-1 h-full border border-gray-400" />
+            <hr className="flex-1 h-full border border-gray-400"/>
           </div>
         </div>
         <div className="line-clamp-2"></div>

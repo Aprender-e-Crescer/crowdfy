@@ -30,16 +30,16 @@ export function Roadmap({
         <div>
           <div className="flex justify-between">
             <div className="mb-10 md:hidden">
-              <BackgroundButton preço="R$ 76.97" />
+              <BackgroundButton preço="R$ 76.97"/>
             </div>
             <div className="mb-10 md:hidden">
-              <BackgroundButton preço="R$ 895.10" />
+              <BackgroundButton preço="R$ 895.10"/>
             </div>
           </div>
           <div className="flex flex-col md:hidden justify-center items-center max-w-full">
-            <div className="flex flex-col bg-white w-full h-max rounded-xl rounded-b-none gap-4 p-2 ">
-              <div className="flex gap-3 ">
-                <img className="w-14 h-14  mt-2" src={avatar} alt="Avatar" />
+            <div className="flex flex-col bg-white w-full h-max rounded-xl rounded-b-none gap-4 p-2">
+              <div className="flex gap-3">
+                <img className="w-14 h-14  mt-2" src={avatar} alt="Avatar"/>
                 <p className="flex items-center justify-center text-[#101828] text-lg font-bold">
                   {titulo}
                 </p>
@@ -65,7 +65,7 @@ export function Roadmap({
                     />
                     <p className="text-[#475467] text-[12px]">{localização}</p>
                   </div>
-                  <Button className="bg-[#84CC16] text-white" variant="shadow">
+                  <Button className="bg-[#84CC16] text-white" campaingButton="shadow">
                     Sign Campaign
                   </Button>
                 </div>
@@ -98,7 +98,7 @@ export function Roadmap({
                   {descrição}
                 </div>
                 <div className="flex items-center mt-3 justify-between max-[1300px]:flex-col min-[1210px]:flex min-[1110px]:gap-5">
-                  <div className="flex items-center ">
+                  <div className="flex items-center">
                     <img
                       className="w-10 h-10 items-center justify-center ml-3 mt-2"
                       src={avatar2}
@@ -109,9 +109,9 @@ export function Roadmap({
                     </p>
                   </div>
                   <div className="flex gap-1 items-center justify-center">
-                    <div className="flex gap-32 md:gap-10 ">
+                    <div className="flex gap-32 md:gap-10">
                       <div className="flex items-center justify-center gap-5 max-[1400px]:flex-col">
-                        <div className="flex gap-5 items-center ">
+                        <div className="flex gap-5 items-center">
                           <div className="flex gap-2">
                             <img
                               className="w-5 h-5 mt-1 ml-5"
@@ -125,7 +125,7 @@ export function Roadmap({
 
                           <Button
                             className="bg-[#84CC16] text-white"
-                            variant="shadow"
+                            campaingButton="shadow"
                           >
                             Sign Campaign
                           </Button>
@@ -143,7 +143,7 @@ export function Roadmap({
 
                   <div className="flex items-center gap-5 max-[1060px]:flex-col">
                     <Progress
-                      className="bg-blue-800 w-44 h-3 ml-4 "
+                      className="bg-blue-800 w-44 h-3 ml-4"
                       value={50}
                     />
                     <p className="text-xl font-bold">{numerosBarra}</p>
@@ -153,8 +153,8 @@ export function Roadmap({
             </div>
           </div>
         </div>
-        <div className="w-full md:justify-center md:flex ">
-          <div className="flex flex-col rounded-xl rounded-t-none border-white bg-white p-2 md:w-4/5  md:rounded-b-none ">
+        <div className="w-full md:justify-center md:flex">
+          <div className="flex flex-col rounded-xl rounded-t-none border-white bg-white p-2 md:w-4/5  md:rounded-b-none">
             <div className="flex flex-col ml-1 md:ml-3">
               <p className="title font-bold text-2xl mb-10">Roadmap</p>
               <div className="flex gap-3">

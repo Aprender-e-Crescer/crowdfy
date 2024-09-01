@@ -16,7 +16,7 @@ export default function Give({title, subtitle, label1, label2, label3, placehold
                     <input 
                         type="text" 
                         id="campaign-title"
-                        className="flex flex-col font-light border border-gray-300 rounded-sm w-full h-10 placeholder-gray-400 placeholder:text-lg text-xl " 
+                        className="flex flex-col font-light border border-gray-300 rounded-sm w-full h-10 placeholder-gray-400 placeholder:text-lg text-xl" 
                         placeholder={placeholder1} 
                         required
                     />
