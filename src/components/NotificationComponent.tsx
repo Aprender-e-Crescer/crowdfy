@@ -14,14 +14,14 @@ export function NotificationComponent({
 }) {
   return (
     <div className="flex gap-3">
-      <div className="flex flex-col justify-center ">
+      <div className="flex flex-col justify-center">
         <div className="flex flex-col flex-1 gap-y-2">
           <Avatar className="flex justify-center items-center size-14">
-            <AvatarImage className="bg-lime-100 " src={img} />
+            <AvatarImage className="bg-lime-100" src={img} />
             <AvatarFallback></AvatarFallback>
           </Avatar>
           <div className="flex flex-col items-center justify-center flex-1">
-            <hr className="flex-1 h-full border border-gray-400" />
+            <hr className="flex-1 h-full border border-gray-400"/>
           </div>
         </div>
         <div className="line-clamp-2"></div>
@@ -33,10 +33,10 @@ export function NotificationComponent({
           </p>
           <p className="text-[#94A3B8]">{postedIn}</p>
         </div>
-        <div className="flex gap-3 ">
+        <div className="flex gap-3">
           <p className="flex gap-3 text-[#475569]">{text1}</p>
         </div>
-        <div className="flex gap-3 ">
+        <div className="flex gap-3">
           <p className="text-[#475569] mb-10">{text2}</p>
         </div>
       </div>
