@@ -28,11 +28,11 @@ function Header() {
 
   return (
     <header
-      className={`ml-[7px] md:ml-[50px] gap-2 justify-center flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
-        } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
+      className={`flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
+        } shadow-sm py-3  transition-all duration-300`}
     >
       {/* Logo */}
-      <div className="flex items-center flex-grow-0">
+      <div className="flex items-center flex-grow-0 ml-3 md:ml-[20px] lg:ml-[90px]">
         <div className="flex items-center space-x-1">
           <img src={logoImage} alt="Logo" className="w-8 h-8" />
           <div className="text-black text-xl font-bold">Crowdfy</div>
@@ -40,7 +40,7 @@ function Header() {
       </div>
 
       {/* Links de navegação (escondidos em telas pequenas) */}
-      <nav className="hidden md:flex ml-8 space-x-8 flex-grow">
+      <nav className="hidden md:flex ml-8 flex-grow gap-5">
         <Link
           to=""
           className={linkClasses("Home")}
@@ -74,7 +74,7 @@ function Header() {
       {/* Menu Hamburguer Responsivo */}
 
       {/* Ações do usuário */}
-      <div className="flex items-center space-x-4 mr-auto md:mr-[100px]">
+      <div className="flex items-center space-x-2 mr-3 lg:mr-[90px] md:ml-[20px]">
         <button className="p-2 w-10 h-10 rounded-lg flex items-center justify-center relative z-10000">
           <div className="bg-[#EDEDED] border-[#F6F6F6] absolute inset-0 border-2 rounded-lg flex items-center justify-center">
             <div className="w-6 h-6 border-2 border-gray-400 rounded-full flex items-center justify-center">

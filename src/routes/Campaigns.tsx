@@ -8,11 +8,11 @@ import CardsViews from '@/components/cardsViews';
 
 function Campaigns() {
   return (
-    <div className="Campaigns ml-[7px] md:ml-[100px] justify-center mr-[7px] md:mr-auto">
+  <div className="Campaigns ml-[7px] md:ml-auto justify-center mr-[7px] md:mr-auto md:justify-center">
          <div className='mt-[24px] mb-[16px] md:mt-[48px] md:mb-[32px]'>
         <TitlePage />
       </div>
-      <div className='flex flex-col md:flex-row'>
+      <div className='flex flex-col md:flex-row lg:flex-row'>
         <div className='flex flex-col md:flex-row'>
           <div>
             <div className='mb-11 md:mb-10 max-w-65'>
@@ -21,10 +21,13 @@ function Campaigns() {
             <CardsViews />
           </div>
         </div>
-        <div className='flex-row md:flex-col mt-11 md:mt-10 ml-auto md:ml-[50px]'>
+        <div className='flex-row md:flex-col  ml-auto mr-auto sm:ml-[px] md:ml-[2px] md:w-auto md:h-auto'>
           <TitleViewActivity />
-          {/* Envolva as atividades em uma div com rolagem vertical em telas pequenas */}
-          <div className='flex-row md:flex-col'>
+          <div className='flex-row md:flex-col mt-4'>
+            <ViewActivity />
+            <ViewActivity />
+            <ViewActivity />
+            <ViewActivity />
             <ViewActivity />
             <ViewActivity />
             <ViewActivity />
