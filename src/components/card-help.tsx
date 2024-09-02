@@ -25,8 +25,10 @@ export default function Card({
   return (
     <>
       <div
-        className={`pt-36 pb-64 px-2 rounded-xl md:bg-cover md:bg-no-repeat ${
-          backgroundImage ? "bg-[url('@/assets/ImageBgCard.png')]" : ''
+        className={`px-2 rounded-xl md:bg-cover md:bg-no-repeat ${
+          backgroundImage
+            ? "pt-36 pb-64 bg-[url('@/assets/ImageBgCard.png')]"
+            : ''
         }`}
       >
         <div className="md:flex md:justify-end md:flex-col md:h-full">
