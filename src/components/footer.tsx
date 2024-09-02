@@ -13,7 +13,7 @@ import iconfooter from '@/assets/icon-footer.png'
 export default function Footer() {
   return (
     <>
-      <div className="hidden md:flex bg-slate-100 w-full flex-col">
+      <div className="hidden lg:flex bg-slate-100 w-full flex-col">
         <div className="flex justify-center gap-x-16 py-20 flex-1 px-8">
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className="text-lime-700 font-semibold">Home</h1>
@@ -99,7 +99,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className=" md:hidden flex flex-wrap bg-slate-100">
+      <div className=" lg:hidden flex flex-wrap bg-slate-100">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className=" text-foreground text-lime-700">
