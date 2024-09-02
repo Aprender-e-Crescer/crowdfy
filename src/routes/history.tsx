@@ -3,10 +3,10 @@ import { Card } from '@/components/card-donate'
 import { SectionHeader } from '@/components/Sectionheader'
 import Header from '@/components/header'
 import { SubHeader } from '@/components/subHeader'
-import { LuSettings } from "react-icons/lu"
-import { IoIosNotificationsOutline } from "react-icons/io"
-import { FaRegHeart } from "react-icons/fa"
-import { MdOutlineWatchLater } from "react-icons/md"
+import { LuSettings } from 'react-icons/lu'
+import { IoIosNotificationsOutline } from 'react-icons/io'
+import { FaRegHeart } from 'react-icons/fa'
+import { MdOutlineWatchLater } from 'react-icons/md'
 
 export const Route = createFileRoute('/history')({
   component: Favorites,
@@ -120,42 +120,42 @@ function Favorites() {
     {
       title: 'Settings',
       variant: 'ghost',
-      icon: <LuSettings className='text-2xl' />,
-      route: '/profile-settings'
+      icon: <LuSettings className="text-2xl" />,
+      route: '/profile-settings',
     },
     {
       title: 'Notifications',
       variant: 'ghost',
-      icon: <IoIosNotificationsOutline className='text-3xl' />,
-      route: '/profileNotifications'
+      icon: <IoIosNotificationsOutline className="text-3xl" />,
+      route: '/profileNotifications',
     },
     {
       title: 'Favorites',
       variant: 'ghost',
-      icon: <FaRegHeart className='text-2xl' />,
-      route: '/favorites'
+      icon: <FaRegHeart className="text-2xl" />,
+      route: '/favorites',
     },
     {
       title: 'History',
       variant: 'lightYellow',
-      icon: <MdOutlineWatchLater className='text-2xl' />,
-      route: '/history'
-    }
+      icon: <MdOutlineWatchLater className="text-2xl" />,
+      route: '/history',
+    },
   ]
-  
+
   return (
     <>
-        <div className="px-4 sm:px-6 md:px-8 lg:px-24">
-          <Header />
-        </div>
-        <div className='border-b-2 border-gray-100 pb-2'></div>
-        <div className="pb-2 px-4 sm:px-6 md:px-8 lg:px-24">
-          <SubHeader buttons={buttons} />
-        </div>
-        <div className='border-b-2 border-gray-100'></div>
-        <div className="px-4 sm:px-6 md:px-8 lg:px-24">
-        <div className='mt-12 mb-24'>
-          <SectionHeader title='History'/>
+      <div className="px-4 sm:px-6 md:px-8 lg:px-24">
+        <Header />
+      </div>
+      <div className="border-b-2 border-gray-100 pb-2"></div>
+      <div className="pb-2 px-4 sm:px-6 md:px-8 lg:px-24">
+        <SubHeader buttons={buttons} />
+      </div>
+      <div className="border-b-2 border-gray-100"></div>
+      <div className="px-4 sm:px-6 md:px-8 lg:px-24">
+        <div className="mt-12 mb-24">
+          <SectionHeader title="History" />
           <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {cardsData.map((card, index) => (
               <Card
@@ -176,8 +176,7 @@ function Favorites() {
             ))}
           </div>
         </div>
-        </div>
+      </div>
     </>
   )
 }
-

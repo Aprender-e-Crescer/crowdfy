@@ -1,39 +1,37 @@
-import { useState } from "react";
-import logoImage from "@/assets/logo.png";
-import settingsImage from "@/assets/perfil.png";
-import iconButom from "@/assets/iconButom.png";
-import { Link } from "@tanstack/react-router";
+import { useState } from 'react'
+import logoImage from '@/assets/logo.png'
+import settingsImage from '@/assets/perfil.png'
+import iconButom from '@/assets/iconButom.png'
+import { Link } from '@tanstack/react-router'
 
 function Header() {
-  const [activeLink, setActiveLink] = useState("Campaigns");
-  const [isTransparent, setIsTransparent] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('Campaigns')
+  const [isTransparent, setIsTransparent] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleLinkClick = (link: string) => {
-    setActiveLink(link);
-    if (link === "Home" || link === "Explore") {
-      setIsTransparent(true);
+    setActiveLink(link)
+    if (link === 'Home' || link === 'Explore') {
+      setIsTransparent(true)
     } else {
-      setIsTransparent(false);
+      setIsTransparent(false)
     }
-    setIsMenuOpen(false); // Fechar o menu após clicar em um link
-  };
+    setIsMenuOpen(false) // Fechar o menu após clicar em um link
+  }
 
   const linkClasses = (link: string) =>
     link === activeLink
-      ? "text-black font-medium"
-      : "text-gray-400 hover:text-gray-900";
+      ? 'text-black font-medium'
+      : 'text-gray-400 hover:text-gray-900'
 
   return (
     <header
-
       className={`2xl:ml-[218px] ml-[16px]  flex flex-wrap items-center justify-between ${
-        isTransparent ? "bg-transparent" : "bg-white"
+        isTransparent ? 'bg-transparent' : 'bg-white'
       } shadow-sm px-4 py-3 md:px-8 transition-all duration-300`}
-
-      className={`flex flex-wrap items-center justify-between ${isTransparent ? "bg-transparent" : "bg-white"
-        } px-2 pb-1 pt-3 md:px-2 transition-all duration-300`}
-
+      className={`flex flex-wrap items-center justify-between ${
+        isTransparent ? 'bg-transparent' : 'bg-white'
+      } px-2 pb-1 pt-3 md:px-2 transition-all duration-300`}
     >
       {/* Logo */}
 
@@ -47,30 +45,30 @@ function Header() {
       <nav className="hidden lg:flex ml-8 gap-4 flex-grow">
         <Link
           to=""
-          className={linkClasses("Home")}
-          onClick={() => handleLinkClick("Home")}
+          className={linkClasses('Home')}
+          onClick={() => handleLinkClick('Home')}
         >
           Home
         </Link>
         <Link
           to="/explore"
-          className={linkClasses("Explore")}
-          onClick={() => handleLinkClick("Explore")}
+          className={linkClasses('Explore')}
+          onClick={() => handleLinkClick('Explore')}
         >
           Explore
         </Link>
-        
+
         <Link
           to="/Campaigns"
-          className={linkClasses("Campaigns")}
-          onClick={() => handleLinkClick("Campaigns")}
+          className={linkClasses('Campaigns')}
+          onClick={() => handleLinkClick('Campaigns')}
         >
           Campaigns
         </Link>
         <Link
           to=""
-          className={linkClasses("Profile")}
-          onClick={() => handleLinkClick("Profile")}
+          className={linkClasses('Profile')}
+          onClick={() => handleLinkClick('Profile')}
         >
           Profile
         </Link>
@@ -114,58 +112,57 @@ function Header() {
               className="w-full h-full bg-[#EDEDED]"
             />
           </div>
-        
 
-        <div className="flex lg:hidden">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-2 rounded-lg w-10 h-10 bg-[#EDEDED] border-[#F6F6F6] border-2 shadow-md flex items-center justify-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-6 h-6 text-gray-600"
+          <div className="flex lg:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 rounded-lg w-10 h-10 bg-[#EDEDED] border-[#F6F6F6] border-2 shadow-md flex items-center justify-center"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
-        </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-6 h-6 text-gray-600"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
           {/* Dropdown Menu (exibido quando o botão é clicado) */}
-          
+
           {isMenuOpen && (
             <div className="absolute top-14 left-0 w-full bg-white shadow-lg z-50">
               <Link
                 to=""
-                className={`block px-4 py-2 ${linkClasses("Home")}`}
-                onClick={() => handleLinkClick("Home")}
+                className={`block px-4 py-2 ${linkClasses('Home')}`}
+                onClick={() => handleLinkClick('Home')}
               >
                 Home
               </Link>
               <Link
                 to=""
-                className={`block px-4 py-2 ${linkClasses("Explore")}`}
-                onClick={() => handleLinkClick("Explore")}
+                className={`block px-4 py-2 ${linkClasses('Explore')}`}
+                onClick={() => handleLinkClick('Explore')}
               >
                 Explore
               </Link>
               <Link
                 to="/Campaigns"
-                className={`block px-4 py-2 ${linkClasses("Campaigns")}`}
-                onClick={() => handleLinkClick("Campaigns")}
+                className={`block px-4 py-2 ${linkClasses('Campaigns')}`}
+                onClick={() => handleLinkClick('Campaigns')}
               >
                 Campaigns
               </Link>
               <Link
                 to=""
-                className={`block px-4 py-2 ${linkClasses("Profile")}`}
-                onClick={() => handleLinkClick("Profile")}
+                className={`block px-4 py-2 ${linkClasses('Profile')}`}
+                onClick={() => handleLinkClick('Profile')}
               >
                 Profile
               </Link>
@@ -174,7 +171,7 @@ function Header() {
         </div>
       </div>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

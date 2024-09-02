@@ -1,17 +1,16 @@
-import { FaListOl } from "react-icons/fa6";
-import { FiGrid } from "react-icons/fi";
+import { FaListOl } from 'react-icons/fa6'
+import { FiGrid } from 'react-icons/fi'
 interface SectionHeaderProps {
-  title: string;
+  title?: string
 }
-
 export function SectionHeader({ title }: SectionHeaderProps) {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between p-4 md:p-8">
       <div>
-        <h2 className="text-3xl font-bold tracking-tight mb-2 md:mb-1 font-inter">
-          {title}
+        <h2 className="text-xl md:text-3xl font-bold tracking-tight mb-2 md:mb-1 font-inter">
+          History {title} {}
         </h2>
-        <p className="text-base text-muted-foreground font-plus-jakarta-sans">
+        <p className="text-sm md:text-base text-muted-foreground font-plus-jakarta-sans">
           Como você pretende ajudar o mundo hoje.
         </p>
       </div>
@@ -26,5 +25,5 @@ export function SectionHeader({ title }: SectionHeaderProps) {
         </button>
       </div>
     </div>
-  );
+  )
 }
