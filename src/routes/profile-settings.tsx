@@ -6,12 +6,40 @@ import PersonalInfo from '@/components/personal-info'
 import ProfileInfo from '@/components/profile-info'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/card-donate'
+import { SubHeader } from '@/components/subHeader'
+import { Bell, Heart, History, Settings } from 'lucide-react'
 
 export const Route = createFileRoute('/profile-settings')({
   component: ProfileSettings,
 })
 
 function ProfileSettings() {
+  const buttonsSubHeader = [
+    {
+      title: 'Settings',
+      variant: 'lightYellow' as const,
+      route: '/profile-settings',
+      icon: <Settings />,
+    },
+    {
+      title: 'Notifications',
+      variant: 'ghost' as const,
+      route: '/profile-notifications',
+      icon: <Bell />,
+    },
+    {
+      title: 'Favorites',
+      variant: 'ghost' as const,
+      route: '/explore-map',
+      icon: <Heart />,
+    },
+    {
+      title: 'History',
+      variant: 'ghost' as const,
+      route: '/explore-map',
+      icon: <History />,
+    },
+  ]
   return (
     <>
       {/*Mobile*/}
@@ -45,6 +73,10 @@ function ProfileSettings() {
       </div>
 
       {/*PC*/}
+
+      <div className="">
+        <SubHeader buttons={buttonsSubHeader} />
+      </div>
 
       <div className="hidden md:flex flex-col mx-32 gap-y-4 mb-5">
         <div className="flex flex-col gap-y-5 gap-x-5 ">
