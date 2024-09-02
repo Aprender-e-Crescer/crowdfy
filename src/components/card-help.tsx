@@ -1,13 +1,9 @@
-import { NotificationComponent } from '@/components/notification-component'
 import avatar from '../assets/Avatar.png'
 import avatar2 from '../assets/Avatar2.png'
-import icon from '../assets/Icon.png'
+import iconLocalização from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
-import { Progress } from './progress'
+import { Progress } from '../components/progress'
 import { Button } from './ui/button'
-import { FundCampaing } from '@/components/fund-campaing'
-import { Loader2 } from 'lucide-react'
-import { BackgroundButton } from '@/components/background-button'
 
 interface Props {
   barNumbers: string
@@ -15,28 +11,25 @@ interface Props {
   userName: string
   descrition: string
   title: string
+  backgroundImage?: boolean
 }
 
-export function Roadmap({
+export default function Card({
   title,
   descrition,
   userName,
   location,
   barNumbers,
+  backgroundImage,
 }: Props) {
   return (
-    <div className="bg-[url('@/assets/ImageBgCard.png')] pt-52 px-2 pb-2 rounded-xl md:h-full md:bg-cover md:bg-no-repeat md:pb-0">
-      <div className="md:flex md:justify-end md:flex-col md:h-full">
-        <div>
-          <div className="flex justify-between">
-            <div className="mb-10 md:hidden">
-              <BackgroundButton preço="R$ 76.97" />
-            </div>
-            <div className="mb-10 md:hidden">
-              <BackgroundButton preço="R$ 895.10" />
-            </div>
-          </div>
-
+    <>
+      <div
+        className={`pt-36 pb-64 px-2 rounded-xl md:bg-cover md:bg-no-repeat ${
+          backgroundImage ? "bg-[url('@/assets/ImageBgCard.png')]" : ''
+        }`}
+      >
+        <div className="md:flex md:justify-end md:flex-col md:h-full">
           <div className="flex flex-col md:hidden justify-center items-center max-w-full">
             <div className="flex flex-col bg-white w-full h-max rounded-xl rounded-b-none gap-4 p-2">
               <div className="flex gap-3">
@@ -61,7 +54,7 @@ export function Roadmap({
                   <div className="flex items-center gap-2">
                     <img
                       className="w-2 h-3 mt-1"
-                      src={icon}
+                      src={iconLocalização}
                       alt="Location Icon"
                     />
                     <p className="text-[#475467] text-[12px]">{location}</p>
@@ -87,8 +80,8 @@ export function Roadmap({
           <div className="hidden md:flex md:justify-start">
             <div className="flex justify-center items-center">
               <div className="flex flex-col bg-white w-4/5 h-full rounded-xl rounded-b-none p-4">
-                <div className="flex gap-3  items-center">
-                  <img className="w-16 h-16  mt-2" src={avatar} alt="Avatar" />
+                <div className="flex gap-3 items-center">
+                  <img className="w-16 h-16 mt-2" src={avatar} alt="Avatar" />
                   <p className="flex text-2xl items-center justify-center text-[#101828] font-bold">
                     {title}
                   </p>
@@ -114,7 +107,7 @@ export function Roadmap({
                           <div className="flex gap-2">
                             <img
                               className="w-5 h-5 mt-1 ml-5"
-                              src={icon}
+                              src={iconLocalização}
                               alt="Location Icon"
                             />
                             <p className="text-[#475467] text-base">
@@ -147,31 +140,7 @@ export function Roadmap({
             </div>
           </div>
         </div>
-        <div className="w-full md:justify-center md:flex">
-          <div className="flex flex-col rounded-xl rounded-t-none border-white bg-white p-2 md:w-4/5  md:rounded-b-none">
-            <div className="flex flex-col ml-1 md:ml-3">
-              <p className="title font-bold text-2xl mb-10">Roadmap</p>
-              <div className="flex gap-3">
-                <NotificationComponent
-                  name="Matheus Rodrigues"
-                  title="is gathering 9000 signs to city's prefecture"
-                  postedIn="in 20 days"
-                  description="“We need to deliver this amount of 9.000 signs to the mayor so he approves us as international English teachers.”"
-                />
-              </div>
-
-              <FundCampaing
-                name="Matheus Rodrigues"
-                description="Raise together $1000 to pay for our (2 persons) flights for the 1st week"
-                postedIn="in 20 days"
-                textbutton="Fund campaign"
-                variant="grayShadow"
-                icon={<Loader2 className="w-5 h-5" />}
-              />
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+    </>
   )
 }

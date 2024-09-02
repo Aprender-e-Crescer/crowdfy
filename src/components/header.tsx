@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import logoImage from '@/img/logo.png'
-import settingsImage from '@/img/perfil.png'
-import iconButom from '@/img/iconButom.png'
+import logoImage from '@/assets/logo.png'
+import settingsImage from '@/assets/perfil.png'
+import iconButom from '@/assets/iconButom.png'
 
 function Header() {
   const [activeLink, setActiveLink] = useState('Campaigns')

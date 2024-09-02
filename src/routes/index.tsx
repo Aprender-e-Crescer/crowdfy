@@ -1,3 +1,4 @@
+import { Roadmap } from '@/components/roadmap-comming-soon'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
@@ -5,5 +6,9 @@ export const Route = createFileRoute('/')({
 })
 
 function Index() {
-  return <div className="p-2"></div>
+  return (
+    <div className="p-2">
+      <Roadmap />
+    </div>
+  )
 }
