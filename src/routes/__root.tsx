@@ -10,7 +10,6 @@ export const Route = createRootRoute({
         <Link to="/" className="[&.active]:font-bold">
           Home
         </Link>{' '}
-        
         <Link to="/about" className="[&.active]:font-bold">
           About
         </Link>
@@ -20,21 +19,21 @@ export const Route = createRootRoute({
         <Link to="/favorites" className="[&.active]:font-bold">
           favorites
         </Link>
-     
         <Link to="/history" className="[&.active]:font-bold">
           history
         </Link>
         <Link to="/profile-settings" className="[&.active]:font-bold">
           Profile Settings
         </Link>
+        <Link to="/profile-notifications" className="[&.active]:font-bold">
+          Profile notification
+        </Link>
       </div>
       <Outlet />
-      <Footer />
       <TanStackRouterDevtools />
       <div className="mt-5">
         <Footer />
       </div>
     </>
   ),
-});
-
+})

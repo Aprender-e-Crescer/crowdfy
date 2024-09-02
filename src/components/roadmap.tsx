@@ -1,31 +1,31 @@
-import { NotificationComponent } from './notification-component'
+import { NotificationComponent } from '@/components/notification-component'
 import avatar from '../assets/Avatar.png'
 import avatar2 from '../assets/Avatar2.png'
 import icon from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
 import { Progress } from './ui/progress'
 import { Button } from './ui/button'
-import { FundCampaing } from '@/components'
+import { FundCampaing } from '@/components/fund-campaing'
 import { Loader2 } from 'lucide-react'
-import { BackgroundButton } from './background_button'
+import { BackgroundButton } from '@/components/background-button'
 
 interface Props {
-  titulo: string
-  descrição: string
-  nomeUser: string
-  localização: string
-  numerosBarra: string
+  barNumbers: string
+  location: string
+  userName: string
+  descrition: string
+  title: string
 }
 
 export function Roadmap({
-  titulo,
-  descrição,
-  nomeUser,
-  localização,
-  numerosBarra,
+  title,
+  descrition,
+  userName,
+  location,
+  barNumbers,
 }: Props) {
   return (
-    <div className="bg-[url('@/assets/images-roadmap/Image.png')] pt-52 px-2 pb-2 rounded-xl md:h-full md:bg-cover md:bg-no-repeat md:pb-0">
+    <div className="bg-[url('@/assets/ImageBgCard.png')] pt-52 px-2 pb-2 rounded-xl md:h-full md:bg-cover md:bg-no-repeat md:pb-0">
       <div className="md:flex md:justify-end md:flex-col md:h-full">
         <div>
           <div className="flex justify-between">
@@ -36,16 +36,17 @@ export function Roadmap({
               <BackgroundButton preço="R$ 895.10" />
             </div>
           </div>
+
           <div className="flex flex-col md:hidden justify-center items-center max-w-full">
             <div className="flex flex-col bg-white w-full h-max rounded-xl rounded-b-none gap-4 p-2">
               <div className="flex gap-3">
-                <img className="w-14 h-14  mt-2" src={avatar} alt="Avatar" />
+                <img className="w-14 h-14 mt-2" src={avatar} alt="Avatar" />
                 <p className="flex items-center justify-center text-[#101828] text-lg font-bold">
-                  {titulo}
+                  {title}
                 </p>
               </div>
               <div className="text-[13px] mr-4 ml-3 mt-1 text-[#475467]">
-                {descrição}
+                {descrition}
               </div>
               <div className="flex items-center justify-between min-[487px]:w-full">
                 <div className="flex items-center">
@@ -54,7 +55,7 @@ export function Roadmap({
                     src={avatar2}
                     alt="User Avatar"
                   />
-                  <p className="text-[#475467] text-[14px] ml-2">{nomeUser}</p>
+                  <p className="text-[#475467] text-[14px] ml-2">{userName}</p>
                 </div>
                 <div className="flex ml-2 gap-1 items-center max-[510px]:flex-col">
                   <div className="flex items-center gap-2">
@@ -63,14 +64,9 @@ export function Roadmap({
                       src={icon}
                       alt="Location Icon"
                     />
-                    <p className="text-[#475467] text-[12px]">{localização}</p>
+                    <p className="text-[#475467] text-[12px]">{location}</p>
                   </div>
-                  <Button
-                    className="bg-[#84CC16] text-white"
-                    campaingButton="shadow"
-                  >
-                    Sign Campaign
-                  </Button>
+                  <Button variant="greenShadow">Sign Campaign</Button>
                 </div>
               </div>
               <div className="flex mt-3 items-center max-[440px]:flex-col max-[440px]:gap-4">
@@ -83,7 +79,7 @@ export function Roadmap({
                   className="bg-blue-800 w-28 h-[5px] max-[440px]:w-60 ml-4"
                   value={50}
                 />
-                <p className="mr-3 ml-3 font-bold">{numerosBarra}</p>
+                <p className="mr-3 ml-3 font-bold">{barNumbers}</p>
               </div>
             </div>
           </div>
@@ -91,14 +87,14 @@ export function Roadmap({
           <div className="hidden md:flex md:justify-start">
             <div className="flex justify-center items-center">
               <div className="flex flex-col bg-white w-4/5 h-full rounded-xl rounded-b-none p-4">
-                <div className="flex gap-3 items-center">
-                  <img className="w-16 h-16 mt-2" src={avatar} alt="Avatar" />
+                <div className="flex gap-3  items-center">
+                  <img className="w-16 h-16  mt-2" src={avatar} alt="Avatar" />
                   <p className="flex text-2xl items-center justify-center text-[#101828] font-bold">
-                    {titulo}
+                    {title}
                   </p>
                 </div>
                 <div className="text-base mr-4 ml-4 mt-1 text-[#475467]">
-                  {descrição}
+                  {descrition}
                 </div>
                 <div className="flex items-center mt-3 justify-between max-[1300px]:flex-col min-[1210px]:flex min-[1110px]:gap-5">
                   <div className="flex items-center">
@@ -108,7 +104,7 @@ export function Roadmap({
                       alt="User Avatar"
                     />
                     <p className="text-[#475467] text-base ml-2 max-[1340px]:w-min">
-                      {nomeUser}
+                      {userName}
                     </p>
                   </div>
                   <div className="flex gap-1 items-center justify-center">
@@ -122,16 +118,11 @@ export function Roadmap({
                               alt="Location Icon"
                             />
                             <p className="text-[#475467] text-base">
-                              {localização}
+                              {location}
                             </p>
                           </div>
 
-                          <Button
-                            className="bg-[#84CC16] text-white"
-                            campaingButton="shadow"
-                          >
-                            Sign Campaign
-                          </Button>
+                          <Button variant="greenShadow">Sign Campaign</Button>
                         </div>
                       </div>
                     </div>
@@ -149,7 +140,7 @@ export function Roadmap({
                       className="bg-blue-800 w-44 h-3 ml-4"
                       value={50}
                     />
-                    <p className="text-xl font-bold">{numerosBarra}</p>
+                    <p className="text-xl font-bold">{barNumbers}</p>
                   </div>
                 </div>
               </div>
@@ -162,21 +153,20 @@ export function Roadmap({
               <p className="title font-bold text-2xl mb-10">Roadmap</p>
               <div className="flex gap-3">
                 <NotificationComponent
-                  nome="Matheus Rodrigues"
-                  text1="is gathering 9000 signs to city's prefecture"
+                  name="Matheus Rodrigues"
+                  title="is gathering 9000 signs to city's prefecture"
                   postedIn="in 20 days"
-                  text2="“We need to deliver this amount of 9.000 signs to the mayor so he approves us as international English teachers.”"
+                  description="“We need to deliver this amount of 9.000 signs to the mayor so he approves us as international English teachers.”"
                 />
               </div>
 
               <FundCampaing
-                nome="Matheus Rodrigues"
-                text1="Raise together $1000 to pay for our (2 persons) flights for the 1st week"
+                name="Matheus Rodrigues"
+                description="Raise together $1000 to pay for our (2 persons) flights for the 1st week"
                 postedIn="in 20 days"
                 textbutton="Fund campaign"
-                Variant="shadow"
-                Icon={<Loader2 className="w-5 h-5" />}
-                colorButton="gray"
+                variant="grayShadow"
+                icon={<Loader2 className="w-5 h-5" />}
               />
             </div>
           </div>

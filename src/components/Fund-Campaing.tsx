@@ -1,32 +1,43 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import img from '@/assets/img.png'
-import { Button } from './button'
-import { IconNode, Loader2, Pen } from 'lucide-react'
+import imgAvatar from '@/assets/imgAvatar.png'
+import { Button } from '@/components/ui/button'
 interface Props {
-  nome: string
+  name: string
   postedIn: string
-  text1: string
+  description: string
   textbutton: string
-  Icon: React.ReactNode
-  Variant: string
-  colorButton: string
+  icon?: React.ReactNode
+  variant?:
+    | 'default'
+    | 'destructive'
+    | 'outline'
+    | 'secondary'
+    | 'hoverWhiteBorder'
+    | 'blackOnHover'
+    | 'letraVerde'
+    | 'BrancoShadow'
+    | 'AcinzentadoIcon'
+    | 'ghost'
+    | 'link'
+    | 'greenShadow'
+    | 'purpleShadow'
+    | 'grayShadow'
 }
 
 export function FundCampaing({
-  nome,
+  name,
   postedIn,
-  text1,
+  description,
   textbutton,
-  Icon,
-  Variant,
-  colorButton,
+  icon,
+  variant,
 }: Props) {
   return (
     <div className="flex gap-3">
       <div className="flex flex-col justify-center">
         <div className="flex flex-col flex-1 gap-y-2">
           <Avatar className="flex justify-center items-center size-14">
-            <AvatarImage className="bg-lime-100" src={img} />
+            <AvatarImage className="bg-lime-100" src={imgAvatar} />
             <AvatarFallback></AvatarFallback>
           </Avatar>
           <div className="flex flex-col items-center justify-center flex-1">
@@ -45,13 +56,9 @@ export function FundCampaing({
         <div className="flex gap-3">
           <p className="flex gap-3 text-[#475569]">{description}</p>
         </div>
-        <Button
-          className="mb-14 text-white w-max"
-          Variant={campaingButton}
-          colorButton={buttonColor}
-        >
+        <Button className="mb-14 w-max" variant={variant}>
           {icon}
-          {buttonText}
+          {textbutton}
         </Button>
       </div>
     </div>
