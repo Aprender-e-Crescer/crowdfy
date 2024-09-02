@@ -10,7 +10,7 @@ import imageAvatar2 from "@/assets/segundaimagemavatar.png";
 import imageAvatar3 from "@/assets/terceiraimagemavatar.png";
 import { Loader2 } from "lucide-react";
 
-export function Roadmap() {
+export function RoadmapFooter() {
   return (
     <div className="max-w-2xl mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">

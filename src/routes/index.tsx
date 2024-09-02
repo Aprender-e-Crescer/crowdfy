@@ -1,14 +1,15 @@
-import { Roadmap } from "@/components/roadmap-comming-soon";
 import { createFileRoute } from "@tanstack/react-router";
+import { RoadmapFooter } from "@/components/roadmap-comming-soon";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: HomePage,
 });
 
-function Index() {
+export function HomePage() {
   return (
-    <div className="p-2">
-      <Roadmap />
-    </div>
+    <>
+      <Card />
+      <RoadmapFooter />
+    </>
   );
 }
