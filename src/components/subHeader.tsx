@@ -1,11 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import { Button } from "./ui/button";
-import { InputSubHeader } from "./input-sub-header";
+import { Button } from "@/components/ui/button";
+import { InputSubHeader } from "@/components/input-sub-header";
 
 interface Props {
   buttons: {
     title: string;
-    variant: "green" | "ghost";
+    variant: "lightYellow" | "ghost";
     icon: JSX.Element;
     route: string;
   }[];
@@ -27,4 +27,3 @@ export function SubHeader({ buttons }: Props) {
     </div>
   );
 }
-

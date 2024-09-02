@@ -14,7 +14,7 @@ function campaingformtreestep() {
   return (
     <>
       <div className="p-2">
-        <div className="xl:flex  justify-center">
+        <div className="xl:flex gap-52 justify-center">
           <div>
             <Give
               title="3. Give final details"
