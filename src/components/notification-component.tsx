@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import imgAvatar from '@/assets/imgAvatar.png'
+import imgAvatarNotification from '@/assets/imgAvatarNotification.png'
 
 interface Props {
   name: string
@@ -19,7 +19,7 @@ export function NotificationComponent({
       <div className="flex flex-col justify-center">
         <div className="flex flex-col flex-1 gap-y-2">
           <Avatar className="flex justify-center items-center size-14">
-            <AvatarImage className="bg-lime-100" src={imgAvatar} />
+            <AvatarImage className="bg-lime-100" src={imgAvatarNotification} />
             <AvatarFallback></AvatarFallback>
           </Avatar>
           <div className="flex flex-col items-center justify-center flex-1">

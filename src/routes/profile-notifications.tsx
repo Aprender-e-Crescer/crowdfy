@@ -15,7 +15,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { FileSignature, Loader2, Pen, PiggyBank } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-export let Route = createFileRoute(`/profile-notifications`)({
+export const Route = createFileRoute(`/profile-notifications`)({
   component: ProfileNotifications,
 })
 
