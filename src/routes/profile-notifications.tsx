@@ -21,7 +21,7 @@ export const Route = createFileRoute(`/profile-notifications`)({
 
 function ProfileNotifications() {
   return (
-    <div className="flex min-[1110px]:mr-0 flex-col min-[1110px]:flex-row">
+    <div className="flex max-[400px]:ml-0 ml-5 flex-col min-[1110px]:flex-row">
       <div className="flex flex-col min-[1110px]:w-4/5 ml-2">
         <div className="flex min-[1110px]:gap-10 lg:mr-5 max-[1110px]:flex-col max-[1110px]:mb-5">
           <p className="font-bold text-3xl max-[1110px]:mb-5 mb-10 mt-10">
@@ -112,7 +112,7 @@ function ProfileNotifications() {
         <Pagination className="hidden min-[1110px]:flex justify-evenly w-full mt-10">
           <PaginationContent>
             <PaginationItem>
-              <PaginationPrevious href="#" />
+              <PaginationPrevious useArrows href="#" />
             </PaginationItem>
             <PaginationItem>
               <PaginationLink href="#">1</PaginationLink>
@@ -129,7 +129,7 @@ function ProfileNotifications() {
               <PaginationEllipsis />
             </PaginationItem>
             <PaginationItem>
-              <PaginationNext href="#" />
+              <PaginationNext useArrows href="#" />
             </PaginationItem>
           </PaginationContent>
         </Pagination>
@@ -146,7 +146,7 @@ function ProfileNotifications() {
       <Pagination className="max-[1110px]:flex hidden justify-evenly w-full mt-10">
         <PaginationContent>
           <PaginationItem>
-            <PaginationPrevious href="#" />
+            <PaginationPrevious useArrows href="#" />
           </PaginationItem>
           <PaginationItem>
             <PaginationLink href="#">1</PaginationLink>
@@ -163,7 +163,7 @@ function ProfileNotifications() {
             <PaginationEllipsis />
           </PaginationItem>
           <PaginationItem>
-            <PaginationNext href="#" />
+            <PaginationNext useArrows href="#" />
           </PaginationItem>
         </PaginationContent>
       </Pagination>
