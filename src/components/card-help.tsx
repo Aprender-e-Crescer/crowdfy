@@ -25,13 +25,15 @@ export default function Card({
   return (
     <>
       <div
-        className={`pt-36 pb-64 px-2 rounded-xl md:bg-cover md:bg-no-repeat ${
-          backgroundImage ? "bg-[url('@/assets/ImageBgCard.png')]" : ''
+        className={`px-2 rounded-xl md:bg-cover md:bg-no-repeat ${
+          backgroundImage
+            ? "pt-36 pb-64 bg-[url('@/assets/ImageBgCard.png')]"
+            : ''
         }`}
       >
         <div className="md:flex md:justify-end md:flex-col md:h-full">
           <div className="flex flex-col md:hidden justify-center items-center max-w-full">
-            <div className="flex flex-col bg-white w-full h-max rounded-xl rounded-b-none gap-4 p-2">
+            <div className="flex flex-col bg-white w-full h-max rounded-xl  gap-4 p-2">
               <div className="flex gap-3">
                 <img className="w-14 h-14 mt-2" src={avatar} alt="Avatar" />
                 <p className="flex items-center justify-center text-[#101828] text-lg font-bold">
@@ -79,7 +81,7 @@ export default function Card({
 
           <div className="hidden md:flex md:justify-start">
             <div className="flex justify-center items-center">
-              <div className="flex flex-col bg-white w-4/5 h-full rounded-xl rounded-b-none p-4">
+              <div className="flex flex-col bg-white w-4/5 h-full rounded-xl  p-4">
                 <div className="flex gap-3 items-center">
                   <img className="w-16 h-16 mt-2" src={avatar} alt="Avatar" />
                   <p className="flex text-2xl items-center justify-center text-[#101828] font-bold">
@@ -89,7 +91,7 @@ export default function Card({
                 <div className="text-base mr-4 ml-4 mt-1 text-[#475467]">
                   {descrition}
                 </div>
-                <div className="flex items-center mt-3 justify-between max-[1300px]:flex-col min-[1210px]:flex min-[1110px]:gap-5">
+                <div className="flex items-center mt-3 ml-10 max-[1300px]:flex-col min-[1210px]:flex min-[1110px]:gap-5">
                   <div className="flex items-center">
                     <img
                       className="w-10 h-10 items-center justify-center ml-3 mt-2"

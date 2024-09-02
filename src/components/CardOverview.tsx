@@ -6,12 +6,12 @@ import { LuCheckCheck } from 'react-icons/lu'
 
 function CardOverview() {
   return (
-    <div className="border-solid border-[#EAECF0] border-[2px] h-auto w-full lg:w-[936px] rounded-[12px] p-[20px]">
+    <div className="border-solid border-[#EAECF0] border-[2px] h-auto w-[500px] xl:w-[936px] rounded-[12px] p-[20px]">
       <div className="flex flex-col lg:flex-row justify-between">
         <h2 className="font-semibold text-[18px] mt-[28px] mb-[28px]">
           Your campaigns (2)
         </h2>
-        <div className="flex justify-center lg:ml-[405px] mb-[28px]">
+        <div className="flex justify-center :ml-[405px] mb-[28px]">
           <Button
             variant="BrancoShadow"
             className="mt-[20px] h-[40px] w-[50px] rounded-br-[0px] rounded-tr-[0px]"
@@ -36,7 +36,7 @@ function CardOverview() {
           </Button>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row mb-[20px] lg:ml-[0px]">
+      <div className="flex flex-col xl:flex-row mb-[20px] ">
         <div className="mb-[20px] lg:mr-[20px]">
           <Card
             titulo={
@@ -82,7 +82,7 @@ function CardOverview() {
           <Progress value={30} className="mt-2" />
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row lg:ml-[0px]">
+      <div className="flex flex-col xl:flex-row lg:ml-[0px]">        
         <div className="mb-[20px] lg:mr-[20px]">
           <Card
             titulo={

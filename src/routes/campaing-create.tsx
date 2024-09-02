@@ -25,8 +25,8 @@ function CampaingCreate() {
 
           <div className="p-2 flex gap-5 flex-col">
             <Card
-              barNumbers='4.533/9.000'
-              location='São Paulo, Brazil'
+              barNumbers="4.533/9.000"
+              location="São Paulo, Brazil"
               userName="Mateus Rodrigues"
               descrition=" I need about 9.000 signatures to deliver to my
               mayor in two weeks and get that grant! Check more about our
@@ -35,8 +35,6 @@ function CampaingCreate() {
               internet."
               title=" Help us Teach English for Kids on China Countryside"
               backgroundImage
-              
-              
             />
           </div>
         </div>
