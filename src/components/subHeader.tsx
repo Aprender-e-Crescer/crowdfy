@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { InputSubHeader } from "@/components/input-sub-header";
-
 interface Props {
   buttons: {
     title: string;
@@ -13,17 +12,21 @@ interface Props {
 
 export function SubHeader({ buttons }: Props) {
   return (
-    <div className="flex justify-start sm:justify-between pt-6 max-[450px]:flex-col max-[450px]:gap-2 ml-2">
-      <div className="flex gap-3 mr-2 sm:mr-5">
-        {buttons.map(({ title, variant, icon, route }) => (
-          <Link to={route} key={title}>
-            <Button variant={variant}>
-              {icon} {title}
-            </Button>
-          </Link>
-        ))}
+    <div>
+      <hr />
+      <div className="flex justify-start sm:justify-between lg:pt-6 lg:pb-6 pt-3 pb-3 max-[450px]:flex-col max-[450px]:gap-2 ml-2">
+        <div className="flex gap-3 mr-2 sm:mr-5">
+          {buttons.map(({ title, variant, icon, route }) => (
+            <Link to={route} key={title}>
+              <Button variant={variant}>
+                {icon} {title}
+              </Button>
+            </Link>
+          ))}
+        </div>
+        <InputSubHeader />
       </div>
-      <InputSubHeader />
+      <hr />
     </div>
   );
 }
