@@ -1,6 +1,8 @@
+import Footer from '@/components/footer'
+import Header from '@/components/header'
+import { SubHeader } from '@/components/subHeader'
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'
-import Footer from '@/components/footer'
 
 export const Route = createRootRoute({
   component: () => (
@@ -14,9 +16,6 @@ export const Route = createRootRoute({
         </Link>
         <Link to="/campaing-create" className="[&.active]:font-bold">
           Campaign Create
-        </Link>
-        <Link to="/profileNotifications" className="[&.active]:font-bold">
-          Profile Notifications
         </Link>
         <Link to="/Campaigns" className="[&.active]:font-bold">
           Campaigns
@@ -33,7 +32,11 @@ export const Route = createRootRoute({
         <Link to="/explore" className="[&.active]:font-bold">
           Explore
         </Link>
+        <Link to="/profile-notifications" className="[&.active]:font-bold">
+          Profile notification
+        </Link>
       </div>
+      <Header />
       <Outlet />
       <TanStackRouterDevtools />
       <div className="mt-5">

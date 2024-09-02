@@ -1,16 +1,16 @@
 import React from 'react';
-import Cristal from "@/assets/Image.png";
+import Cristal from "@/assets/cristal.png";
 
 const ViewActivity: React.FC = () => {
     return (
         <div className="w-full max-w-xs h-auto p-2 bg-white rounded-lg font-sans">
-            <div className="flex flex-row items-start">
+            <div className="flex lg:[940px] flex-row items-start">
                 {/* Avatar e Linha Vertical */}
-                <div className="relative flex flex-col items-center mr-4">
+                <div className="relative flex flex-col items-center ">
                     <img
                         src="https://assets.vogue.com/photos/65fdd4c0da96444591b39091/4:3/pass/undefined"
                         alt="User Avatar"
-                        className="w-8 h-8 rounded-full object-cover"
+                        className="w-8 h-8 rounded-full object-cover min-w-8"
                     />
                     <div className="w-0.5 h-8 bg-gray-200 mt-2"></div>
                 </div>
