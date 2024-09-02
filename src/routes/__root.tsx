@@ -6,7 +6,7 @@ import Header from '@/components/header'
 export const Route = createRootRoute({
   component: () => (
     <>
-      <div c>
+      <div >
         <Header />
       </div>
       <Outlet />
