@@ -2,9 +2,9 @@ import { Bold, Italic, Link2, Logs, Menu } from 'lucide-react'
 
 export default function Tell() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center p-3">
-      <div className="flex flex-col gap-4 w-full md:w-96">
-        <div className="flex flex-col gap-2">
+    <div className="flex p-3">
+      <div className="flex flex-col gap-4 w-full xl:w-96 ">
+        <div className="flex flex-col gap-2 w-full">
           <h2 className="text-[#101828] font-semibold text-3xl">
             2. Tell more about your campaign
           </h2>
@@ -18,7 +18,7 @@ export default function Tell() {
             Your campaign title
           </p>
           <input
-            className="border border-[#8C9CB1] w-full h-10 rounded-md p-4"
+            className="border border-[#8C9CB1] w-full h-10 rounded-md p-4 focus:outline-none focus:ring-2 focus:ring-[#475467] transition-all duration-200"
             type="text"
             placeholder="Write here your beautiful title 🌱"
           />
@@ -36,7 +36,7 @@ export default function Tell() {
             </div>
 
             <textarea
-              className="w-full border border-[#8C9CB1] h-28 rounded-md p-4"
+              className="w-full border border-[#8C9CB1] h-28 rounded-md p-4 focus:outline-none focus:ring-2 focus:ring-[#475467] transition-all duration-200 resize-none"
               placeholder="Tell your story here, give details about your scenario. And explain why you need this help on this campaign"
             />
             <p className="text-[#344054] font-normal text-xs">

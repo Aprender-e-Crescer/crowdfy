@@ -12,7 +12,7 @@ function campaingformsecondstep() {
     <>
       <div className="flex-col">
         <div className="p-2">
-          <div className="xl:flex justify-center">
+          <div className="xl:flex justify-center gap-52">
             <div>
               <Tell />
             </div>

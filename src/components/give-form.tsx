@@ -23,7 +23,7 @@ export default function Give({
 }: Props) {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center p-5 w-full">
-      <div className="flex flex-col gap-4 w-full md:w-96">
+      <div className="flex flex-col gap-4 w-full xl:w-96">
         <div className="text-[#101828] font-semibold text-3xl">
           <h2>{title}</h2>
           <div className="text-base font-normal text-[#475467]">
