@@ -2,7 +2,6 @@ import { createFileRoute } from '@tanstack/react-router'
 import { HeaderCard } from '@/components/headerCard'
 import { CardMapa } from '@/components/Cardmapa'
 import { Map } from '@/components/map'
-import Header from '@/components/header'
 import { SubHeader } from '@/components/subHeader'
 import { FiMapPin } from 'react-icons/fi'
 import { FiGrid } from 'react-icons/fi'
@@ -85,9 +84,7 @@ export const Route = createFileRoute('/explore-map')({
 function Explore() {
   return (
     <div>
-      <div className='px-4 sm:px-6 md:px-8 lg:px-24'>
-        <Header /> 
-      </div>     
+           
       <div>
         <div className='border-b-2 border-gray-100 pb-2'></div>
       </div>

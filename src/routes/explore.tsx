@@ -2,7 +2,6 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/card-donate'
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination'
 import { HeaderCard } from '@/components/headerCard'
-import Header from '@/components/header'
 import { SubHeader } from '@/components/subHeader'
 import { FiMapPin } from 'react-icons/fi'
 import { FiGrid } from 'react-icons/fi'
@@ -131,9 +130,6 @@ function Explore() {
 
   return (
     <>
-      <div className='px-4 sm:px-6 md:px-8 lg:px-24'>
-        <Header />
-      </div>
       <div className='border-b-2 border-gray-100 pb-2'></div>
       <div className='pb-2 px-4 sm:px-6 md:px-8 lg:px-24'>
         <SubHeader buttons={buttons} />

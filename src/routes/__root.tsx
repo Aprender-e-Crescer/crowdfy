@@ -6,12 +6,14 @@ import Header from '@/components/header'
 export const Route = createRootRoute({
   component: () => (
     <>
-      <div >
+      <div className='px-4 sm:px-6 md:px-8 lg:px-24'>
         <Header />
       </div>
       <Outlet />
       <TanStackRouterDevtools />
-      
+     
+
+    
     </>
   ),
 })
