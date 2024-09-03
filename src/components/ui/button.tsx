@@ -16,15 +16,15 @@ const buttonVariants = cva(
           'border border-input bg-background hover:bg-accent hover:text-accent-foreground flex gap-2 px-16 py-8 items-center',
         secondary:
           'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-        hoverWhiteBorder:
+        'hover-White-Border':
           'rounded-[8px] border-4 bg-green-200 text-black border-gray-300 hover:bg-white hover:border-black flex gap-2 py-2 px-4',
         blackOnHover:
           'bg-black text-white hover:bg-black hover:text-white flex gap-2 py-2 px-4',
         letraVerde:
           'text-[#65A30D] text-[14px] hover:text-[#475467] flex gap-2 py-2 px-4',
-        BrancoShadow:
+        whiteShadow:
           'text-[#0F172A] text-[14px] bg-[#FFFFFF] hover:text-[#475467] border-solid border-[2px] border-[#E2E8F0] flex gap-2 py-2 px-4',
-        AcinzentadoIcon:
+        grayIcon:
           'text-[#94A3B8] text-[14px] bg-[#F8FAFC] hover:text-[#475467] border-solid border-[2px] border-[#CBD5E1] flex gap-2 py-2 px-4',
         ghost:
           'hover:bg-accent hover:text-accent-foreground flex gap-2 px-16 py-8 items-center',

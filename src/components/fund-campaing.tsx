@@ -15,8 +15,6 @@ interface Props {
     | 'hoverWhiteBorder'
     | 'blackOnHover'
     | 'letraVerde'
-    | 'BrancoShadow'
-    | 'AcinzentadoIcon'
     | 'ghost'
     | 'link'
     | 'greenShadow'
@@ -38,7 +36,7 @@ export function FundCampaing({
         <div className="flex flex-col flex-1 gap-y-2">
           <Avatar className="flex justify-center items-center size-14">
             <AvatarImage className="bg-lime-100" src={imgAvatarNotification} />
-            <AvatarFallback></AvatarFallback>
+            <AvatarFallback />
           </Avatar>
           <div className="flex flex-col items-center justify-center flex-1">
             <hr className="flex-1 h-full border border-gray-400" />
