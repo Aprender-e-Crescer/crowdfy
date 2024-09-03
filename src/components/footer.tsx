@@ -26,14 +26,14 @@ export default function Footer() {
             <p className="text-slate-600">Recents</p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <Link to="/explore-map" className="[&.active]">
+            <Link to="/explore" className="[&.active]">
               <h1 className="font-semibold">Explore</h1>
             </Link>
             <p className="text-slate-600">Lists</p>
             <Link to="/explore-map" className="[&.active]">
-            <p className="flex text-slate-600">
-              Maps <Badge variant="success">New</Badge>
-            </p>
+              <p className="flex text-slate-600">
+                Maps <Badge variant="success">New</Badge>
+              </p>
             </Link>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
@@ -119,7 +119,7 @@ export default function Footer() {
               Lists
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-            <Link to="/explore-map" className="[&.active]">
+              <Link to="/explore-map" className="[&.active]">
                 Maps <Badge variant="success">New</Badge>
               </Link>
             </AccordionContent>
