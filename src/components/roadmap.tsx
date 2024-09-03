@@ -108,11 +108,7 @@ export function Roadmap({
                       <div className="flex items-center justify-center gap-5 max-[1400px]:flex-col">
                         <div className="flex gap-5 items-center">
                           <div className="flex gap-2">
-                            <img
-                              className="w-5 h-5 mt-1 ml-5"
-                              src={icon}
-                              alt="Location Icon"
-                            />
+                            <MapPin className="text-gray-400" />
                             <p className="text-[#475467] text-base">
                               {location}
                             </p>
