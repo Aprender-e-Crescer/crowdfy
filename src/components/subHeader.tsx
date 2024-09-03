@@ -9,11 +9,11 @@ import {
 } from '@/components/ui/dropdown-menu'
 interface Props {
   buttons: {
-    title: string
-    variant: 'lightYellow' | 'ghost'
-    icon: JSX.Element
-    route: string
-  }[]
+    title: string;
+    variant: "lightYellow" | "ghost" | "green";
+    icon: JSX.Element;
+    route: string;
+  }[];
 }
 
 export function SubHeader({ buttons }: Props) {
