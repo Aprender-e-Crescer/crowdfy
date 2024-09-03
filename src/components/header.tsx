@@ -7,7 +7,7 @@ import { Link } from "@tanstack/react-router";
 
 
 function Header() {
-  const [activeLink, setActiveLink] = useState('Campaigns')
+  const [activeLink, setActiveLink] = useState('Home')
   const [isTransparent, setIsTransparent] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
