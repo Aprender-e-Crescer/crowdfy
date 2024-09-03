@@ -1,7 +1,6 @@
 import { NotificationComponent } from '@/components/notification-component'
 import avatar from '../assets/Avatar.png'
 import avatar2 from '../assets/Avatar2.png'
-import icon from '../assets/Icon.png'
 import iconAvatar from '../assets/Avatars.png'
 import { Progress } from './progress'
 import { Button } from './ui/button'
