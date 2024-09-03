@@ -70,7 +70,7 @@ function campaingformtreestep() {
           </div>
 
           <div className="flex justify-center">
-            <Link to="/" className="[&.active]: flex justify-center">
+            <Link to="/Campaigns" className="[&.active]: flex justify-center">
               <button className="flex items-center text-[#475467] font-semibold gap-2">
                 Next
                 <ArrowRight className="mr-2 font-semibold" />

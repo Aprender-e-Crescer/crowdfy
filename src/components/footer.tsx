@@ -14,21 +14,22 @@ export default function Footer() {
   return (
     <>
       <div className="hidden md:flex bg-slate-100 w-full flex-col">
-        <div className="flex justify-center gap-x-16 py-20 flex-1 px-8">
+        <div className="flex justify-between mx-32 py-20 flex-1 px-8">
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <h1 className="text-lime-700 font-semibold">Home</h1>
+            <Link to="/" className="[&.active]">
+              <h1 className="text-lime-700 font-semibold">Home</h1>
+            </Link>
             <Link to="/favorites" className="[&.active]">
               <p className="text-slate-600">My favorites</p>
             </Link>
-            <Link to="/history" className="[&.active]">
-              <p className="text-slate-600">Recents</p>
-            </Link>
+
+            <p className="text-slate-600">Recents</p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <h1 className="font-semibold">Explore</h1>
-            <Link to="/" className="[&.active]">
-              <p className="text-slate-600">Lists</p>
+            <Link to="/explore" className="[&.active]">
+              <h1 className="font-semibold">Explore</h1>
             </Link>
+            <p className="text-slate-600">Lists</p>
             <Link to="/explore-map" className="[&.active]">
               <p className="flex text-slate-600">
                 Maps <Badge variant="success">New</Badge>
@@ -36,31 +37,30 @@ export default function Footer() {
             </Link>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <h1 className="font-semibold">Campaigns</h1>
-
-            <p className="text-slate-600 ">Home</p>
+            <Link to="/my-campaigns" className="[&.active]">
+              <h1 className="font-semibold">Campaigns</h1>
+            </Link>
             <Link to="/" className="[&.active]">
+              <p className="text-slate-600 ">Home</p>
+            </Link>
+            <Link to="/my-campaigns" className="[&.active]">
               <p className="flex text-slate-600">
                 Campaigns <Badge variant="success">12</Badge>
               </p>
             </Link>
-            <Link to="/explore" className="[&.active]">
-              {' '}
-              <p className="flex text-slate-600">
-                Donations <Badge variant="success">4</Badge>
-              </p>
-            </Link>
-            <Link to="/" className="[&.active]">
-              {' '}
-              <p className="text-slate-600">Analytics</p>
-            </Link>
+
+            <p className="flex text-slate-600">
+              Donations <Badge variant="success">4</Badge>
+            </p>
+
+            <p className="text-slate-600">Analytics</p>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className="font-semibold">Profile</h1>
-            <Link to="/" className="[&.active]">
+            <Link to="/profile-settings" className="[&.active]">
               <p className="text-slate-600">Settings</p>
             </Link>
-            <Link to="/" className="[&.active]">
+            <Link to="/profile-notifications" className="[&.active]">
               <p className="flex text-slate-600">
                 Notifications <Badge variant="success">10</Badge>
               </p>
@@ -68,21 +68,16 @@ export default function Footer() {
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className="font-semibold">Resources</h1>
-            <Link to="/" className="[&.active]">
-              <p className="text-slate-600">How to use crouwdfy</p>
-            </Link>
-            <Link to="/" className="[&.active]">
-              <p className="text-slate-600">Docs</p>
-            </Link>
-            <Link to="/" className="[&.active]">
-              <p className="text-slate-600">Legal Terms</p>
-            </Link>
-            <Link to="/" className="[&.active]">
-              <p className="text-slate-600">Blog</p>
-            </Link>
-            <Link to="/" className="[&.active]">
-              <p className="text-slate-600">Merch</p>
-            </Link>
+
+            <p className="text-slate-600">How to use crouwdfy</p>
+
+            <p className="text-slate-600">Docs</p>
+
+            <p className="text-slate-600">Legal Terms</p>
+
+            <p className="text-slate-600">Blog</p>
+
+            <p className="text-slate-600">Merch</p>
           </div>
         </div>
         <hr />
@@ -105,28 +100,26 @@ export default function Footer() {
             <AccordionTrigger className=" text-foreground text-lime-700">
               Home
             </AccordionTrigger>
+
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
+              <Link to="/favorites" className="[&.active]">
                 My favorites
               </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Recents
-              </Link>
+              Recents
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className=" text-foreground">
               Explore
             </AccordionTrigger>
+
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Lists
-              </Link>
+              Lists
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
+              <Link to="/explore-map" className="[&.active]">
                 Maps <Badge variant="success">New</Badge>
               </Link>
             </AccordionContent>
@@ -137,25 +130,19 @@ export default function Footer() {
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               <Link to="/" className="[&.active]">
-                {' '}
                 Home
               </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                {' '}
+              <Link to="/my-campaigns" className="[&.active]">
                 Campaigns<Badge variant="success">12</Badge>
               </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Donations<Badge variant="success">4</Badge>
-              </Link>
+              Donations<Badge variant="success">4</Badge>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Analytics
-              </Link>
+              Analytics
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -163,12 +150,12 @@ export default function Footer() {
               Profile
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
+              <Link to="/profile-settings" className="[&.active]">
                 Settings
               </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
+              <Link to="/profile-notifications" className="[&.active]">
                 Notifications<Badge variant="success">10</Badge>
               </Link>
             </AccordionContent>
@@ -178,30 +165,19 @@ export default function Footer() {
               Resources
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                How to use crouwdfy
-              </Link>
+              How to use crouwdfy
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Docs
-              </Link>
+              Docs
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Legal Terms
-              </Link>
+              Legal Terms
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Blog
-              </Link>
+              Blog
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                {' '}
-                Merch
-              </Link>
+              Merch
             </AccordionContent>
           </AccordionItem>
           <hr />
