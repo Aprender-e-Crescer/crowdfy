@@ -144,7 +144,6 @@ function Favorites() {
 
   return (
     <>
-      <div className="pb-2"></div>
       <SubHeader buttons={buttons} />
       <div className="px-4 sm:px-6 md:px-8 lg:px-24">
         <div className="mt-12 mb-24">

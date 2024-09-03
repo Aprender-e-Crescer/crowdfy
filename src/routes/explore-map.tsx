@@ -82,7 +82,6 @@ export const Route = createFileRoute('/explore-map')({
 function Explore() {
   return (
     <>   
-      <div className="pb-2"></div>
       <SubHeader buttons={buttons} />
       <div className="mt-10 flex flex-col ">
         <div className="flex flex-col md:flex-row gap-4 flex-grow">
