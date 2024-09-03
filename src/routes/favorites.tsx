@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Card } from '@/components/card-donate'
 import { SectionHeader } from '@/components/Sectionheader'
-import Header from '@/components/header'
 import { SubHeader } from '@/components/subHeader'
 import { LuSettings } from 'react-icons/lu'
 import { IoIosNotificationsOutline } from 'react-icons/io'
@@ -145,11 +144,9 @@ function Favorites() {
 
   return (
     <>
-      <div className="px-4 sm:px-6 md:px-8 lg:px-24">
-        <Header />
-      </div>
+     
       <div className="border-b-2 border-gray-100 pb-2"></div>
-      <div className="pb-2 px-4 sm:px-6 md:px-8 lg:px-24">
+      <div className="">
         <SubHeader buttons={buttons} />
       </div>
       <div className="border-b-2 border-gray-100"></div>

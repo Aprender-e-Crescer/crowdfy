@@ -35,8 +35,19 @@ export const Route = createRootRoute({
         <Link to="/profile-notifications" className="[&.active]:font-bold">
           Profile notification
         </Link>
+      
+        <Link to="/history" className="[&.active]:font-bold">
+          history
+        </Link>
+      
+        <Link to="/favorites" className="[&.active]:font-bold">
+         favorites
+        </Link>
+      
       </div>
-      <Header />
+      <div className='mx-24'>
+        <Header />
+      </div>
       <Outlet />
       <TanStackRouterDevtools />
       <div className="mt-5">
