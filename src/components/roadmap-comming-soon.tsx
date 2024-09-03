@@ -3,18 +3,17 @@
  * @see https://v0.dev/t/kMflSIl2Jp5
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
-import { Button } from '@/components/ui/button'
-import imageAvatar1 from '@/assets/primeiraimagemavatar.png'
-import imageAvatar2 from '@/assets/segundaimagemavatar.png'
-import imageAvatar3 from '@/assets/terceiraimagemavatar.png'
-import { Loader2 } from 'lucide-react'
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import imageAvatar1 from "@/assets/primeiraimagemavatar.png";
+import imageAvatar2 from "@/assets/segundaimagemavatar.png";
+import imageAvatar3 from "@/assets/terceiraimagemavatar.png";
 
-export function Roadmap() {
+export function RoadmapFooter() {
   return (
-    <div className="max-w-2xl mx-auto p-4">
+    <div className="max-w-2xl mx-auto p-4 bg-white rounded-lg">
       <h1 className="text-2xl font-bold mb-4">
-        Roadmap <span className=" text-lg">(Coming Soon)</span>
+        Roadmap <span className="text-lg">(Coming Soon)</span>
       </h1>
       <div className="space-y-6 relative before:absolute before:inset-y-0 before:left-[20px] before:w-px before:bg-muted">
         <div className="flex items-start space-x-4">
@@ -30,7 +29,7 @@ export function Roadmap() {
               <span className="text-sm text-muted-foreground">in 20 days</span>
             </div>
             <p className="text-sm text-[#475467]">
-              is gathering{' '}
+              is gathering{" "}
               <span className="font-bold text-[#84CC16]">9000</span> signs to
               city's prefecture
             </p>
@@ -53,12 +52,14 @@ export function Roadmap() {
               <span className="text-sm text-muted-foreground">in 20 days</span>
             </div>
             <p className="text-sm text-[#475467]">
-              Raise together{' '}
+              Raise together{" "}
               <span className="font-bold text-[#475569]">$1000</span> to pay for
               our (2 persons) flights to 1st weeks
             </p>
-            <Button variant={'outline'} className="bg-[#7B7B7B] text-white">
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            <Button
+              variant="greenShadow"
+              className="hover:bg-[#7B7B7B] text-white"
+            >
               Fund compaign
             </Button>
           </div>
@@ -76,8 +77,8 @@ export function Roadmap() {
               <span className="text-sm text-muted-foreground">2 mins ago</span>
             </div>
             <p className="text-sm text-[#475467]">
-              Make{' '}
-              <span className="font-bold text-[#9333EA]">300 children</span>{' '}
+              Make{" "}
+              <span className="font-bold text-[#9333EA]">300 children</span>{" "}
               pass on the English proficiency test on China
             </p>
             <div className="flex space-x-2 mt-2">
@@ -115,13 +116,13 @@ export function Roadmap() {
               <span className="text-sm text-muted-foreground">2 mins ago</span>
             </div>
             <p className="text-sm text-[#475467]">
-              Your earned{' '}
-              <span className="font-bold text-purple-600">300 </span>uSDG +{' '}
+              Your earned{" "}
+              <span className="font-bold text-purple-600">300 </span>uSDG +{" "}
               <span className="font-bold text-[#9333EA]">10.000 </span>XP
             </p>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
