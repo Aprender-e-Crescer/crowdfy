@@ -10,7 +10,7 @@ export function HomePage() {
   return (
     <>
       <div className="bg-[url('@/assets/fundoHome.png')] bg-cover bg-no-repeat bg-center">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-12">
           <div className="mb-10 max-w-[850px]">
             <Card
               title="Help us Teach English for Kids on China Countryside"
