@@ -85,7 +85,7 @@ const PaginationPrevious = ({
       ) : (
         <ChevronLeft className="h-4 w-4" />
       )}
-      <span className="hidden sm:inline">Previous</span>{' '}
+      <span className="hidden lg:inline">Previous</span>{' '}
       {/* Esconde em telas pequenas */}
     </PaginationLink>
   </Link>
@@ -111,7 +111,7 @@ const PaginationNext = ({
       className={cn('gap-1 pr-2.5', className)}
       {...props}
     >
-      <span className="hidden sm:inline">Next</span>{' '}
+      <span className="hidden lg:inline">Next</span>{' '}
       {/* Esconde em telas pequenas */}
       {useArrows ? (
         <FaArrowRight className="h-4 w-4" />

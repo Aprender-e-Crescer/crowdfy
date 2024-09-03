@@ -84,7 +84,7 @@ function Explore() {
     <>   
       <div className="pb-2"></div>
       <SubHeader buttons={buttons} />
-      <div className="mt-10 flex flex-col min-h-screen">
+      <div className="mt-10 flex flex-col ">
         <div className="flex flex-col md:flex-row gap-4 flex-grow">
           <div className="flex flex-col gap-4 w-full md:w-1/2">
             <div className="mx-4">
