@@ -42,7 +42,7 @@ function Header() {
       {/* Links de navegação (escondidos em telas pequenas) */}
       <nav className="hidden md:flex ml-8 flex-grow gap-5">
         <Link
-          to=""
+          to="/"
           className={linkClasses('Home')}
           onClick={() => handleLinkClick('Home')}
         >
@@ -64,7 +64,7 @@ function Header() {
           Campaigns
         </Link>
         <Link
-          to=""
+          to="/profile-settings"
           className={linkClasses('Profile')}
           onClick={() => handleLinkClick('Profile')}
         >

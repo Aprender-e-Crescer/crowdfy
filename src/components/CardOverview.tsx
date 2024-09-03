@@ -11,16 +11,16 @@ function CardOverview() {
       <div className="flex flex-col lg:flex-row justify-between md:flex-col">
         <h2 className="font-semibold text-[18px] mt-[28px] mb-[28px]">Your campaigns (2)</h2>
         <div className="flex justify-center lg:ml-[405px] mb-[28px]">
-          <Button variant="BrancoBorda" className="mt-[20px] h-[40px] w-[50px] rounded-br-[0px] rounded-tr-[0px]">
+          <Button variant="whiteShadow" className="mt-[20px] h-[40px] w-[50px] rounded-br-[0px] rounded-tr-[0px]">
             All
           </Button>
-          <Button variant="AcinzentadoIcon" className="mt-[20px] h-[40px] w-[134px] rounded-br-[0px] rounded-tr-[0px] rounded-bl-[0px] rounded-tl-[0px]">
+          <Button variant="grayIcon" className="mt-[20px] h-[40px] w-[134px] rounded-br-[0px] rounded-tr-[0px] rounded-bl-[0px] rounded-tl-[0px]">
             <div>
               <PiTimer className="h-[20px]" />
             </div>
             <div className="ml-2">In Progress</div>
           </Button>
-          <Button variant="AcinzentadoIcon" className="mt-[20px] h-[40px] w-[134px] rounded-bl-[0px] rounded-tl-[0px]">
+          <Button variant="grayIcon" className="mt-[20px] h-[40px] w-[134px] rounded-bl-[0px] rounded-tl-[0px]">
             <LuCheckCheck />
             <div className="ml-2">Concluded</div>
           </Button>
@@ -51,7 +51,7 @@ function CardOverview() {
         <Button variant="letraVerde" className="mt-[12px] lg:mr-[20px]">
           Need help?
         </Button>
-        <Button variant="BrancoBorda" className="mt-[12px]">
+        <Button variant="whiteShadow" className="mt-[12px]">
           Manage campaigns
         </Button>
       </div>
