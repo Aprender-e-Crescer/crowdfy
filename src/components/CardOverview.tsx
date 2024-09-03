@@ -13,13 +13,13 @@ function CardOverview() {
         </h2>
         <div className="flex justify-center :ml-[405px] mb-[28px]">
           <Button
-            variant="BrancoShadow"
+            variant="whiteShadow"
             className="mt-[20px] h-[40px] w-[50px] rounded-br-[0px] rounded-tr-[0px]"
           >
             All
           </Button>
           <Button
-            variant="AcinzentadoIcon"
+            variant="grayIcon"
             className="mt-[20px] h-[40px] w-[134px] rounded-br-[0px] rounded-tr-[0px] rounded-bl-[0px] rounded-tl-[0px]"
           >
             <div>
@@ -28,7 +28,7 @@ function CardOverview() {
             <div className="ml-2">In Progress</div>
           </Button>
           <Button
-            variant="AcinzentadoIcon"
+            variant="grayIcon"
             className="mt-[20px] h-[40px] w-[134px] rounded-bl-[0px] rounded-tl-[0px]"
           >
             <LuCheckCheck />
@@ -82,7 +82,7 @@ function CardOverview() {
           <Progress value={30} className="mt-2" />
         </div>
       </div>
-      <div className="flex flex-col xl:flex-row lg:ml-[0px]">        
+      <div className="flex flex-col xl:flex-row lg:ml-[0px]">
         <div className="mb-[20px] lg:mr-[20px]">
           <Card
             titulo={
@@ -133,7 +133,7 @@ function CardOverview() {
         <Button variant="letraVerde" className="mt-[12px] lg:mr-[20px]">
           Need help?
         </Button>
-        <Button variant="BrancoShadow" className="mt-[12px]">
+        <Button variant="whiteShadow" className="mt-[12px]">
           Manage campaigns
         </Button>
       </div>
