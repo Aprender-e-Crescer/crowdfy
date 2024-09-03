@@ -37,7 +37,9 @@ export default function Footer() {
             </Link>
           </div>
           <div className="flex flex-col flex-1 items-start max-w-40">
-            <h1 className="font-semibold">Campaigns</h1>
+            <Link to="/my-campaigns" className="[&.active]">
+              <h1 className="font-semibold">Campaigns</h1>
+            </Link>
             <Link to="/" className="[&.active]">
               <p className="text-slate-600 ">Home</p>
             </Link>
@@ -95,11 +97,10 @@ export default function Footer() {
       <div className=" md:hidden flex flex-wrap bg-slate-100">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <Link to="/" className="[&.active]">
-              <AccordionTrigger className=" text-foreground text-lime-700">
-                Home
-              </AccordionTrigger>
-            </Link>
+            <AccordionTrigger className=" text-foreground text-lime-700">
+              Home
+            </AccordionTrigger>
+
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               <Link to="/favorites" className="[&.active]">
                 My favorites
@@ -110,11 +111,10 @@ export default function Footer() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <Link to="/explore" className="[&.active]">
-              <AccordionTrigger className=" text-foreground">
-                Explore
-              </AccordionTrigger>
-            </Link>
+            <AccordionTrigger className=" text-foreground">
+              Explore
+            </AccordionTrigger>
+
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               Lists
             </AccordionContent>
@@ -130,25 +130,19 @@ export default function Footer() {
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               <Link to="/" className="[&.active]">
-                {' '}
                 Home
               </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                {' '}
+              <Link to="/my-campaigns" className="[&.active]">
                 Campaigns<Badge variant="success">12</Badge>
               </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Donations<Badge variant="success">4</Badge>
-              </Link>
+              Donations<Badge variant="success">4</Badge>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Analytics
-              </Link>
+              Analytics
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -156,12 +150,12 @@ export default function Footer() {
               Profile
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
+              <Link to="/profile-settings" className="[&.active]">
                 Settings
               </Link>
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
+              <Link to="/profile-notifications" className="[&.active]">
                 Notifications<Badge variant="success">10</Badge>
               </Link>
             </AccordionContent>
@@ -171,30 +165,19 @@ export default function Footer() {
               Resources
             </AccordionTrigger>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                How to use crouwdfy
-              </Link>
+              How to use crouwdfy
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Docs
-              </Link>
+              Docs
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Legal Terms
-              </Link>
+              Legal Terms
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                Blog
-              </Link>
+              Blog
             </AccordionContent>
             <AccordionContent className="bg-muted text-muted-foreground p-4">
-              <Link to="/" className="[&.active]">
-                {' '}
-                Merch
-              </Link>
+              Merch
             </AccordionContent>
           </AccordionItem>
           <hr />
