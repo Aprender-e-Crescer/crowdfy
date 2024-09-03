@@ -37,7 +37,7 @@ const buttonsSubHeader = [
   {
     title: 'Favorites',
     variant: 'ghost' as const,
-    route: '/explore-map',
+    route: '/favorites',
     icon: <Heart />,
   },
   {
