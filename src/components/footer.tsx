@@ -17,10 +17,10 @@ export default function Footer() {
         <div className="flex justify-center gap-x-16 py-20 flex-1 px-8">
           <div className="flex flex-col flex-1 items-start max-w-40">
             <h1 className="text-lime-700 font-semibold">Home</h1>
-            <Link to="/" className="[&.active]">
+            <Link to="/favorites" className="[&.active]">
               <p className="text-slate-600">My favorites</p>
             </Link>
-            <Link to="/" className="[&.active]">
+            <Link to="/history" className="[&.active]">
               <p className="text-slate-600">Recents</p>
             </Link>
           </div>
@@ -29,7 +29,7 @@ export default function Footer() {
             <Link to="/" className="[&.active]">
               <p className="text-slate-600">Lists</p>
             </Link>
-            <Link to="/" className="[&.active]">
+            <Link to="/explore-map" className="[&.active]">
               <p className="flex text-slate-600">
                 Maps <Badge variant="success">New</Badge>
               </p>
@@ -44,7 +44,7 @@ export default function Footer() {
                 Campaigns <Badge variant="success">12</Badge>
               </p>
             </Link>
-            <Link to="/" className="[&.active]">
+            <Link to="/explore" className="[&.active]">
               {' '}
               <p className="flex text-slate-600">
                 Donations <Badge variant="success">4</Badge>

@@ -144,12 +144,8 @@ function Favorites() {
 
   return (
     <>
-     
-      <div className="border-b-2 border-gray-100 pb-2"></div>
-      <div className="">
-        <SubHeader buttons={buttons} />
-      </div>
-      <div className="border-b-2 border-gray-100"></div>
+      <div className="pb-2"></div>
+      <SubHeader buttons={buttons} />
       <div className="px-4 sm:px-6 md:px-8 lg:px-24">
         <div className="mt-12 mb-24">
           <SectionHeader title="Favorites" />
@@ -164,10 +160,10 @@ function Favorites() {
                 cardDescription={card.cardDescription}
                 donationValue={card.donationValue}
                 progressValue={card.progressValue}
-                type={'default'}
-                level={''}
-                experience={''}
-                avatarDescription={''}
+                type="default"
+                level=""
+                experience=""
+                avatarDescription=""
                 isLink={true}
               />
             ))}
