@@ -30,13 +30,13 @@ function ProfileSettings() {
     {
       title: 'Favorites',
       variant: 'ghost' as const,
-      route: '/explore-map',
+      route: '/favorites',
       icon: <Heart />,
     },
     {
       title: 'History',
       variant: 'ghost' as const,
-      route: '/explore-map',
+      route: '/history',
       icon: <History />,
     },
   ]
