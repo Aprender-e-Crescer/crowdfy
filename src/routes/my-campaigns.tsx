@@ -1,41 +1,41 @@
-import { SubHeader } from "@/components/subHeader";
-import { Textarea } from "@/components/ui/textarea";
-import { UserProfile } from "@/components/ui/user-profile";
-import { Progress } from "@/components/ui/progress";
-import share from "@/assets/share.svg";
-import Heart from "@/assets/HeartFav.svg";
-import IconDonate from "@/assets/IconDonate.svg";
-import CheyennePerfil from "@/assets/CheyennePerfil.svg";
-import MarilyUser from "@/assets/MarilyUser.svg";
-import FranciPerfil from "@/assets/FranciPerfil.svg";
-import AdilsonFranciPerfil from "@/assets/AdilsonFranciPerfil.svg";
-import JocelynPerfil from "@/assets/JocelynPerfil.svg";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { createFileRoute } from "@tanstack/react-router";
-import { Eye, Flag, MapPin, Rocket } from "lucide-react";
-import FemalePerfil from "@/assets/FemalePerfil.svg";
-import ImagemMaeEFilha from "@/assets/ImageLiveCampaings.png";
+import { SubHeader } from '@/components/subHeader'
+import { Textarea } from '@/components/ui/textarea'
+import { UserProfile } from '@/components/user-profile'
+import { Progress } from '@/components/ui/progress'
+import share from '@/assets/share.svg'
+import Heart from '@/assets/HeartFav.svg'
+import IconDonate from '@/assets/IconDonate.svg'
+import CheyennePerfil from '@/assets/CheyennePerfil.svg'
+import MarilyUser from '@/assets/MarilyUser.svg'
+import FranciPerfil from '@/assets/FranciPerfil.svg'
+import AdilsonFranciPerfil from '@/assets/AdilsonFranciPerfil.svg'
+import JocelynPerfil from '@/assets/JocelynPerfil.svg'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { createFileRoute } from '@tanstack/react-router'
+import { Eye, Flag, MapPin, Rocket } from 'lucide-react'
+import FemalePerfil from '@/assets/FemalePerfil.svg'
+import ImagemMaeEFilha from '@/assets/ImageLiveCampaings.png'
 
-export const Route = createFileRoute("/my-campaigns")({
+export const Route = createFileRoute('/my-campaigns')({
   component: LiveCampaigns,
-});
+})
 
 export function LiveCampaigns() {
   const buttonsSubHeader = [
     {
-      title: "Overview",
-      variant: "ghost" as const,
-      route: "/Campaigns",
+      title: 'Overview',
+      variant: 'ghost' as const,
+      route: '/Campaigns',
       icon: <Eye />,
     },
     {
-      title: "My Campaigns",
-      variant: "green" as const,
-      route: "/my-campaigns",
+      title: 'My Campaigns',
+      variant: 'lightYellow' as const,
+      route: '/my-campaigns',
       icon: <Rocket />,
     },
-  ];
+  ]
 
   return (
     <>
@@ -144,10 +144,7 @@ export function LiveCampaigns() {
 
         <div className="flex flex-col gap-4">
           <div className="flex justify-start lg:justify-center mb-6">
-            <Button
-              className="bg-[#D9F99D] text-[#1F2937] max-w-40 border-[#F7FEE7] font-medium"
-              variant="shadow"
-            >
+            <Button className="max-w-40" variant="lightYellow">
               <img src={share} className="mx-2" />
               Share Campaign
             </Button>
@@ -204,10 +201,7 @@ export function LiveCampaigns() {
             </div>
 
             <div className="flex justify-between">
-              <Button
-                className="bg-[#D9F99D] text-[#1F2937] w-full border-[#F7FEE7] font-medium"
-                variant="shadow"
-              >
+              <Button className="w-full" variant="lightYellow">
                 <img src={share} className="mx-2" />
                 Share Campaign
               </Button>
@@ -250,10 +244,7 @@ export function LiveCampaigns() {
               </p>
             </div>
 
-            <Button
-              className="w-full bg-[#84CC16] hover:bg-green-600 text-white"
-              variant="default"
-            >
+            <Button className="w-full" variant="greenShadow">
               <img src={IconDonate} />
               Donate now
             </Button>
@@ -268,5 +259,5 @@ export function LiveCampaigns() {
         </div>
       </main>
     </>
-  );
+  )
 }

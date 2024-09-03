@@ -1,14 +1,25 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Card } from '@/components/component/card'
-
-
+import { Card } from '@/components/card-donate'
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from '@/components/ui/pagination'
 import { HeaderCard } from '@/components/headerCard'
+import { SubHeader } from '@/components/subHeader'
+import { FiMapPin, FiGrid } from 'react-icons/fi'
+import { LuNewspaper } from 'react-icons/lu'
 
 export const Route = createFileRoute('/explore')({
   component: Explore,
 })
 
 function Explore() {
+  // Dados do card-donate
   const cardsData = [
     {
       imageSrc: '/imagemCard1.png',
@@ -27,7 +38,7 @@ function Explore() {
       cardTitle: 'Educación en Academia de...',
       cardDescription:
         'Hola, mi nombre es Bernal Torres y la educación de mi sobrino Christian Tomas es mi principal preocupación.',
-      donationValue: '4,177.20 ',
+      donationValue: '4,177.20',
       progressValue: 50,
     },
     {
@@ -112,22 +123,92 @@ function Explore() {
     },
   ]
 
+  // Botões do SubHeader
+  const buttons = [
+    {
+      title: 'Gallery',
+      variant: 'lightYellow',
+      icon: <FiGrid className="text-2xl" />,
+      route: '/explore',
+    },
+    {
+      title: 'Maps',
+      variant: 'ghost',
+      icon: <FiMapPin className="text-2xl" />,
+      route: '/explore-map',
+    },
+    {
+      title: 'Feed',
+      variant: 'ghost',
+      icon: <LuNewspaper className="text-2xl" />,
+      route: '#',
+    },
+  ]
+
   return (
     <>
-      <div>
-        <HeaderCard />
-        <div className=" gap-5 sm:mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-          {cardsData.map((card, index) => (
-            <Card
-              key={index}
-              imageSrc={card.imageSrc}
-              avatarSrc={card.avatarSrc}
-              avatarName={card.avatarName}
-              cardTitle={card.cardTitle}
-              cardDescription={card.cardDescription}
-              donationValue={card.donationValue}
-              progressValue={card.progressValue} type={'default'} level={''} experience={''} avatarDescription={''}            />
-          ))}
+      <SubHeader buttons={buttons} />
+      <div className="px-4 sm:px-6 md:px-8 lg:px-24">
+        <div className="mt-12 mb-24">
+          <HeaderCard />
+          <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {cardsData.map((card, index) => (
+              <Card
+                key={index}
+                imageSrc={card.imageSrc}
+                avatarSrc={card.avatarSrc}
+                avatarName={card.avatarName}
+                cardTitle={card.cardTitle}
+                cardDescription={card.cardDescription}
+                donationValue={card.donationValue}
+                progressValue={card.progressValue}
+                type='default'
+                level=''
+                experience=''
+                avatarDescription=''
+                isLink={true}
+              />
+            ))}
+          </div>
+          <Pagination className="mt-6">
+            <PaginationContent className="flex items-center justify-between w-full border-t-2 border-gray-100 p-5 text-gray-100">
+              <PaginationItem>
+                <PaginationPrevious
+                  href="#"
+                  useArrows={true}
+                  className="text-gray-600"
+                />
+              </PaginationItem>
+              <PaginationItem className="flex">
+                <PaginationLink href="#" className="text-gray-600">
+                  1
+                </PaginationLink>
+                <PaginationLink href="#" className="text-gray-600">
+                  2
+                </PaginationLink>
+                <PaginationLink href="#" className="text-gray-600">
+                  3
+                </PaginationLink>
+                <PaginationEllipsis className="text-gray-600" />
+                <PaginationLink href="#" className="text-gray-600">
+                  8
+                </PaginationLink>
+                <PaginationLink href="#" className="text-gray-600">
+                  9
+                </PaginationLink>
+                <PaginationLink href="#" className="text-gray-600">
+                  10
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationNext
+                  href="#"
+                  useArrows={true}
+                  className="text-[#475467]"
+                />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
         </div>
       </div>
     </>

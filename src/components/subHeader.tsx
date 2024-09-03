@@ -1,11 +1,16 @@
-import { Link } from "@tanstack/react-router";
-import { Button } from "./ui/button";
-import { InputSubHeader } from "./ui/input-sub-header";
-
+import { Link } from '@tanstack/react-router'
+import { Button } from '@/components/ui/button'
+import { InputSubHeader } from '@/components/input-sub-header'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
 interface Props {
   buttons: {
     title: string;
-    variant: "green" | "ghost";
+    variant: "lightYellow" | "ghost" | "green";
     icon: JSX.Element;
     route: string;
   }[];
@@ -13,18 +18,35 @@ interface Props {
 
 export function SubHeader({ buttons }: Props) {
   return (
-    <div className="flex justify-start sm:justify-between pt-6 max-[450px]:flex-col max-[450px]:gap-2 ml-2">
-      <div className="flex gap-3 mr-2 sm:mr-5">
-        {buttons.map(({ title, variant, icon, route }) => (
-          <Link to={route} key={title}>
-            <Button variant={variant}>
-              {icon} {title}
-            </Button>
-          </Link>
-        ))}
+    <>
+      <hr />
+      <div className="flex justify-between max-[420px]:flex-col lg:pt-6 lg:pb-6 pt-3 pb-3 max-[450px]:gap-2 ml-2 lg:mx-24">
+        <div className="gap-3 mr-2 sm:mr-5 hidden lg:flex">
+          {buttons.map(({ title, variant, icon, route }) => (
+            <Link to={route} key={title}>
+              <Button variant={variant}>
+                {icon} {title}
+              </Button>
+            </Link>
+          ))}
+        </div>
+        <div className="lg:hidden">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="lightYellow">Actions</Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              {buttons.map(({ title, route }) => (
+                <DropdownMenuItem key={title}>
+                  <Link to={route}>{title}</Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+        <InputSubHeader />
       </div>
-      <InputSubHeader />
-    </div>
-  );
+      <hr />
+    </>
+  )
 }
-

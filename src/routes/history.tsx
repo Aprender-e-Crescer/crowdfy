@@ -1,7 +1,11 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Card } from '@/components/component/card'
-import { SectionHeader } from '@/components/component/Sectionheader'
-
+import { Card } from '@/components/card-donate'
+import { SectionHeader } from '@/components/Sectionheader'
+import { SubHeader } from '@/components/subHeader'
+import { LuSettings } from 'react-icons/lu'
+import { IoIosNotificationsOutline } from 'react-icons/io'
+import { FaRegHeart } from 'react-icons/fa'
+import { MdOutlineWatchLater } from 'react-icons/md'
 
 export const Route = createFileRoute('/history')({
   component: History,
@@ -26,7 +30,7 @@ function History() {
       cardTitle: 'Educación en Academia de...',
       cardDescription:
         'Hola, mi nombre es Bernal Torres y la educación de mi sobrino Christian Tomas es mi principal preocupación.',
-      donationValue: '4,177.20 ',
+      donationValue: '4,177.20',
       progressValue: 50,
     },
     {
@@ -111,22 +115,58 @@ function History() {
     },
   ]
 
+  const buttons = [
+    {
+      title: 'Settings',
+      variant: 'ghost',
+      icon: <LuSettings className="text-2xl" />,
+      route: '/profile-settings',
+    },
+    {
+      title: 'Notifications',
+      variant: 'ghost',
+      icon: <IoIosNotificationsOutline className="text-3xl" />,
+      route: '/profileNotifications',
+    },
+    {
+      title: 'Favorites',
+      variant: 'ghost',
+      icon: <FaRegHeart className="text-2xl" />,
+      route: '/favorites',
+    },
+    {
+      title: 'History',
+      variant: 'lightYellow',
+      icon: <MdOutlineWatchLater className="text-2xl" />,
+      route: '/history',
+    },
+  ]
+
   return (
     <>
-      <div>
-        <SectionHeader/>
-        <div className=" gap-5 sm:mx-24 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-          {cardsData.map((card, index) => (
-            <Card
-              key={index}
-              imageSrc={card.imageSrc}
-              avatarSrc={card.avatarSrc}
-              avatarName={card.avatarName}
-              cardTitle={card.cardTitle}
-              cardDescription={card.cardDescription}
-              donationValue={card.donationValue}
-              progressValue={card.progressValue} type={'default'} level={''} experience={''} avatarDescription={''}            />
-          ))}
+      <SubHeader buttons={buttons} />
+      <div className="px-4 sm:px-6 md:px-8 lg:px-24">
+        <div className="mt-12 mb-24">
+          <SectionHeader title="History" />
+          <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {cardsData.map((card, index) => (
+              <Card
+                key={index}
+                imageSrc={card.imageSrc}
+                avatarSrc={card.avatarSrc}
+                avatarName={card.avatarName}
+                cardTitle={card.cardTitle}
+                cardDescription={card.cardDescription}
+                donationValue={card.donationValue}
+                progressValue={card.progressValue}
+                type="default"
+                level=""
+                experience=""
+                avatarDescription=""
+                isLink={true}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>

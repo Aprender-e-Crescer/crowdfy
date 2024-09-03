@@ -5,24 +5,58 @@ import ImageFundo from '@/assets/Image overlay.png'
 import PersonalInfo from '@/components/personal-info'
 import ProfileInfo from '@/components/profile-info'
 import { Button } from '@/components/ui/button'
-import { CardAvengers } from '@/components/card-profile'
+import { Card } from '@/components/card-donate'
+import { SubHeader } from '@/components/subHeader'
+import { Bell, Heart, History, Settings } from 'lucide-react'
 
 export const Route = createFileRoute('/profile-settings')({
   component: ProfileSettings,
 })
 
 function ProfileSettings() {
+  const buttonsSubHeader = [
+    {
+      title: 'Settings',
+      variant: 'lightYellow' as const,
+      route: '/profile-settings',
+      icon: <Settings />,
+    },
+    {
+      title: 'Notifications',
+      variant: 'ghost' as const,
+      route: '/profile-notifications',
+      icon: <Bell />,
+    },
+    {
+      title: 'Favorites',
+      variant: 'ghost' as const,
+      route: '/favorites',
+      icon: <Heart />,
+    },
+    {
+      title: 'History',
+      variant: 'ghost' as const,
+      route: '/history',
+      icon: <History />,
+    },
+  ]
   return (
     <>
       {/*Mobile*/}
       <div className="md:hidden flex flex-col mx-3 gap-y-4 justify-center items-center">
+        <SubHeader buttons={buttonsSubHeader} />
         <div className="flex flex-col gap-y-5">
           <div className="flex flex-col justify-center items-center gap-y-8">
             <PersonalInfo />
             <Localization />
           </div>
         </div>
-        <CardAvengers
+        <Card
+          cardDescription=""
+          type="settings"
+          cardTitle=""
+          donationValue=""
+          isLink={false}
           avatarName="Marcus Dutra"
           avatarSrc={ImageAvatar}
           progressValue={90}
@@ -33,7 +67,7 @@ function ProfileSettings() {
         />
 
         <div className="flex justify-center gap-10 mb-5">
-          <Button className="bg-lime-500 text-white" variant="shadow" size="lg">
+          <Button variant="greenShadow" size="lg">
             Save Settings
           </Button>
         </div>
@@ -41,15 +75,12 @@ function ProfileSettings() {
 
       {/*PC*/}
 
-      <div className="hidden md:flex flex-col mx-32 gap-y-4 mb-5">
-        <div className="flex flex-col gap-y-5 gap-x-5 ">
+      <div className="hidden md:flex flex-col gap-y-4 mb-5 ">
+        <SubHeader buttons={buttonsSubHeader} />
+        <div className="flex flex-col gap-y-5 gap-x-5 mx-32">
           <div className="flex w-full justify-between items-center mt-5">
             <ProfileInfo />
-            <Button
-              className="bg-lime-500 text-white"
-              variant="shadow"
-              size="lg"
-            >
+            <Button variant="greenShadow" size="lg">
               Save Settings
             </Button>
           </div>
@@ -57,18 +88,23 @@ function ProfileSettings() {
 
           <div className="flex gap-20 flex-col xl:flex-row justify-around items-center max-w-[1500px]">
             <PersonalInfo />
-            <CardAvengers
+            <Card
+              cardDescription=""
+              type="settings"
+              cardTitle=""
+              donationValue=""
+              isLink={false}
               avatarName="Marcus Dutra"
               avatarSrc={ImageAvatar}
-              imageSrc={ImageFundo}
               progressValue={90}
-              avatarDescription="Designer, Rio de Janeiro, Brasil"
               level="level 8"
               experience="18.543 XP/20.000 XP"
+              avatarDescription="Designer, Rio de Janeiro, Brasil"
+              imageSrc={ImageFundo}
             />
           </div>
         </div>
-        <div>
+        <div className="mx-32">
           <Localization />
         </div>
       </div>

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react'
-
 import { cn } from '@/lib/utils'
 import { ButtonProps, buttonVariants } from '@/components/ui/button'
 
@@ -70,7 +69,8 @@ const PaginationPrevious = ({
     {...props}
   >
     <ChevronLeft className="h-4 w-4" />
-    <span>Previous</span>
+    {/* Aqui, adicionei a classe para ocultar o texto em telas pequenas */}
+    <span className="hidden sm:block">Previous</span>
   </PaginationLink>
 )
 PaginationPrevious.displayName = 'PaginationPrevious'
@@ -85,7 +85,8 @@ const PaginationNext = ({
     className={cn('gap-1 pr-2.5', className)}
     {...props}
   >
-    <span>Next</span>
+    {/* Aqui, adicionei a classe para ocultar o texto em telas pequenas */}
+    <span className="hidden sm:block">Next</span>
     <ChevronRight className="h-4 w-4" />
   </PaginationLink>
 )
