@@ -40,6 +40,9 @@ export const Route = createRootRoute({
         <Link to="/favorites" className="[&.active]:font-bold">
           favorites
         </Link>
+        <Link to="/charts" className="[&.active]:font-bold">
+          Charts
+        </Link>
       </div>
       <Header />
       <Outlet />

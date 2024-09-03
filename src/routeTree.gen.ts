@@ -18,6 +18,7 @@ import { Route as HistoryImport } from './routes/history'
 import { Route as FavoritesImport } from './routes/favorites'
 import { Route as ExploreMapImport } from './routes/explore-map'
 import { Route as ExploreImport } from './routes/explore'
+import { Route as ChartsImport } from './routes/charts'
 import { Route as CampaingThirdStepImport } from './routes/campaing-third-step'
 import { Route as CampaingSecondStepImport } from './routes/campaing-second-step'
 import { Route as CampaingCreateImport } from './routes/campaing-create'
@@ -59,6 +60,11 @@ const ExploreMapRoute = ExploreMapImport.update({
 
 const ExploreRoute = ExploreImport.update({
   path: '/explore',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ChartsRoute = ChartsImport.update({
+  path: '/charts',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -138,6 +144,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CampaingThirdStepImport
       parentRoute: typeof rootRoute
     }
+    '/charts': {
+      id: '/charts'
+      path: '/charts'
+      fullPath: '/charts'
+      preLoaderRoute: typeof ChartsImport
+      parentRoute: typeof rootRoute
+    }
     '/explore': {
       id: '/explore'
       path: '/explore'
@@ -199,6 +212,7 @@ export const routeTree = rootRoute.addChildren({
   CampaingCreateRoute,
   CampaingSecondStepRoute,
   CampaingThirdStepRoute,
+  ChartsRoute,
   ExploreRoute,
   ExploreMapRoute,
   FavoritesRoute,
@@ -222,6 +236,7 @@ export const routeTree = rootRoute.addChildren({
         "/campaing-create",
         "/campaing-second-step",
         "/campaing-third-step",
+        "/charts",
         "/explore",
         "/explore-map",
         "/favorites",
@@ -248,6 +263,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/campaing-third-step": {
       "filePath": "campaing-third-step.tsx"
+    },
+    "/charts": {
+      "filePath": "charts.tsx"
     },
     "/explore": {
       "filePath": "explore.tsx"
