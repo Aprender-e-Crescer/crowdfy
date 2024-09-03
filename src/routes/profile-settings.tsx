@@ -75,9 +75,9 @@ function ProfileSettings() {
 
       {/*PC*/}
 
-      <div className="hidden md:flex flex-col gap-y-4 mb-5 mx-32">
+      <div className="hidden md:flex flex-col gap-y-4 mb-5 ">
         <SubHeader buttons={buttonsSubHeader} />
-        <div className="flex flex-col gap-y-5 gap-x-5">
+        <div className="flex flex-col gap-y-5 gap-x-5 mx-32">
           <div className="flex w-full justify-between items-center mt-5">
             <ProfileInfo />
             <Button variant="greenShadow" size="lg">
@@ -104,7 +104,9 @@ function ProfileSettings() {
             />
           </div>
         </div>
-        <Localization />
+        <div className="mx-32">
+          <Localization />
+        </div>
       </div>
     </>
   )
