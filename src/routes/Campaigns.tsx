@@ -4,11 +4,33 @@ import CardOverview from "@/components/CardOverview";
 import ViewActivity from "@/components/ViewActivity";
 import TitleViewActivity from '@/components/titleViewActivity';
 import CardsViews from '@/components/cardsViews';
+import { Eye, Rocket } from "lucide-react";
+import { SubHeader } from "@/components/subHeader";
 
 
-function Campaigns() {
+
+export function Campaigns() {
+  const buttons = [
+    {
+      title: "Overview",
+      variant: "green" as const,
+      route: "/Campaigns",
+      icon: <Eye />,
+    },
+    {
+      title: "My Campaigns",
+      variant: "lightYellow" as const,
+      route: "/my-campaigns",
+      icon: <Rocket />,
+    },
+  ];
+
   return (
+   
+      
+
   <div className="Campaigns ml-[7px] md:ml-auto justify-center mr-[7px] md:mr-auto md:justify-center">
+          <SubHeader buttons={buttons} />
          <div className='mt-[24px] mb-[16px] md:mt-[48px] md:mb-[32px]'>
         <TitlePage />
       </div>

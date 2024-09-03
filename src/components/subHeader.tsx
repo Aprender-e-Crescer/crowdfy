@@ -5,7 +5,7 @@ import { InputSubHeader } from "@/components/input-sub-header";
 interface Props {
   buttons: {
     title: string;
-    variant: "lightYellow" | "ghost";
+    variant: "lightYellow" | "ghost" | "green";
     icon: JSX.Element;
     route: string;
   }[];
