@@ -11,8 +11,8 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as ProfileNotificationsImport } from './routes/profileNotifications'
 import { Route as ProfileSettingsImport } from './routes/profile-settings'
+import { Route as ProfileNotificationsImport } from './routes/profile-notifications'
 import { Route as MyCampaignsImport } from './routes/my-campaigns'
 import { Route as HistoryImport } from './routes/history'
 import { Route as FavoritesImport } from './routes/favorites'
@@ -27,13 +27,13 @@ import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
 
-const ProfileNotificationsRoute = ProfileNotificationsImport.update({
-  path: '/profileNotifications',
+const ProfileSettingsRoute = ProfileSettingsImport.update({
+  path: '/profile-settings',
   getParentRoute: () => rootRoute,
 } as any)
 
-const ProfileSettingsRoute = ProfileSettingsImport.update({
-  path: '/profile-settings',
+const ProfileNotificationsRoute = ProfileNotificationsImport.update({
+  path: '/profile-notifications',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -173,18 +173,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MyCampaignsImport
       parentRoute: typeof rootRoute
     }
+    '/profile-notifications': {
+      id: '/profile-notifications'
+      path: '/profile-notifications'
+      fullPath: '/profile-notifications'
+      preLoaderRoute: typeof ProfileNotificationsImport
+      parentRoute: typeof rootRoute
+    }
     '/profile-settings': {
       id: '/profile-settings'
       path: '/profile-settings'
       fullPath: '/profile-settings'
       preLoaderRoute: typeof ProfileSettingsImport
-      parentRoute: typeof rootRoute
-    }
-    '/profileNotifications': {
-      id: '/profileNotifications'
-      path: '/profileNotifications'
-      fullPath: '/profileNotifications'
-      preLoaderRoute: typeof ProfileNotificationsImport
       parentRoute: typeof rootRoute
     }
   }
@@ -204,8 +204,8 @@ export const routeTree = rootRoute.addChildren({
   FavoritesRoute,
   HistoryRoute,
   MyCampaignsRoute,
-  ProfileSettingsRoute,
   ProfileNotificationsRoute,
+  ProfileSettingsRoute,
 })
 
 /* prettier-ignore-end */
@@ -227,8 +227,8 @@ export const routeTree = rootRoute.addChildren({
         "/favorites",
         "/history",
         "/my-campaigns",
-        "/profile-settings",
-        "/profileNotifications"
+        "/profile-notifications",
+        "/profile-settings"
       ]
     },
     "/": {
@@ -264,11 +264,11 @@ export const routeTree = rootRoute.addChildren({
     "/my-campaigns": {
       "filePath": "my-campaigns.tsx"
     },
+    "/profile-notifications": {
+      "filePath": "profile-notifications.tsx"
+    },
     "/profile-settings": {
       "filePath": "profile-settings.tsx"
-    },
-    "/profileNotifications": {
-      "filePath": "profileNotifications.tsx"
     }
   }
 }

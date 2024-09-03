@@ -35,7 +35,7 @@ export function CardMapa({ cardData }: CardMapaProps) {
                 className="w-full h-at sm:w-1/3 lg:w-1/4 rounded-lg object-cover"
               />
               <div className="flex-1 flex flex-col gap-1">
-                <div className='flex justify-between'>
+                <div className="flex justify-between">
                   <div>
                     <div className="text-xs sm:text-sm text-green-500">
                       {card.donationText}
