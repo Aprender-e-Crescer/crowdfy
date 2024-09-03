@@ -6,7 +6,7 @@ import iconAvatar from '../assets/Avatars.png'
 import { Progress } from './progress'
 import { Button } from './ui/button'
 import { FundCampaing } from '@/components/fund-campaing'
-import { Loader2 } from 'lucide-react'
+import { Loader2, MapPin } from 'lucide-react'
 import { BackgroundButton } from '@/components/background-button'
 
 interface Props {
@@ -59,11 +59,7 @@ export function Roadmap({
                 </div>
                 <div className="flex ml-2 gap-1 items-center max-[510px]:flex-col">
                   <div className="flex items-center gap-2">
-                    <img
-                      className="w-2 h-3 mt-1"
-                      src={icon}
-                      alt="Location Icon"
-                    />
+                    <MapPin className="text-gray-400" />
                     <p className="text-[#475467] text-[12px]">{location}</p>
                   </div>
                   <Button variant="greenShadow">Sign Campaign</Button>
