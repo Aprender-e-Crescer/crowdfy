@@ -60,7 +60,7 @@ export function Card({
                 />
                 <div
                   className="flex absolute justify-center items-center
-              bg-[#84CC16] rounded-full w-[16hpx] h-[16px] p-1 top-8 left-8"
+                  bg-[#84CC16] rounded-full w-[16hpx] h-[16px] p-1 top-8 left-8"
                 >
                   <p className="text-white font-extrabold">8</p>
                 </div>

@@ -3,10 +3,8 @@ import { HeaderCard } from '@/components/headerCard'
 import { CardMapa } from '@/components/Cardmapa'
 import { Map } from '@/components/map'
 import { SubHeader } from '@/components/subHeader'
-import { FiMapPin } from 'react-icons/fi'
-import { FiGrid } from 'react-icons/fi'
+import { FiMapPin, FiGrid } from 'react-icons/fi'
 import { LuNewspaper } from 'react-icons/lu'
-
 import {
   Pagination,
   PaginationContent,
@@ -83,18 +81,10 @@ export const Route = createFileRoute('/explore-map')({
 
 function Explore() {
   return (
-    <div>
-           
-      <div>
-        <div className="border-b-2 border-gray-100 pb-2"></div>
-      </div>
-      <div className="pb-2 px-4 sm:px-6 md:px-8 lg:px-24">
-        <SubHeader buttons={buttons} />
-      </div>
-      <div>
-        <div className="border-b-2 border-gray-100 mb-8"></div>
-      </div>
-      <div className="flex flex-col min-h-screen">
+    <>   
+      <div className="pb-2"></div>
+      <SubHeader buttons={buttons} />
+      <div className="mt-10 flex flex-col min-h-screen">
         <div className="flex flex-col md:flex-row gap-4 flex-grow">
           <div className="flex flex-col gap-4 w-full md:w-1/2">
             <div className="mx-4">
@@ -128,6 +118,6 @@ function Explore() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
