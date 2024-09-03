@@ -20,7 +20,7 @@ export function SubHeader({ buttons }: Props) {
   return (
     <>
       <hr />
-      <div className="flex justify-between lg:pt-6 lg:pb-6 pt-3 pb-3 max-[450px]:gap-2 ml-2 lg:mx-24">
+      <div className="flex justify-between max-[420px]:flex-col lg:pt-6 lg:pb-6 pt-3 pb-3 max-[450px]:gap-2 ml-2 lg:mx-24">
         <div className="gap-3 mr-2 sm:mr-5 hidden lg:flex">
           {buttons.map(({ title, variant, icon, route }) => (
             <Link to={route} key={title}>
