@@ -59,7 +59,7 @@ function Header() {
         </Link>
 
         <Link
-          to="/Campaigns"
+          to="/campaing-create"
           className={linkClasses('Campaigns')}
           onClick={() => handleLinkClick('Campaigns')}
         >
