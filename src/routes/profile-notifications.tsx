@@ -51,7 +51,7 @@ const buttonsSubHeader = [
 function ProfileNotifications() {
   return (
     <>
-      <div className="lg:mx-16 pb-10">
+      <div className="lg:mx-16">
         <SubHeader buttons={buttonsSubHeader} />
       </div>
       <div className="flex max-[400px]:ml-0 ml-5 flex-col min-[1110px]:flex-row">
