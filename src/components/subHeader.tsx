@@ -5,11 +5,8 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { MoreVertical } from 'lucide-react'
-import { DropdownMenuSeparator } from '@radix-ui/react-dropdown-menu'
 interface Props {
   buttons: {
     title: string
@@ -53,11 +50,3 @@ export function SubHeader({ buttons }: Props) {
     </>
   )
 }
-
-;<DropdownMenuContent>
-  <DropdownMenuLabel>My Account</DropdownMenuLabel>
-  <DropdownMenuItem>Profile</DropdownMenuItem>
-  <DropdownMenuItem>Billing</DropdownMenuItem>
-  <DropdownMenuItem>Team</DropdownMenuItem>
-  <DropdownMenuItem>Subscription</DropdownMenuItem>
-</DropdownMenuContent>

@@ -8,18 +8,21 @@ interface Props {
   textbutton: string
   icon?: React.ReactNode
   variant?:
+    | 'link'
+    | 'ghost'
+    | 'lightYellow'
+    | 'greenShadow'
     | 'default'
     | 'destructive'
     | 'outline'
     | 'secondary'
-    | 'hoverWhiteBorder'
     | 'blackOnHover'
     | 'letraVerde'
-    | 'ghost'
-    | 'link'
-    | 'greenShadow'
     | 'purpleShadow'
     | 'grayShadow'
+    | 'hover-White-Border'
+    | 'whiteShadow'
+    | 'grayIcon'
 }
 
 export function FundCampaing({
