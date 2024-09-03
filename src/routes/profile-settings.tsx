@@ -1,20 +1,50 @@
-import { Localization } from '@/components/localization'
-import { createFileRoute } from '@tanstack/react-router'
-import ImageAvatar from '@/assets/imagemavatar.png'
-import ImageFundo from '@/assets/Image overlay.png'
-import PersonalInfo from '@/components/personal-info'
-import ProfileInfo from '@/components/profile-info'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/card-donate'
+import { Localization } from "@/components/localization";
+import { createFileRoute } from "@tanstack/react-router";
+import ImageAvatar from "@/assets/imagemavatar.png";
+import ImageFundo from "@/assets/Image overlay.png";
+import PersonalInfo from "@/components/personal-info";
+import ProfileInfo from "@/components/profile-info";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/card-donate";
+import { SubHeader } from "@/components/subHeader";
+import { Bell, Heart, History, Settings } from "lucide-react";
 
-export const Route = createFileRoute('/profile-settings')({
+export const Route = createFileRoute("/profile-settings")({
   component: ProfileSettings,
-})
+});
 
 function ProfileSettings() {
+  const buttonsSubHeader = [
+    {
+      title: "Settings",
+      variant: "lightYellow" as const,
+      route: "/profile-settings",
+      icon: <Settings />,
+    },
+    {
+      title: "Notifications",
+      variant: "ghost" as const,
+      route: "/profile-notifications",
+      icon: <Bell />,
+    },
+    {
+      title: "Favorites",
+      variant: "ghost" as const,
+      route: "/explore-map",
+      icon: <Heart />,
+    },
+    {
+      title: "History",
+      variant: "ghost" as const,
+      route: "/explore-map",
+      icon: <History />,
+    },
+  ];
+
   return (
     <>
       {/*Mobile*/}
+      <SubHeader buttons={buttonsSubHeader} />
       <div className="md:hidden flex flex-col mx-3 gap-y-4 justify-center items-center">
         <div className="flex flex-col gap-y-5">
           <div className="flex flex-col justify-center items-center gap-y-8">
@@ -79,5 +109,5 @@ function ProfileSettings() {
         </div>
       </div>
     </>
-  )
+  );
 }
