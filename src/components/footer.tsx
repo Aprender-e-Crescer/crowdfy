@@ -70,6 +70,9 @@ export default function Footer() {
             <h1 className="font-semibold">Resources</h1>
 
             <p className="text-slate-600">How to use crouwdfy</p>
+            <Link to="/charts" className="[&.active]">
+              <p className="text-slate-600">Charts</p>
+            </Link>
 
             <p className="text-slate-600">Docs</p>
 
@@ -167,6 +170,12 @@ export default function Footer() {
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               How to use crouwdfy
             </AccordionContent>
+            <AccordionContent className="bg-muted text-muted-foreground p-4">
+              <Link to="/charts" className="[&.active]">
+                Charts
+              </Link>
+            </AccordionContent>
+
             <AccordionContent className="bg-muted text-muted-foreground p-4">
               Docs
             </AccordionContent>
